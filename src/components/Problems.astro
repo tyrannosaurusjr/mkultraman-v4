@@ -1,0 +1,106 @@
+---
+const problems = [
+  {
+    num: '01',
+    title: 'You\'re paying for 12 tools and using 4 of them properly.',
+    label: 'Tool Sprawl',
+    body: 'Subscriptions accumulate. Nobody owns the stack. Every new hire adds another tool. I map everything, cut the waste, and build a stack that works together.',
+  },
+  {
+    num: '02',
+    title: 'Your processes grew organically. That\'s a polite word for broken.',
+    label: 'Workflow Debt',
+    body: 'Manual handoffs, email chains, spreadsheets doing the work of software. I redesign workflows so your team stops losing hours to friction that shouldn\'t exist.',
+  },
+  {
+    num: '03',
+    title: 'You don\'t know what\'s working because nothing is measured.',
+    label: 'No Visibility',
+    body: 'Revenue flowing through systems with no reporting. Marketing with no attribution. Operations with no dashboards. I build the infrastructure layer that makes your business legible.',
+  },
+];
+---
+
+<section class="problems">
+  <div class="container">
+    <p class="eyebrow">What I fix</p>
+    <h2 class="problems__headline">
+      Most SMEs don't have a people problem.<br />
+      They have a <em>systems</em> problem.
+    </h2>
+
+    <div class="problems__grid">
+      {problems.map((p) => (
+        <div class="problem-card">
+          <span class="problem-card__num">{p.num} — {p.label}</span>
+          <p class="problem-card__title">{p.title}</p>
+          <p class="problem-card__body">{p.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .problems {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: var(--space-96) 0;
+  }
+
+  .problems__headline {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-24) 0 var(--space-64);
+    max-width: 640px;
+  }
+  .problems__headline em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .problems__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-24);
+  }
+
+  .problem-card {
+    padding: var(--space-32);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+
+  .problem-card__num {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .problem-card__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+    margin-bottom: var(--space-12);
+  }
+
+  .problem-card__body {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  @media (max-width: 768px) {
+    .problems__grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,205 @@
+---
+---
+
+<section class="hero" id="top">
+  <div class="hero__inner container">
+
+    <!-- Left: headline + supporting copy -->
+    <div class="hero__content">
+      <p class="eyebrow">Tokyo · Digital Infrastructure</p>
+
+      <h1 class="hero__headline">
+        Your tech stack<br />
+        is <em>costing</em><br />
+        you money.
+      </h1>
+
+      <p class="hero__sub">
+        Most SMEs are chaotic — too many tools, workflows nobody designed,
+        operations that react instead of compound. I fix the digital
+        infrastructure underneath so your business runs cleaner and makes
+        more money with less friction.
+      </p>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">40+</span>
+          <span class="stat__label">SMEs worked with</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">10yr</span>
+          <span class="stat__label">Japan market</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">30%</span>
+          <span class="stat__label">Avg. tool spend cut</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: inquiry form -->
+    <div class="hero__form-wrap" id="inquiry">
+      <div class="hero__form">
+        <p class="form-title">Let's talk about your stack.</p>
+        <p class="form-desc">
+          Tell me what's breaking. I'll tell you what it's costing you — and
+          how to fix it.
+        </p>
+
+        <form
+          name="inquiry"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="form-fields"
+        >
+          <input type="hidden" name="form-name" value="inquiry" />
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+          <div class="field">
+            <label class="label" for="name">Name</label>
+            <input class="input" id="name" name="name" type="text" placeholder="Tanaka Kenji" required />
+          </div>
+
+          <div class="field">
+            <label class="label" for="email">Email</label>
+            <input class="input" id="email" name="email" type="email" placeholder="kenji@company.co.jp" required />
+          </div>
+
+          <div class="field">
+            <label class="label" for="message">What's the problem?</label>
+            <textarea
+              class="textarea"
+              id="message"
+              name="message"
+              placeholder="Too many tools, broken workflows, no visibility — describe the friction."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Send inquiry →
+          </button>
+        </form>
+
+        <p class="form-note">
+          <span class="dot">●</span>
+          Reply within 48 hours. No sales calls, no pitch decks.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: calc(100dvh - 60px);
+    display: flex;
+    align-items: center;
+    padding: var(--space-96) 0;
+  }
+
+  .hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: var(--space-96);
+    align-items: center;
+    width: 100%;
+  }
+
+  /* ── Headline ── */
+  .hero__headline {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    margin: var(--space-24) 0;
+  }
+  .hero__headline em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero__sub {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 480px;
+    margin-bottom: var(--space-48);
+  }
+
+  /* ── Stats ── */
+  .hero__stats {
+    display: flex;
+    gap: var(--space-48);
+    flex-wrap: wrap;
+  }
+  .stat { display: flex; flex-direction: column; gap: 3px; }
+  .stat__num {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+  .stat__label {
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.03em;
+  }
+
+  /* ── Form ── */
+  .hero__form {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-32);
+  }
+
+  .form-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: var(--space-8);
+  }
+  .form-desc {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.55;
+    margin-bottom: var(--space-24);
+  }
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  .form-note {
+    margin-top: var(--space-16);
+    font-size: 11px;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    justify-content: center;
+  }
+  .dot { color: var(--accent); font-size: 8px; }
+  .hidden { display: none; }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .hero {
+      min-height: auto;
+      padding: var(--space-64) 0;
+    }
+    .hero__inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-64);
+    }
+    .hero__form {
+      max-width: 480px;
+    }
+  }
+</style>

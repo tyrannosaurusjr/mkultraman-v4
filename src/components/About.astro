@@ -1,0 +1,100 @@
+---
+---
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__photo-wrap">
+        <img
+          src="/images/tetsu-island.webp"
+          alt="Tetsu — MKUltraman, on a hilltop in Japan"
+          class="about__photo"
+          width="400"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div class="about__content">
+        <p class="about__name">Tetsu — MKUltraman</p>
+        <p class="about__meta eyebrow">Digital Infrastructure · Tokyo · 10+ Years</p>
+        <p class="about__bio">
+          I don't sell volume. I work with a small number of organizations at a time,
+          go deep on their operations, and build infrastructure that compounds over time.
+          Ten years in the Japan market, across industries from F&B to media to professional
+          services. If execution feels harder than it should be, that instinct is
+          usually right — and it's usually structural.
+        </p>
+        <a href="#inquiry" class="about__cta">Start a conversation →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: var(--space-64) 0;
+  }
+
+  .about__inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-48);
+    align-items: start;
+  }
+
+  .about__photo-wrap {
+    width: 280px;
+    flex-shrink: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .about__photo {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .about__name {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin-bottom: var(--space-8);
+  }
+
+  .about__meta {
+    margin-bottom: var(--space-16);
+    font-size: 11px;
+  }
+  .about__meta::before { display: none; }
+
+  .about__bio {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    max-width: 620px;
+    margin-bottom: var(--space-24);
+  }
+
+  .about__cta {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+    transition: opacity 0.15s;
+  }
+  .about__cta:hover { opacity: 0.75; }
+
+  @media (max-width: 640px) {
+    .about__inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-24);
+    }
+  }
+</style>

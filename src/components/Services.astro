@@ -1,0 +1,140 @@
+---
+const services = [
+  {
+    icon: '⚡',
+    title: 'Stack Audit',
+    tag: 'One-time',
+    body: 'I map your entire digital infrastructure, find what\'s broken and what\'s wasted, and deliver a clear action plan. Most clients cut 30% of their tool spend within 60 days.',
+  },
+  {
+    icon: '🔧',
+    title: 'Infrastructure Build',
+    tag: 'Scoped project',
+    body: 'I redesign and rebuild your digital stack — new tools, integrated workflows, and documentation your team can actually use. Delivered with a handoff and training.',
+  },
+  {
+    icon: '📡',
+    title: 'Ongoing Management',
+    tag: 'Monthly retainer',
+    body: 'I manage your digital infrastructure so you don\'t have to think about it. New tools, vendor relationships, performance monitoring — handled. You focus on the business.',
+  },
+];
+---
+
+<section class="services" id="services">
+  <div class="container">
+    <p class="eyebrow">How I work</p>
+    <h2 class="services__headline">Three ways to engage.</h2>
+
+    <div class="services__grid">
+      {services.map((s) => (
+        <div class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon">{s.icon}</span>
+            <span class="service-card__tag">{s.tag}</span>
+          </div>
+          <h3 class="service-card__title">{s.title}</h3>
+          <p class="service-card__body">{s.body}</p>
+          <a href="#inquiry" class="service-card__link">Inquire →</a>
+        </div>
+      ))}
+    </div>
+
+    <p class="services__note">
+      Not sure what you need? Fill out the form. I'll read it, ask a few questions, and tell you exactly what makes sense — no obligation.
+    </p>
+  </div>
+</section>
+
+<style>
+  .services {
+    padding: var(--space-96) 0;
+  }
+
+  .services__headline {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-24) 0 var(--space-64);
+  }
+
+  .services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-24);
+    margin-bottom: var(--space-48);
+  }
+
+  .service-card {
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    transition: border-color 0.2s ease;
+  }
+  .service-card:hover { border-color: var(--accent); }
+
+  .service-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .service-card__icon {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .service-card__tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+  }
+
+  .service-card__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .service-card__body {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    flex: 1;
+  }
+
+  .service-card__link {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    transition: opacity 0.15s;
+    align-self: flex-start;
+  }
+  .service-card__link:hover { opacity: 0.75; }
+
+  .services__note {
+    font-size: 14px;
+    color: var(--text-dim);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-24) var(--space-32);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .services__grid { grid-template-columns: 1fr; }
+  }
+</style>

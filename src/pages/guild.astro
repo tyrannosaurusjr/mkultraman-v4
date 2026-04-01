@@ -1,0 +1,467 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const sites = [
+  {
+    name: "Japanese Jesus",
+    domain: "japanesejesus.com",
+    url: "https://japanesejesus.com",
+    tagline: "Alternate reality game meets Japanese legend.",
+    description: "Explores the real-world legend that Jesus survived crucifixion and died in Shingo Village, Japan — built as an editorial site layered with a multi-level ARG.",
+    category: "Storytelling",
+    location: "Shingo Village, Aomori",
+  },
+  {
+    name: "Wild Meat Japan",
+    domain: "wildmeatjapan.com",
+    url: "https://wildmeatjapan.com",
+    tagline: "Japan's wild game provider directory.",
+    description: "The most comprehensive directory of wild game meat providers in Japan. Connects hunters, processors, wholesalers, and retailers across all prefectures.",
+    category: "Food",
+    location: "Japan",
+  },
+  {
+    name: "Music In Japan",
+    domain: "musicinjapan.com",
+    url: "https://musicinjapan.com",
+    tagline: "Tokyo's underground, no filter.",
+    description: "Born from 15 years of scene experience — tracks 400+ monthly shows across 22 underground venues. Metal, punk, hardcore, noise.",
+    category: "Music",
+    location: "Tokyo",
+  },
+  {
+    name: "Japan Craft Beer",
+    domain: "japancraftbeer.com",
+    url: "https://japancraftbeer.com",
+    tagline: "Business intelligence for Japan's craft brewing.",
+    description: "Intelligence platform tracking 800+ breweries. Provides digital presence audits, business analysis, and automated data collection.",
+    category: "Food & Drink",
+    location: "Japan",
+  },
+  {
+    name: "Akiyaz",
+    domain: "akiyaz.io",
+    url: "https://akiyaz.io",
+    tagline: "Build Japan's future with Akiyaz.",
+    description: "Rural revitalization platform transforming vacant spaces into vibrant communities. Helps investors and expats acquire and renovate abandoned homes.",
+    category: "Real Estate",
+    location: "Japan",
+  },
+  {
+    name: "Kaala Music",
+    domain: "kaalamusic.com",
+    url: "https://kaalamusic.com",
+    tagline: "Japan's underground music scene finder.",
+    description: "Direct access to Japan's underground music ecosystem — band discovery, venue mapping, and curated content from 15 years in the Tokyo scene.",
+    category: "Music",
+    location: "Tokyo",
+  },
+  {
+    name: "Heather Dobbin",
+    domain: "heatherdobbin.com",
+    url: "https://heatherdobbin.com",
+    tagline: "Elevate your leadership potential.",
+    description: "Tokyo-based executive coaching focused on sustainable leadership, burnout recovery, and authentic professional development for global executives.",
+    category: "Coaching",
+    location: "Tokyo",
+  },
+  {
+    name: "The Delphi Network",
+    domain: "thedelphinetwork.com",
+    url: "https://thedelphinetwork.com",
+    tagline: "Elite executive networking in Japan.",
+    description: "Tokyo's premier networking platform for foreign professionals navigating Japan's business landscape. Curated peer networks and exclusive events.",
+    category: "Network",
+    location: "Tokyo",
+  },
+  {
+    name: "Thom Smith Art",
+    domain: "thomsmithart.com",
+    url: "https://thomsmithart.com",
+    tagline: "Unique artwork rooted in underground culture.",
+    description: "Tokyo-based illustration and design practice specializing in album artwork, posters, and merchandise graphics with underground music scene roots.",
+    category: "Art",
+    location: "Tokyo",
+  },
+  {
+    name: "MKUltraman",
+    domain: "mkultraman.com",
+    url: "https://mkultraman.com",
+    tagline: "Digital infrastructure for SMEs in Japan.",
+    description: "The operator layer. Digital infrastructure management, stack consolidation, and workflow design for organizations that need their systems to work.",
+    category: "Strategy",
+    location: "Tokyo",
+    isSelf: true,
+  },
+];
+
+const categoryColors: Record<string, string> = {
+  "Storytelling": "#8B5CF6",
+  "Food": "#F59E0B",
+  "Food & Drink": "#F59E0B",
+  "Music": "#EC4899",
+  "Real Estate": "#10B981",
+  "Coaching": "#3B82F6",
+  "Network": "#6366F1",
+  "Art": "#F97316",
+  "Strategy": "#C41E3A",
+};
+---
+
+<Base
+  title="Ultra Guild — The Network"
+  description="A network of 10 independent sites spanning music, food, travel, art, and strategy — built across Japan and beyond. Operated by MKUltraman."
+>
+  <Nav />
+
+  <main>
+
+    <!-- Hero -->
+    <section class="guild-hero">
+      <div class="container">
+        <p class="eyebrow">The Ultra Guild</p>
+        <h1 class="guild-headline">
+          Ten sites. One<br /><em>operating system.</em>
+        </h1>
+        <p class="guild-sub">
+          The Ultra Guild is a network of independent sites spanning music, food,
+          real estate, art, strategy, and storytelling — built and operated across
+          Japan. Each site runs on shared infrastructure, tooling, and operating
+          patterns. When something improves in one place, it compounds across all of them.
+        </p>
+
+        <div class="guild-stats">
+          <div class="gstat">
+            <span class="gstat__num">10</span>
+            <span class="gstat__label">Active sites</span>
+          </div>
+          <div class="gstat">
+            <span class="gstat__num">6</span>
+            <span class="gstat__label">Categories</span>
+          </div>
+          <div class="gstat">
+            <span class="gstat__num">Japan</span>
+            <span class="gstat__label">Primary market</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="guild-model">
+      <div class="container">
+        <p class="eyebrow">How it works</p>
+        <h2 class="section-headline">Progress doesn't reset.</h2>
+
+        <div class="model-grid">
+          <div class="model-card">
+            <span class="model-card__icon">⚡</span>
+            <h3 class="model-card__title">Shared Infrastructure</h3>
+            <p class="model-card__body">All sites run on common tooling, deployment patterns, and data standards. No rebuilding from scratch. What's been solved stays solved.</p>
+          </div>
+          <div class="model-card">
+            <span class="model-card__icon">📡</span>
+            <h3 class="model-card__title">Signal Amplification</h3>
+            <p class="model-card__body">Shared structured data and cross-linking builds authority across the network. Technical improvements to one property benefit all connected properties.</p>
+          </div>
+          <div class="model-card">
+            <span class="model-card__icon">🔁</span>
+            <h3 class="model-card__title">Compounding Wins</h3>
+            <p class="model-card__body">Workflow refinements, SEO gains, and operational improvements propagate naturally. Progress is cumulative by design — not siloed by project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Site grid -->
+    <section class="guild-sites">
+      <div class="container">
+        <p class="eyebrow">The network</p>
+        <h2 class="section-headline">The sites.</h2>
+
+        <div class="sites-grid">
+          {sites.map((site) => {
+            const color = categoryColors[site.category] || '#888';
+            return (
+              <a
+                href={site.url}
+                target={site.isSelf ? undefined : '_blank'}
+                rel={site.isSelf ? undefined : 'noopener'}
+                class={`site-card${site.isSelf ? ' site-card--self' : ''}`}
+              >
+                <div class="site-card__top">
+                  <span class="site-card__category" style={`color: ${color}; border-color: ${color}33; background: ${color}11`}>
+                    {site.category}
+                  </span>
+                  {!site.isSelf && <span class="site-card__ext">↗</span>}
+                </div>
+                <h3 class="site-card__name">{site.name}</h3>
+                <p class="site-card__tagline">{site.tagline}</p>
+                <p class="site-card__desc">{site.description}</p>
+                <div class="site-card__footer">
+                  <span class="site-card__domain">{site.domain}</span>
+                  <span class="site-card__location">{site.location}</span>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="guild-cta">
+      <div class="container">
+        <div class="guild-cta__inner">
+          <div>
+            <h2 class="guild-cta__headline">Want your site in the network?</h2>
+            <p class="guild-cta__sub">Guild membership is by invitation. If you're operating a site in Japan and want access to shared infrastructure and compounding advantage — reach out.</p>
+          </div>
+          <a href="/#inquiry" class="btn btn-primary">Get in touch →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Base>
+
+<style>
+  /* ── Hero ── */
+  .guild-hero {
+    padding: var(--space-96) 0 var(--space-64);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .guild-headline {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 6vw, 80px);
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    margin: var(--space-24) 0;
+  }
+  .guild-headline em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .guild-sub {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 640px;
+    margin-bottom: var(--space-48);
+  }
+
+  .guild-stats {
+    display: flex;
+    gap: var(--space-48);
+    flex-wrap: wrap;
+  }
+  .gstat { display: flex; flex-direction: column; gap: 3px; }
+  .gstat__num {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+  .gstat__label {
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.03em;
+  }
+
+  /* ── How it works ── */
+  .guild-model {
+    padding: var(--space-96) 0;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-headline {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-24) 0 var(--space-48);
+  }
+
+  .model-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-24);
+  }
+
+  .model-card {
+    padding: var(--space-32);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+
+  .model-card__icon { font-size: 24px; line-height: 1; }
+
+  .model-card__title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .model-card__body {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  /* ── Sites grid ── */
+  .guild-sites {
+    padding: var(--space-96) 0;
+  }
+
+  .sites-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-20);
+  }
+
+  .site-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    padding: var(--space-28);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .site-card:hover {
+    border-color: var(--text-dim);
+    transform: translateY(-2px);
+  }
+  .site-card--self {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, var(--surface) 0%, rgba(196, 30, 58, 0.05) 100%);
+  }
+  .site-card--self:hover { border-color: var(--accent-hover); }
+
+  .site-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-card__category {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    border: 1px solid;
+  }
+
+  .site-card__ext {
+    font-size: 14px;
+    color: var(--text-dim);
+  }
+
+  .site-card__name {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .site-card__tagline {
+    font-size: 13px;
+    font-style: italic;
+    color: var(--text-muted);
+    font-family: var(--font-display);
+  }
+
+  .site-card__desc {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .site-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-8);
+    padding-top: var(--space-12);
+    border-top: 1px solid var(--border);
+  }
+
+  .site-card__domain {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+
+  .site-card__location {
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+
+  /* ── CTA ── */
+  .guild-cta {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: var(--space-64) 0;
+  }
+
+  .guild-cta__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-48);
+    flex-wrap: wrap;
+  }
+
+  .guild-cta__headline {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 3vw, 36px);
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-12);
+    letter-spacing: -0.01em;
+  }
+
+  .guild-cta__sub {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .guild-cta .btn-primary {
+    width: auto;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .model-grid { grid-template-columns: 1fr; }
+    .sites-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .sites-grid { grid-template-columns: 1fr; }
+    .guild-cta__inner { flex-direction: column; align-items: flex-start; }
+  }
+</style>
