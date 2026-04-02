@@ -15,8 +15,37 @@ import Footer from '../components/Footer.astro';
     <Hero />
     <Problems />
     <Services />
-    <Insights />
     <About />
+    <Insights />
+    <!-- Bottom CTA -->
+    <section class="bottom-cta">
+      <div class="container">
+        <h2>Ready to fix the stack?</h2>
+        <p>Tell me what's broken. Free initial reply, no obligations.</p>
+        <a href="/contact" class="btn btn-primary">Get in touch →</a>
+      </div>
+    </section>
   </main>
   <Footer />
 </Base>
+
+<style>
+  .bottom-cta {
+    padding: var(--space-96) 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+  .bottom-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-16);
+  }
+  .bottom-cta p {
+    font-size: 17px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-32);
+  }
+</style>

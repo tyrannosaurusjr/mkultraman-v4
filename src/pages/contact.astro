@@ -1,0 +1,271 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const FORMSPREE_ID = "xbljevon";
+---
+
+<Base
+  title="Contact — MKUltraman"
+  description="Get in touch about auditing, fixing, or managing your digital infrastructure. Based in Tokyo, working with SMEs across Japan."
+>
+  <Nav />
+  <main class="contact-page">
+    <div class="container">
+      <div class="contact-inner">
+
+        <!-- Left: context -->
+        <div class="contact-context">
+          <p class="eyebrow">Get in touch</p>
+          <h1>Tell me what's broken.</h1>
+          <p class="context-desc">
+            The more specific you are, the more useful my response will be.
+            Describe the actual friction — not the category.
+          </p>
+
+          <div class="how-it-works">
+            <p class="how-title">How it works</p>
+            <ol class="how-list">
+              <li>
+                <span class="step-num">01</span>
+                <div>
+                  <strong>You send an inquiry</strong>
+                  <p>Describe the problem in your own words. No format required.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">02</span>
+                <div>
+                  <strong>I read and respond</strong>
+                  <p>Within 48 hours. Usually a few clarifying questions or a direct suggestion.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">03</span>
+                <div>
+                  <strong>We decide if it's a fit</strong>
+                  <p>A brief call if needed. No pressure, no pitch. Just whether this makes sense.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <p class="contact-note">
+            Prefer email? <a href="mailto:hello@mkultraman.com">hello@mkultraman.com</a>
+          </p>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-wrap">
+          <form
+            id="contact-form"
+            action={`https://formspree.io/f/${FORMSPREE_ID}`}
+            method="POST"
+            class="contact-form"
+          >
+            <div class="field">
+              <label class="label" for="c-name">Name</label>
+              <input class="input" id="c-name" name="name" type="text" placeholder="Tanaka Kenji" required />
+            </div>
+
+            <div class="field">
+              <label class="label" for="c-email">Email</label>
+              <input class="input" id="c-email" name="email" type="email" placeholder="kenji@company.co.jp" required />
+            </div>
+
+            <div class="field">
+              <label class="label" for="c-company">Company / Team size <span class="optional">(optional)</span></label>
+              <input class="input" id="c-company" name="company" type="text" placeholder="Acme KK · 12 people" />
+            </div>
+
+            <div class="field">
+              <label class="label" for="c-tools">Tools you're currently using <span class="optional">(optional)</span></label>
+              <input class="input" id="c-tools" name="tools" type="text" placeholder="Slack, Notion, Kintone, spreadsheets…" />
+            </div>
+
+            <div class="field">
+              <label class="label" for="c-message">What's the problem?</label>
+              <textarea
+                class="textarea"
+                id="c-message"
+                name="message"
+                placeholder="Too many tools nobody uses, reports that take hours to pull, onboarding that breaks every time…"
+                required
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label class="label" for="c-service">What kind of help are you looking for? <span class="optional">(optional)</span></label>
+              <select class="input" id="c-service" name="service">
+                <option value="">Not sure yet</option>
+                <option value="audit">Stack Audit</option>
+                <option value="build">Infrastructure Build</option>
+                <option value="management">Ongoing Management</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="contact-submit">
+              Send inquiry →
+            </button>
+
+            <p class="form-success hidden" id="contact-success">
+              ✓ Received. I'll reply within 48 hours.
+            </p>
+            <p class="form-error hidden" id="contact-error">
+              Something went wrong. Email me at <a href="mailto:hello@mkultraman.com">hello@mkultraman.com</a>
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<style>
+  .contact-page {
+    padding: var(--space-96) 0;
+  }
+  .contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: var(--space-96);
+    align-items: start;
+  }
+
+  /* Left */
+  .contact-context h1 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin: var(--space-16) 0 var(--space-24);
+  }
+  .context-desc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 420px;
+    margin-bottom: var(--space-48);
+  }
+  .how-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: var(--space-24);
+  }
+  .how-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+  }
+  .how-list li {
+    display: flex;
+    gap: var(--space-16);
+    align-items: start;
+  }
+  .step-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  .how-list strong {
+    display: block;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: var(--space-4);
+  }
+  .how-list p {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .contact-note {
+    margin-top: var(--space-48);
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+  .contact-note a { color: var(--accent); }
+
+  /* Form */
+  .contact-form {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-32);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  .optional {
+    font-size: 11px;
+    color: var(--text-dim);
+    font-weight: 400;
+  }
+  .form-success {
+    margin-top: var(--space-8);
+    font-size: 14px;
+    color: #4caf78;
+    text-align: center;
+    font-weight: 500;
+  }
+  .form-error {
+    margin-top: var(--space-8);
+    font-size: 13px;
+    color: var(--accent);
+    text-align: center;
+  }
+  .form-error a { color: var(--accent); }
+  .hidden { display: none; }
+
+  @media (max-width: 900px) {
+    .contact-inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-48);
+    }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const btn = document.getElementById('contact-submit') as HTMLButtonElement;
+  const success = document.getElementById('contact-success') as HTMLElement;
+  const error = document.getElementById('contact-error') as HTMLElement;
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+
+        if (res.ok) {
+          form.reset();
+          btn.classList.add('hidden');
+          success.classList.remove('hidden');
+        } else {
+          throw new Error('non-ok');
+        }
+      } catch {
+        btn.textContent = 'Send inquiry →';
+        btn.disabled = false;
+        error.classList.remove('hidden');
+      }
+    });
+  }
+</script>

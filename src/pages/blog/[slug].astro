@@ -27,7 +27,12 @@ const formatDate = (date: Date) => {
 };
 ---
 
-<Base title={`${post.data.title} — MKUltraman`} description={post.data.description}>
+<Base
+  title={`${post.data.title} — MKUltraman`}
+  description={post.data.description}
+  article={true}
+  pubDate={post.data.pubDate.toISOString()}
+>
   <Nav />
 
   <main class="blog-post">

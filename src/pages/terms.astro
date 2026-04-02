@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base title="Terms of Service — MKUltraman" description="Terms of service for mkultraman.com.">
+  <Nav />
+  <main class="legal">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <p class="updated">Last updated: April 2026</p>
+
+      <h2>Use of this site</h2>
+      <p>This site is provided for informational purposes. By using it you agree not to misuse it, attempt to compromise its security, or submit false inquiries.</p>
+
+      <h2>Services</h2>
+      <p>Engagement terms, scope, deliverables, and pricing are agreed in writing before any paid work begins. Submitting an inquiry form does not constitute a contract.</p>
+
+      <h2>Intellectual property</h2>
+      <p>All content on this site — writing, design, and code — is owned by MKUltraman unless otherwise noted. Do not reproduce without permission.</p>
+
+      <h2>Disclaimer</h2>
+      <p>Information on this site is provided in good faith but without warranty. Business outcomes vary. No results are guaranteed.</p>
+
+      <h2>Governing law</h2>
+      <p>These terms are governed by the laws of Japan.</p>
+
+      <h2>Contact</h2>
+      <p><a href="mailto:hello@mkultraman.com">hello@mkultraman.com</a></p>
+
+      <p class="back"><a href="/">← Back to home</a></p>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<style>
+  .legal {
+    padding: var(--space-96) 0;
+  }
+  .legal h1 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-8);
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: var(--space-64);
+  }
+  .legal h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin: var(--space-32) 0 var(--space-12);
+  }
+  .legal p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-muted);
+    max-width: 680px;
+  }
+  .legal a { color: var(--accent); }
+  .back { margin-top: var(--space-64); }
+</style>

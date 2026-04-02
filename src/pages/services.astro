@@ -1,0 +1,337 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base
+  title="Services — MKUltraman"
+  description="Stack audits, infrastructure builds, and ongoing management for SMEs in Japan. Operator-grade digital infrastructure work."
+>
+  <Nav />
+  <main>
+
+    <!-- Hero -->
+    <section class="services-hero">
+      <div class="container">
+        <p class="eyebrow">What I do</p>
+        <h1>Three ways to work together.</h1>
+        <p class="hero-sub">
+          Most engagements start with an audit. Some turn into a build.
+          The ones that go best become ongoing.
+        </p>
+      </div>
+    </section>
+
+    <!-- Service 1: Stack Audit -->
+    <section class="service-detail" id="audit">
+      <div class="container">
+        <div class="service-detail__inner">
+          <div class="service-detail__meta">
+            <p class="service-num">01</p>
+            <p class="service-type">One-time · Fixed fee</p>
+          </div>
+          <div class="service-detail__content">
+            <h2>Stack Audit</h2>
+            <p class="service-lead">
+              A diagnostic of everything your business runs on. Tools, workflows,
+              costs, and where the friction is coming from.
+            </p>
+
+            <h3>What's included</h3>
+            <ul>
+              <li>Full inventory of tools, subscriptions, and integrations</li>
+              <li>Workflow mapping — how work actually moves (not how it's supposed to)</li>
+              <li>Cost analysis: what you're paying vs what you're getting</li>
+              <li>Friction points: where time and money are being lost</li>
+              <li>Written report with prioritized recommendations</li>
+              <li>60-minute debrief call</li>
+            </ul>
+
+            <div class="service-specs">
+              <div class="spec">
+                <span class="spec-label">Timeline</span>
+                <span class="spec-value">1–2 weeks</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Deliverable</span>
+                <span class="spec-value">Written audit report + call</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Starting from</span>
+                <span class="spec-value">¥150,000</span>
+              </div>
+            </div>
+
+            <a href="/contact" class="btn btn-primary">Start with an audit →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 2: Infrastructure Build -->
+    <section class="service-detail alt" id="build">
+      <div class="container">
+        <div class="service-detail__inner">
+          <div class="service-detail__meta">
+            <p class="service-num">02</p>
+            <p class="service-type">Scoped project · Fixed or milestone</p>
+          </div>
+          <div class="service-detail__content">
+            <h2>Infrastructure Build</h2>
+            <p class="service-lead">
+              Rebuild the operational layer of your business. Replace tool chaos
+              with systems that actually fit how your team works.
+            </p>
+
+            <h3>What this typically covers</h3>
+            <ul>
+              <li>Tool consolidation and migration</li>
+              <li>Workflow design and automation</li>
+              <li>CRM, project management, and communication stack setup</li>
+              <li>Data flows and reporting dashboards</li>
+              <li>Team onboarding and documentation</li>
+              <li>Handoff with runbooks — you own it after</li>
+            </ul>
+
+            <h3>Good fit if</h3>
+            <ul>
+              <li>You've outgrown your current setup but don't know what to replace it with</li>
+              <li>You have a specific tool migration (e.g. moving off spreadsheets)</li>
+              <li>Your team is growing and workflows haven't caught up</li>
+            </ul>
+
+            <div class="service-specs">
+              <div class="spec">
+                <span class="spec-label">Timeline</span>
+                <span class="spec-value">4–12 weeks</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Deliverable</span>
+                <span class="spec-value">Working system + documentation</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Starting from</span>
+                <span class="spec-value">¥500,000</span>
+              </div>
+            </div>
+
+            <a href="/contact" class="btn btn-primary">Discuss a build →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 3: Ongoing Management -->
+    <section class="service-detail" id="management">
+      <div class="container">
+        <div class="service-detail__inner">
+          <div class="service-detail__meta">
+            <p class="service-num">03</p>
+            <p class="service-type">Monthly retainer · Ongoing</p>
+          </div>
+          <div class="service-detail__content">
+            <h2>Ongoing Management</h2>
+            <p class="service-lead">
+              I stay in as your infrastructure operator. You don't have to think
+              about the stack. I handle it.
+            </p>
+
+            <h3>What's covered monthly</h3>
+            <ul>
+              <li>Tool and vendor management — renewals, upgrades, cost reviews</li>
+              <li>Workflow monitoring and iteration</li>
+              <li>New tool evaluation and onboarding</li>
+              <li>Incident response (something breaks, I fix it)</li>
+              <li>Monthly review of operational metrics</li>
+              <li>Direct access for questions and quick tasks</li>
+            </ul>
+
+            <h3>How it starts</h3>
+            <p>All retainer clients start with a Stack Audit. This ensures the system we're managing is sound and I know the full picture before taking ongoing responsibility.</p>
+
+            <div class="service-specs">
+              <div class="spec">
+                <span class="spec-label">Commitment</span>
+                <span class="spec-value">3-month minimum</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Access</span>
+                <span class="spec-value">Slack + monthly calls</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Starting from</span>
+                <span class="spec-value">¥120,000 / month</span>
+              </div>
+            </div>
+
+            <a href="/contact" class="btn btn-primary">Inquire about retainer →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="services-cta">
+      <div class="container">
+        <h2>Not sure which fits?</h2>
+        <p>Tell me what's going on and I'll tell you what makes sense.</p>
+        <a href="/contact" class="btn btn-primary">Get in touch →</a>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</Base>
+
+<style>
+  /* Hero */
+  .services-hero {
+    padding: var(--space-96) 0 var(--space-64);
+    border-bottom: 1px solid var(--border);
+  }
+  .services-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 900;
+    color: var(--text);
+    margin: var(--space-16) 0 var(--space-24);
+    letter-spacing: -0.02em;
+  }
+  .hero-sub {
+    font-size: 18px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  /* Detail sections */
+  .service-detail {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .service-detail.alt {
+    background: var(--surface);
+  }
+  .service-detail__inner {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: var(--space-64);
+    align-items: start;
+  }
+  .service-num {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--border);
+    line-height: 1;
+  }
+  .service-type {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-top: var(--space-8);
+  }
+  .service-detail__content h2 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-16);
+  }
+  .service-lead {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 560px;
+    margin-bottom: var(--space-32);
+  }
+  .service-detail__content h3 {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin: var(--space-32) 0 var(--space-16);
+  }
+  .service-detail__content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+  }
+  .service-detail__content li {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .service-detail__content li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 12px;
+  }
+  .service-detail__content p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  /* Specs */
+  .service-specs {
+    display: flex;
+    gap: var(--space-48);
+    margin: var(--space-32) 0;
+    padding: var(--space-24) 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .spec { display: flex; flex-direction: column; gap: var(--space-4); }
+  .spec-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .spec-value {
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* Bottom CTA */
+  .services-cta {
+    padding: var(--space-96) 0;
+    text-align: center;
+  }
+  .services-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+  }
+  .services-cta p {
+    font-size: 17px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-32);
+  }
+
+  @media (max-width: 768px) {
+    .service-detail__inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-32);
+    }
+    .service-num { font-size: 32px; }
+  }
+</style>

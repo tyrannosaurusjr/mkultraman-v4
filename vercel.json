@@ -1,0 +1,453 @@
+{
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/ai-hype-cycle-japanese-tech-startups-innovation",
+      "destination": "/blog/ai-hype-cycle-japanese-tech-startups-innovation",
+      "permanent": true
+    },
+    {
+      "source": "/ai-misuse-ai-in-japan-reasoning-guide",
+      "destination": "/blog/ai-misuse-ai-in-japan-reasoning-guide",
+      "permanent": true
+    },
+    {
+      "source": "/aizu-strategy-rural-japan-blueprint",
+      "destination": "/blog/aizu-strategy-rural-japan-blueprint",
+      "permanent": true
+    },
+    {
+      "source": "/artisan-mindset-business-growth-craftsmanship",
+      "destination": "/blog/artisan-mindset-business-growth-craftsmanship",
+      "permanent": true
+    },
+    {
+      "source": "/automate-schedule-monetize-your-time-for-profit",
+      "destination": "/blog/automate-schedule-monetize-your-time-for-profit",
+      "permanent": true
+    },
+    {
+      "source": "/bitcoin-mining-grid-stability-japan",
+      "destination": "/blog/bitcoin-mining-grid-stability-japan",
+      "permanent": true
+    },
+    {
+      "source": "/blue-ocean-market-creation-strategy",
+      "destination": "/blog/blue-ocean-market-creation-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/chatgpt5-review-from-the-trenches",
+      "destination": "/blog/chatgpt5-review-from-the-trenches",
+      "permanent": true
+    },
+    {
+      "source": "/chigasaki-beach-event-wild-food-experience",
+      "destination": "/blog/chigasaki-beach-event-wild-food-experience",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-training-programs-japanese-leadership",
+      "destination": "/blog/corporate-training-programs-japanese-leadership",
+      "permanent": true
+    },
+    {
+      "source": "/creative-collaboration-product-design-illustration",
+      "destination": "/blog/creative-collaboration-product-design-illustration",
+      "permanent": true
+    },
+    {
+      "source": "/digital-business-card-japan-networking",
+      "destination": "/blog/digital-business-card-japan-networking",
+      "permanent": true
+    },
+    {
+      "source": "/digital-facade-japan-inc-mirage",
+      "destination": "/blog/digital-facade-japan-inc-mirage",
+      "permanent": true
+    },
+    {
+      "source": "/digital-ghost-insolvency-facade-japan",
+      "destination": "/blog/digital-ghost-insolvency-facade-japan",
+      "permanent": true
+    },
+    {
+      "source": "/digital-immigrants-agi-cognitive-labor",
+      "destination": "/blog/digital-immigrants-agi-cognitive-labor",
+      "permanent": true
+    },
+    {
+      "source": "/digital-literacy-crisis-japan-business",
+      "destination": "/blog/digital-literacy-crisis-japan-business",
+      "permanent": true
+    },
+    {
+      "source": "/digital-paradox-analog-transformation",
+      "destination": "/blog/digital-paradox-analog-transformation",
+      "permanent": true
+    },
+    {
+      "source": "/digital-skills-japan-legacy-systems-workforce",
+      "destination": "/blog/digital-skills-japan-legacy-systems-workforce",
+      "permanent": true
+    },
+    {
+      "source": "/fall-corporate-japan-osaka-expo-2025",
+      "destination": "/blog/fall-corporate-japan-osaka-expo-2025",
+      "permanent": true
+    },
+    {
+      "source": "/foreign-labor-public-order-data-shift",
+      "destination": "/blog/foreign-labor-public-order-data-shift",
+      "permanent": true
+    },
+    {
+      "source": "/fragmented-communication-tool-overload-etiquette",
+      "destination": "/blog/fragmented-communication-tool-overload-etiquette",
+      "permanent": true
+    },
+    {
+      "source": "/future-of-japan-2026-visible-shift",
+      "destination": "/blog/future-of-japan-2026-visible-shift",
+      "permanent": true
+    },
+    {
+      "source": "/heritage-crafts-artisan-decline-kogei",
+      "destination": "/blog/heritage-crafts-artisan-decline-kogei",
+      "permanent": true
+    },
+    {
+      "source": "/hidden-markets-japan-investor-insight-alpha",
+      "destination": "/blog/hidden-markets-japan-investor-insight-alpha",
+      "permanent": true
+    },
+    {
+      "source": "/hollow-empire-japan-inc-visa-barrier",
+      "destination": "/blog/hollow-empire-japan-inc-visa-barrier",
+      "permanent": true
+    },
+    {
+      "source": "/japan-agetech-strategy-fails-human-care",
+      "destination": "/blog/japan-agetech-strategy-fails-human-care",
+      "permanent": true
+    },
+    {
+      "source": "/japan-business-execution-2026",
+      "destination": "/blog/japan-business-execution-2026",
+      "permanent": true
+    },
+    {
+      "source": "/japan-departure-tax-travel-policy-impact",
+      "destination": "/blog/japan-departure-tax-travel-policy-impact",
+      "permanent": true
+    },
+    {
+      "source": "/japan-dual-pricing-resident-discounts",
+      "destination": "/blog/japan-dual-pricing-resident-discounts",
+      "permanent": true
+    },
+    {
+      "source": "/japan-dual-pricing-resident-discounts-osaka-ramen",
+      "destination": "/blog/japan-dual-pricing-resident-discounts-osaka-ramen",
+      "permanent": true
+    },
+    {
+      "source": "/japan-economic-stagnation-toxic-culture-sanseito",
+      "destination": "/blog/japan-economic-stagnation-toxic-culture-sanseito",
+      "permanent": true
+    },
+    {
+      "source": "/japan-entrepreneurship-rural-revitalization-akiya",
+      "destination": "/blog/japan-entrepreneurship-rural-revitalization-akiya",
+      "permanent": true
+    },
+    {
+      "source": "/japan-market-untapped-value-investment",
+      "destination": "/blog/japan-market-untapped-value-investment",
+      "permanent": true
+    },
+    {
+      "source": "/japan-national-brand-paradox-cool-japan-inc",
+      "destination": "/blog/japan-national-brand-paradox-cool-japan-inc",
+      "permanent": true
+    },
+    {
+      "source": "/japan-post-scandal-logistics-safety-accountability",
+      "destination": "/blog/japan-post-scandal-logistics-safety-accountability",
+      "permanent": true
+    },
+    {
+      "source": "/japan-systemic-labor-shortfall-collapse",
+      "destination": "/blog/japan-systemic-labor-shortfall-collapse",
+      "permanent": true
+    },
+    {
+      "source": "/japan-technology-ai-copyright-innovation",
+      "destination": "/blog/japan-technology-ai-copyright-innovation",
+      "permanent": true
+    },
+    {
+      "source": "/japan-third-cities-frontier-escape-tokyo",
+      "destination": "/blog/japan-third-cities-frontier-escape-tokyo",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-business-culture-disorganized-approach",
+      "destination": "/blog/japanese-business-culture-disorganized-approach",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-event-promotion-event-seo-strategy",
+      "destination": "/blog/japanese-event-promotion-event-seo-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-jesus-shingo-legend-folklore-disruption",
+      "destination": "/blog/japanese-jesus-shingo-legend-folklore-disruption",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-kawaii-culture-reclaiming-lost-childhood",
+      "destination": "/blog/japanese-kawaii-culture-reclaiming-lost-childhood",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-leadership-culture-wa",
+      "destination": "/blog/japanese-leadership-culture-wa",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-society-foreign-workers-consensus",
+      "destination": "/blog/japanese-society-foreign-workers-consensus",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-tech-accelerators-digital-infra-audits",
+      "destination": "/blog/japanese-tech-accelerators-digital-infra-audits",
+      "permanent": true
+    },
+    {
+      "source": "/japans-political-paralysis",
+      "destination": "/blog/japans-political-paralysis",
+      "permanent": true
+    },
+    {
+      "source": "/japans-political-paralysis-entrenched-ldp-factions",
+      "destination": "/blog/japans-political-paralysis-entrenched-ldp-factions",
+      "permanent": true
+    },
+    {
+      "source": "/local-business-strategy-japan-execution-shonan",
+      "destination": "/blog/local-business-strategy-japan-execution-shonan",
+      "permanent": true
+    },
+    {
+      "source": "/modern-disaster-dated-practice-karoshi-japan",
+      "destination": "/blog/modern-disaster-dated-practice-karoshi-japan",
+      "permanent": true
+    },
+    {
+      "source": "/modern-event-management-outdated-event-logistics",
+      "destination": "/blog/modern-event-management-outdated-event-logistics",
+      "permanent": true
+    },
+    {
+      "source": "/openai-ecosystem-chatgpt-integration-japan",
+      "destination": "/blog/openai-ecosystem-chatgpt-integration-japan",
+      "permanent": true
+    },
+    {
+      "source": "/osaka-expo-2025-japan-economic-stagnation",
+      "destination": "/blog/osaka-expo-2025-japan-economic-stagnation",
+      "permanent": true
+    },
+    {
+      "source": "/overcome-sunk-cost-fallacy-business-focus",
+      "destination": "/blog/overcome-sunk-cost-fallacy-business-focus",
+      "permanent": true
+    },
+    {
+      "source": "/premium-pricing-japan-overcoming-deflation-tourism",
+      "destination": "/blog/premium-pricing-japan-overcoming-deflation-tourism",
+      "permanent": true
+    },
+    {
+      "source": "/prime-minister-sanae-takaichi-heavy-metal-japan",
+      "destination": "/blog/prime-minister-sanae-takaichi-heavy-metal-japan",
+      "permanent": true
+    },
+    {
+      "source": "/professional-communication-breakdown-effective-workflow",
+      "destination": "/blog/professional-communication-breakdown-effective-workflow",
+      "permanent": true
+    },
+    {
+      "source": "/regional-revitalization-japan",
+      "destination": "/blog/regional-revitalization-japan",
+      "permanent": true
+    },
+    {
+      "source": "/revolutionary-toto-washlet-strategy-japanese-purity",
+      "destination": "/blog/revolutionary-toto-washlet-strategy-japanese-purity",
+      "permanent": true
+    },
+    {
+      "source": "/rural-revitalization-japan-softbank-investment",
+      "destination": "/blog/rural-revitalization-japan-softbank-investment",
+      "permanent": true
+    },
+    {
+      "source": "/salary-transparency-hiring-process-recruitment",
+      "destination": "/blog/salary-transparency-hiring-process-recruitment",
+      "permanent": true
+    },
+    {
+      "source": "/scheduling-emails-workplace-boundaries-communication",
+      "destination": "/blog/scheduling-emails-workplace-boundaries-communication",
+      "permanent": true
+    },
+    {
+      "source": "/service-pricing-client-trust-confidence",
+      "destination": "/blog/service-pricing-client-trust-confidence",
+      "permanent": true
+    },
+    {
+      "source": "/shared-systems-japan-business-failure",
+      "destination": "/blog/shared-systems-japan-business-failure",
+      "permanent": true
+    },
+    {
+      "source": "/systemic-failure-japan-global-mindset-modernity",
+      "destination": "/blog/systemic-failure-japan-global-mindset-modernity",
+      "permanent": true
+    },
+    {
+      "source": "/technology-adoption-japan-systems-procurement",
+      "destination": "/blog/technology-adoption-japan-systems-procurement",
+      "permanent": true
+    },
+    {
+      "source": "/tokyo-business-curation-startup-lady",
+      "destination": "/blog/tokyo-business-curation-startup-lady",
+      "permanent": true
+    },
+    {
+      "source": "/tokyo-business-mindset-strategic-agility-leadership",
+      "destination": "/blog/tokyo-business-mindset-strategic-agility-leadership",
+      "permanent": true
+    },
+    {
+      "source": "/tourist-behavior-japan-travel-kyoto",
+      "destination": "/blog/tourist-behavior-japan-travel-kyoto",
+      "permanent": true
+    },
+    {
+      "source": "/us-tariff-exemption-japan-shipping-opportunity",
+      "destination": "/blog/us-tariff-exemption-japan-shipping-opportunity",
+      "permanent": true
+    },
+    {
+      "source": "/visceral-experience-winter-nights-december-21st",
+      "destination": "/blog/visceral-experience-winter-nights-december-21st",
+      "permanent": true
+    },
+    {
+      "source": "/visual-brand-strategy-psychedelic-fashion-branding",
+      "destination": "/blog/visual-brand-strategy-psychedelic-fashion-branding",
+      "permanent": true
+    },
+    {
+      "source": "/visual-identity-strategy-branding-japan",
+      "destination": "/blog/visual-identity-strategy-branding-japan",
+      "permanent": true
+    },
+    {
+      "source": "/zombie-companies-japan-stifled-entrepreneurship",
+      "destination": "/blog/zombie-companies-japan-stifled-entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/feed",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/feed/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/category/(.*)",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/tag/(.*)",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/author/(.*)",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

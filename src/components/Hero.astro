@@ -1,4 +1,5 @@
 ---
+const FORMSPREE_ID = "xbljevon";
 ---
 
 <section class="hero" id="top">
@@ -47,15 +48,11 @@
         </p>
 
         <form
-          name="inquiry"
+          id="hero-form"
+          action={`https://formspree.io/f/${FORMSPREE_ID}`}
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
           class="form-fields"
         >
-          <input type="hidden" name="form-name" value="inquiry" />
-          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
-
           <div class="field">
             <label class="label" for="name">Name</label>
             <input class="input" id="name" name="name" type="text" placeholder="Tanaka Kenji" required />
@@ -77,9 +74,16 @@
             ></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" class="btn btn-primary" id="hero-submit">
             Send inquiry →
           </button>
+
+          <p class="form-success hidden" id="hero-success">
+            ✓ Received. I'll reply within 48 hours.
+          </p>
+          <p class="form-error hidden" id="hero-error">
+            Something went wrong. Email me directly at hello@mkultraman.com
+          </p>
         </form>
 
         <p class="form-note">
@@ -188,6 +192,20 @@
   .dot { color: var(--accent); font-size: 8px; }
   .hidden { display: none; }
 
+  .form-success {
+    margin-top: var(--space-12);
+    font-size: 13px;
+    color: #4caf78;
+    text-align: center;
+    font-weight: 500;
+  }
+  .form-error {
+    margin-top: var(--space-12);
+    font-size: 12px;
+    color: var(--accent);
+    text-align: center;
+  }
+
   /* ── Responsive ── */
   @media (max-width: 900px) {
     .hero {
@@ -203,3 +221,38 @@
     }
   }
 </style>
+
+<script>
+  const form = document.getElementById('hero-form') as HTMLFormElement;
+  const btn = document.getElementById('hero-submit') as HTMLButtonElement;
+  const success = document.getElementById('hero-success') as HTMLElement;
+  const error = document.getElementById('hero-error') as HTMLElement;
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+
+        if (res.ok) {
+          form.reset();
+          btn.classList.add('hidden');
+          success.classList.remove('hidden');
+        } else {
+          throw new Error('non-ok');
+        }
+      } catch {
+        btn.textContent = 'Send inquiry →';
+        btn.disabled = false;
+        error.classList.remove('hidden');
+      }
+    });
+  }
+</script>
