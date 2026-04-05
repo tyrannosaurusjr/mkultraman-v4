@@ -5,6 +5,7 @@ interface Props {
   ogImage?: string;
   article?: boolean;
   pubDate?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -13,10 +14,53 @@ const {
   ogImage = '/images/tetsu-island.webp',
   article = false,
   pubDate,
+  noindex = false,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://mkultraman.com');
-const ogImageURL = new URL(ogImage, Astro.site ?? 'https://mkultraman.com');
+const siteURL = (Astro.site ?? 'https://mkultraman.com').toString().replace(/\/$/, '');
+const canonicalURL = new URL(Astro.url.pathname, siteURL);
+const ogImageURL = new URL(ogImage, siteURL);
+
+const isHome = Astro.url.pathname === '/';
+
+const orgSchema = {
+  "@type": "Organization",
+  "@id": `${siteURL}/#organization`,
+  "name": "MKUltraman",
+  "url": siteURL.toString(),
+  "logo": new URL('/favicon.svg', siteURL).toString(),
+  "description": "Digital infrastructure management for SMEs in Japan.",
+  "founder": {
+    "@type": "Person",
+    "name": "Tetsu",
+    "jobTitle": "Digital Infrastructure Consultant",
+    "url": siteURL.toString(),
+  },
+  "areaServed": { "@type": "Country", "name": "Japan" },
+  "sameAs": ["https://instagram.com/mkultraman"],
+};
+
+const websiteSchema = {
+  "@type": "WebSite",
+  "@id": `${siteURL}/#website`,
+  "name": "MKUltraman",
+  "url": siteURL.toString(),
+  "publisher": { "@id": `${siteURL}/#organization` },
+};
+
+const homeSchemaGraph = [orgSchema, websiteSchema];
+
+const articleSchema = article ? {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "url": canonicalURL.toString(),
+  "image": ogImageURL.toString(),
+  "datePublished": pubDate,
+  "author": { "@type": "Person", "name": "Tetsu", "url": siteURL.toString() },
+  "publisher": { "@id": `${siteURL}/#organization` },
+} : null;
 ---
 
 <!doctype html>
@@ -25,6 +69,7 @@ const ogImageURL = new URL(ogImage, Astro.site ?? 'https://mkultraman.com');
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <title>{title}</title>
 
     <!-- Canonical -->
@@ -63,6 +108,14 @@ const ogImageURL = new URL(ogImage, Astro.site ?? 'https://mkultraman.com');
 
     <!-- Analytics -->
     <script defer data-domain="mkultraman.com" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Structured Data -->
+    {isHome && (
+      <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": homeSchemaGraph })} />
+    )}
+    {articleSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    )}
   </head>
   <body>
     <slot />
