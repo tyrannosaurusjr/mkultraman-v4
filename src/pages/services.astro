@@ -98,6 +98,10 @@ const servicesSchema = {
               </div>
             </div>
 
+            <div class="service-image">
+              <img src="/images/code-audit.webp" alt="Stack audit — analyzing your systems" loading="lazy" decoding="async" />
+            </div>
+
             <a href="/contact" class="btn btn-primary">Start with an audit →</a>
           </div>
         </div>
@@ -149,6 +153,10 @@ const servicesSchema = {
                 <span class="spec-label">Starting from</span>
                 <span class="spec-value">¥500,000</span>
               </div>
+            </div>
+
+            <div class="service-image">
+              <img src="/images/office-team.webp" alt="Infrastructure build — collaborative team process" loading="lazy" decoding="async" />
             </div>
 
             <a href="/contact" class="btn btn-primary">Discuss a build →</a>
@@ -322,6 +330,21 @@ const servicesSchema = {
   }
 
   /* Specs */
+  .service-image {
+    margin: var(--space-32) 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .service-image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.85);
+  }
+
   .service-specs {
     display: flex;
     gap: var(--space-48);

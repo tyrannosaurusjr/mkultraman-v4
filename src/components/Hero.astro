@@ -105,6 +105,30 @@ const FORMSPREE_ID = "mbdppqqq";
     display: flex;
     align-items: center;
     padding: var(--space-96) 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/images/tokyo-downtown.webp') center/cover no-repeat;
+    opacity: 0.12;
+    z-index: 0;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--bg) 45%, transparent 100%);
+    z-index: 1;
+  }
+
+  .hero__inner {
+    position: relative;
+    z-index: 2;
   }
 
   .hero__inner {

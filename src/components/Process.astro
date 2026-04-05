@@ -53,6 +53,15 @@
       </li>
     </ol>
 
+    <div class="process-image">
+      <img
+        src="/images/bridge.webp"
+        alt="Infrastructure — connecting systems that work"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+
     <p class="process-note">
       Not sure which fits? <a href="/contact">Tell me what's going on</a> and I'll tell you what makes sense.
     </p>
@@ -133,6 +142,21 @@
     font-size: 12px !important;
     color: var(--text-dim) !important;
     letter-spacing: 0.02em;
+  }
+
+  .process-image {
+    margin-top: var(--space-48);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .process-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.8);
   }
 
   .process-note {
