@@ -1,0 +1,159 @@
+---
+---
+
+<section class="process">
+  <div class="container">
+    <div class="process-header">
+      <p class="eyebrow">— How I work</p>
+      <h2>No retainers on day one. No guesswork.</h2>
+      <p class="process-desc">
+        Every engagement starts with a clear picture of what's actually going on.
+        Most clients recoup the audit cost inside 60 days.
+      </p>
+    </div>
+
+    <ol class="process-steps">
+      <li class="step">
+        <div class="step-number">01</div>
+        <div class="step-body">
+          <h3>Stack Audit</h3>
+          <p>
+            I map everything your business runs on — tools, costs, workflows,
+            integrations. Most audits surface 2–4 tools you're paying for but
+            not using, and at least one process nobody owns.
+          </p>
+          <p class="step-output">Output: written report + debrief call · ¥150,000</p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="step-number">02</div>
+        <div class="step-body">
+          <h3>Fix What's Broken</h3>
+          <p>
+            If the audit reveals bigger structural problems — fragmented tools,
+            missing workflows, a team that can't see what's happening — I build
+            the replacement. One system your team actually uses.
+          </p>
+          <p class="step-output">Output: working infrastructure + runbooks · from ¥500,000</p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="step-number">03</div>
+        <div class="step-body">
+          <h3>Ongoing Operator</h3>
+          <p>
+            For companies that want someone watching the stack permanently.
+            I handle vendor renewals, onboard new tools, and respond when
+            something breaks. You focus on the business.
+          </p>
+          <p class="step-output">Output: infrastructure under management · ¥120,000/month</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="process-note">
+      Not sure which fits? <a href="/contact">Tell me what's going on</a> and I'll tell you what makes sense.
+    </p>
+  </div>
+</section>
+
+<style>
+  .process {
+    padding: var(--space-96) 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .process-header {
+    max-width: 600px;
+    margin-bottom: var(--space-64);
+  }
+
+  .process-header h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3.5vw, 40px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin: var(--space-16) 0 var(--space-24);
+    line-height: 1.15;
+  }
+
+  .process-desc {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .process-steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: var(--space-32);
+    padding: var(--space-48) 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+  }
+
+  .step-number {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    font-weight: 500;
+    padding-top: 6px;
+  }
+
+  .step-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.01em;
+  }
+
+  .step-body p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  .step-output {
+    margin-top: var(--space-16) !important;
+    font-family: var(--font-mono);
+    font-size: 12px !important;
+    color: var(--text-dim) !important;
+    letter-spacing: 0.02em;
+  }
+
+  .process-note {
+    margin-top: var(--space-48);
+    font-size: 14px;
+    color: var(--text-dim);
+  }
+
+  .process-note a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .process-note a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .step {
+      grid-template-columns: 1fr;
+      gap: var(--space-16);
+    }
+  }
+</style>

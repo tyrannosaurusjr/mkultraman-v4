@@ -7,6 +7,8 @@ import Footer from '../../components/Footer.astro';
 const posts = await getCollection('blog');
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
+const allTags = [...new Set(sortedPosts.flatMap(p => p.data.tags))].sort();
+
 const formatDate = (date: Date) => {
   return new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
@@ -30,9 +32,16 @@ const formatDate = (date: Date) => {
         </p>
       </div>
 
-      <div class="posts-grid">
+      <div class="tag-filters" id="tag-filters" role="group" aria-label="Filter by topic">
+        <button class="tag-chip active" data-tag="all">All</button>
+        {allTags.map(tag => (
+          <button class="tag-chip" data-tag={tag}>{tag}</button>
+        ))}
+      </div>
+
+      <div class="posts-grid" id="posts-grid">
         {sortedPosts.map((post) => (
-          <a href={`/blog/${post.id}/`} class="post-card">
+          <a href={`/blog/${post.id}/`} class="post-card" data-tags={post.data.tags.join('|')}>
             <div class="post-card__meta">
               <time class="post-date">{formatDate(post.data.pubDate)}</time>
               <div class="post-card__tags">
@@ -79,6 +88,38 @@ const formatDate = (date: Date) => {
     font-size: 18px;
     color: var(--text-muted);
     line-height: 1.6;
+  }
+
+  .tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-8);
+    margin-bottom: var(--space-48);
+  }
+
+  .tag-chip {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .tag-chip:hover {
+    color: var(--text);
+    border-color: var(--text-dim);
+  }
+
+  .tag-chip.active {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(196, 30, 58, 0.08);
   }
 
   .posts-grid {
@@ -161,4 +202,26 @@ const formatDate = (date: Date) => {
     .post-card__meta { flex-direction: row; }
     .posts-grid { gap: var(--space-24); }
   }
+
+  .post-card[hidden] { display: none; }
 </style>
+
+<script>
+  const chips = document.querySelectorAll<HTMLButtonElement>('.tag-chip');
+  const cards = document.querySelectorAll<HTMLElement>('.post-card');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      const tag = chip.dataset.tag ?? 'all';
+      cards.forEach(card => {
+        if (tag === 'all' || (card.dataset.tags ?? '').split('|').includes(tag)) {
+          card.removeAttribute('hidden');
+        } else {
+          card.setAttribute('hidden', '');
+        }
+      });
+    });
+  });
+</script>

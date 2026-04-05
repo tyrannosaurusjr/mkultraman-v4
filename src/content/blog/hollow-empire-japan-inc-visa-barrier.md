@@ -1,6 +1,6 @@
 ---
 title: "Hollow Empire: Why Japan Inc.’s Visa Barrier Spells Ruin"
-description: "Japan Inc. is a Hollow Empire. We analyze the brutal new Visa Barrier, the Stagnation of the corporate state, and the lie of "Western Standards.""
+description: "Japan Inc. is a Hollow Empire. We analyze the brutal new Visa Barrier, the Stagnation of the corporate state, and the lie of \"Western Standards.\""
 pubDate: 2025-11-28
 tags: ["Economics & Investment", "Policy & Society"]
 draft: false

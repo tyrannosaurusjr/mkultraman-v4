@@ -1,6 +1,6 @@
 ---
 title: "Japan's Systemic Labor Shortfall: The 2040 Collapse"
-description: "Japan is hit by a 3.39M worker deficit. Discover why AI won't save the "Hollow Empire" from the 2025 Digital Cliff and systemic collapse."
+description: "Japan is hit by a 3.39M worker deficit. Discover why AI won't save the \"Hollow Empire\" from the 2025 Digital Cliff and systemic collapse."
 pubDate: 2026-01-27
 tags: ["Economics & Investment", "Society & Culture"]
 draft: false

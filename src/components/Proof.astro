@@ -1,0 +1,126 @@
+---
+const sectors = [
+  "Food & Beverage",
+  "Professional Services",
+  "Media & Publishing",
+  "Real Estate",
+  "Retail",
+  "Healthcare",
+  "Education",
+  "Logistics",
+];
+
+const outcomes = [
+  { stat: "¥2–8M", label: "typical annual tool spend recovered per audit" },
+  { stat: "60 days", label: "average time from audit to working replacement system" },
+  { stat: "30%", label: "average reduction in operational overhead" },
+];
+---
+
+<section class="proof">
+  <div class="container">
+    <div class="proof-inner">
+      <div class="proof-outcomes">
+        {outcomes.map(o => (
+          <div class="outcome">
+            <span class="outcome-stat">{o.stat}</span>
+            <span class="outcome-label">{o.label}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="proof-divider"></div>
+
+      <div class="proof-sectors">
+        <p class="sectors-label">Industries served</p>
+        <div class="sector-list">
+          {sectors.map(s => (
+            <span class="sector-tag">{s}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .proof {
+    padding: var(--space-64) 0;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .proof-inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-48);
+  }
+
+  /* Outcomes row */
+  .proof-outcomes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-32);
+  }
+
+  .outcome {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .outcome-stat {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .outcome-label {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.5;
+    max-width: 200px;
+  }
+
+  .proof-divider {
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* Sectors row */
+  .sectors-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: var(--space-16);
+  }
+
+  .sector-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-8);
+  }
+
+  .sector-tag {
+    font-size: 13px;
+    color: var(--text-muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 5px 12px;
+    border-radius: var(--radius-full);
+  }
+
+  @media (max-width: 640px) {
+    .proof-outcomes {
+      grid-template-columns: 1fr 1fr;
+    }
+    .proof-outcomes .outcome:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+</style>
