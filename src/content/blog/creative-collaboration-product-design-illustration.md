@@ -36,7 +36,7 @@ Our work together blurs boundaries between music, art, and business. Playing in 
 
 Our dynamic works because Thom is fearless about texture, and I am relentless about [strategy](https://mkultraman.com/business-services/strategic-advisory/). When those two align, products like his nengajo feel inevitable. You can see the Japanese influence in the brush-like gold lines and the carefully balanced red accents. You can feel the [Cooper Union](https://cooper.edu/) discipline in the geometry. You can trace the underground Tokyo energy in the decision to make each set by hand. It is not branding; it is cultural layering through design.
 
-# Craft, Commitment, and Continuity
+## Craft, Commitment, and Continuity
 
 **Creative collaboration projects** like this remind me that the most sustainable partnerships are built on aligned obsession. We have both evolved over time, exploring new instruments, new mediums, and new **illustration** tools, but the creative loop remains unchanged. Whether we are rehearsing or discussing typography, the process always involves three steps:
 
@@ -47,51 +47,3 @@ That is where quality comes from. Not perfection, but persistence.
 Thom’s nengajo project represents that perfectly. Even though I only handle the ecommerce setup, it feels like an echo of our shared history. Each release is a timestamp in a long, ongoing conversation between sound, form, and friendship.
 
 Whether we are rehearsing or discussing typography, the process always involves three steps:
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
--
-[Business Advisories](https://mkultraman.com/business-advisories/)
-
--
-[Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-
--
-[The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-
--
-[Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-
--
-[Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-
--
-[Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
--
-[Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-
--
-[Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-
--
-[Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

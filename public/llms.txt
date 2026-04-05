@@ -1,0 +1,51 @@
+# MKUltraman — Digital Infrastructure for SMEs in Japan
+
+> Matt Ketchum is a Tokyo-based digital infrastructure consultant with 10+ years
+> in the Japan market. He audits, rebuilds, and manages the technology
+> stacks of small and medium enterprises across Japan, specializing in
+> eliminating tool sprawl, fixing broken workflows, and building measurable
+> operations. He has worked with 40+ SMEs and averages a 30% reduction in
+> tool spend per engagement.
+
+## Services
+
+- Stack Audit (one-time): Maps full digital infrastructure, identifies
+  waste and broken systems, delivers a prioritized action plan.
+  Most clients cut 30% of tool spend within 60 days.
+- Infrastructure Build (scoped project): Redesigns and rebuilds the
+  digital stack with integrated workflows, documentation, and team training.
+- Ongoing Management (monthly retainer): Manages all digital infrastructure
+  on an ongoing basis — vendors, tools, monitoring, and optimization.
+
+## About
+
+Matt Ketchum (MKUltraman) operates under the principle that most SME problems are
+structural, not people problems. Based in Tokyo. Works with a small client
+roster at a time to go deep. Industries served: F&B, media, professional
+services, events, retail.
+
+## Blog
+
+73 articles covering digital transformation in Japan, SME strategy,
+technology adoption failures, Japan business culture, and market analysis.
+URL: https://mkultraman.com/blog/
+
+## Key Pages
+
+- Homepage: https://mkultraman.com/
+- Blog index: https://mkultraman.com/blog/
+- Contact/Inquiry: https://mkultraman.com/#inquiry
+
+## Network
+
+MKUltraman is the hub of the Ultra Guild — a network of 10 independent
+sites spanning music, food, travel, art, and storytelling across Japan:
+- https://japanesejesus.com
+- https://wildmeatjapan.com
+- https://musicinjapan.com
+- https://japancraftbeer.com
+- https://akiyaz.io
+- https://kaalamusic.com
+- https://heatherdobbin.com
+- https://thedelphinetwork.com
+- https://thomsmithart.com

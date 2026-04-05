@@ -1,0 +1,292 @@
+---
+/**
+ * SchemaOrg.astro
+ *
+ * Sitewide structured data for mkultraman.com.
+ *
+ * Emits a single @graph containing:
+ *   - Organization (the consulting practice)
+ *   - ProfessionalService (LocalBusiness subtype)
+ *   - Person (Tetsu, founder)
+ *   - Three Service nodes (Stack Audit, Infrastructure Build, Ongoing Management)
+ *   - WebSite with SearchAction
+ *   - The Guild Organization (cross-site network)
+ *   - WebSite entries for all guild member sites
+ *
+ * Inject this component inside <head> in Base.astro.
+ */
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+
+    // ── 1. Organization ────────────────────────────────────────────────────
+    {
+      "@type": "Organization",
+      "@id": "https://mkultraman.com/#organization",
+      "name": "MKUltraman",
+      "url": "https://mkultraman.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mkultraman.com/favicon.svg",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Digital infrastructure consulting practice for SMEs in Japan. Stack audits, infrastructure builds, and ongoing management. Based in Tokyo.",
+      "foundingDate": "2020",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Japan"
+        }
+      ],
+      "location": {
+        "@type": "Place",
+        "name": "Tokyo, Japan",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tokyo",
+          "addressCountry": "JP"
+        }
+      },
+      "founder": {
+        "@id": "https://mkultraman.com/#person"
+      },
+      "employee": {
+        "@id": "https://mkultraman.com/#person"
+      },
+      "sameAs": [
+        "https://instagram.com/mkultraman",
+        "https://linkedin.com/in/mkultraman",
+        "https://github.com/tyrannosaurusjr"
+      ],
+      "knowsAbout": [
+        "digital infrastructure",
+        "stack audit",
+        "workflow automation",
+        "SME consulting",
+        "Japan market",
+        "SaaS consolidation"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "MKUltraman Services",
+        "itemListElement": [
+          { "@id": "https://mkultraman.com/#service-stack-audit" },
+          { "@id": "https://mkultraman.com/#service-infrastructure-build" },
+          { "@id": "https://mkultraman.com/#service-ongoing-management" }
+        ]
+      },
+      "memberOf": {
+        "@id": "https://mkultraman.com/guild/#organization"
+      }
+    },
+
+    // ── 2. ProfessionalService (LocalBusiness) ─────────────────────────────
+    {
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@id": "https://mkultraman.com/#professional-service",
+      "name": "MKUltraman",
+      "url": "https://mkultraman.com",
+      "image": "https://mkultraman.com/images/tetsu-island.webp",
+      "description": "Digital infrastructure management for SMEs in Japan. Less tool chaos. More revenue. Less work.",
+      "priceRange": "$$",
+      "currenciesAccepted": "JPY",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tokyo",
+        "addressCountry": "JP"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Japan"
+      },
+      "serviceType": "Digital Infrastructure Consulting",
+      "slogan": "Your tech stack is costing you money.",
+      "founder": {
+        "@id": "https://mkultraman.com/#person"
+      },
+      "sameAs": [
+        "https://instagram.com/mkultraman",
+        "https://linkedin.com/in/mkultraman"
+      ],
+      "parentOrganization": {
+        "@id": "https://mkultraman.com/#organization"
+      }
+    },
+
+    // ── 3. Person (Tetsu) ──────────────────────────────────────────────────
+    {
+      "@type": "Person",
+      "@id": "https://mkultraman.com/#person",
+      "name": "Matt Ketchum",
+      "alternateName": "MKUltraman",
+      "url": "https://mkultraman.com",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://mkultraman.com/images/tetsu-island.webp",
+        "caption": "Tetsu — MKUltraman, on a hilltop in Japan"
+      },
+      "jobTitle": "Digital Infrastructure Consultant",
+      "description": "10+ years in the Japan market across F&B, media, and professional services. Works with a small number of organizations at a time to build digital infrastructure that compounds over time.",
+      "worksFor": {
+        "@id": "https://mkultraman.com/#organization"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tokyo",
+        "addressCountry": "JP"
+      },
+      "sameAs": [
+        "https://instagram.com/mkultraman",
+        "https://linkedin.com/in/mkultraman",
+        "https://github.com/tyrannosaurusjr"
+      ],
+      "knowsAbout": [
+        "digital infrastructure",
+        "SME operations",
+        "Japan market",
+        "workflow design",
+        "SaaS stack management",
+        "vendor management"
+      ],
+      "knowsLanguage": ["en", "ja"]
+    },
+
+    // ── 4. Service: Stack Audit ────────────────────────────────────────────
+    {
+      "@type": "Service",
+      "@id": "https://mkultraman.com/#service-stack-audit",
+      "name": "Stack Audit",
+      "url": "https://mkultraman.com/#services",
+      "description": "A complete mapping of your digital infrastructure — tools, workflows, integrations, and costs. Identifies what is broken and what is wasted. Delivers a clear action plan. Most clients cut 30% of their tool spend within 60 days.",
+      "serviceType": "Digital Infrastructure Audit",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "description": "One-time engagement"
+        }
+      },
+      "provider": {
+        "@id": "https://mkultraman.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Japan"
+      }
+    },
+
+    // ── 5. Service: Infrastructure Build ──────────────────────────────────
+    {
+      "@type": "Service",
+      "@id": "https://mkultraman.com/#service-infrastructure-build",
+      "name": "Infrastructure Build",
+      "url": "https://mkultraman.com/#services",
+      "description": "A full redesign and rebuild of your digital stack — new tools, integrated workflows, and documentation your team can actually use. Delivered with a structured handoff and training.",
+      "serviceType": "Digital Infrastructure Build",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "description": "Scoped project"
+        }
+      },
+      "provider": {
+        "@id": "https://mkultraman.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Japan"
+      }
+    },
+
+    // ── 6. Service: Ongoing Management ────────────────────────────────────
+    {
+      "@type": "Service",
+      "@id": "https://mkultraman.com/#service-ongoing-management",
+      "name": "Ongoing Management",
+      "url": "https://mkultraman.com/#services",
+      "description": "Continuous management of your digital infrastructure — new tools, vendor relationships, and performance monitoring, handled on a monthly retainer. You focus on the business.",
+      "serviceType": "Digital Infrastructure Management",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "description": "Monthly retainer"
+        }
+      },
+      "provider": {
+        "@id": "https://mkultraman.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Japan"
+      }
+    },
+
+    // ── 7. WebSite with SearchAction ───────────────────────────────────────
+    {
+      "@type": "WebSite",
+      "@id": "https://mkultraman.com/#website",
+      "name": "MKUltraman",
+      "url": "https://mkultraman.com",
+      "description": "Digital infrastructure consulting for SMEs in Japan. Stack audits, infrastructure builds, and ongoing management. Based in Tokyo.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://mkultraman.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mkultraman.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "isPartOf": {
+        "@id": "https://mkultraman.com/guild/#organization"
+      }
+    },
+
+    // ── 8. Guild Organization (network root) ───────────────────────────────
+    {
+      "@type": "Organization",
+      "@id": "https://mkultraman.com/guild/#organization",
+      "name": "The Guild",
+      "description": "A network of independent sites spanning music, food, travel, art, and storytelling — built across Japan and beyond.",
+      "url": "https://mkultraman.com/guild",
+      "sameAs": [
+        "https://japanesejesus.com",
+        "https://wildmeatjapan.com",
+        "https://musicinjapan.com",
+        "https://japancraftbeer.com",
+        "https://mkultraman.com",
+        "https://akiyaz.io",
+        "https://kaalamusic.com",
+        "https://heatherdobbin.com",
+        "https://thedelphinetwork.com",
+        "https://thomsmithart.com"
+      ],
+      "member": [
+        { "@type": "Organization", "@id": "https://japanesejesus.com/#entity",      "name": "Japanese Jesus",      "url": "https://japanesejesus.com" },
+        { "@type": "Organization", "@id": "https://wildmeatjapan.com/#entity",      "name": "Wild Meat Japan",      "url": "https://wildmeatjapan.com" },
+        { "@type": "Organization", "@id": "https://musicinjapan.com/#entity",       "name": "Music In Japan",       "url": "https://musicinjapan.com" },
+        { "@type": "Organization", "@id": "https://japancraftbeer.com/#entity",     "name": "Japan Craft Beer",     "url": "https://japancraftbeer.com" },
+        { "@type": "Organization", "@id": "https://mkultraman.com/#entity",         "name": "MKUltraman",           "url": "https://mkultraman.com" },
+        { "@type": "Organization", "@id": "https://akiyaz.io/#entity",              "name": "Akiyaz",               "url": "https://akiyaz.io" },
+        { "@type": "Organization", "@id": "https://kaalamusic.com/#entity",         "name": "Kaala Music",          "url": "https://kaalamusic.com" },
+        { "@type": "Person",       "@id": "https://heatherdobbin.com/#entity",      "name": "Heather Dobbin",       "url": "https://heatherdobbin.com" },
+        { "@type": "Organization", "@id": "https://thedelphinetwork.com/#entity",   "name": "The Delphi Network",   "url": "https://thedelphinetwork.com" },
+        { "@type": "Person",       "@id": "https://thomsmithart.com/#entity",       "name": "Thom Smith Art",       "url": "https://thomsmithart.com" }
+      ]
+    }
+
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema, null, 2)} />

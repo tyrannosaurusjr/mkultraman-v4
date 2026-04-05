@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block training-only crawlers
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://mkultraman.com/sitemap-index.xml

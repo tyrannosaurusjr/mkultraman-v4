@@ -4,18 +4,21 @@ const problems = [
     num: '01',
     title: 'You\'re paying for 12 tools and using 4 of them properly.',
     label: 'Tool Sprawl',
+    cost: '~¥200K/month in redundant subscriptions',
     body: 'Subscriptions accumulate. Nobody owns the stack. Every new hire adds another tool. I map everything, cut the waste, and build a stack that works together.',
   },
   {
     num: '02',
     title: 'Your processes grew organically. That\'s a polite word for broken.',
     label: 'Workflow Debt',
+    cost: '~15 hours/week lost to manual work',
     body: 'Manual handoffs, email chains, spreadsheets doing the work of software. I redesign workflows so your team stops losing hours to friction that shouldn\'t exist.',
   },
   {
     num: '03',
     title: 'You don\'t know what\'s working because nothing is measured.',
     label: 'No Visibility',
+    cost: 'Revenue leaking through unmeasured systems',
     body: 'Revenue flowing through systems with no reporting. Marketing with no attribution. Operations with no dashboards. I build the infrastructure layer that makes your business legible.',
   },
 ];
@@ -34,6 +37,7 @@ const problems = [
         <div class="problem-card">
           <span class="problem-card__num">{p.num} — {p.label}</span>
           <p class="problem-card__title">{p.title}</p>
+          <p class="problem-card__cost">{p.cost}</p>
           <p class="problem-card__body">{p.body}</p>
         </div>
       ))}
@@ -91,7 +95,15 @@ const problems = [
     font-weight: 600;
     color: var(--text);
     line-height: 1.4;
+    margin-bottom: var(--space-8);
+  }
+
+  .problem-card__cost {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent);
     margin-bottom: var(--space-12);
+    letter-spacing: 0.02em;
   }
 
   .problem-card__body {

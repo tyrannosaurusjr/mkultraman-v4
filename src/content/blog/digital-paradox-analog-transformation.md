@@ -29,7 +29,7 @@ The **digital paradox** plays out differently across sectors. Here's where the g
 
 Despite the friction, Japan's **transformation** is happening. Slowly. But surely. Key trends are turning the tide.
 
-## Where Innovators Should Focus
+## Where Should Digital Innovators Focus in Japan?
 
 This isn’t a typical digital transformation market. It demands nuance, cultural sensitivity, and patient iteration. But the upside is massive.
 
@@ -42,51 +42,3 @@ For outsiders, this is frustrating. But for insiders—or those patient enough t
 
 
 The next great **transformation** companies won’t force Japan to leap forward. They’ll meet it where it is and guide it forward—one analog inefficiency at a time.
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
--
-[Business Advisories](https://mkultraman.com/business-advisories/)
-
--
-[Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-
--
-[The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-
--
-[Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-
--
-[Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-
--
-[Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
--
-[Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-
--
-[Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-
--
-[Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

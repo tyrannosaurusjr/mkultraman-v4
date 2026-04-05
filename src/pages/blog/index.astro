@@ -16,9 +16,11 @@ const formatDate = (date: Date) => {
     day: 'numeric'
   }).format(date);
 };
+
+const toIsoDate = (date: Date) => date.toISOString().split('T')[0];
 ---
 
-<Base title="Blog — MKUltraman" description="Field notes on digital infrastructure, business strategy, and market dynamics in Japan.">
+<Base title="Blog — MKUltraman | Japan SME Digital Infrastructure Analysis" description="Field notes on digital infrastructure, business strategy, and market dynamics in Japan. Written by Tetsu from Tokyo.">
   <Nav />
 
   <main class="blog-index">
@@ -43,7 +45,7 @@ const formatDate = (date: Date) => {
         {sortedPosts.map((post) => (
           <a href={`/blog/${post.id}/`} class="post-card" data-tags={post.data.tags.join('|')}>
             <div class="post-card__meta">
-              <time class="post-date">{formatDate(post.data.pubDate)}</time>
+              <time class="post-date" datetime={toIsoDate(post.data.pubDate)}>{formatDate(post.data.pubDate)}</time>
               <div class="post-card__tags">
                 {post.data.tags.map(tag => (
                   <span class="post-tag">{tag}</span>

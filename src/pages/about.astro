@@ -1,0 +1,398 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://mkultraman.com/#person",
+  "name": "Matt Ketchum",
+  "alternateName": "MKUltraman",
+  "url": "https://mkultraman.com/about",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://mkultraman.com/images/tetsu-island.webp",
+    "caption": "Matt Ketchum — MKUltraman, digital infrastructure consultant in Tokyo"
+  },
+  "jobTitle": "Digital Infrastructure Consultant",
+  "description": "Tokyo-based digital infrastructure consultant with 10+ years in the Japan market. Specializes in eliminating tool sprawl, fixing broken workflows, and building measurable operations for SMEs. Has worked with 40+ organizations across F&B, media, professional services, events, and retail.",
+  "worksFor": {
+    "@id": "https://mkultraman.com/#organization"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tokyo",
+    "addressCountry": "JP"
+  },
+  "sameAs": [
+    "https://instagram.com/mkultraman",
+    "https://linkedin.com/in/mkultraman",
+    "https://github.com/tyrannosaurusjr"
+  ],
+  "knowsAbout": [
+    "digital infrastructure",
+    "SME operations in Japan",
+    "SaaS stack management",
+    "workflow design and automation",
+    "vendor management",
+    "digital transformation in Japan",
+    "tool sprawl remediation",
+    "business systems architecture"
+  ],
+  "knowsLanguage": ["en", "ja"]
+};
+---
+
+<Base
+  title="About Matt Ketchum (MKUltraman) — Digital Infrastructure Consultant, Tokyo"
+  description="Matt Ketchum is a Tokyo-based digital infrastructure consultant with 10+ years in the Japan market. He helps SMEs eliminate tool sprawl, fix broken workflows, and build measurable operations."
+>
+  <Nav />
+
+  <main class="about-page">
+    <div class="container">
+
+      <div class="about-hero">
+        <div class="about-hero__photo-wrap">
+          <img
+            src="/images/tetsu-island.webp"
+            alt="Matt Ketchum — MKUltraman, digital infrastructure consultant based in Tokyo, Japan"
+            class="about-hero__photo"
+            width="480"
+            height="480"
+          />
+        </div>
+        <div class="about-hero__content">
+          <p class="eyebrow">About</p>
+          <h1 class="about-hero__name">Matt Ketchum — MKUltraman</h1>
+          <p class="about-hero__title">Digital Infrastructure Consultant · Tokyo · 10+ Years</p>
+
+          <p class="about-hero__bio">
+            I've spent 10 years watching Japanese businesses suffocate under
+            their own tool chaos. I've helped 40+ SMEs eliminate redundant
+            software, automate workflows that were eating 15+ hours per week,
+            and build reporting systems that actually show what's working.
+          </p>
+
+          <p class="about-hero__bio">
+            I work with a small number of clients at a time — typically 6-8 per
+            year. When your systems are this broken, depth matters more than
+            scale.
+          </p>
+
+          <div class="about-hero__stats">
+            <div class="stat">
+              <span class="stat__num">40+</span>
+              <span class="stat__label">SMEs transformed</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">30%</span>
+              <span class="stat__label">Avg. tool spend cut</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">10yr</span>
+              <span class="stat__label">Japan market</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="about-section">
+        <h2 class="about-section__title">What I Do</h2>
+        <p class="about-section__text">
+          I audit, fix, and manage the digital infrastructure that SMEs run on.
+          That means the tools, the workflows between them, and the reporting
+          layer that makes the business legible. Most organizations I work with
+          are paying for 8-15 tools and using 4 of them properly. Their
+          processes grew organically — a polite word for broken. And nothing
+          is measured, so nobody knows what's actually working.
+        </p>
+        <p class="about-section__text">
+          I fix all of that. The typical engagement starts with a Stack Audit
+          that maps everything, quantifies the waste, and delivers a clear
+          action plan. Most clients cut 30% of their tool spend within 60 days.
+          From there, I either build the new infrastructure myself or hand off
+          the plan for their team to execute.
+        </p>
+      </section>
+
+      <section class="about-section">
+        <h2 class="about-section__title">Industries I Work With</h2>
+        <div class="about-industries">
+          <div class="about-industry">
+            <span class="about-industry__name">Food & Beverage</span>
+            <span class="about-industry__desc">Restaurants, producers, importers, event caterers</span>
+          </div>
+          <div class="about-industry">
+            <span class="about-industry__name">Media & Content</span>
+            <span class="about-industry__desc">Publishers, podcasts, video production, agencies</span>
+          </div>
+          <div class="about-industry">
+            <span class="about-industry__name">Professional Services</span>
+            <span class="about-industry__desc">Consultants, coaches, legal, accounting</span>
+          </div>
+          <div class="about-industry">
+            <span class="about-industry__name">Events & Hospitality</span>
+            <span class="about-industry__desc">Event producers, venues, tourism operators</span>
+          </div>
+          <div class="about-industry">
+            <span class="about-industry__name">Retail & E-commerce</span>
+            <span class="about-industry__desc">Independent retail, online shops, D2C brands</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <h2 class="about-section__title">Why Not Someone Else?</h2>
+        <div class="about-vs">
+          <div class="about-vs__item">
+            <span class="about-vs__label">vs. Internal IT hire</span>
+            <p class="about-vs__text">
+              Your IT person maintains what you have. I optimize what you need.
+              An internal hire costs ¥5-8M/year and takes 6 months to ramp.
+              I deliver an action plan in 2 weeks.
+            </p>
+          </div>
+          <div class="about-vs__item">
+            <span class="about-vs__label">vs. Japanese consultancy</span>
+            <p class="about-vs__text">
+              Local system integrators sell you more tools and longer contracts.
+              I eliminate the tools you don't need and build systems that run
+              without ongoing dependency on me.
+            </p>
+          </div>
+          <div class="about-vs__item">
+            <span class="about-vs__label">vs. Doing nothing</span>
+            <p class="about-vs__text">
+              The cost of broken systems compounds every month. ¥200K+ in
+              redundant subscriptions. 15+ hours/week in manual work.
+              Revenue leaking through unmeasured systems. The audit pays for
+              itself.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <h2 class="about-section__title">The Ultra Guild</h2>
+        <p class="about-section__text">
+          MKUltraman is the hub of a network of 10 independent sites I operate
+          across music, food, travel, art, and storytelling in Japan. This
+          network — the <a href="/guild">Ultra Guild</a> — runs on shared
+          digital infrastructure, proving the same systems thinking I bring to
+          client work.
+        </p>
+      </section>
+
+      <section class="about-cta-section">
+        <p class="about-cta__text">
+          If execution feels harder than it should be, that instinct is usually
+          right — and it's usually structural.
+        </p>
+        <a href="/#inquiry" class="btn btn-primary">Get your stack audited &rarr;</a>
+      </section>
+
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+</Base>
+
+<style>
+  .about-page {
+    padding: var(--space-96) 0;
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  .about-hero {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: var(--space-64);
+    align-items: start;
+    margin-bottom: var(--space-96);
+  }
+
+  .about-hero__photo-wrap {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .about-hero__photo {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .about-hero__name {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin: var(--space-16) 0 var(--space-8);
+    line-height: 1.1;
+  }
+
+  .about-hero__title {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    margin-bottom: var(--space-24);
+  }
+
+  .about-hero__bio {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-16);
+    max-width: 560px;
+  }
+
+  .about-hero__stats {
+    display: flex;
+    gap: var(--space-48);
+    margin-top: var(--space-32);
+    flex-wrap: wrap;
+  }
+
+  .stat { display: flex; flex-direction: column; gap: 3px; }
+  .stat__num {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+  .stat__label {
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.03em;
+  }
+
+  /* ── Sections ── */
+  .about-section {
+    max-width: 720px;
+    margin-bottom: var(--space-64);
+  }
+
+  .about-section__title {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin-bottom: var(--space-24);
+  }
+
+  .about-section__text {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-16);
+  }
+
+  .about-section__text a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* ── Industries ── */
+  .about-industries {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-16);
+  }
+
+  .about-industry {
+    padding: var(--space-20) var(--space-24);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .about-industry__name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .about-industry__desc {
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  /* ── VS ── */
+  .about-vs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-20);
+  }
+
+  .about-vs__item {
+    padding: var(--space-24);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+
+  .about-vs__label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: var(--space-8);
+  }
+
+  .about-vs__text {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  /* ── CTA ── */
+  .about-cta-section {
+    text-align: center;
+    padding: var(--space-64) 0;
+    border-top: 1px solid var(--border);
+    margin-top: var(--space-32);
+  }
+
+  .about-cta__text {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: var(--space-24);
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 768px) {
+    .about-hero {
+      grid-template-columns: 1fr;
+      gap: var(--space-32);
+    }
+    .about-hero__photo {
+      height: 280px;
+    }
+    .about-industries {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

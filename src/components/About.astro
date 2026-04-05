@@ -19,13 +19,36 @@
         <p class="about__name">Matt Ketchum — MKUltraman</p>
         <p class="about__meta eyebrow">Digital Infrastructure · Tokyo · 10+ Years</p>
         <p class="about__bio">
-          I don't sell volume. I work with a small number of organizations at a time,
-          go deep on their operations, and build infrastructure that compounds over time.
-          Ten years in the Japan market, across industries from F&B to media to professional
-          services. If execution feels harder than it should be, that instinct is
-          usually right — and it's usually structural.
+          I've spent 10 years watching Japanese businesses suffocate under
+          their own tool chaos. I've helped 40+ SMEs eliminate redundant
+          software, automate workflows that were eating 15+ hours per week,
+          and build reporting systems that actually show what's working.
         </p>
-        <a href="/contact" class="about__cta">Start a conversation →</a>
+        <p class="about__bio">
+          I work with a small number of clients at a time. When your systems
+          are this broken, depth matters more than scale. Industries: F&B,
+          media, professional services, events, retail.
+        </p>
+
+        <div class="about__vs">
+          <p class="about__vs-title">Why not someone else?</p>
+          <div class="about__vs-grid">
+            <div class="about__vs-item">
+              <span class="about__vs-label">vs. Internal IT</span>
+              <span class="about__vs-text">Your IT person maintains what you have. I optimize what you need.</span>
+            </div>
+            <div class="about__vs-item">
+              <span class="about__vs-label">vs. Japanese consultancy</span>
+              <span class="about__vs-text">Local firms sell you more tools. I eliminate the ones you don't need.</span>
+            </div>
+            <div class="about__vs-item">
+              <span class="about__vs-label">vs. Doing nothing</span>
+              <span class="about__vs-text">Broken systems compound every month. The audit pays for itself.</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="/contact" class="about__cta">Get your stack audited &rarr;</a>
       </div>
     </div>
   </div>
@@ -83,6 +106,50 @@
     margin-bottom: var(--space-24);
   }
 
+  .about__vs {
+    margin: var(--space-24) 0;
+    padding: var(--space-24);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+
+  .about__vs-title {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: var(--space-16);
+  }
+
+  .about__vs-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .about__vs-item {
+    display: flex;
+    gap: var(--space-16);
+    align-items: baseline;
+  }
+
+  .about__vs-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent);
+    white-space: nowrap;
+    min-width: 160px;
+    letter-spacing: 0.02em;
+  }
+
+  .about__vs-text {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
   .about__cta {
     font-size: 14px;
     font-weight: 500;
@@ -95,6 +162,13 @@
     .about__inner {
       grid-template-columns: 1fr;
       gap: var(--space-24);
+    }
+    .about__vs-item {
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .about__vs-label {
+      min-width: auto;
     }
   }
 </style>

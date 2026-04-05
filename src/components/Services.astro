@@ -2,21 +2,21 @@
 const services = [
   {
     icon: '⚡',
-    title: 'Stack Audit',
-    tag: 'One-time',
-    body: 'I map your entire digital infrastructure, find what\'s broken and what\'s wasted, and deliver a clear action plan. Most clients cut 30% of their tool spend within 60 days.',
+    title: 'Find Your Hidden Waste',
+    tag: 'Stack Audit · One-time',
+    body: 'I spend 2 weeks reverse-engineering how your business actually works vs how your tools pretend it works. You get a detailed report showing exactly what to kill, what to fix, and what to build — with vendor recommendations and cost projections. Most clients cut 30% of their tool spend within 60 days.',
   },
   {
     icon: '🔧',
-    title: 'Infrastructure Build',
-    tag: 'Scoped project',
-    body: 'I redesign and rebuild your digital stack — new tools, integrated workflows, and documentation your team can actually use. Delivered with a handoff and training.',
+    title: 'Build Systems That Work Together',
+    tag: 'Infrastructure Build · Scoped project',
+    body: 'I redesign and rebuild your digital stack from the audit findings — new tools, integrated workflows, and documentation your team can actually use. Delivered with structured handoff and training so it runs without me.',
   },
   {
     icon: '📡',
-    title: 'Ongoing Management',
-    tag: 'Monthly retainer',
-    body: 'I manage your digital infrastructure so you don\'t have to think about it. New tools, vendor relationships, performance monitoring — handled. You focus on the business.',
+    title: 'Never Think About IT Again',
+    tag: 'Ongoing Management · Monthly retainer',
+    body: 'I manage your entire digital infrastructure so you can focus on the business. New tools, vendor relationships, performance monitoring, workflow optimization — all handled. You get monthly reports showing what changed and why.',
   },
 ];
 ---
@@ -24,7 +24,7 @@ const services = [
 <section class="services" id="services">
   <div class="container">
     <p class="eyebrow">How I work</p>
-    <h2 class="services__headline">Three ways to engage.</h2>
+    <h2 class="services__headline">Three ways to fix your stack.</h2>
 
     <div class="services__grid">
       {services.map((s) => (
@@ -35,13 +35,13 @@ const services = [
           </div>
           <h3 class="service-card__title">{s.title}</h3>
           <p class="service-card__body">{s.body}</p>
-          <a href="#inquiry" class="service-card__link">Inquire →</a>
+          <a href="#inquiry" class="service-card__link">Get started &rarr;</a>
         </div>
       ))}
     </div>
 
     <p class="services__note">
-      Not sure what you need? Fill out the form. I'll read it, ask a few questions, and tell you exactly what makes sense — no obligation.
+      Not sure what you need? Start with the Stack Audit. It pays for itself — guaranteed.
     </p>
   </div>
 </section>

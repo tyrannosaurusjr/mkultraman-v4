@@ -1,0 +1,87 @@
+---
+interface Props {
+  tool?: 'redditreach' | 'tetsuno-claw' | 'japan-money-tracker' | 'hitoe';
+}
+
+const { tool } = Astro.props;
+
+const tools = {
+  redditreach: {
+    '@type': 'SoftwareApplication',
+    name: 'RedditReach',
+    description: 'Reddit authority generation tool with keyword monitoring, AI-drafted contextual replies, and smart scheduling.',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
+    url: 'https://mkultraman.com/tools/redditreach',
+    offers: {
+      '@type': 'Offer',
+      price: '29',
+      priceCurrency: 'USD',
+      priceValidUntil: '2027-12-31',
+    },
+  },
+  'tetsuno-claw': {
+    '@type': 'SoftwareApplication',
+    name: 'Tetsuno Claw',
+    description: 'AI work operating system for English-speaking business operators in Japan. 11 specialist agents via Telegram.',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
+    url: 'https://mkultraman.com/tools/tetsuno-claw',
+    offers: {
+      '@type': 'AggregateOffer',
+      lowPrice: '0',
+      highPrice: '39',
+      priceCurrency: 'USD',
+    },
+  },
+  'japan-money-tracker': {
+    '@type': 'SoftwareApplication',
+    name: 'Japan Money Tracker',
+    description: 'AI-powered receipt scanning, multi-currency expense tracking, and 確定申告-ready tax categories for freelancers and expats in Japan.',
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Web',
+    url: 'https://mkultraman.com/tools/japan-money-tracker',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  },
+  hitoe: {
+    '@type': 'SoftwareApplication',
+    name: 'Hitoe',
+    description: 'Meta membership management tool that normalizes contacts and members across Stripe, Luma, Mailchimp, and more.',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
+    url: 'https://mkultraman.com/tools/hitoe',
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/PreOrder',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  },
+};
+
+const creator = {
+  '@type': 'Organization',
+  '@id': 'https://mkultraman.com/#entity',
+  name: 'MKUltraman',
+  url: 'https://mkultraman.com',
+};
+
+let graph: Record<string, unknown>[];
+
+if (tool && tools[tool]) {
+  graph = [{ ...tools[tool], creator }];
+} else {
+  graph = Object.values(tools).map((t) => ({ ...t, creator }));
+}
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': graph,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

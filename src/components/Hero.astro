@@ -10,22 +10,22 @@ const FORMSPREE_ID = "mbdppqqq";
       <p class="eyebrow">Tokyo · Digital Infrastructure</p>
 
       <h1 class="hero__headline">
-        Your tech stack<br />
-        is <em>costing</em><br />
-        you money.
+        Cut 30% of your<br />
+        tool costs in<br />
+        <em>60 days.</em>
       </h1>
 
       <p class="hero__sub">
-        Most SMEs are chaotic — too many tools, workflows nobody designed,
-        operations that react instead of compound. I fix the digital
-        infrastructure underneath so your business runs cleaner and makes
-        more money with less friction.
+        Japanese SMEs waste hundreds of thousands of yen monthly on redundant
+        software, broken workflows, and systems that don't talk to each other.
+        I audit your entire digital stack and show you exactly what's broken,
+        what's wasted, and what to fix first.
       </p>
 
       <div class="hero__stats">
         <div class="stat">
           <span class="stat__num">40+</span>
-          <span class="stat__label">SMEs worked with</span>
+          <span class="stat__label">SMEs transformed</span>
         </div>
         <div class="stat">
           <span class="stat__num">10yr</span>
@@ -41,10 +41,10 @@ const FORMSPREE_ID = "mbdppqqq";
     <!-- Right: inquiry form -->
     <div class="hero__form-wrap" id="inquiry">
       <div class="hero__form">
-        <p class="form-title">Let's talk about your stack.</p>
+        <p class="form-title">Get your stack audited.</p>
         <p class="form-desc">
           Tell me what's breaking. I'll tell you what it's costing you — and
-          how to fix it.
+          exactly how to fix it.
         </p>
 
         <form
@@ -75,7 +75,7 @@ const FORMSPREE_ID = "mbdppqqq";
           </div>
 
           <button type="submit" class="btn btn-primary" id="hero-submit">
-            Send inquiry →
+            Get your stack audited &rarr;
           </button>
 
           <p class="form-success hidden" id="hero-success">
@@ -87,8 +87,11 @@ const FORMSPREE_ID = "mbdppqqq";
         </form>
 
         <p class="form-note">
-          <span class="dot">●</span>
+          <span class="dot">&#9679;</span>
           Reply within 48 hours. No sales calls, no pitch decks.
+        </p>
+        <p class="form-guarantee">
+          If the audit doesn't find savings opportunities, it's free.
         </p>
       </div>
     </div>
@@ -188,6 +191,13 @@ const FORMSPREE_ID = "mbdppqqq";
     align-items: center;
     gap: var(--space-8);
     justify-content: center;
+  }
+  .form-guarantee {
+    margin-top: var(--space-8);
+    font-size: 11px;
+    color: var(--accent);
+    text-align: center;
+    font-weight: 500;
   }
   .dot { color: var(--accent); font-size: 8px; }
   .hidden { display: none; }

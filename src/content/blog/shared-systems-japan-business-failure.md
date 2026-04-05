@@ -11,7 +11,7 @@ Japan does not suffer from a lack of effort. It suffers from broken shared syste
 
 This is not a talent issue. It is an operating model failure.
 
-## The Hidden Cost of Fragmentation
+## What Is the Hidden Cost of Fragmented Business Systems?
 
 Most Japanese businesses function as collections of silos rather than integrated systems. Tools are chosen locally. Processes evolve independently. Knowledge stays trapped inside departments or vendors. When projects end, progress ends with them.
 
@@ -20,7 +20,7 @@ Every organization repeats the same work because there are no shared systems to 
 
 This fragmentation feels normal inside Japan Inc., but it imposes a ceiling on leverage. Effort scales linearly. Risk remains high. Execution slows as complexity increases. Over time, organizations become fragile rather than resilient.
 
-## Why Systems Block Momentum
+## Why Do Broken Systems Block Business Growth in Japan?
 
 The dominant Japanese operating mindset prioritizes autonomy over alignment. Each team protects its own process, even when that process no longer serves the organization. Standardization is treated as loss of control rather than a force multiplier.
 
@@ -51,7 +51,7 @@ Most organizations rely on institutional memory carried by individuals. When peo
 
 Schemas persist. Workflows stabilize. Authority signals accumulate. Machines understand relationships correctly because structure exists to support them. This creates durability that isolated teams cannot achieve.
 
-## Why Japan Inc. Cannot Fix This Internally
+## Why Can't Japan Inc. Fix Its Own Infrastructure?
 
 Japan’s accepted business norms actively resist system-level correction. This resistance is not ideological. It is structural. Decision making favors consensus over enforcement, local autonomy over shared alignment, and short-term harmony over long-term leverage.
 
@@ -138,51 +138,3 @@ That requires shared systems, enforced execution architecture, and infrastructur
 
 
 Ultra Guild exists because the old model cannot survive what comes next.
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
--
-[Business Advisories](https://mkultraman.com/business-advisories/)
-
--
-[Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-
--
-[The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-
--
-[Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-
--
-[Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-
--
-[Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
--
-[Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-
--
-[Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-
--
-[Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

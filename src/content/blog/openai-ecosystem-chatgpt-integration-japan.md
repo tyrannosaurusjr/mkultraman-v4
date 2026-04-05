@@ -29,7 +29,7 @@ ChatGPT will also proactively surface relevant apps when they could be helpful. 
 
 Here are a few practical examples:
 
-# A New Frontier for Japanese Developers
+## A New Frontier for Japanese Developers
 
 While the initial launch partners are global giants, the biggest news for the tech industry is the "Apps SDK." An SDK, or Software Development Kit, is the set of tools that developers use to build applications for a specific platform. OpenAI is essentially giving developers in **Japan** and around the world the keys to build their own integrations.
 
@@ -50,51 +50,3 @@ This is a developing story, and you can read the original report from [TechCrunc
 
 
 This announcement solidifies a new direction for **AI**. ChatGPT is no longer just a place to ask questions. It is aggressively becoming the central platform where you get things done. As we explore what this means for technology and society, staying informed is more important than ever. You can learn more about our mission to track these changes on our [about page](https://icanjapan.ai/about).
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
--
-[Business Advisories](https://mkultraman.com/business-advisories/)
-
--
-[Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-
--
-[The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-
--
-[Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-
--
-[Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-
--
-[Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
--
-[Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-
--
-[Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-
--
-[Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

@@ -6,7 +6,7 @@ tags: ["Digital Transformation & AI"]
 draft: false
 ---
 
-# My Guide to Navigating the AI Hype Cycle
+## My Guide to Navigating the AI Hype Cycle
 
 In my work analyzing technology trends, particularly here in Japan, I have never seen a frenzy quite like the current one. The global **AI hype cycle** is in full swing, promising to redefine every industry. Within this gold rush, a particular trend among [Japanese tech startups](https://www.japantimes.co.jp/business/2025/07/23/tech/mckinsey-generative-ai-report/) has caught my attention: the audacious claim to have automated deeply human qualities. These companies are selling more than just software; they are selling engineered empathy, influence, and connection. This has prompted me to develop a framework for a critical question: how can we distinguish genuine **innovation** from masterful marketing theater?
 
@@ -53,51 +53,3 @@ So, how do we assess these ambitious claims? The companies are undoubtedly legit
 However, the central claims often lean dangerously close to the bullshit end of the spectrum. They represent a masterclass in branding and narrative-crafting, perfectly timed to capitalize on the global AI frenzy. They take a real, existing technology (LLMs) and cloak it in a near-mythical concept (manufactured human connection) to create a product that sounds more revolutionary than it may actually be.
 
 Rather than a simple seal of approval or disapproval, I propose a verdict based on critical thinking. The danger of the current **AI hype cycle** is that it muddies the waters of genuine **innovation**. It risks creating a "human connection" bubble that, when it inevitably pops, could lead to widespread cynicism. These **Japanese tech startups** are selling a promise. And in this high-stakes world, both investors and customers should be profoundly wary. True progress requires us to ask the hard questions and demand proof, not just promises.
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
--
-[Business Advisories](https://mkultraman.com/business-advisories/)
-
--
-[Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-
--
-[The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-
--
-[Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-
--
-[Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-
--
-[Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
--
-[Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-
--
-[Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-
--
-[Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

@@ -25,6 +25,39 @@ const formatDate = (date: Date) => {
     day: 'numeric'
   }).format(date);
 };
+
+const isoDate = post.data.pubDate.toISOString().split('T')[0];
+
+const blogPostingSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": post.data.title,
+  "description": post.data.description,
+  "datePublished": post.data.pubDate.toISOString(),
+  "dateModified": post.data.pubDate.toISOString(),
+  "author": {
+    "@type": "Person",
+    "@id": "https://mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://mkultraman.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://mkultraman.com/#organization",
+    "name": "MKUltraman",
+    "url": "https://mkultraman.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://mkultraman.com/blog/${post.id}/`
+  },
+  "keywords": post.data.tags.join(', '),
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://mkultraman.com/#website"
+  }
+};
 ---
 
 <Base
@@ -42,7 +75,7 @@ const formatDate = (date: Date) => {
           <a href="/blog" class="back-link">← All articles</a>
 
           <div class="post-meta">
-            <time class="post-date">{formatDate(post.data.pubDate)}</time>
+            <time class="post-date" datetime={isoDate}>{formatDate(post.data.pubDate)}</time>
             <div class="post-tags">
               {post.data.tags.map(tag => (
                 <span class="post-tag">{tag}</span>
@@ -62,6 +95,8 @@ const formatDate = (date: Date) => {
   </main>
 
   <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
 </Base>
 
 <style>

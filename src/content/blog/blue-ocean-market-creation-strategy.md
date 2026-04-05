@@ -32,11 +32,11 @@ You don’t win by being slightly better. You win by being the only one who matt
 
 I’ve never cared much for crowded rooms. The businesses I’ve built all started by identifying overlooked or misunderstood areas, then filling that space with something bold, useful, and deeply specific.
 
-# How to Find Blue Ocean Opportunities
+## How to Find Blue Ocean Opportunities
 
 You don’t need a billion-dollar idea. You just need to look where others aren’t. Here’s how to start.
 
-# What to Watch Out For
+## What to Watch Out For
 
 **Blue ocean** work isn’t risk-free. It requires a different muscle than traditional competition. Here’s where founders often stumble:
 
@@ -53,51 +53,3 @@ Your job isn’t to fight harder. It’s to see clearer.
 
 
 Whether it’s identity, convenience, ethics, fun, or access—there’s always a layer of value waiting to be reimagined. That’s where the opportunity lives.
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
--
-[Business Advisories](https://mkultraman.com/business-advisories/)
-
--
-[Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-
--
-[The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-
--
-[Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-
--
-[Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-
--
-[Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
--
-[Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-
--
-[Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-
--
-[Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

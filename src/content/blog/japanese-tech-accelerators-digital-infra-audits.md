@@ -17,7 +17,7 @@ And for founders operating at the speed of software, following an organization t
 
 This is the blind guide problem. The guide is not malicious. They are simply unqualified. And following them costs time, momentum, and sometimes entire companies.
 
-## The Potemkin Village of Innovation
+## Why Do Japanese Tech Accelerators Look Innovative But Aren't?
 
 A modern tech accelerator’s website should not be a brochure. It should be infrastructure.
 
@@ -71,7 +71,7 @@ This moment matters because it mirrors how the organization operates internally.
 
 Founders should trust this signal. You do not need a full audit to recognize a weak handshake. The first click already tells you whether the organization builds leverage or merely gestures toward it.
 
-## Platform Choice as a Competence Signal
+## What Does Your Technology Platform Say About Your Business?
 
 The most revealing evidence uncovered during accelerator audits is not found in copy or branding. It is found in platform stewardship.
 
@@ -163,7 +163,7 @@ An accelerator that understands technology would treat events as inputs, not out
 
 When this does not happen, it is not an oversight. It is a declaration of priorities.
 
-## The Empty Library Problem
+## Why Is Missing Content a Business Infrastructure Problem?
 
 One might tolerate friction if there were real assets on the other side.
 
@@ -263,51 +263,3 @@ The blind guide is bad enough.
 
 
 The fortress is worse.
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
--
-[Business Advisories](https://mkultraman.com/business-advisories/)
-
--
-[Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-
--
-[The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-
--
-[Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-
--
-[Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-
--
-[Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
--
-[Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-
--
-[Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-
--
-[Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

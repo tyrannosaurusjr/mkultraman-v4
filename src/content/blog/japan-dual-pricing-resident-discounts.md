@@ -116,35 +116,3 @@ To avoid another Osaka ramen controversy, businesses should follow this roadmap:
 
 The Osaka ramen controversy was a wake-up call. It proved that while Japan dual pricing is an economic necessity, the “foreigner surcharge” is a failed implementation strategy. By adopting a resident discount model inspired by the Kama’aina discount, Japan can build a tourism economy that is both profitable and respectful of its citizens.
 The goal for 2026 should be a Japan where the world is welcome, but the locals are never priced out of their own homes. Through transparent, residency-based pricing, we can solve the riddle of overtourism and preserve the “Omotenashi” that makes Japan a world-class destination. The shift from “Foreigner Prices” to “Resident Benefits” is more than just semantics; it is the evolution of Japanese hospitality for a global age.
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
-- [Business Advisories](https://mkultraman.com/business-advisories/)
-- [Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-- [The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-- [Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-- [Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-- [Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
-- [Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-- [Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-- [Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

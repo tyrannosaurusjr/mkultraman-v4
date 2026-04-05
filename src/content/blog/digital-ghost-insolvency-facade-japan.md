@@ -45,7 +45,7 @@ Yet, its public-facing digital asset – the only part of the company the world 
 
 The delusion is complete. The market believes it is funding a technology company. In reality, it is funding a traditional, analog sales organization that wears a technology costume. The valuation is based on the idea of the tech, not the existence of it.
 
-## The Digital Ghost of Security
+## What Is a Digital Ghost Company in Japan?
 
 If the frontend is a deception, the backend is a crime scene. We ran a standard analysis of this firm’s domain health. In 2025, email authentication is not "nice to have." It is the digital equivalent of having a lock on your front door.
 
@@ -86,7 +86,7 @@ The stakeholders think they own a secure, proprietary data fortress. They actual
 
 This represents a fracture in the **Digital Ghost** business model. You are paying for enterprise security, but you are getting freelance-level anarchy.
 
-## The SEO Black Hole
+## How Does Insolvency Create an SEO Black Hole?
 
 Let’s move from security to discoverability. In the modern economy, if you are not indexable, you do not exist. Google is not a person; it is a machine. It needs to be fed structure—Schema markup, metadata, clear hierarchy, and crawlable pathways—to understand what a business does.
 
@@ -172,51 +172,3 @@ We have seen the top of the food chain, and the machinery is missing. But surely
 
 
 In Part 3, we will look at The Blind Guide. We will audit a famous "Innovation Accelerator" and find out why the people teaching startups to drive are struggling to start their own engines.
-
-**MKUltraman**
-
-
-Digital strategy and digital infrastructure for modern businesses operating in Japan.
-
-**System Architecture**
-
-
-- [Japan Insights](https://mkultraman.com/japan-insights-system-dynamics-structure/)
-- [Business Services](https://mkultraman.com/business-services/)
-- [Ultra Guild](https://mkultraman.com/ultra-guild/)
-- [Strategic Advisory Inquiry](https://mkultraman.com/business-strategy-inquiry/)
-
-**Advisory & Applied Work**
-
-
--
-[Business Advisories](https://mkultraman.com/business-advisories/)
-
--
-[Dia Inc.](https://mkultraman.com/business-advisories/dia-inc-it-solutions/)
-
--
-[The Delphi Network](https://mkultraman.com/business-advisories/delphi-business-networking/)
-
--
-[Heather Dobbin Coaching](https://mkultraman.com/business-advisories/heather-dobbin-coaching/)
-
--
-[Centrum](https://mkultraman.com/business-advisories/centrum-web3-tech-hub/)
-
--
-[Hello xLab](https://mkultraman.com/business-advisories/hello-xlab-experiential-design/)
-
-**Legal & Utility******
-
-
--
-[Terms of Service](https://mkultraman.com/legal-utility/consulting-terms-of-service)
-
--
-[Data Privacy Policy](https://mkultraman.com/legal-utility/data-privacy-policy)
-
--
-[Commerce Disclosure](https://mkultraman.com/legal-utility/commerce-disclosure)
-
-© MKUltraman 2026

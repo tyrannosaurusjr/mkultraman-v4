@@ -1,0 +1,269 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import ToolsSchema from '../../components/ToolsSchema.astro';
+
+const tools = [
+  {
+    slug: 'redditreach',
+    name: 'RedditReach',
+    tag: 'Authority generation',
+    headline: 'Build authority where your customers already look.',
+    body: 'Monitor subreddits for keyword-matched posts, generate contextual replies, and schedule engagement that looks natural. Staggered timing, cross-post detection, best-time analytics. Built for operators who want inbound without paying for ads.',
+    status: 'Live',
+    price: 'From $29/mo',
+  },
+  {
+    slug: 'tetsuno-claw',
+    name: 'Tetsuno Claw',
+    tag: 'AI work assistant',
+    headline: 'A work operating system for Japan.',
+    body: 'Eleven specialist AI agents in one Telegram bot — tax, scheduling, transit, real estate, legal intake, content, research, and more. Built on Claude, tuned for English-speaking operators navigating Japanese corporate infrastructure.',
+    status: 'Live',
+    price: 'Free tier available',
+  },
+  {
+    slug: 'japan-money-tracker',
+    name: 'Japan Money Tracker',
+    tag: 'Tax & finance',
+    headline: 'Organize your money for Japanese tax filing.',
+    body: 'AI-powered receipt scanning, multi-currency expense tracking, and 確定申告-ready categories. Paste OCR text or upload photos — Claude extracts dates, amounts, vendors, and tax rates automatically. Syncs to Airtable and Google Drive.',
+    status: 'Live',
+    price: 'Free',
+  },
+  {
+    slug: 'hitoe',
+    name: 'Hitoe',
+    tag: 'Membership management',
+    headline: 'One canonical list of your people.',
+    body: 'Your members are scattered across Stripe, Luma, Mailchimp, Google Sheets, and your inbox. Hitoe rectifies and normalizes contacts across platforms into a single source of truth. Stop guessing who\'s actually in your community.',
+    status: 'Coming soon',
+    price: 'Waitlist open',
+  },
+];
+---
+
+<Base
+  title="Tools — MKUltraman"
+  description="Operator tools for SMEs in Japan. RedditReach, Tetsuno Claw, Japan Money Tracker, and Hitoe — built by MKUltraman."
+>
+  <ToolsSchema />
+  <Nav />
+  <main>
+    <section class="tools-hero">
+      <div class="container">
+        <p class="eyebrow">Tools</p>
+        <h1 class="tools-hero__headline">
+          Software I built<br />
+          for operators<br />
+          like <em>me.</em>
+        </h1>
+        <p class="tools-hero__sub">
+          I run ten businesses across Japan. These are the tools I built to do
+          it — and now they're yours. Each one solves a problem I hit
+          repeatedly and couldn't find a good answer for.
+        </p>
+      </div>
+    </section>
+
+    <section class="tools-grid-section">
+      <div class="container">
+        <div class="tools-grid">
+          {tools.map((t) => (
+            <a href={`/tools/${t.slug}`} class="tool-card">
+              <div class="tool-card__top">
+                <span class="tool-card__tag">{t.tag}</span>
+                <span class={`tool-card__status ${t.status === 'Coming soon' ? 'tool-card__status--soon' : ''}`}>
+                  {t.status}
+                </span>
+              </div>
+              <h2 class="tool-card__name">{t.name}</h2>
+              <p class="tool-card__headline">{t.headline}</p>
+              <p class="tool-card__body">{t.body}</p>
+              <div class="tool-card__bottom">
+                <span class="tool-card__price">{t.price}</span>
+                <span class="tool-card__arrow">&rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="tools-cta">
+      <div class="container">
+        <div class="tools-cta__box">
+          <p class="tools-cta__text">
+            Need something custom? These tools grew out of consulting
+            engagements. If you have a problem that doesn't fit, let's talk.
+          </p>
+          <a href="/#inquiry" class="btn btn-primary tools-cta__btn">Get in touch &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>
+
+<style>
+  /* ── Hero ── */
+  .tools-hero {
+    padding: var(--space-96) 0 var(--space-64);
+  }
+
+  .tools-hero__headline {
+    font-family: var(--font-display);
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    margin: var(--space-24) 0;
+  }
+  .tools-hero__headline em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .tools-hero__sub {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 540px;
+  }
+
+  /* ── Grid ── */
+  .tools-grid-section {
+    padding: 0 0 var(--space-96);
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-24);
+  }
+
+  .tool-card {
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    transition: border-color 0.2s ease;
+    text-decoration: none;
+  }
+  .tool-card:hover { border-color: var(--accent); }
+
+  .tool-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tool-card__tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+  }
+
+  .tool-card__status {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #4ade80;
+  }
+  .tool-card__status--soon {
+    color: var(--text-dim);
+  }
+
+  .tool-card__name {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+
+  .tool-card__headline {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .tool-card__body {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    flex: 1;
+  }
+
+  .tool-card__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border);
+  }
+
+  .tool-card__price {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+
+  .tool-card__arrow {
+    font-size: 16px;
+    color: var(--accent);
+    transition: transform 0.15s;
+  }
+  .tool-card:hover .tool-card__arrow {
+    transform: translateX(4px);
+  }
+
+  /* ── CTA ── */
+  .tools-cta {
+    padding: 0 0 var(--space-96);
+  }
+
+  .tools-cta__box {
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-32);
+  }
+
+  .tools-cta__text {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    max-width: 520px;
+  }
+
+  .tools-cta__btn {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .tools-grid { grid-template-columns: 1fr; }
+    .tools-cta__box {
+      flex-direction: column;
+      text-align: center;
+    }
+    .tools-cta__btn { width: 100%; }
+  }
+</style>
