@@ -1,8 +1,8 @@
 ---
-title: "Modern Disaster: Japan&#039;s Dangerous 2-Hour Sleep Ethic"
-description: "Japan&#039;s celebration of overwork is a modern disaster. This dated practice isn&#039;t just inefficient; it leads to karoshi and poor leadership."
+title: "Modern Disaster: Japan's Dangerous 2-Hour Sleep Ethic"
+description: "Japan's celebration of overwork is a modern disaster. This dated practice isn't just inefficient; it leads to karoshi and poor leadership."
 pubDate: 2025-11-16
-tags: ["Leadership &amp; Management", "Society &amp; Culture"]
+tags: ["Leadership & Management", "Society & Culture"]
 draft: false
 ---
 

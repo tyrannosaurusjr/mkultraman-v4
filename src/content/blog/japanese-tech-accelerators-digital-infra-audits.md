@@ -2,7 +2,7 @@
 title: "Japanese Tech Accelerators and Their Broken Infrastructure"
 description: "A critique of Japanese tech accelerators, exposing weak accelerator digital infrastructure and why audits matter more than events, optics, or hype."
 pubDate: 2025-12-15
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: "3 Steps for a Powerful Visual Identity Strategy in Japan"
 description: "Build a powerful visual identity strategy with a steady signal. Discover how branding in Japan requires intention and control to become unforgettable."
 pubDate: 2025-04-07
-tags: ["Business in Japan", "Economics &amp; Investment"]
+tags: ["Business in Japan", "Economics & Investment"]
 draft: false
 ---
 

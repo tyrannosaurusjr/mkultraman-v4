@@ -2,7 +2,7 @@
 title: "Foreign Labor Data: 60% Oppose Active Entry Now"
 description: "New survey Data shows Japan turns against Foreign Labor. Fears over Public Order rise among youth. Analyze the bias, the politics, and the reality."
 pubDate: 2025-12-03
-tags: ["Business in Japan", "Policy &amp; Society"]
+tags: ["Business in Japan", "Policy & Society"]
 draft: false
 ---
 

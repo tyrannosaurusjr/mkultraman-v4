@@ -1,5 +1,5 @@
 ---
-title: "Powerful Lessons on Japan Entrepreneurship &amp; Akiya Success"
+title: "Powerful Lessons on Japan Entrepreneurship & Akiya Success"
 description: "Discover my unique story in Japan entrepreneurship on the Unpacking Japan podcast. From surviving a tsunami to spearheading rural revitalization Japan with akiya."
 pubDate: 2025-10-05
 tags: ["Business in Japan", "Rural Revitalization"]

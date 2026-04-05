@@ -1,8 +1,8 @@
 ---
-title: "Digital Skills: 5 Best Ways to Fix Japan&#039;s Legacy Systems"
-description: "Japan&#039;s legacy systems are holding back its workforce. Learn why investing in digital skills is essential for transformation and global competition."
+title: "Digital Skills: 5 Best Ways to Fix Japan's Legacy Systems"
+description: "Japan's legacy systems are holding back its workforce. Learn why investing in digital skills is essential for transformation and global competition."
 pubDate: 2025-02-13
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

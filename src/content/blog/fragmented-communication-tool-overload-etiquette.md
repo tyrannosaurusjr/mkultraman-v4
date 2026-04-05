@@ -1,8 +1,8 @@
 ---
 title: "Fix Fragmented Communication: 3 Powerful Etiquette Rules"
-description: "Is fragmented communication killing your team&#039;s productivity? Learn how communication tool overload creates chaos and why shared etiquette is the only real solution."
+description: "Is fragmented communication killing your team's productivity? Learn how communication tool overload creates chaos and why shared etiquette is the only real solution."
 pubDate: 2025-06-26
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

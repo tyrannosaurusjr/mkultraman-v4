@@ -2,7 +2,7 @@
 title: "Service Pricing: 3 Powerful Ways to Build Client Trust"
 description: "Master your Service Pricing to build lasting Client Trust. Find the Confidence to set value-based rates and stop undercharging."
 pubDate: 2025-03-30
-tags: ["Business Strategy", "Economics &amp; Investment"]
+tags: ["Business Strategy", "Economics & Investment"]
 draft: false
 ---
 

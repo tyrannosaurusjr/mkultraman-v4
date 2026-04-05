@@ -2,7 +2,7 @@
 title: "Shared Systems: Why Japan’s Business Model Is Failing Now"
 description: "Shared systems and execution architecture replace fragmented infrastructure in Japan, enabling businesses to compound advantage."
 pubDate: 2026-01-07
-tags: ["Business Strategy", "Digital Transformation &amp; AI"]
+tags: ["Business Strategy", "Digital Transformation & AI"]
 draft: false
 ---
 

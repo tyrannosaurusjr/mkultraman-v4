@@ -1,8 +1,8 @@
 ---
 title: "Expert Corporate Training Programs for Japanese Leadership"
-description: "Elevate your team with expert Corporate Training Programs. Heather Dobbin&#039;s Japanese Leadership Development boosts performance."
+description: "Elevate your team with expert Corporate Training Programs. Heather Dobbin's Japanese Leadership Development boosts performance."
 pubDate: 2025-09-28
-tags: ["Business in Japan", "Systems &amp; Strategy"]
+tags: ["Business in Japan", "Systems & Strategy"]
 draft: false
 ---
 

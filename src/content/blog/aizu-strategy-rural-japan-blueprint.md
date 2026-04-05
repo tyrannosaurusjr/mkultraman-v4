@@ -1,6 +1,6 @@
 ---
 title: "The Aizu Strategy: 5-Steps to Awesome Cultural Assets"
-description: "Japan&#039;s rural tourism model is broken. Municipalities are failing, letting the core cultural assets rot. An Aizu Strategy can unlock true development."
+description: "Japan's rural tourism model is broken. Municipalities are failing, letting the core cultural assets rot. An Aizu Strategy can unlock true development."
 pubDate: 2025-10-26
 tags: ["Business Strategy", "Rural Revitalization"]
 draft: false

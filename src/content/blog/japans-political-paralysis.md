@@ -1,8 +1,8 @@
 ---
-title: "Japan&#039;s Political Paralysis: A Call for New National Vision"
-description: "Japan&#039;s political stagnation is at a critical juncture, highlighting the need for a new national vision to address Japan&#039;s Political Paralysis."
+title: "Japan's Political Paralysis: A Call for New National Vision"
+description: "Japan's political stagnation is at a critical juncture, highlighting the need for a new national vision to address Japan's Political Paralysis."
 pubDate: 2025-07-22
-tags: ["Economics &amp; Investment", "Policy &amp; Society"]
+tags: ["Economics & Investment", "Policy & Society"]
 draft: false
 ---
 

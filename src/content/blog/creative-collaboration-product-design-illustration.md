@@ -2,7 +2,7 @@
 title: "Creative Collaboration Power: 12 Years of Design Brotherhood"
 description: "Explore creative collaboration, product design, and illustration through Thom Smith: bandmate, designer, and the mind behind new nengajo prints."
 pubDate: 2025-10-29
-tags: ["Business Strategy", "Systems &amp; Strategy"]
+tags: ["Business Strategy", "Systems & Strategy"]
 draft: false
 ---
 

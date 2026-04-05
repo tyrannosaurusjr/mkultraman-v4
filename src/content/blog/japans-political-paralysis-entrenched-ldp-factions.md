@@ -1,8 +1,8 @@
 ---
-title: "Japan&#039;s Political Paralysis: A Self-Inflicted Crisis"
-description: "Discover the true source of Japan&#039;s political paralysis. It&#039;s not chaotic instability; its a stagnant system ruled by legacy LDP factions needing reform."
+title: "Japan's Political Paralysis: A Self-Inflicted Crisis"
+description: "Discover the true source of Japan's political paralysis. It's not chaotic instability; its a stagnant system ruled by legacy LDP factions needing reform."
 pubDate: 2025-07-31
-tags: ["Systems &amp; Strategy"]
+tags: ["Systems & Strategy"]
 draft: false
 ---
 

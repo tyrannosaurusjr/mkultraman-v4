@@ -2,7 +2,7 @@
 title: "The Digital Facade: Japan Inc. Is a Dangerous Mirage"
 description: "Japan Inc. hides behind a Digital Facade, fueled by Legacy Inertia. This creates a Mirage that traps SMEs in a cycle of endless, unnecessary labor."
 pubDate: 2025-12-12
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

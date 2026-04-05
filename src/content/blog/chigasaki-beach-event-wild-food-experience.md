@@ -1,5 +1,5 @@
 ---
-title: "August 30-31 Chigasaki Beach Event: Fire &amp; Fermentation"
+title: "August 30-31 Chigasaki Beach Event: Fire & Fermentation"
 description: "Join the ultimate Chigasaki Beach Event for a wild food experience featuring fire-cooked game, craft beer, and unique fermented foods. Aug 30-31."
 pubDate: 2025-07-28
 tags: ["Business in Japan", "Rural Revitalization"]

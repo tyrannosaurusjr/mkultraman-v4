@@ -1,8 +1,8 @@
 ---
-title: "Tourist Behavior: Unlock Japan&#039;s Amazing Cultural Code"
-description: "Bad tourist behavior in Japan isn&#039;t just rude. It&#039;s a cultural clash. Understand the context for better Japan travel, especially in crowded Kyoto."
+title: "Tourist Behavior: Unlock Japan's Amazing Cultural Code"
+description: "Bad tourist behavior in Japan isn't just rude. It's a cultural clash. Understand the context for better Japan travel, especially in crowded Kyoto."
 pubDate: 2025-11-04
-tags: ["Systems &amp; Strategy", "Society &amp; Culture"]
+tags: ["Systems & Strategy", "Society & Culture"]
 draft: false
 ---
 

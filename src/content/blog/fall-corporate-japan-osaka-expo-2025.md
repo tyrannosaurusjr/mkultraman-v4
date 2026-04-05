@@ -2,7 +2,7 @@
 title: "The Fall of Corporate Japan: Osaka Expo 2025 Innovation"
 description: "Witness the fall of Corporate Japan as the Osaka Expo 2025 failure reveals systemic rot. See how this collapse fosters grassroots innovation."
 pubDate: 2025-04-14
-tags: ["Business in Japan", "Economics &amp; Investment"]
+tags: ["Business in Japan", "Economics & Investment"]
 draft: false
 ---
 

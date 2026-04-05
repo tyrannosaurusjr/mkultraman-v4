@@ -1,8 +1,8 @@
 ---
 title: "Japanese Leadership Culture: The Price of the Concept of Wa"
-description: "Japanese leadership culture prioritizes &quot;Wa&quot; over results. We trace this crisis from the Ashikaga era to 2026 and offer a path to reinvention."
+description: "Japanese leadership culture prioritizes "Wa" over results. We trace this crisis from the Ashikaga era to 2026 and offer a path to reinvention."
 pubDate: 2026-01-14
-tags: ["Society &amp; Culture", "Business in Japan"]
+tags: ["Society & Culture", "Business in Japan"]
 draft: false
 ---
 

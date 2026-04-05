@@ -1,8 +1,8 @@
 ---
-title: "Japan&#039;s 1 Epic Flaw: Zombie Companies &amp; Tough Business Visa"
+title: "Japan's 1 Epic Flaw: Zombie Companies & Tough Business Visa"
 description: "Japan is clearing out its Zombie Companies, but a critical flaw remains. Tougher Business Visa processes stifles innovation needed for real growth."
 pubDate: 2025-10-11
-tags: ["Business in Japan", "Policy &amp; Society"]
+tags: ["Business in Japan", "Policy & Society"]
 draft: false
 ---
 

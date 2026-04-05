@@ -2,7 +2,7 @@
 title: "5 Essential Questions to Ask About the AI Hype Cycle Now"
 description: "Is it real innovation or just the AI hype cycle? My guide for analyzing Japanese tech startups reveals 5 key questions to ask before you invest."
 pubDate: 2025-08-12
-tags: ["Digital Transformation &amp; AI"]
+tags: ["Digital Transformation & AI"]
 draft: false
 ---
 

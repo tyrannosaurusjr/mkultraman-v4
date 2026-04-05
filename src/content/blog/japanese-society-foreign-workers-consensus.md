@@ -1,8 +1,8 @@
 ---
-title: "Japanese Society&#039;s Radical Future: An Expert 5-step Analysis"
-description: "What defines Japanese society&#039;s future? Explore the vital role of foreign workers and the critical need for a new consensus."
+title: "Japanese Society's Radical Future: An Expert 5-step Analysis"
+description: "What defines Japanese society's future? Explore the vital role of foreign workers and the critical need for a new consensus."
 pubDate: 2025-11-06
-tags: ["Policy &amp; Society", "Society &amp; Culture"]
+tags: ["Policy & Society", "Society & Culture"]
 draft: false
 ---
 

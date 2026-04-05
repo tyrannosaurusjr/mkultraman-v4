@@ -2,7 +2,7 @@
 title: "Eye-Opening Japan Third Cities: Escape Tokyo Talent Drain"
 description: "I help pioneers escape the Tokyo Talent Drain to Japan Third Cities. Discover how to use the capital as a strategic launchpad for this new frontier."
 pubDate: 2025-07-16
-tags: ["Policy &amp; Society", "Society &amp; Culture"]
+tags: ["Policy & Society", "Society & Culture"]
 draft: false
 ---
 

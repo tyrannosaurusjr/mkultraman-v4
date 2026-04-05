@@ -2,7 +2,7 @@
 title: "Japan Market: 5 Proven Ways to Find Untapped Value"
 description: "The Japan Market is full of Untapped Value. For VCs and managers with powerful Investment strategies to find and scale Blue Ocean opportunities."
 pubDate: 2025-03-18
-tags: ["Business Strategy", "Economics &amp; Investment"]
+tags: ["Business Strategy", "Economics & Investment"]
 draft: false
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Master AGI: Digital Immigrants &amp; Cognitive Labor"
+title: "Master AGI: Digital Immigrants & Cognitive Labor"
 description: "The digital immigrants are coming. Discover how AGI is automating cognitive labor and the exact strategy entrepreneurs need to survive the shift."
 pubDate: 2025-11-30
-tags: ["Business Strategy", "Digital Transformation &amp; AI"]
+tags: ["Business Strategy", "Digital Transformation & AI"]
 draft: false
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Sanae Takaichi&#039;s 666% Metal Myth: The Ultimate Truth"
-description: "Media reports label Sanae Takaichi as Japan&#039;s &quot;heavy metal&quot; PM. For the life of me, I can&#039;t find a connection to the real Japanese scene."
+title: "Sanae Takaichi's 666% Metal Myth: The Ultimate Truth"
+description: "Media reports label Sanae Takaichi as Japan's "heavy metal" PM. For the life of me, I can't find a connection to the real Japanese scene."
 pubDate: 2025-10-22
-tags: ["Policy &amp; Society", "Society &amp; Culture"]
+tags: ["Policy & Society", "Society & Culture"]
 draft: false
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Osaka Expo 2025: The Flaws of Japan&#039;s Costly Nostalgia"
+title: "Osaka Expo 2025: The Flaws of Japan's Costly Nostalgia"
 description: "Critically assess Osaka Expo 2025, a project fueled by nostalgia amidst Japan economic stagnation. Uncover reasons why this event fails."
 pubDate: 2025-04-15
-tags: ["Business in Japan", "Society &amp; Culture"]
+tags: ["Business in Japan", "Society & Culture"]
 draft: false
 ---
 

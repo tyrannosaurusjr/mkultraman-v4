@@ -1,8 +1,8 @@
 ---
-title: "Hidden Markets: 3 Powerful Ways to Unlock Japan&#039;s Alpha"
-description: "Unlock Japan&#039;s Hidden Markets with new Investor Insight. This guide shows how to find the Alpha in data voids and unseen cultural niches."
+title: "Hidden Markets: 3 Powerful Ways to Unlock Japan's Alpha"
+description: "Unlock Japan's Hidden Markets with new Investor Insight. This guide shows how to find the Alpha in data voids and unseen cultural niches."
 pubDate: 2025-03-20
-tags: ["Business in Japan", "Economics &amp; Investment"]
+tags: ["Business in Japan", "Economics & Investment"]
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Japanese Jesus: Powerful Folklore and The Shingo Legend"
 description: "I am building Japanese Jesus to hack the Shingo Legend. This is not religion. It is Folklore weaponized to save Aomori from fading away."
 pubDate: 2025-11-30
-tags: ["Rural Revitalization", "Systems &amp; Strategy"]
+tags: ["Rural Revitalization", "Systems & Strategy"]
 draft: false
 ---
 

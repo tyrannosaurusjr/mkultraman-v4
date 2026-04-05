@@ -2,7 +2,7 @@
 title: "Tokyo Business Mindset: 5 Master Plays for Strategic Agility"
 description: "Mastering the Tokyo business mindset requires strategic agility. My guide offers essential leadership insights for success in Japan."
 pubDate: 2025-07-04
-tags: ["Business in Japan", "Leadership &amp; Management"]
+tags: ["Business in Japan", "Leadership & Management"]
 draft: false
 ---
 

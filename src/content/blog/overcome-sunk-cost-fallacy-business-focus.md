@@ -2,7 +2,7 @@
 title: "Sunk Cost Fallacy: 4 Expert Strategic Decision Making Tips"
 description: "Overcome the Sunk Cost Fallacy and master strategic decision making. Discover 4 powerful steps to reclaim your focus and drive business growth."
 pubDate: 2025-04-20
-tags: ["Business in Japan", "Leadership &amp; Management"]
+tags: ["Business in Japan", "Leadership & Management"]
 draft: false
 ---
 

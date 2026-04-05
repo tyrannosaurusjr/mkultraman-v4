@@ -2,7 +2,7 @@
 title: "A Powerful Visual Brand Strategy for Psychedelic Branding"
 description: "Harness the power of a bold visual brand strategy. Learn how psychedelic fashion and abrasive aesthetics can redefine your personal branding and attract your ideal audience."
 pubDate: 2025-04-06
-tags: ["Business Strategy", "Economics &amp; Investment"]
+tags: ["Business Strategy", "Economics & Investment"]
 draft: false
 ---
 

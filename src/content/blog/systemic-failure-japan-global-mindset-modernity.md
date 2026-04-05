@@ -1,8 +1,8 @@
 ---
 title: "Systemic Failure in Japan: 7 Signs We Need a Global Mindset"
-description: "Japan&#039;s systemic failure to integrate is clear. Without a global mindset, its corporations and society cannot contribute to modernity."
+description: "Japan's systemic failure to integrate is clear. Without a global mindset, its corporations and society cannot contribute to modernity."
 pubDate: 2025-10-20
-tags: ["Leadership &amp; Management", "Society &amp; Culture"]
+tags: ["Leadership & Management", "Society & Culture"]
 draft: false
 ---
 

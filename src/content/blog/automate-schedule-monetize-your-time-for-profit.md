@@ -2,7 +2,7 @@
 title: "4 Essential Steps to Monetize Your Time with Automation"
 description: "Learn how to monetize your time with a simple system. I show you how to automate your schedule to stop wasting hours and boost profitability."
 pubDate: 2025-06-21
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

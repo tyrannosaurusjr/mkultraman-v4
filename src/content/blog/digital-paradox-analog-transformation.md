@@ -1,8 +1,8 @@
 ---
 title: "Digital Paradox in Japan: 6 Ways to Smash Analog Systems"
-description: "Japan&#039;s digital paradox reveals how outdated analog systems create real opportunities for tech-led transformation. Learn to contribute to the future!"
+description: "Japan's digital paradox reveals how outdated analog systems create real opportunities for tech-led transformation. Learn to contribute to the future!"
 pubDate: 2025-02-20
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

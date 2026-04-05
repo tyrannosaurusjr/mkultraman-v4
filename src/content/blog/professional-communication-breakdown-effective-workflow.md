@@ -1,8 +1,8 @@
 ---
 title: "Fix Your Professional Communication Breakdown: 5 Mega Tips"
-description: "Tackle your professional communication breakdown. I&#039;ll build an effective client workflow with high fidelity to fix the 5 flaws in your system."
+description: "Tackle your professional communication breakdown. I'll build an effective client workflow with high fidelity to fix the 5 flaws in your system."
 pubDate: 2025-09-22
-tags: ["Business in Japan", "Society &amp; Culture"]
+tags: ["Business in Japan", "Society & Culture"]
 draft: false
 ---
 

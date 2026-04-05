@@ -1,8 +1,8 @@
 ---
 title: "Blue Ocean Power: Wild Market Creation Beats Competition"
-description: "Create a blue ocean by using market creation and original strategy instead of competing in crowded spaces. There&#039;s adventure everywhere."
+description: "Create a blue ocean by using market creation and original strategy instead of competing in crowded spaces. There's adventure everywhere."
 pubDate: 2025-03-02
-tags: ["Economics &amp; Investment", "Leadership &amp; Management"]
+tags: ["Economics & Investment", "Leadership & Management"]
 draft: false
 ---
 

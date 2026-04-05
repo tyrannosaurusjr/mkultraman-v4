@@ -1,6 +1,6 @@
 ---
 title: "Tokyo Business Curation and the Powerful Startup Lady Effect"
-description: "Navigate the chaos of Tokyo Business with high-signal strategies. Startup Lady and Curation are your source for clarity in Japan&#039;s noisy market."
+description: "Navigate the chaos of Tokyo Business with high-signal strategies. Startup Lady and Curation are your source for clarity in Japan's noisy market."
 pubDate: 2025-12-10
 tags: ["Business in Japan", "Business Strategy"]
 draft: false

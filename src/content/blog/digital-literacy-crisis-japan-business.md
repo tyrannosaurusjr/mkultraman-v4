@@ -2,7 +2,7 @@
 title: "The Digital Literacy Crisis: Why Japan Is Breaking Itself"
 description: "Japan faces a crisis of Digital Literacy where Japan Businesses gut their own strategies and use the results as proof that digital tools do not work."
 pubDate: 2025-12-01
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

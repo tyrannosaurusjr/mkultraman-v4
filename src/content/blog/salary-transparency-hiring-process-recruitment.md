@@ -1,6 +1,6 @@
 ---
 title: "Salary Transparency: 5 Wins for a Powerful Hiring Process"
-description: "Salary transparency, a clear hiring process, and honest recruitment attract better candidates and save time. Don&#039;t hobble your HR efforts."
+description: "Salary transparency, a clear hiring process, and honest recruitment attract better candidates and save time. Don't hobble your HR efforts."
 pubDate: 2025-03-02
 tags: ["Business Strategy"]
 draft: false

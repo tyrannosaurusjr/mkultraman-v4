@@ -1,8 +1,8 @@
 ---
-title: "The Digital Ghost Exposed: Insolvency &amp; the Digital Façade"
+title: "The Digital Ghost Exposed: Insolvency & the Digital Façade"
 description: "We audit a top Japanese firm and find a Digital Ghost. Beneath the hype lies a Digital Façade, technical Insolvency, and a security suicide pact."
 pubDate: 2025-12-13
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Japan Dual Pricing: The Powerful Case for Resident Discounts"
 description: "The Osaka ramen controversy proves foreigner pricing fails. Discover why resident discounts are the only viable Japan dual pricing strategy in 2026."
 pubDate: 2026-01-07
-tags: ["Business in Japan", "Economics &amp; Investment"]
+tags: ["Business in Japan", "Economics & Investment"]
 draft: false
 ---
 

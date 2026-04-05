@@ -2,7 +2,7 @@
 title: "5 Big Ways a Digital Business Card Boosts Japan Networking"
 description: "Empower your networking in Japan with a digital business card. Learn how to modernize Japanese business culture and elevate your identity."
 pubDate: 2025-04-17
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

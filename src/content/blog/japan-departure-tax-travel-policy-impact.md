@@ -1,8 +1,8 @@
 ---
 title: "Departure Tax: 5 Brilliant Ways Japan Can Fix Tourism Now"
-description: "Japan&#039;s new Departure Tax is a flawed Travel Policy. I explore the Impact of this tourist levy and why Japan needs a smarter solution."
+description: "Japan's new Departure Tax is a flawed Travel Policy. I explore the Impact of this tourist levy and why Japan needs a smarter solution."
 pubDate: 2025-11-14
-tags: ["Economics &amp; Investment", "Society &amp; Culture"]
+tags: ["Economics & Investment", "Society & Culture"]
 draft: false
 ---
 

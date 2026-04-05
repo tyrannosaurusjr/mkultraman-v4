@@ -2,7 +2,7 @@
 title: "Japan Economic Stagnation: Opportunities for Growth"
 description: "My analysis reveals how Japan economic stagnation and a toxic work culture create fertile ground for the Sanseito party. Understand the real issues."
 pubDate: 2025-07-04
-tags: ["Economics &amp; Investment", "Policy &amp; Society"]
+tags: ["Economics & Investment", "Policy & Society"]
 draft: false
 ---
 

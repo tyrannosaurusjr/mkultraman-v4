@@ -2,7 +2,7 @@
 title: "Technology Adoption in Japan Fails at Procurement"
 description: "Japan systems treat procurement as progress. I explain why technology adoption stalls after purchase and produces little operational change."
 pubDate: 2026-01-13
-tags: ["Digital Transformation &amp; AI", "Systems &amp; Strategy"]
+tags: ["Digital Transformation & AI", "Systems & Strategy"]
 draft: false
 ---
 

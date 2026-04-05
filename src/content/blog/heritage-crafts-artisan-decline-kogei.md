@@ -1,6 +1,6 @@
 ---
-title: "Heritage Crafts: 3 Tips to Prevent Japan&#039;s Artisan Decline"
-description: "Discover the reality facing Japan&#039;s heritage crafts. This article explores the causes of artisan decline and why many traditions must adapt."
+title: "Heritage Crafts: 3 Tips to Prevent Japan's Artisan Decline"
+description: "Discover the reality facing Japan's heritage crafts. This article explores the causes of artisan decline and why many traditions must adapt."
 pubDate: 2025-10-02
 tags: ["Business in Japan", "Business Strategy"]
 draft: false

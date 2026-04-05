@@ -2,7 +2,7 @@
 title: "Japan Technology and the Awesome Future of AI Copyright Law"
 description: "Explore the future of Japan Technology as it confronts AI. See how new Copyright Law and innovation can make Japan a global leader in AI policy"
 pubDate: 2025-10-15
-tags: ["Business Strategy", "Digital Transformation &amp; AI"]
+tags: ["Business Strategy", "Digital Transformation & AI"]
 draft: false
 ---
 

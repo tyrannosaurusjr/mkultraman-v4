@@ -1,8 +1,8 @@
 ---
-title: "Agetech Strategy: Why Japan&#039;s Tech Fix Fails 3 Big Ways"
-description: "Japan&#039;s Agetech Strategy relies on robotics to solve its aging crisis, but this fails. See why Human Eldercare is the only viable path forward."
+title: "Agetech Strategy: Why Japan's Tech Fix Fails 3 Big Ways"
+description: "Japan's Agetech Strategy relies on robotics to solve its aging crisis, but this fails. See why Human Eldercare is the only viable path forward."
 pubDate: 2025-03-10
-tags: ["Business in Japan", "Digital Transformation &amp; AI"]
+tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 

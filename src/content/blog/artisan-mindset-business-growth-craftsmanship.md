@@ -1,8 +1,8 @@
 ---
-title: "Artisan Mindset &amp; Business Growth: 3 Case Studies"
+title: "Artisan Mindset & Business Growth: 3 Case Studies"
 description: "Explore the Japanese Artisan Mindset. While it elevates craftsmanship, it often hinders Business Growth. Learn how to balance tradition with modern strategy."
 pubDate: 2025-04-03
-tags: ["Business in Japan", "Economics &amp; Investment"]
+tags: ["Business in Japan", "Economics & Investment"]
 draft: false
 ---
 

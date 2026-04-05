@@ -2,7 +2,7 @@
 title: "Boost Your Impact: 5 Reasons for Scheduling Emails Now"
 description: "Master scheduling emails to set healthy workplace boundaries and improve your communication. Take back control of your workflow now."
 pubDate: 2025-06-18
-tags: ["Business in Japan", "Leadership &amp; Management"]
+tags: ["Business in Japan", "Leadership & Management"]
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Japan National Brand: Unraveling Its Global Image Mystery"
 description: "My analysis deconstructs the Japan national brand paradox. Discover the truth behind the images of Cool Japan and the grim reality of Japan Inc."
 pubDate: 2025-06-29
-tags: ["Society &amp; Culture", "Systems &amp; Strategy"]
+tags: ["Society & Culture", "Systems & Strategy"]
 draft: false
 ---
 

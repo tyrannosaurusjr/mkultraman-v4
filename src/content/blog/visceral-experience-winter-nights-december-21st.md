@@ -2,7 +2,7 @@
 title: "Visceral Experience: Cool Winter Nights December 21st"
 description: "Celebrate the season with true immersion. Visceral experience at Winter Nights on December 21st to fuel new development for leaders."
 pubDate: 2025-11-20
-tags: ["Rural Revitalization", "Society &amp; Culture"]
+tags: ["Rural Revitalization", "Society & Culture"]
 draft: false
 ---
 

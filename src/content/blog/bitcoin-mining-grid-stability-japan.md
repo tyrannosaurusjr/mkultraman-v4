@@ -1,8 +1,8 @@
 ---
-title: "Bitcoin Mining: Japan&#039;s New Strategy for Grid Stability"
+title: "Bitcoin Mining: Japan's New Strategy for Grid Stability"
 description: "The Bitcoin Mining industry is testing a new use for Grid Stability in Japan, but it raises questions. We explore the promise and the partners."
 pubDate: 2025-11-03
-tags: ["Digital Transformation &amp; AI", "Systems &amp; Strategy"]
+tags: ["Digital Transformation & AI", "Systems & Strategy"]
 draft: false
 ---
 
