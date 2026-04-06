@@ -1,5 +1,6 @@
 ---
 import SchemaOrg from '../components/SchemaOrg.astro';
+import Analytics from '@vercel/analytics/astro';
 
 interface Props {
   title?: string;
@@ -75,5 +76,6 @@ const ogImageURL = new URL(ogImage, siteURL);
   </head>
   <body>
     <slot />
+    <Analytics />
   </body>
 </html>
