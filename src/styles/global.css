@@ -27,6 +27,12 @@ a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; border: none; background: none; }
 ul, ol { list-style: none; }
 
+/* ─── FOCUS ──────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 /* ─── LAYOUT ──────────────────────────────────────────── */
 .container {
   max-width: var(--max-w);
