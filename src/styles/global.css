@@ -111,7 +111,10 @@ ul, ol { list-style: none; }
 .textarea::placeholder { color: var(--text-dim); }
 
 .input:focus,
-.textarea:focus { border-color: var(--accent); }
+.textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
 
 .textarea { resize: vertical; min-height: 90px; }
 
