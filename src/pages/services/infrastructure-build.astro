@@ -1,0 +1,666 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does an Infrastructure Build include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tool consolidation and migration, workflow design and automation, CRM and project management setup, data flows and reporting dashboards, team onboarding, and handoff documentation. Exactly what's included depends on your situation — we scope it together before work begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this require a Stack Audit first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not always, but a prior audit makes the build significantly faster and lower risk. If you come to a build without an audit, expect the early phase to include a discovery sprint that covers similar ground. For retainer clients, an audit is required before we start ongoing management."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an Infrastructure Build take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typically 4–12 weeks depending on the scope. A focused tool migration might be 4 weeks. A full operational rebuild — new CRM, workflows, automation layer, team onboarding — is typically 8–12 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who owns the system after the build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do. The deliverable includes working systems plus runbooks your team can use to maintain and extend them. I don't build things your team can't operate. If you want ongoing management after the build, that's a separate retainer engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from hiring an agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Agencies typically sell time and headcount. This is operator-grade infrastructure work done by someone who actually runs businesses in Japan — the output is systems that work for your specific situation, not generic implementations. A comparable agency engagement in Tokyo runs ¥2–5M and takes twice as long."
+      }
+    }
+  ]
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Infrastructure Build",
+  "description": "Rebuild the operational layer of your business. Tool consolidation, workflow design, automation, and team onboarding. You own it after.",
+  "provider": {
+    "@type": "Person",
+    "@id": "https://mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://mkultraman.com"
+  },
+  "areaServed": { "@type": "Country", "name": "Japan" },
+  "offers": {
+    "@type": "Offer",
+    "price": "500000",
+    "priceCurrency": "JPY"
+  }
+};
+---
+
+<Base
+  title="Infrastructure Build — Digital Operations Rebuild for Japan SMEs | MKUltraman"
+  description="Rebuild the operational layer of your business. Tool consolidation, workflow design, automation, CRM setup, team onboarding. Starting from ¥500,000."
+>
+  <Nav />
+
+  <main>
+
+    <!-- Hero -->
+    <section class="build-hero">
+      <div class="container">
+        <a href="/services" class="back-link">&larr; All services</a>
+        <div class="hero-top">
+          <span class="service-tag">02 &mdash; Scoped project · Fixed or milestone</span>
+        </div>
+        <h1>Infrastructure Build</h1>
+        <p class="hero-lead">
+          Rebuild the operational layer of your business. Replace tool chaos
+          with systems that actually fit how your team works.
+        </p>
+        <div class="hero-specs">
+          <div class="spec">
+            <span class="spec-label">Timeline</span>
+            <span class="spec-value">4–12 weeks</span>
+          </div>
+          <div class="spec">
+            <span class="spec-label">Deliverable</span>
+            <span class="spec-value">Working system + documentation</span>
+          </div>
+          <div class="spec">
+            <span class="spec-label">Starting from</span>
+            <span class="spec-value">¥500,000</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Book an exploratory call — $175 &rarr;
+          </a>
+          <a href="/contact" class="hero-alt">or send a message</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- The problem -->
+    <section class="problem">
+      <div class="container">
+        <div class="problem__inner">
+          <div class="problem__copy">
+            <p class="eyebrow">The problem</p>
+            <h2>You've outgrown your current setup. You just don't know what to replace it with.</h2>
+            <p>
+              The tools you're running were fine when you had 8 people. Now you have
+              25 and the same Slack, the same shared inbox, the same "just send me a
+              message when it's done" workflows. Every new hire makes the problem worse.
+            </p>
+            <p>
+              The Infrastructure Build takes your operation apart and puts it back
+              together properly. New tooling where it's needed, migrated or consolidated
+              where you're duplicating, automated where the manual work is killing
+              velocity. Your team gets something that actually fits. You get runbooks
+              so they can maintain it.
+            </p>
+          </div>
+          <div class="problem__stat-block">
+            <div class="stat">
+              <span class="stat__num">¥2–5M</span>
+              <span class="stat__label">Typical Tokyo agency engagement for comparable scope</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">2x</span>
+              <span class="stat__label">How much longer agency timelines typically run</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">¥500K+</span>
+              <span class="stat__label">Starting price for a full infrastructure build</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What this covers -->
+    <section class="scope">
+      <div class="container">
+        <p class="eyebrow">What this covers</p>
+        <h2>Built for your situation, not a template.</h2>
+        <div class="scope__grid">
+          <div class="scope__item">
+            <h3>Tool consolidation</h3>
+            <p>Audit what you have, decide what stays, migrate off what doesn't. No more paying for three things that do the same job.</p>
+          </div>
+          <div class="scope__item">
+            <h3>Workflow design</h3>
+            <p>Map how work should actually flow, then build it. Handoffs, approvals, status updates — all defined and systematic.</p>
+          </div>
+          <div class="scope__item">
+            <h3>Automation</h3>
+            <p>Identify the manual steps that shouldn't be manual. Route, notify, sync, and escalate without someone doing it by hand.</p>
+          </div>
+          <div class="scope__item">
+            <h3>CRM and pipeline setup</h3>
+            <p>If you're running sales or client relationships on spreadsheets, we fix that. Proper CRM configured for your actual sales process.</p>
+          </div>
+          <div class="scope__item">
+            <h3>Data and reporting</h3>
+            <p>Build the dashboards your team actually looks at. Operational metrics, pipeline, costs — readable by non-engineers.</p>
+          </div>
+          <div class="scope__item">
+            <h3>Handoff and documentation</h3>
+            <p>Runbooks for every system we build. Your team doesn't need me to keep running things after I leave.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Good fit -->
+    <section class="fit">
+      <div class="container">
+        <div class="fit__inner">
+          <div>
+            <p class="eyebrow">Good fit if</p>
+            <ul class="fit__list">
+              <li>You've outgrown your current setup but don't know what to replace it with</li>
+              <li>You have a specific tool migration — moving off spreadsheets, off an old CRM</li>
+              <li>Your team is growing and workflows haven't kept up</li>
+              <li>You need systems your team can actually use without a manual</li>
+              <li>You want to own what's built, not depend on a consultant forever</li>
+            </ul>
+          </div>
+          <div>
+            <p class="eyebrow">Not a fit if</p>
+            <ul class="fit__list fit__list--dim">
+              <li>You need software engineering or custom dev work</li>
+              <li>You want someone to maintain things long-term without building ownership internally</li>
+              <li>You don't have the team capacity to participate in the build process</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process">
+      <div class="container">
+        <p class="eyebrow">How it works</p>
+        <h2>Scoped before work starts. No surprises.</h2>
+        <div class="process__steps">
+          <div class="process__step">
+            <span class="step-num">01</span>
+            <div class="step-content">
+              <h3>Scoping call</h3>
+              <p>We define what the build covers, what success looks like, and how we'll work together. Pricing is confirmed before anything begins.</p>
+            </div>
+          </div>
+          <div class="process__step">
+            <span class="step-num">02</span>
+            <div class="step-content">
+              <h3>Discovery sprint</h3>
+              <p>If you don't have a recent Stack Audit, the first phase covers similar ground — mapping what you have before we decide what to build.</p>
+            </div>
+          </div>
+          <div class="process__step">
+            <span class="step-num">03</span>
+            <div class="step-content">
+              <h3>Build and migration</h3>
+              <p>Systems get built, configured, and tested. Team gets onboarded. Data gets migrated. This is the long part — typically 4–10 weeks depending on scope.</p>
+            </div>
+          </div>
+          <div class="process__step">
+            <span class="step-num">04</span>
+            <div class="step-content">
+              <h3>Handoff</h3>
+              <p>Runbooks delivered, team trained, questions answered. You own it from here. Ongoing management available if you want continued support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <p class="eyebrow">Questions</p>
+        <h2>Common questions about the Infrastructure Build.</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Does this require a Stack Audit first?</summary>
+            <p>Not always. If you already have a clear picture of your stack, we can go straight to a build. If not, the early phase includes a discovery sprint. For retainer clients, an audit is required before ongoing management starts.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Who owns the system after the build?</summary>
+            <p>You do. The deliverable includes working systems plus runbooks your team can use to maintain and extend them. I don't build things your team can't operate without me.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How do you handle Japanese-language tools and workflows?</summary>
+            <p>I work in both English and Japanese. Tools common in Japan — Kintone, Cybozu, Chatwork, LINE WORKS, freee — are in scope. Most builds involve a mix of global and Japan-specific tools.</p>
+          </details>
+          <details class="faq__item">
+            <summary>What if the scope changes mid-project?</summary>
+            <p>Scope changes happen. We'll discuss them as they come up and agree on how to handle them — extended timeline, adjusted deliverable, or a change order. Nothing gets added without both parties agreeing first.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How is this different from hiring an agency?</summary>
+            <p>Agencies sell time and headcount. This is operator-grade work done by someone who runs businesses in Japan — the output is systems that work for your specific situation, not a generic implementation. A comparable agency engagement in Tokyo runs ¥2–5M and takes twice as long.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="cta-bottom">
+      <div class="container">
+        <h2>Let's figure out what you need.</h2>
+        <p>45 minutes. We'll scope your situation and you'll know whether this is the right move.</p>
+        <div class="cta-bottom__actions">
+          <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Book an exploratory call — $175 &rarr;
+          </a>
+          <a href="/contact" class="cta-bottom__alt">or send a message</a>
+        </div>
+        <div class="cta-bottom__other">
+          <p>Also looking at:</p>
+          <a href="/services/stack-audit">Stack Audit &rarr;</a>
+          <a href="/services/ongoing-management">Ongoing Management &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <Footer />
+</Base>
+
+<style>
+  /* Hero */
+  .build-hero {
+    padding: var(--space-96) 0 var(--space-64);
+    border-bottom: 1px solid var(--border);
+  }
+  .back-link {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+    display: inline-block;
+    margin-bottom: var(--space-32);
+  }
+  .back-link:hover { color: var(--text); }
+  .hero-top { margin-bottom: var(--space-16); }
+  .service-tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .build-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.025em;
+    line-height: 1.0;
+    margin-bottom: var(--space-16);
+  }
+  .hero-lead {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 560px;
+    margin-bottom: var(--space-32);
+  }
+  .hero-specs {
+    display: flex;
+    gap: var(--space-48);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-32);
+    padding: var(--space-24) 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .spec { display: flex; flex-direction: column; gap: var(--space-4); }
+  .spec-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .spec-value {
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 500;
+  }
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-16);
+  }
+  .hero-alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .hero-alt:hover { color: var(--text); }
+
+  /* Problem */
+  .problem {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .problem__inner {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: var(--space-64);
+    align-items: start;
+  }
+  .problem__copy h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-16) 0 var(--space-24);
+  }
+  .problem__copy p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-24);
+  }
+  .problem__stat-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding-bottom: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .stat:last-child { border-bottom: none; padding-bottom: 0; }
+  .stat__num {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+  .stat__label {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* Scope */
+  .scope {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .scope h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-16) 0 var(--space-64);
+  }
+  .scope__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-32);
+  }
+  .scope__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  .scope__item h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .scope__item p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  /* Fit */
+  .fit {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .fit__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-64);
+  }
+  .fit__inner .eyebrow { margin-bottom: var(--space-16); }
+  .fit__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  .fit__list li {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .fit__list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 12px;
+  }
+  .fit__list--dim li { color: var(--text-dim); }
+  .fit__list--dim li::before { color: var(--border); }
+
+  /* Process */
+  .process {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .process h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-16) 0 var(--space-64);
+  }
+  .process__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+  .process__step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: var(--space-32);
+    padding: var(--space-32);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .process__step:last-child { border-bottom: none; }
+  .step-num {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    padding-top: 3px;
+  }
+  .step-content h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: var(--space-8);
+  }
+  .step-content p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .faq h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-16) 0 var(--space-48);
+  }
+  .faq__list {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+  .faq__item {
+    padding: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .faq__item:last-child { border-bottom: none; }
+  .faq__item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-left: var(--space-16);
+  }
+  .faq__item[open] summary::after { content: '–'; }
+  .faq__item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: var(--space-16);
+  }
+
+  /* Bottom CTA */
+  .cta-bottom {
+    padding: var(--space-96) 0;
+    text-align: center;
+  }
+  .cta-bottom h2 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.02em;
+  }
+  .cta-bottom p {
+    font-size: 17px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-32);
+  }
+  .cta-bottom__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+    margin-bottom: var(--space-48);
+  }
+  .cta-bottom__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .cta-bottom__alt:hover { color: var(--text); }
+  .cta-bottom__other {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-24);
+    flex-wrap: wrap;
+  }
+  .cta-bottom__other p {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin: 0;
+  }
+  .cta-bottom__other a {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .cta-bottom__other a:hover { color: var(--accent); }
+
+  @media (max-width: 768px) {
+    .problem__inner { grid-template-columns: 1fr; }
+    .scope__grid { grid-template-columns: 1fr; }
+    .fit__inner { grid-template-columns: 1fr; }
+    .process__step { grid-template-columns: 48px 1fr; gap: var(--space-16); }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+  }
+</style>
