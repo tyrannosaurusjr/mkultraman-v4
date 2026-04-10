@@ -1,0 +1,93 @@
+---
+interface Props {
+  tags?: string[];
+}
+
+const { tags = [] } = Astro.props;
+
+const infraTags = ['infrastructure', 'digital transformation', 'technology', 'tools', 'SaaS', 'automation'];
+const strategyTags = ['strategy', 'business', 'leadership', 'execution', 'pricing'];
+
+const isInfra = tags.some(t => infraTags.some(it => t.toLowerCase().includes(it.toLowerCase())));
+const isStrategy = tags.some(t => strategyTags.some(st => t.toLowerCase().includes(st.toLowerCase())));
+
+let heading = 'Need help with this?';
+let subtext = 'I help SMEs in Japan fix their digital infrastructure. Book an exploratory call or send me a message.';
+let buttonText = 'Book a call — $175';
+
+if (isInfra) {
+  heading = 'Is your stack costing you?';
+  subtext = 'I audit digital infrastructure for SMEs in Japan — tools, workflows, costs, friction. 45 minutes, $175.';
+  buttonText = 'Book a stack review — $175';
+} else if (isStrategy) {
+  heading = 'Want to talk strategy?';
+  subtext = 'I work with operators in Japan building systems that scale. 45 minutes, $175 — tell me what you\'re working on.';
+  buttonText = 'Book a call';
+}
+---
+
+<aside class="blog-cta">
+  <div class="blog-cta__inner">
+    <p class="blog-cta__heading">{heading}</p>
+    <p class="blog-cta__sub">{subtext}</p>
+    <div class="blog-cta__actions">
+      <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">{buttonText} &rarr;</a>
+      <span class="blog-cta__or">or</span>
+      <a href="/contact" class="blog-cta__contact">send a message</a>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .blog-cta {
+    margin-top: var(--space-64);
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .blog-cta__inner {
+    max-width: 520px;
+  }
+  .blog-cta__heading {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-8);
+    letter-spacing: -0.01em;
+  }
+  .blog-cta__sub {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: var(--space-24);
+  }
+  .blog-cta__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-16);
+  }
+  .blog-cta__or {
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+  .blog-cta__contact {
+    font-size: 14px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .blog-cta__contact:hover { color: var(--text); }
+
+  @media (max-width: 640px) {
+    .blog-cta__actions {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-12);
+    }
+    .blog-cta__or { display: none; }
+    .blog-cta__contact {
+      font-size: 13px;
+    }
+  }
+</style>

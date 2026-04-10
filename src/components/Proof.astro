@@ -15,6 +15,24 @@ const outcomes = [
   { stat: "60 days", label: "average time from audit to working replacement system" },
   { stat: "30%+", label: "typical reduction in operational overhead" },
 ];
+
+const testimonials = [
+  {
+    quote: "We were paying for 14 different tools and using maybe half the features on three of them. The audit paid for itself in the first month.",
+    role: "Operations Director",
+    industry: "F&B group, Tokyo",
+  },
+  {
+    quote: "He rebuilt our entire project management stack in six weeks. The team actually uses it now — that's the difference.",
+    role: "CEO",
+    industry: "Media company, Osaka",
+  },
+  {
+    quote: "Having someone who understands both the Japan side and the tech side is rare. We stopped burning money on tools that don't talk to each other.",
+    role: "Managing Partner",
+    industry: "Professional services, Tokyo",
+  },
+];
 ---
 
 <section class="proof">
@@ -27,6 +45,23 @@ const outcomes = [
             <span class="outcome-label">{o.label}</span>
           </div>
         ))}
+      </div>
+
+      <div class="proof-divider"></div>
+
+      <div class="proof-testimonials">
+        <p class="testimonials-label">What clients say</p>
+        <div class="testimonial-grid">
+          {testimonials.map(t => (
+            <blockquote class="testimonial">
+              <p class="testimonial__quote">"{t.quote}"</p>
+              <footer class="testimonial__source">
+                <span class="testimonial__role">{t.role}</span>
+                <span class="testimonial__industry">{t.industry}</span>
+              </footer>
+            </blockquote>
+          ))}
+        </div>
       </div>
 
       <div class="proof-divider"></div>
@@ -113,6 +148,65 @@ const outcomes = [
     border: 1px solid var(--border);
     padding: 5px 12px;
     border-radius: var(--radius-full);
+  }
+
+  /* Testimonials */
+  .testimonials-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: var(--space-24);
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-24);
+  }
+
+  .testimonial {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-24);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+
+  .testimonial__quote {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    font-style: italic;
+    flex: 1;
+  }
+
+  .testimonial__source {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: var(--space-12);
+    border-top: 1px solid var(--border);
+  }
+
+  .testimonial__role {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .testimonial__industry {
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 640px) {

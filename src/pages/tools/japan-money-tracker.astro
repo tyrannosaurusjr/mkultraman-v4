@@ -113,6 +113,24 @@ const features = [
         </div>
       </div>
     </section>
+
+    <section class="tool-consult">
+      <div class="container">
+        <div class="tool-consult__box">
+          <div class="tool-consult__content">
+            <p class="tool-consult__heading">Need more than a tracker?</p>
+            <p class="tool-consult__sub">
+              If your financial ops are scattered across spreadsheets, bank apps,
+              and your accountant's inbox, I can build you a proper system.
+              Stripe reconciliation, invoicing flows, reporting dashboards.
+            </p>
+          </div>
+          <div class="tool-consult__actions">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <Footer />
 </Base>
@@ -284,8 +302,42 @@ const features = [
     line-height: 1.7;
   }
 
+  /* ── Consult CTA ── */
+  .tool-consult {
+    padding: 0 0 var(--space-96);
+  }
+  .tool-consult__box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-32);
+  }
+  .tool-consult__heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: var(--space-4);
+  }
+  .tool-consult__sub {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    max-width: 480px;
+  }
+  .tool-consult__actions {
+    flex-shrink: 0;
+  }
+
   @media (max-width: 768px) {
     .how-it-works__steps { grid-template-columns: 1fr; }
     .features__grid { grid-template-columns: 1fr; }
+    .tool-consult__box {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 </style>

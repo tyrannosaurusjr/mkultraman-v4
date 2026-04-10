@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
+import BlogCTA from '../../components/BlogCTA.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -90,6 +91,8 @@ const blogPostingSchema = {
         <div class="post-content">
           <Content />
         </div>
+
+        <BlogCTA tags={post.data.tags} />
       </article>
     </div>
   </main>

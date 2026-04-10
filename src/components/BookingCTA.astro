@@ -1,0 +1,157 @@
+---
+interface Props {
+  variant?: 'inline' | 'banner' | 'compact';
+  heading?: string;
+  subtext?: string;
+  buttonText?: string;
+  calendlyUrl?: string;
+}
+
+const {
+  variant = 'inline',
+  heading = 'Book an exploratory call',
+  subtext = '45 minutes, $175. I\'ll dig into your stack and tell you what\'s broken and what to fix first.',
+  buttonText = 'Book a call',
+  calendlyUrl = 'https://calendly.com/mkultraman/mkultraman-exploratory-call',
+} = Astro.props;
+---
+
+{variant === 'banner' && (
+  <div class="booking-banner">
+    <div class="booking-banner__inner">
+      <div class="booking-banner__content">
+        <p class="booking-banner__heading">{heading}</p>
+        <p class="booking-banner__sub">{subtext}</p>
+      </div>
+      <div class="booking-banner__actions">
+        <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">{buttonText} &rarr;</a>
+        <a href="/contact" class="booking-banner__alt">or send a message</a>
+      </div>
+    </div>
+  </div>
+)}
+
+{variant === 'inline' && (
+  <div class="booking-inline">
+    <p class="booking-inline__heading">{heading}</p>
+    <p class="booking-inline__sub">{subtext}</p>
+    <div class="booking-inline__actions">
+      <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">{buttonText} &rarr;</a>
+      <span class="booking-inline__or">or</span>
+      <a href="/contact" class="booking-inline__alt">send a message</a>
+    </div>
+  </div>
+)}
+
+{variant === 'compact' && (
+  <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" class="booking-compact">
+    <span class="booking-compact__dot">&#9679;</span>
+    <span class="booking-compact__text">{buttonText}</span>
+    <span class="booking-compact__arrow">&rarr;</span>
+  </a>
+)}
+
+<style>
+  /* ── Banner variant ── */
+  .booking-banner {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-32);
+  }
+  .booking-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-32);
+  }
+  .booking-banner__heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: var(--space-4);
+  }
+  .booking-banner__sub {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .booking-banner__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-8);
+    flex-shrink: 0;
+  }
+  .booking-banner__alt {
+    font-size: 12px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .booking-banner__alt:hover { color: var(--text); }
+
+  /* ── Inline variant ── */
+  .booking-inline {
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-32);
+    margin-top: var(--space-48);
+  }
+  .booking-inline__heading {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-8);
+  }
+  .booking-inline__sub {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-24);
+  }
+  .booking-inline__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-16);
+  }
+  .booking-inline__or {
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+  .booking-inline__alt {
+    font-size: 14px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .booking-inline__alt:hover { color: var(--text); }
+
+  /* ── Compact variant ── */
+  .booking-compact {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-8);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: color 0.15s;
+    text-decoration: none;
+  }
+  .booking-compact:hover { color: var(--accent); }
+  .booking-compact__dot {
+    font-size: 6px;
+    color: var(--accent);
+  }
+  .booking-compact__arrow {
+    transition: transform 0.15s;
+  }
+  .booking-compact:hover .booking-compact__arrow {
+    transform: translateX(3px);
+  }
+
+  @media (max-width: 768px) {
+    .booking-banner__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

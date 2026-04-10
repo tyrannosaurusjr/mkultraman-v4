@@ -111,6 +111,24 @@ const tiers = [
         </div>
       </div>
     </section>
+
+    <section class="tool-consult">
+      <div class="container">
+        <div class="tool-consult__box">
+          <div class="tool-consult__content">
+            <p class="tool-consult__heading">Running more than one business in Japan?</p>
+            <p class="tool-consult__sub">
+              Tetsuno Claw handles day-to-day ops. If your systems need a
+              deeper overhaul — consolidated tools, clean workflows, real
+              infrastructure — I do that too.
+            </p>
+          </div>
+          <div class="tool-consult__actions">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <Footer />
 </Base>
@@ -314,8 +332,42 @@ const tiers = [
     font-size: 12px;
   }
 
+  /* ── Consult CTA ── */
+  .tool-consult {
+    padding: 0 0 var(--space-96);
+  }
+  .tool-consult__box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-32);
+  }
+  .tool-consult__heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: var(--space-4);
+  }
+  .tool-consult__sub {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    max-width: 480px;
+  }
+  .tool-consult__actions {
+    flex-shrink: 0;
+  }
+
   @media (max-width: 768px) {
     .agents__grid { grid-template-columns: 1fr; }
     .pricing__grid { grid-template-columns: 1fr; }
+    .tool-consult__box {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 </style>

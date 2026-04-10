@@ -1,4 +1,5 @@
 ---
+import Newsletter from './Newsletter.astro';
 const year = new Date().getFullYear();
 ---
 
@@ -35,11 +36,13 @@ const year = new Date().getFullYear();
       <div class="footer__col">
         <p class="footer__col-title">Connect</p>
         <ul class="footer__links">
+          <li><a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener">Book a call</a></li>
           <li><a href="https://instagram.com/mkultraman" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://linkedin.com/in/mkultraman" target="_blank" rel="noopener">LinkedIn</a></li>
           <li><a href="/guild">Ultra Guild</a></li>
-          <li><a href="#inquiry">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
+        <Newsletter variant="footer" />
       </div>
     </div>
 

@@ -1,0 +1,109 @@
+---
+interface Props {
+  variant?: 'section' | 'footer';
+}
+
+const { variant = 'section' } = Astro.props;
+const SUBSTACK_URL = 'https://mkultraman.substack.com/subscribe';
+---
+
+{variant === 'section' && (
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__inner">
+        <div class="newsletter__content">
+          <p class="eyebrow">Newsletter</p>
+          <h2 class="newsletter__heading">The Japan Operator Briefing</h2>
+          <p class="newsletter__sub">
+            What I'm watching in Japan — infrastructure, strategy, and market
+            dynamics. One email when I publish. No spam, no sequences.
+          </p>
+        </div>
+        <div class="newsletter__form">
+          <a href={SUBSTACK_URL} target="_blank" rel="noopener noreferrer" class="btn btn-primary newsletter__btn">
+            Subscribe on Substack &rarr;
+          </a>
+          <p class="newsletter__note">Join operators in Japan. Free. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+{variant === 'footer' && (
+  <div class="newsletter-footer">
+    <p class="newsletter-footer__label">Get the briefing</p>
+    <a href={SUBSTACK_URL} target="_blank" rel="noopener noreferrer" class="newsletter-footer__link">
+      Subscribe on Substack &rarr;
+    </a>
+  </div>
+)}
+
+<style>
+  /* ── Section variant ── */
+  .newsletter {
+    padding: var(--space-64) 0;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .newsletter__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-64);
+    align-items: center;
+  }
+  .newsletter__heading {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin: var(--space-16) 0 var(--space-12);
+  }
+  .newsletter__sub {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    max-width: 420px;
+  }
+  .newsletter__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  .newsletter__btn {
+    width: auto;
+    display: inline-flex;
+    align-self: flex-start;
+  }
+  .newsletter__note {
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+
+  /* ── Footer variant ── */
+  .newsletter-footer {
+    margin-top: var(--space-16);
+  }
+  .newsletter-footer__label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: var(--space-8);
+  }
+  .newsletter-footer__link {
+    font-size: 14px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .newsletter-footer__link:hover { color: var(--text); }
+
+  @media (max-width: 768px) {
+    .newsletter__inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-32);
+    }
+  }
+</style>

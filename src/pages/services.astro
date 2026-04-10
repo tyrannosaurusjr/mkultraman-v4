@@ -98,7 +98,10 @@ const servicesSchema = {
               </div>
             </div>
 
-            <a href="/contact" class="btn btn-primary">Start with an audit →</a>
+            <div class="service-actions">
+              <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
+              <a href="/contact" class="btn-secondary">or send a message</a>
+            </div>
           </div>
         </div>
       </div>
@@ -151,7 +154,10 @@ const servicesSchema = {
               </div>
             </div>
 
-            <a href="/contact" class="btn btn-primary">Discuss a build →</a>
+            <div class="service-actions">
+              <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
+              <a href="/contact" class="btn-secondary">or send a message</a>
+            </div>
           </div>
         </div>
       </div>
@@ -200,7 +206,10 @@ const servicesSchema = {
               </div>
             </div>
 
-            <a href="/contact" class="btn btn-primary">Inquire about retainer →</a>
+            <div class="service-actions">
+              <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
+              <a href="/contact" class="btn-secondary">or send a message</a>
+            </div>
           </div>
         </div>
       </div>
@@ -210,8 +219,11 @@ const servicesSchema = {
     <section class="services-cta">
       <div class="container">
         <h2>Not sure which fits?</h2>
-        <p>Tell me what's going on and I'll tell you what makes sense.</p>
-        <a href="/contact" class="btn btn-primary">Get in touch →</a>
+        <p>45 minutes. I'll dig into your situation and tell you what makes sense.</p>
+        <div class="services-cta__actions">
+          <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
+          <a href="/contact" class="services-cta__alt">prefer to write? send a message</a>
+        </div>
       </div>
     </section>
 
@@ -378,11 +390,42 @@ const servicesSchema = {
     margin-bottom: var(--space-32);
   }
 
+  /* Service actions */
+  .service-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-16);
+  }
+  .btn-secondary {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .btn-secondary:hover { color: var(--text); }
+
+  /* Bottom CTA actions */
+  .services-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+  }
+  .services-cta__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .services-cta__alt:hover { color: var(--text); }
+
   @media (max-width: 768px) {
     .service-detail__inner {
       grid-template-columns: 1fr;
       gap: var(--space-32);
     }
     .service-num { font-size: 32px; }
+    .service-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 </style>

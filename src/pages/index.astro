@@ -8,6 +8,7 @@ import Process from '../components/Process.astro';
 import About from '../components/About.astro';
 import Proof from '../components/Proof.astro';
 import Insights from '../components/Insights.astro';
+import Newsletter from '../components/Newsletter.astro';
 import Footer from '../components/Footer.astro';
 ---
 
@@ -21,12 +22,17 @@ import Footer from '../components/Footer.astro';
     <About />
     <Proof />
     <Insights />
+    <Newsletter />
+
     <!-- Bottom CTA -->
     <section class="bottom-cta">
       <div class="container">
         <h2>Ready to fix the stack?</h2>
-        <p>Tell me what's broken. Free initial reply, no obligations.</p>
-        <a href="/contact" class="btn btn-primary">Get in touch →</a>
+        <p>45 minutes. I'll dig into your stack and tell you exactly what's broken.</p>
+        <div class="bottom-cta__actions">
+          <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
+          <a href="/contact" class="bottom-cta__alt">prefer to write? send a message</a>
+        </div>
       </div>
     </section>
   </main>
@@ -52,4 +58,16 @@ import Footer from '../components/Footer.astro';
     color: var(--text-muted);
     margin-bottom: var(--space-32);
   }
+  .bottom-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+  }
+  .bottom-cta__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .bottom-cta__alt:hover { color: var(--text); }
 </style>
