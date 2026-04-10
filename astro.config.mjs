@@ -27,11 +27,28 @@ export default defineConfig({
   prefetch: true,
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/guild'),
+      filter: (page) =>
+        !page.includes('/guild') &&
+        !page.includes('/privacy') &&
+        !page.includes('/terms'),
       serialize: (item) => {
-        const match = item.url.match(/\/blog\/([^/]+)\/$/);
-        if (match && blogDates.has(match[1])) {
-          item.lastmod = blogDates.get(match[1]);
+        // Blog posts: use real pubDate as lastmod
+        const blogMatch = item.url.match(/\/blog\/([^/]+)\/$/);
+        if (blogMatch && blogDates.has(blogMatch[1])) {
+          item.lastmod = blogDates.get(blogMatch[1]);
+          return item;
+        }
+        // Commercial pages: pin to known build date
+        const commercialLastmod = {
+          'https://mkultraman.com/': '2026-04-10',
+          'https://mkultraman.com/services/': '2026-04-10',
+          'https://mkultraman.com/services/stack-audit/': '2026-04-10',
+          'https://mkultraman.com/services/infrastructure-build/': '2026-04-10',
+          'https://mkultraman.com/services/ongoing-management/': '2026-04-10',
+          'https://mkultraman.com/contact/': '2026-04-10',
+        };
+        if (commercialLastmod[item.url]) {
+          item.lastmod = new Date(commercialLastmod[item.url]);
         }
         return item;
       },
