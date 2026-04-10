@@ -83,6 +83,29 @@ const features = [
       </div>
     </section>
 
+    <section class="consult-bridge">
+      <div class="container">
+        <div class="consult-bridge__box">
+          <div class="consult-bridge__content">
+            <p class="eyebrow">Can't wait?</p>
+            <h2 class="consult-bridge__heading">I build this manually for clients today.</h2>
+            <p class="consult-bridge__body">
+              Hitoe is still in development, but the problem it solves — scattered
+              members across Stripe, Luma, Mailchimp, and spreadsheets — is one I fix
+              for consulting clients right now. If your contact data is a mess and you
+              need it sorted before the product ships, let's talk.
+            </p>
+          </div>
+          <div class="consult-bridge__action">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book an exploratory call — $175 &rarr;
+            </a>
+            <a href="/contact" class="consult-bridge__alt">or send a message</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="waitlist" id="waitlist">
       <div class="container">
         <div class="waitlist__box">
@@ -260,6 +283,46 @@ const features = [
     color: var(--text-muted);
     line-height: 1.6;
   }
+
+  /* ── Consulting bridge ── */
+  .consult-bridge {
+    padding: var(--space-96) 0;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .consult-bridge__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-64);
+  }
+  .consult-bridge__heading {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-16) 0 var(--space-16);
+  }
+  .consult-bridge__body {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 540px;
+  }
+  .consult-bridge__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+    flex-shrink: 0;
+  }
+  .consult-bridge__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .consult-bridge__alt:hover { color: var(--text); }
 
   /* ── Waitlist ── */
   .waitlist {

@@ -55,6 +55,10 @@ const servicesSchema = {
           Most engagements start with an audit. Some turn into a build.
           The ones that go best become ongoing.
         </p>
+        <div class="services-availability">
+          <span class="availability-dot"></span>
+          <span class="availability-text">Currently accepting <strong>2 new audit clients</strong> this quarter</span>
+        </div>
       </div>
     </section>
 
@@ -97,6 +101,7 @@ const servicesSchema = {
                 <span class="spec-value">¥150,000</span>
               </div>
             </div>
+            <p class="anchor-note">An internal IT hire costs ¥5–8M/year before benefits. This is a one-time diagnostic — most clients recover the cost inside 30 days.</p>
 
             <div class="service-actions">
               <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
@@ -153,6 +158,7 @@ const servicesSchema = {
                 <span class="spec-value">¥500,000</span>
               </div>
             </div>
+            <p class="anchor-note">A comparable agency engagement in Tokyo runs ¥2–5M and takes twice as long. This is operator-grade work, done by someone who actually runs businesses here.</p>
 
             <div class="service-actions">
               <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
@@ -205,6 +211,7 @@ const servicesSchema = {
                 <span class="spec-value">¥175,000 / month</span>
               </div>
             </div>
+            <p class="anchor-note">¥175K/month vs. ¥600K+ for a full-time IT manager — without the overhead, onboarding time, or single point of failure.</p>
 
             <div class="service-actions">
               <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
@@ -388,6 +395,39 @@ const servicesSchema = {
     font-size: 17px;
     color: var(--text-muted);
     margin-bottom: var(--space-32);
+  }
+
+  /* Availability indicator */
+  .services-availability {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    margin-top: var(--space-32);
+  }
+  .availability-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2);
+  }
+  .availability-text {
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+  .availability-text strong {
+    color: var(--text);
+  }
+
+  /* Price anchor note */
+  .anchor-note {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.55;
+    font-style: italic;
+    max-width: 520px;
+    margin-bottom: var(--space-24);
   }
 
   /* Service actions */

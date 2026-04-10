@@ -35,7 +35,24 @@ const blogPostingSchema = {
   "headline": post.data.title,
   "description": post.data.description,
   "datePublished": post.data.pubDate.toISOString(),
-  "dateModified": post.data.pubDate.toISOString(),
+  "dateModified": (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+  ...(post.data.heroImage ? {
+    "image": {
+      "@type": "ImageObject",
+      "url": post.data.heroImage.startsWith('http')
+        ? post.data.heroImage
+        : `https://mkultraman.com${post.data.heroImage}`,
+      "width": 1200,
+      "height": 630
+    }
+  } : {
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://mkultraman.com/og-default.png",
+      "width": 1200,
+      "height": 630
+    }
+  }),
   "author": {
     "@type": "Person",
     "@id": "https://mkultraman.com/#person",

@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base
+  title="Page Not Found — MKUltraman"
+  description="This page doesn't exist. Find what you're looking for below."
+  noindex={true}
+>
+  <Nav />
+  <main class="not-found">
+    <div class="container">
+      <div class="not-found__inner">
+        <p class="not-found__code">404</p>
+        <h1 class="not-found__heading">This page doesn't exist.</h1>
+        <p class="not-found__sub">
+          Broken link, mistyped URL, or something that moved. Here's where to go instead.
+        </p>
+
+        <div class="not-found__links">
+          <a href="/" class="not-found__link">
+            <span class="not-found__link-label">Home</span>
+            <span class="not-found__link-desc">The full picture</span>
+          </a>
+          <a href="/services" class="not-found__link">
+            <span class="not-found__link-label">Services</span>
+            <span class="not-found__link-desc">Stack audits, builds, retainers</span>
+          </a>
+          <a href="/blog" class="not-found__link">
+            <span class="not-found__link-label">Writing</span>
+            <span class="not-found__link-desc">What I'm watching in Japan</span>
+          </a>
+          <a href="/tools" class="not-found__link">
+            <span class="not-found__link-label">Tools</span>
+            <span class="not-found__link-desc">Software I built for operators</span>
+          </a>
+        </div>
+
+        <div class="not-found__cta">
+          <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Book an exploratory call — $175 &rarr;
+          </a>
+          <a href="/contact" class="not-found__contact">or send a message</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<style>
+  .not-found {
+    min-height: calc(100dvh - 60px);
+    display: flex;
+    align-items: center;
+    padding: var(--space-96) 0;
+  }
+
+  .not-found__inner {
+    max-width: 560px;
+  }
+
+  .not-found__code {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .not-found__heading {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.025em;
+    line-height: 1.0;
+    margin-bottom: var(--space-16);
+  }
+
+  .not-found__sub {
+    font-size: 17px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: var(--space-48);
+  }
+
+  .not-found__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: var(--space-48);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .not-found__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-16) var(--space-24);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+    text-decoration: none;
+  }
+  .not-found__link:last-child { border-bottom: none; }
+  .not-found__link:hover { background: var(--surface); }
+
+  .not-found__link-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .not-found__link-desc {
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  .not-found__cta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-16);
+  }
+
+  .not-found__contact {
+    font-size: 14px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .not-found__contact:hover { color: var(--text); }
+
+  @media (max-width: 640px) {
+    .not-found__link {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-4);
+    }
+    .not-found__cta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

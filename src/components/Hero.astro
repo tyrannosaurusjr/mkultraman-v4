@@ -86,11 +86,10 @@ const FORMSPREE_ID = "mbdppqqq";
           </p>
         </form>
 
-        <div class="form-divider"></div>
-        <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="form-booking">
-          <span class="form-booking__text">Prefer to talk? <strong>Book a 45-min exploratory call — $175</strong></span>
-          <span class="form-booking__arrow">&rarr;</span>
-        </a>
+        <p class="form-note">
+          <span class="dot">&#9679;</span>
+          Reply within 48 hours. No sales calls, no pitch decks.
+        </p>
       </div>
     </div>
 
@@ -204,38 +203,16 @@ const FORMSPREE_ID = "mbdppqqq";
     flex-direction: column;
     gap: var(--space-16);
   }
-  .form-divider {
-    height: 1px;
-    background: var(--border);
-    margin: var(--space-16) 0;
-  }
-  .form-booking {
+  .form-note {
+    margin-top: var(--space-16);
+    font-size: 11px;
+    color: var(--text-dim);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: var(--space-12) var(--space-16);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    transition: border-color 0.15s;
-    text-decoration: none;
+    gap: var(--space-8);
+    justify-content: center;
   }
-  .form-booking:hover { border-color: var(--accent); }
-  .form-booking__text {
-    font-size: 13px;
-    color: var(--text-dim);
-  }
-  .form-booking__text strong {
-    color: var(--text);
-    font-weight: 600;
-  }
-  .form-booking__arrow {
-    color: var(--accent);
-    font-size: 14px;
-    transition: transform 0.15s;
-  }
-  .form-booking:hover .form-booking__arrow {
-    transform: translateX(3px);
-  }
+  .dot { color: var(--accent); font-size: 8px; }
   .hidden { display: none; }
 
   .form-success {
