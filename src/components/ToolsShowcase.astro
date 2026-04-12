@@ -1,0 +1,207 @@
+---
+const tools = [
+  {
+    slug: 'redditreach',
+    name: 'RedditReach',
+    tag: 'Authority generation',
+    status: 'Live',
+    price: 'From $29/mo',
+    desc: 'Monitor subreddits for keyword-matched posts, draft contextual replies, and schedule engagement automatically. Built for operators who want inbound without paying for ads.',
+  },
+  {
+    slug: 'tetsuno-claw',
+    name: 'Tetsuno Claw',
+    tag: 'AI work assistant',
+    status: 'Live',
+    price: 'Free tier',
+    desc: 'Eleven specialist AI agents in one Telegram bot — tax, scheduling, transit, legal intake, research, and more. Built on Claude, tuned for English-speaking operators in Japan.',
+  },
+  {
+    slug: 'japan-money-tracker',
+    name: 'Japan Money Tracker',
+    tag: 'Tax & finance',
+    status: 'Live',
+    price: 'Free',
+    desc: 'AI-powered receipt scanning, multi-currency expense tracking, and 確定申告-ready categories. Paste OCR text or upload photos — Claude extracts the details automatically.',
+  },
+  {
+    slug: 'hitoe',
+    name: 'Hitoe',
+    tag: 'Membership management',
+    status: 'Coming soon',
+    price: 'Waitlist',
+    desc: 'Normalize members and contacts across Stripe, Luma, Mailchimp, and more into one canonical list. Stop guessing who\'s actually in your community.',
+  },
+];
+---
+
+<section class="tools-showcase">
+  <div class="container">
+    <div class="tools-header">
+      <div>
+        <p class="eyebrow">Tools</p>
+        <h2 class="tools-headline">Software I built for operators.</h2>
+      </div>
+      <p class="tools-sub">
+        I use all of these in my own practice. My clients use them too.
+        Built for the specific friction points of running a business in Japan.
+      </p>
+    </div>
+
+    <div class="tools-grid">
+      {tools.map(t => (
+        <a href={`/tools/${t.slug}`} class="tool-card">
+          <div class="tool-card__top">
+            <div class="tool-card__tags">
+              <span class="tool-tag">{t.tag}</span>
+              <span class={`tool-status ${t.status === 'Live' ? 'tool-status--live' : 'tool-status--soon'}`}>
+                {t.status}
+              </span>
+            </div>
+            <span class="tool-price">{t.price}</span>
+          </div>
+          <h3 class="tool-name">{t.name}</h3>
+          <p class="tool-desc">{t.desc}</p>
+          <span class="tool-link">View tool &rarr;</span>
+        </a>
+      ))}
+    </div>
+
+    <div class="tools-footer">
+      <a href="/tools" class="tools-all">See all tools &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tools-showcase {
+    padding: var(--space-96) 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .tools-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-48);
+    align-items: end;
+    margin-bottom: var(--space-64);
+  }
+
+  .tools-headline {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-top: var(--space-16);
+  }
+
+  .tools-sub {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    align-self: end;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-24);
+  }
+
+  .tool-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .tool-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .tool-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+  }
+
+  .tool-card__tags {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+  }
+
+  .tool-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    border-radius: var(--radius-full);
+  }
+
+  .tool-status {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .tool-status--live { color: #4ade80; }
+  .tool-status--soon { color: var(--text-dim); }
+
+  .tool-price {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+  }
+
+  .tool-name {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+
+  .tool-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    flex: 1;
+  }
+
+  .tool-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    margin-top: var(--space-8);
+  }
+
+  .tools-footer {
+    margin-top: var(--space-32);
+    text-align: center;
+  }
+
+  .tools-all {
+    font-size: 14px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .tools-all:hover { color: var(--accent); }
+
+  @media (max-width: 768px) {
+    .tools-header { grid-template-columns: 1fr; gap: var(--space-16); }
+    .tools-grid { grid-template-columns: 1fr; }
+  }
+</style>
