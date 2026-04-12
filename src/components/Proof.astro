@@ -1,36 +1,39 @@
 ---
 const sectors = [
-  "Food & Beverage",
+  "Community & Events",
+  "Construction",
   "Professional Services",
-  "Media & Publishing",
-  "Real Estate",
-  "Retail",
-  "Healthcare",
-  "Education",
-  "Logistics",
+  "IT & Technology",
+  "Coaching",
+  "Entertainment",
+  "Networks",
+  "Media",
 ];
 
 const outcomes = [
-  { stat: "¥2–8M", label: "typical annual tool spend recovered per audit" },
-  { stat: "60 days", label: "average time from audit to working replacement system" },
-  { stat: "30%+", label: "typical reduction in operational overhead" },
+  { stat: "¥6.5M", label: "annual revenue increase for a community client after payment and membership integration" },
+  { stat: "120×", label: "traffic growth for a construction firm — from under 5 to 600+ daily visitors" },
+  { stat: "3+", label: "qualified leads added per month via Reddit outreach automation" },
 ];
 
-const testimonials = [
+const cases = [
   {
-    quote: "We were paying for 14 different tools and using maybe half the features on three of them. The audit paid for itself in the first month.",
-    role: "Operations Director",
-    industry: "F&B group, Tokyo",
+    industry: "Community organization · Tokyo",
+    result: "¥6.5M revenue increase",
+    before: "Collecting payment by bank transfer, running events off a broken website, emailing a messy list with account details and hoping people paid in advance. Cash at the door for the rest.",
+    after: "Integrated Stripe payments, Luma event management, and membership tracking into a single system. Revenue became visible and predictable for the first time.",
   },
   {
-    quote: "He rebuilt our entire project management stack in six weeks. The team actually uses it now — that's the difference.",
-    role: "CEO",
-    industry: "Media company, Osaka",
+    industry: "Construction · Japan",
+    result: "600+ daily visitors, 7 qualified inquiries/month",
+    before: "Under 5 visitors per day. Bloated images, thin content, orphaned pages, off-putting copy, and a generic domain that signaled nothing about the business.",
+    after: "Full rebuild with hub-and-spoke content architecture, optimized media, automated contact system, and a premium industry domain secured. Top Google placement within 6 months.",
   },
   {
-    quote: "Having someone who understands both the Japan side and the tech side is rare. We stopped burning money on tools that don't talk to each other.",
-    role: "Managing Partner",
-    industry: "Professional services, Tokyo",
+    industry: "SME operator · ongoing",
+    result: "3+ converting leads/month from Reddit",
+    before: "No systematic way to reach the communities where qualified buyers were already asking relevant questions.",
+    after: "RedditReach monitors target subreddits for relevant posts and surfaces reply opportunities. The client schedules contextual responses and converts Reddit traffic into paying customers.",
   },
 ];
 ---
@@ -50,16 +53,19 @@ const testimonials = [
       <div class="proof-divider"></div>
 
       <div class="proof-testimonials">
-        <p class="testimonials-label">What clients say</p>
+        <p class="testimonials-label">Client results</p>
         <div class="testimonial-grid">
-          {testimonials.map(t => (
-            <blockquote class="testimonial">
-              <p class="testimonial__quote">"{t.quote}"</p>
-              <footer class="testimonial__source">
-                <span class="testimonial__role">{t.role}</span>
-                <span class="testimonial__industry">{t.industry}</span>
-              </footer>
-            </blockquote>
+          {cases.map(c => (
+            <div class="testimonial">
+              <div class="testimonial__header">
+                <span class="testimonial__result">{c.result}</span>
+                <span class="testimonial__industry">{c.industry}</span>
+              </div>
+              <div class="testimonial__body">
+                <p class="testimonial__before"><strong>Before:</strong> {c.before}</p>
+                <p class="testimonial__after"><strong>After:</strong> {c.after}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -176,31 +182,46 @@ const testimonials = [
     gap: var(--space-16);
   }
 
-  .testimonial__quote {
-    font-size: 14px;
-    color: var(--text-muted);
-    line-height: 1.65;
-    font-style: italic;
-    flex: 1;
-  }
-
-  .testimonial__source {
+  .testimonial__header {
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    padding-top: var(--space-12);
-    border-top: 1px solid var(--border);
+    gap: var(--space-4);
+    padding-bottom: var(--space-16);
+    border-bottom: 1px solid var(--border);
   }
 
-  .testimonial__role {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text);
+  .testimonial__result {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.01em;
   }
 
   .testimonial__industry {
-    font-size: 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
     color: var(--text-dim);
+    letter-spacing: 0.05em;
+  }
+
+  .testimonial__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .testimonial__before,
+  .testimonial__after {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  .testimonial__before strong,
+  .testimonial__after strong {
+    color: var(--text-dim);
+    font-weight: 600;
   }
 
   @media (max-width: 768px) {
