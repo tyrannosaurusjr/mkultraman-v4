@@ -10,13 +10,13 @@ const tools = [
     name: 'RedditReach',
     tag: 'Authority generation',
     headline: 'Build authority where your customers already look.',
-    body: 'Monitor subreddits for keyword-matched posts, generate contextual replies, and schedule engagement that looks natural. Staggered timing, cross-post detection, best-time analytics. Built for operators who want inbound without paying for ads.',
+    body: 'Monitor subreddits for keyword-matched posts, generate contextual replies using Claude, Gemini, and ChatGPT, and schedule engagement that looks natural. Staggered timing, cross-post detection, best-time analytics. Built for operators who want inbound without paying for ads.',
     status: 'Live',
     price: 'From $29/mo',
   },
   {
     slug: 'tetsuno-claw',
-    name: 'Tetsuno Claw',
+    name: 'TetsuClaw',
     tag: 'AI work assistant',
     headline: 'A work operating system for Japan.',
     body: 'Eleven specialist AI agents in one Telegram bot — tax, scheduling, transit, real estate, legal intake, content, research, and more. Built on Claude, tuned for English-speaking operators navigating Japanese corporate infrastructure.',
@@ -46,7 +46,7 @@ const tools = [
 
 <Base
   title="Tools — MKUltraman"
-  description="Operator tools for SMEs in Japan. RedditReach, Tetsuno Claw, Japan Money Tracker, and Hitoe — built by MKUltraman."
+  description="Operator tools for SMEs in Japan. RedditReach, TetsuClaw, Japan Money Tracker, and Hitoe — built by MKUltraman."
 >
   <ToolsSchema />
   <Nav />
@@ -72,10 +72,8 @@ const tools = [
         <div class="tools-grid">
           {tools.map((t) => (
             <a
-              href={t.external ? t.url : `/tools/${t.slug}`}
+              href={`/tools/${t.slug}`}
               class="tool-card"
-              target={t.external ? "_blank" : undefined}
-              rel={t.external ? "noopener noreferrer" : undefined}
             >
               <div class="tool-card__top">
                 <span class="tool-card__tag">{t.tag}</span>

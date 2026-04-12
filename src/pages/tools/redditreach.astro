@@ -6,7 +6,7 @@ import ToolsSchema from '../../components/ToolsSchema.astro';
 
 const features = [
   { title: 'Keyword monitoring', desc: 'Track subreddits for posts matching your keywords. Get notified when opportunities appear.' },
-  { title: 'Contextual reply drafts', desc: 'AI-generated replies that match the tone and context of the thread. No generic spam.' },
+  { title: 'Contextual reply drafts', desc: 'Replies drafted by Claude, Gemini, and ChatGPT — each model evaluated for tone and context fit. No generic spam.' },
   { title: 'Smart scheduling', desc: 'Replies staggered 8-25 minutes apart, max 4/hour with jitter. Looks natural because it is.' },
   { title: 'Cross-post detection', desc: 'Automatically skips threads you\'ve already engaged with. No duplicate replies, no ban risk.' },
   { title: 'Best-time analytics', desc: 'Engagement heatmaps per subreddit show when your replies get the most traction.' },
@@ -14,7 +14,7 @@ const features = [
 ];
 
 const tiers = [
-  { name: 'Pro Monthly', price: '$29', period: '/month', features: ['Unlimited subreddits', 'AI reply generation', 'Smart scheduling', 'Analytics dashboard', 'Cross-post detection'] },
+  { name: 'Pro Monthly', price: '$29', period: '/month', features: ['Unlimited subreddits', 'Claude + Gemini + ChatGPT drafts', 'Smart scheduling', 'Analytics dashboard', 'Cross-post detection'] },
   { name: 'Pro Yearly', price: '$249', period: '/year', note: 'Save $99', features: ['Everything in monthly', 'Priority support', '2 months free'] },
 ];
 ---
@@ -39,8 +39,9 @@ const tiers = [
         </p>
         <p class="product-hero__sub">
           Reddit is where people go for real recommendations. RedditReach
-          monitors relevant subreddits, drafts contextual replies, and
-          schedules them to look natural. You build authority. Inbound follows.
+          monitors relevant subreddits, drafts contextual replies using
+          Claude, Gemini, and ChatGPT, then schedules them to look natural.
+          You build authority. Inbound follows.
         </p>
         <div class="product-hero__actions">
           <a href="#pricing" class="btn btn-primary product-hero__btn">See pricing &rarr;</a>
