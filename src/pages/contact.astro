@@ -99,9 +99,15 @@ const FORMSPREE_ID = "mbdppqqq";
               <label class="label" for="c-service">What kind of help are you looking for? <span class="optional">(optional)</span></label>
               <select class="input" id="c-service" name="service">
                 <option value="">Not sure yet</option>
-                <option value="audit">Stack Audit</option>
-                <option value="build">Infrastructure Build</option>
-                <option value="management">Ongoing Management</option>
+                <optgroup label="Consulting">
+                  <option value="audit">Stack Audit</option>
+                  <option value="build">Infrastructure Build</option>
+                  <option value="management">Ongoing Management</option>
+                </optgroup>
+                <optgroup label="White Label">
+                  <option value="your-sauce">Your Sauce — branded hot sauce</option>
+                  <option value="your-product">Your Product — pitch me your product</option>
+                </optgroup>
               </select>
             </div>
 
@@ -240,6 +246,13 @@ const FORMSPREE_ID = "mbdppqqq";
   const btn = document.getElementById('contact-submit') as HTMLButtonElement;
   const success = document.getElementById('contact-success') as HTMLElement;
   const error = document.getElementById('contact-error') as HTMLElement;
+  const serviceSelect = document.getElementById('c-service') as HTMLSelectElement;
+
+  const topic = new URLSearchParams(window.location.search).get('topic');
+  if (topic && serviceSelect) {
+    const match = Array.from(serviceSelect.options).find((o) => o.value === topic);
+    if (match) serviceSelect.value = topic;
+  }
 
   if (form) {
     form.addEventListener('submit', async (e) => {

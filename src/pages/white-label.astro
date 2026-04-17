@@ -1,0 +1,612 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between the three offerings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pain Sauce is my own product — hot sauce with Worship Pain branding, sold on my band's store. Your Sauce is the same service turned outward — you get your label on the same Habanebros sauce, and I build and run your sales funnel for a cut. Your Product is the inverse — if you make something that isn't moving, I'll white-label it under my own brand and take over distribution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who makes the actual hot sauce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Habanebros. They manufacture the sauce for Pain Sauce and for any client who wants their own branded version. The product is real — not a dropshipped placeholder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of products will you white-label?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any product, but I'm selective. Food, merch, tools, hardware — it depends on whether I think I can actually move it. If it's a good product, you have margin to share, and it fits something I can market, we can talk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are deals structured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your Sauce: you pay Habanebros their wholesale, I take a cut of your online sales. No upfront fee. Your Product: case-by-case — could be rev share, bulk purchase, or a hybrid, depending on what makes sense for the product and my distribution cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a website or audience already?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For Your Sauce — a brand people actually care about helps, but I can stand up the sales page from scratch. For Your Product — you don't need an audience at all. That's what I'm bringing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the proof this works?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pain Sauce — a hot sauce I put my band's branding on, sold through my own funnel. I did it before turning it into a service. The same pipeline is what powers Your Sauce. The same distribution muscle is what powers Your Product."
+      }
+    }
+  ]
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "White Label — Branding and distribution services",
+  "description": "Three offerings: Pain Sauce (my own branded hot sauce), Your Sauce (I help you launch your own branded hot sauce), and Your Product (I white-label and distribute your product under my brand).",
+  "provider": {
+    "@type": "Person",
+    "@id": "https://mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://mkultraman.com"
+  }
+};
+---
+
+<Base
+  title="White Label — Branding and distribution services | MKUltraman"
+  description="Three doors into white labeling. Buy Pain Sauce (my hot sauce). Launch Your Sauce (your brand, my funnel). Or pitch Your Product (I'll white-label and distribute it under my name)."
+>
+  <Nav />
+
+  <main>
+
+    <!-- Hero -->
+    <section class="wl-hero">
+      <div class="container">
+        <div class="hero-top">
+          <span class="service-tag">White Label &mdash; Branding &amp; distribution</span>
+        </div>
+        <h1>White Label.</h1>
+        <p class="hero-lead">
+          Three doors into the same idea: good products deserve good branding
+          and the right distribution. Sometimes that's me putting my name on
+          someone else's product. Sometimes it's you putting yours on
+          Habanebros'. Sometimes it's me taking your product and moving it
+          under my brand.
+        </p>
+      </div>
+    </section>
+
+    <!-- The three offerings -->
+    <section class="offerings">
+      <div class="container">
+        <div class="offerings__grid">
+
+          <article class="offering">
+            <div class="offering__header">
+              <span class="offering__num">01</span>
+              <span class="offering__tag">My product</span>
+            </div>
+            <h2 class="offering__name">Pain Sauce</h2>
+            <p class="offering__headline">
+              My band's hot sauce. Real product. For sale now.
+            </p>
+            <p class="offering__body">
+              Worship Pain is my band. Pain Sauce is what happens when you
+              take your brand seriously enough to put it on a bottle. The
+              sauce is made by Habanebros, labeled with our art, sold on our
+              merch store. This is the original — and the proof the rest
+              works.
+            </p>
+            <div class="offering__deal">
+              <span class="deal-label">Deal</span>
+              <span class="deal-value">Buy a bottle</span>
+            </div>
+            <a href="https://worshippain.com/merch/pain-sauce" target="_blank" rel="noopener noreferrer" class="offering__cta">
+              Get Pain Sauce &rarr;
+            </a>
+          </article>
+
+          <article class="offering offering--highlight">
+            <div class="offering__header">
+              <span class="offering__num">02</span>
+              <span class="offering__tag">Service for creators</span>
+            </div>
+            <h2 class="offering__name">Your Sauce</h2>
+            <p class="offering__headline">
+              Your label on the same sauce. I build and run the funnel.
+            </p>
+            <p class="offering__body">
+              Bands, creators, restaurants, anyone with a brand people care
+              about. You pay Habanebros their wholesale directly — no
+              markup from me. I design the product page, set up the order
+              flow, and manage sales. You set the retail price. We split
+              what comes above Habanebros' cost.
+            </p>
+            <div class="offering__deal">
+              <span class="deal-label">Deal</span>
+              <span class="deal-value">No upfront fee &middot; rev share</span>
+            </div>
+            <a href="/contact?topic=your-sauce" class="offering__cta">
+              Start a sauce &rarr;
+            </a>
+          </article>
+
+          <article class="offering">
+            <div class="offering__header">
+              <span class="offering__num">03</span>
+              <span class="offering__tag">Inbound from producers</span>
+            </div>
+            <h2 class="offering__name">Your Product</h2>
+            <p class="offering__headline">
+              Got a good product that won't move? Pitch me.
+            </p>
+            <p class="offering__body">
+              If you make something real — food, merch, a tool, hardware —
+              and it's not getting the traction it deserves, send it my way.
+              If I think it's worthwhile and I can move it, I'll white-label
+              it under one of my brands and take over distribution. You keep
+              making the thing. I keep the numbers moving.
+            </p>
+            <div class="offering__deal">
+              <span class="deal-label">Deal</span>
+              <span class="deal-value">Case-by-case</span>
+            </div>
+            <a href="/contact?topic=your-product" class="offering__cta">
+              Pitch your product &rarr;
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof -->
+    <section class="proof">
+      <div class="container">
+        <div class="proof__inner">
+          <div class="proof__copy">
+            <p class="eyebrow">Proof of concept</p>
+            <h2>I built it for myself first.</h2>
+            <p>
+              Pain Sauce wasn't a business plan. It was me taking my band's
+              brand seriously enough to put it on something physical,
+              finding a real manufacturer (Habanebros), and building the
+              online flow to sell it. Once it was working, the question was
+              obvious: whose brand is next?
+            </p>
+            <p>
+              Your Sauce is the same pipeline, pointed at you. Your Product
+              is the same distribution muscle, pointed at someone else's
+              inventory. Different directions, same engine.
+            </p>
+          </div>
+          <div class="proof__card">
+            <div class="proof__label">Worship Pain</div>
+            <div class="proof__product-name">Pain Sauce</div>
+            <div class="proof__meta">
+              <span>Made by Habanebros</span>
+              <span>Sold on merch store</span>
+              <span>Custom label</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Good fit -->
+    <section class="fit">
+      <div class="container">
+        <div class="fit__inner">
+          <div>
+            <p class="eyebrow">Your Sauce — good fit if</p>
+            <ul class="fit__list">
+              <li>You have a brand people actually care about</li>
+              <li>You want merch that's different from a t-shirt</li>
+              <li>You want to sell online without running the technical side</li>
+              <li>You're okay with a rev share instead of fixed costs</li>
+            </ul>
+          </div>
+          <div>
+            <p class="eyebrow">Your Product — good fit if</p>
+            <ul class="fit__list">
+              <li>You make a real product that deserves more eyes on it</li>
+              <li>You're a better maker than a marketer</li>
+              <li>You have margin to share with a distribution partner</li>
+              <li>You don't mind someone else's brand on the front of it</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <p class="eyebrow">Questions</p>
+        <h2>Common questions.</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>What's the difference between the three offerings?</summary>
+            <p>Pain Sauce is my own product — my band's hot sauce, for sale. Your Sauce is the same service turned outward — your label on the same Habanebros sauce, I build and run your funnel for a cut. Your Product is the inverse — you make something good that isn't moving, I white-label it under my own brand and take over distribution.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Who makes the actual hot sauce?</summary>
+            <p>Habanebros. They manufacture the sauce for Pain Sauce and for any client who wants their own branded version. The product is real — not a dropshipped placeholder.</p>
+          </details>
+          <details class="faq__item">
+            <summary>What kind of products will you white-label?</summary>
+            <p>Any product, but I'm selective. Food, merch, tools, hardware — it depends on whether I think I can actually move it. If it's a good product, you have margin to share, and it fits something I can market, we can talk.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How are deals structured?</summary>
+            <p>Your Sauce: you pay Habanebros their wholesale, I take a cut of your online sales. No upfront fee. Your Product: case-by-case — could be rev share, bulk purchase, or a hybrid, depending on what makes sense for the product and my distribution cost.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Do I need a website or audience already?</summary>
+            <p>For Your Sauce — a brand people actually care about helps, but I can stand up the sales page from scratch. For Your Product — you don't need an audience at all. That's what I'm bringing.</p>
+          </details>
+          <details class="faq__item">
+            <summary>What's the proof this works?</summary>
+            <p>Pain Sauce — a hot sauce I put my band's branding on, sold through my own funnel. I did it before turning it into a service. The same pipeline is what powers Your Sauce. The same distribution muscle is what powers Your Product.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="cta-bottom">
+      <div class="container">
+        <h2>Pick a door.</h2>
+        <p>Tell me which one fits, and a few words about what you're working with.</p>
+        <div class="cta-bottom__actions">
+          <a href="https://worshippain.com/merch/pain-sauce" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buy Pain Sauce &rarr;</a>
+          <a href="/contact?topic=your-sauce" class="btn btn-primary">Start Your Sauce &rarr;</a>
+          <a href="/contact?topic=your-product" class="btn btn-primary">Pitch Your Product &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <Footer />
+</Base>
+
+<style>
+  /* Hero */
+  .wl-hero {
+    padding: var(--space-96) 0 var(--space-64);
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-top { margin-bottom: var(--space-16); }
+  .service-tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .wl-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(56px, 9vw, 128px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.035em;
+    line-height: 1.0;
+    margin-bottom: var(--space-24);
+  }
+  .hero-lead {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 640px;
+  }
+
+  /* Offerings grid */
+  .offerings {
+    padding: var(--space-64) 0 var(--space-96);
+    border-bottom: 1px solid var(--border);
+  }
+  .offerings__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-24);
+  }
+  .offering {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: border-color 0.2s ease;
+  }
+  .offering:hover { border-color: var(--accent); }
+  .offering--highlight { border-color: var(--accent); }
+  .offering__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .offering__num {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+  }
+  .offering__tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+  }
+  .offering__name {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .offering__headline {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .offering__body {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    flex: 1;
+  }
+  .offering__deal {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-12) 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .deal-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .deal-value {
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 500;
+  }
+  .offering__cta {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    transition: opacity 0.15s;
+  }
+  .offering__cta:hover { opacity: 0.8; }
+
+  /* Proof */
+  .proof {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .proof__inner {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: var(--space-64);
+    align-items: start;
+  }
+  .proof__copy h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-16) 0 var(--space-24);
+  }
+  .proof__copy p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-24);
+  }
+  .proof__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .proof__label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .proof__product-name {
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .proof__meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding-top: var(--space-16);
+    border-top: 1px solid var(--border);
+  }
+  .proof__meta span {
+    font-size: 13px;
+    color: var(--text-muted);
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .proof__meta span::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 12px;
+  }
+
+  /* Fit */
+  .fit {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .fit__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-64);
+  }
+  .fit__inner .eyebrow { margin-bottom: var(--space-16); }
+  .fit__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  .fit__list li {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .fit__list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 12px;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: var(--space-96) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .faq h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: var(--space-16) 0 var(--space-48);
+  }
+  .faq__list {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+  .faq__item {
+    padding: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .faq__item:last-child { border-bottom: none; }
+  .faq__item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-left: var(--space-16);
+  }
+  .faq__item[open] summary::after { content: '–'; }
+  .faq__item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: var(--space-16);
+  }
+
+  /* Bottom CTA */
+  .cta-bottom {
+    padding: var(--space-96) 0;
+    text-align: center;
+  }
+  .cta-bottom h2 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.02em;
+  }
+  .cta-bottom p {
+    font-size: 17px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-32);
+  }
+  .cta-bottom__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-12);
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 900px) {
+    .offerings__grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .proof__inner { grid-template-columns: 1fr; }
+    .fit__inner { grid-template-columns: 1fr; }
+    .cta-bottom__actions { flex-direction: column; }
+    .cta-bottom__actions .btn { width: 100%; }
+  }
+</style>
