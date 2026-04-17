@@ -82,9 +82,41 @@ const ogImageURL = new URL(ogImage, siteURL);
 
     <!-- Structured Data -->
     <SchemaOrg />
+
+    <!-- Price JPY display -->
+    <style is:global>
+      .price-jpy {
+        display: block;
+        font-size: 11px;
+        color: var(--text-dim);
+        font-family: var(--font-mono);
+        letter-spacing: 0.02em;
+        margin-top: 3px;
+        font-weight: 400;
+      }
+    </style>
   </head>
   <body>
     <slot />
     <Analytics />
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', async () => {
+        const els = document.querySelectorAll('[data-usd]');
+        if (!els.length) return;
+        let rate = parseFloat(sessionStorage.getItem('usd_jpy') || '0');
+        if (!rate) {
+          try {
+            const r = await fetch('https://api.frankfurter.app/latest?from=USD&to=JPY');
+            const d = await r.json();
+            rate = d.rates.JPY;
+            sessionStorage.setItem('usd_jpy', String(rate));
+          } catch { rate = 159; }
+        }
+        els.forEach(el => {
+          const jpy = Math.round(Number(el.dataset.usd) * rate);
+          el.textContent = '\u2248 \u00A5' + jpy.toLocaleString('ja-JP');
+        });
+      });
+    </script>
   </body>
 </html>
