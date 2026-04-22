@@ -1,6 +1,7 @@
 ---
 import SchemaOrg from '../components/SchemaOrg.astro';
 import Analytics from '@vercel/analytics/astro';
+import '../styles/global.css';
 
 interface Props {
   title?: string;
@@ -62,9 +63,6 @@ const ogImageURL = new URL(ogImage, siteURL);
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,400&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Global styles -->
-    <link rel="stylesheet" href="/styles/global.css" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
