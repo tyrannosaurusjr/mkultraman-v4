@@ -107,6 +107,9 @@ const breadcrumbSchema = {
           <a href="/blog" class="back-link">← All articles</a>
 
           <div class="post-meta">
+            <span class="post-byline">
+              By <a href="/about" rel="author">Matt Ketchum</a>
+            </span>
             <time class="post-date" datetime={isoDate}>{formatDate(post.data.pubDate)}</time>
             <div class="post-tags">
               {post.data.tags.map(tag => (
@@ -122,6 +125,18 @@ const breadcrumbSchema = {
         <div class="post-content">
           <Content />
         </div>
+
+        <aside class="post-author-bio" aria-labelledby="author-bio-heading">
+          <h2 id="author-bio-heading" class="post-author-bio__heading">About the author</h2>
+          <p class="post-author-bio__body">
+            <strong>Matt Ketchum</strong> is a digital infrastructure
+            consultant based in Tokyo. He audits, rebuilds, and manages
+            the technology stacks of 40+ small and medium enterprises
+            across Japan — F&amp;B, media, professional services, events,
+            retail. He runs the Stack Audit service at MKUltraman.
+            <a href="/about">More about Matt →</a>
+          </p>
+        </aside>
 
         <BlogCTA tags={post.data.tags} />
       </article>
@@ -170,6 +185,22 @@ const breadcrumbSchema = {
     gap: var(--space-16);
     margin-bottom: var(--space-32);
     flex-wrap: wrap;
+  }
+
+  .post-byline {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+  .post-byline a {
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .post-byline a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
   }
 
   .post-date {
@@ -286,6 +317,39 @@ const breadcrumbSchema = {
     font-style: italic;
     color: var(--text-muted);
   }
+
+  /* Author bio at end of post — E-E-A-T signal and named-author reinforcement
+     for AI citation. The in-header byline plus this block together hit
+     Google's QRG "clear human authorship" bar. */
+  .post-author-bio {
+    margin-top: var(--space-64);
+    padding: var(--space-32) 0 0;
+    border-top: 1px solid var(--border);
+  }
+  .post-author-bio__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: var(--space-12);
+  }
+  .post-author-bio__body {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text-muted);
+    max-width: 680px;
+  }
+  .post-author-bio__body strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .post-author-bio__body a {
+    color: var(--accent);
+    transition: opacity 0.15s;
+  }
+  .post-author-bio__body a:hover { opacity: 0.75; }
 
   @media (max-width: 768px) {
     .post-meta {
