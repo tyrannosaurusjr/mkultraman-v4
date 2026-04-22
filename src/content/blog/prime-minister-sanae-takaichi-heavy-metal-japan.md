@@ -47,7 +47,7 @@ It also provides a "safe" form of rebellion. It allows **Sanae Takaichi** to pro
 
 ### From Private Hobby to Public Brand
 
-This is a masterful act of political [branding](https://mkultraman.com/digital-branding-strategy/). The narrative strategically transforms a private hobby into a public-facing identity. That electronic drum kit in her home is no longer just a tool for stress relief; it is now a prop, a symbol. It has been converted into a "relatable" hook for media outlets, both domestic and international, who are looking for a simple way to frame her political rise. It is the spoonful of sugar that helps the complex, and for some, bitter, medicine of her politics go down.
+This is a masterful act of political [branding](/blog/visual-identity-strategy-branding-japan/). The narrative strategically transforms a private hobby into a public-facing identity. That electronic drum kit in her home is no longer just a tool for stress relief; it is now a prop, a symbol. It has been converted into a "relatable" hook for media outlets, both domestic and international, who are looking for a simple way to frame her political rise. It is the spoonful of sugar that helps the complex, and for some, bitter, medicine of her politics go down.
 
 
 This branding is especially effective for Western media, which is already culturally primed to see **Japan** as a land of "quirky" contradictions. A **heavy metal**-loving, right-wing Prime Minister fits this preconceived template perfectly. It requires no deep analysis of her policies, her political history, or her factional allegiances within the LDP. It just requires a simple, surprising juxtaposition. It's an easy story to write, and an even easier one to sell.

@@ -57,7 +57,7 @@ This behavior stems from a lack of **Confidence** in the value provided. To buil
 
 Here are three common boundary failures that destroy a contractor's pricing strategy:
 
-If you’re going to build a multi-tiered system, build it with integrity. Make each level earn its price, and then protect those boundaries. Not rigidly, but intentionally. Every time you override them to avoid tension, you chip away at the clarity your clients rely on. This is a key principle we teach in our [business design](https://mkultraman.com/business-services/) programs.
+If you’re going to build a multi-tiered system, build it with integrity. Make each level earn its price, and then protect those boundaries. Not rigidly, but intentionally. Every time you override them to avoid tension, you chip away at the clarity your clients rely on. This is a key principle we teach in our [services](/services).
 
 ## Your Service Pricing and Value
 
@@ -67,7 +67,7 @@ Discounts can be a smart tactic. But for many independent contractors, they’ve
 These are not strategies. These are symptoms of low conviction.
 
 
-If a service doesn't sell at its full price, it doesn’t mean the price is wrong. It might mean the *story* is wrong. Or the value proposition is underdeveloped. Or the audience isn't aligned. Fixing that takes courage and [strategic analysis](https://mkultraman.com/category/systems-and-strategy/)—not just slashing the tag until someone bites.
+If a service doesn't sell at its full price, it doesn’t mean the price is wrong. It might mean the *story* is wrong. Or the value proposition is underdeveloped. Or the audience isn't aligned. Fixing that takes courage and [strategic analysis](/blog/tag/systems-and-strategy/)—not just slashing the tag until someone bites.
 
 
 Undercutting your own **Service Pricing** to make a sale is like bribing someone to believe in you. They may say yes in the moment, but they’re not really on board. And they won’t stick around. Real **Client Trust** is built on value, not on discounts.

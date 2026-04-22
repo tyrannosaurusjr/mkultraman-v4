@@ -34,7 +34,7 @@ Here are a few practical examples:
 While the initial launch partners are global giants, the biggest news for the tech industry is the "Apps SDK." An SDK, or Software Development Kit, is the set of tools that developers use to build applications for a specific platform. OpenAI is essentially giving developers in **Japan** and around the world the keys to build their own integrations.
 
 
-This new **OpenAI ecosystem** lowers the barrier for Japanese developers to create incredibly powerful, AI-driven tools. It allows them to tap into ChatGPT's massive user base without having to build their own large language model from scratch. This shift is a central focus of my [advisory services](https://mkultraman.com/business-services/).
+This new **OpenAI ecosystem** lowers the barrier for Japanese developers to create incredibly powerful, AI-driven tools. It allows them to tap into ChatGPT's massive user base without having to build their own large language model from scratch. This shift is a central focus of my [advisory services](/services).
 
 ## The "How" - Technology and Lingering Questions
 

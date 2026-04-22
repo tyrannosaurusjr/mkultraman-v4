@@ -62,7 +62,7 @@ You must first question if the market is invisible or simply non-existent. Is th
 
 ### The First-Mover Cost Burden
 
-You face the first-mover disadvantage. You will bear the entire cost of educating the market. A future competitor could benefit from your efforts. This cost *must* be factored into your financial modeling. Your **Investor Insight** must include a plan for market education. You are not just selling a product; you are introducing a new category. This makes marketing and community-building a primary business function, not a secondary one. This is a core part of any sound [strategic analysis](https://mkultraman.com/category/systems-and-strategy/).
+You face the first-mover disadvantage. You will bear the entire cost of educating the market. A future competitor could benefit from your efforts. This cost *must* be factored into your financial modeling. Your **Investor Insight** must include a plan for market education. You are not just selling a product; you are introducing a new category. This makes marketing and community-building a primary business function, not a secondary one. This is a core part of any sound [strategic analysis](/blog/tag/systems-and-strategy/).
 
 ### Cultural Resistance as Risk
 
@@ -80,7 +80,7 @@ From a traditional perspective, *akiya* were a liability. Banks wouldn't finance
 
 The **Investor Insight** came from reframing the asset. A new generation of entrepreneurs and investors saw what the incumbents missed.
 
-I created a new market from thin air. I saw the **Hidden Markets** in the data void. By connecting this unseen asset to an emerging demand, I am now generating enormous **Alpha**. This is the [business design](https://mkultraman.com/business-design/) of the future.
+I created a new market from thin air. I saw the **Hidden Markets** in the data void. By connecting this unseen asset to an emerging demand, I am now generating enormous **Alpha**. This is the [business design](/blog/blue-ocean-market-creation-strategy/) of the future.
 
 ## A Playbook for Generating Alpha
 

@@ -410,6 +410,116 @@
       "permanent": true
     },
     {
+      "source": "/advisory-projects",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/advisory-projects/heather-dobbin-coaching",
+      "destination": "/blog/corporate-training-programs-japanese-leadership",
+      "permanent": true
+    },
+    {
+      "source": "/business-design",
+      "destination": "/blog/blue-ocean-market-creation-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/business-services",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/business-services/strategic-advisory",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/category/systems-and-strategy",
+      "destination": "/blog/tag/systems-and-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/custom-oakleys",
+      "destination": "/white-label",
+      "permanent": true
+    },
+    {
+      "source": "/digital-branding-strategy",
+      "destination": "/blog/visual-identity-strategy-branding-japan",
+      "permanent": true
+    },
+    {
+      "source": "/financial-survival",
+      "destination": "/tools/japan-money-tracker",
+      "permanent": true
+    },
+    {
+      "source": "/institutional-decay",
+      "destination": "/blog/systemic-failure-japan-global-mindset-modernity",
+      "permanent": true
+    },
+    {
+      "source": "/japan-insights-system-dynamics-structure/business-development-growth-strategy",
+      "destination": "/blog/tag/business-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/japan-post-license-revocation-exposes-logistics-failure",
+      "destination": "/blog/japan-post-scandal-logistics-safety-accountability",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-immigration-guide",
+      "destination": "/blog/japanese-society-foreign-workers-consensus",
+      "permanent": true
+    },
+    {
+      "source": "/leadership-fails",
+      "destination": "/blog/japanese-leadership-culture-wa",
+      "permanent": true
+    },
+    {
+      "source": "/marketing-strategy",
+      "destination": "/blog/tag/business-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/productivity",
+      "destination": "/blog/professional-communication-breakdown-effective-workflow",
+      "permanent": true
+    },
+    {
+      "source": "/project/rural-revitalization-japan-akiya-ownership",
+      "destination": "/blog/japan-entrepreneurship-rural-revitalization-akiya",
+      "permanent": true
+    },
+    {
+      "source": "/shokunin-mindset-focusing-on-craft-limits-growth",
+      "destination": "/blog/artisan-mindset-business-growth-craftsmanship",
+      "permanent": true
+    },
+    {
+      "source": "/systems-strategy",
+      "destination": "/blog/tag/systems-and-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/tetsunori-tawaraya",
+      "destination": "/blog/visual-brand-strategy-psychedelic-fashion-branding",
+      "permanent": true
+    },
+    {
+      "source": "/ultra-guild",
+      "destination": "/guild",
+      "permanent": true
+    },
+    {
+      "source": "/why-i-love-japan",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
       "source": "/wp-admin",
       "destination": "/",
       "permanent": true

@@ -16,7 +16,7 @@ This is Japan's **digital paradox**: a high-tech country stuck in slow-motion **
 The root causes of Japan’s digital inertia are cultural and systemic, not technical. The technology exists. The barriers lie in tradition, demographics, and risk aversion.
 
 
-The hanko, for example, is more than a stamp. It symbolizes legitimacy and trust in [business](https://mkultraman.com/advisory-projects/) and governance. Cash is more than currency—it is security for an aging population that distrusts digital banking. And in many industries, change is seen not as progress but as disruption.
+The hanko, for example, is more than a stamp. It symbolizes legitimacy and trust in [business](/services) and governance. Cash is more than currency—it is security for an aging population that distrusts digital banking. And in many industries, change is seen not as progress but as disruption.
 
 
 This cultural conservatism, baked into both government and business, creates a closed loop. Institutions and consumers reinforce each other’s analog habits. But precisely because this resistance is so persistent, the upside of breaking through it is enormous.

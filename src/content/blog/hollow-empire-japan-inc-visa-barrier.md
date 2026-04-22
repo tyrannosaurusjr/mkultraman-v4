@@ -6,7 +6,7 @@ tags: ["Economics & Investment", "Policy & Society"]
 draft: false
 ---
 
-I look at the numbers coming out of Tokyo and see a coroner’s report for a patient that refuses to admit it is dying. The subject is not just a country; it is a massive, interlocking corporate system. Japan Inc. is no longer the Asian tiger of legend, but rather a **Hollow Empire**(not to be confused with the [Sam Hawke novel](https://www.amazon.co.uk/Hollow-Empire-Sam-Hawke-ebook/dp/B07JR91VZ8/ref=sr_1_1?dchild=1&keywords=hollow+empire&qid=1604569632&sr=8-1)) crumbling in real time. The bureaucracy just announced a massive hike in [immigration](https://mkultraman.com/japanese-immigration-guide/) fees that defies business logic. They are building a **Visa Barrier** to keep the world out of a dying boardroom. This decision guarantees that the thirty-year **Stagnation** of the corporate state turns from a chronic condition into a terminal event.
+I look at the numbers coming out of Tokyo and see a coroner’s report for a patient that refuses to admit it is dying. The subject is not just a country; it is a massive, interlocking corporate system. Japan Inc. is no longer the Asian tiger of legend, but rather a **Hollow Empire**(not to be confused with the [Sam Hawke novel](https://www.amazon.co.uk/Hollow-Empire-Sam-Hawke-ebook/dp/B07JR91VZ8/ref=sr_1_1?dchild=1&keywords=hollow+empire&qid=1604569632&sr=8-1)) crumbling in real time. The bureaucracy just announced a massive hike in [immigration](/blog/japanese-society-foreign-workers-consensus/) fees that defies business logic. They are building a **Visa Barrier** to keep the world out of a dying boardroom. This decision guarantees that the thirty-year **Stagnation** of the corporate state turns from a chronic condition into a terminal event.
 
 ## The Arithmetic of Extortion
 
@@ -141,7 +141,7 @@ Real reform is messy because it requires raising wages and enforcing labor laws.
 That path is hard because it upsets corporate donors and conservative voters. So they choose the easy path. They hike fees, pretend to "normalize" the system, and ignite the fuse on the **Hollow Empire**.
 
 
-To understand this failure, read our analysis on [institutional decay](https://mkultraman.com/institutional-decay). If you are an expat here, check out our guide on [financial survival strategies](https://mkultraman.com/financial-survival).
+To understand this failure, read our analysis on [institutional decay](/blog/systemic-failure-japan-global-mindset-modernity/). If you are an expat here, check out our guide on [financial survival strategies](/tools/japan-money-tracker).
 
 
 For data on the labor crisis, the [Japan Institute for Labour Policy and Training](https://www.jil.go.jp/english/) is essential. You can track the demographic shift at the [National Institute of Population and Social Security Research](https://www.ipss.go.jp/index-e.html). For legal context, [Ministry of Justice](https://www.moj.go.jp/EN/index.html) publishes updates.

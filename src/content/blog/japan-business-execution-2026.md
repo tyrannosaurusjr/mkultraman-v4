@@ -8,7 +8,7 @@ draft: false
 
 ## Japan Business Execution Will Be Defined by Operators in 2026
 
-In [Part 0](https://mkultraman.com/future-of-japan-2026-visible-shift/) of this series, I argued that 2026 will be the year Japan’s future becomes visible, not because institutions transform, but because their limits become easier to recognize. This article assumes that premise and moves forward from it. The focus here is not on diagnosis, but on behavior. Specifically, it asks how [Japan business](https://mkultraman.com/japan-insights-system-dynamics-structure/business-development-growth-strategy/) execution will actually occur once institutional timelines no longer define the outer boundary of action.
+In [Part 0](/blog/future-of-japan-2026-visible-shift/) of this series, I argued that 2026 will be the year Japan’s future becomes visible, not because institutions transform, but because their limits become easier to recognize. This article assumes that premise and moves forward from it. The focus here is not on diagnosis, but on behavior. Specifically, it asks how [Japan business](/blog/tag/business-strategy/) execution will actually occur once institutional timelines no longer define the outer boundary of action.
 
 
 Japan’s institutions will remain intact in 2026. Their structures, incentives, and internal logic will persist largely unchanged. Ministries will still regulate, major corporations will still coordinate, and established players will continue to set many of the formal rules of engagement. What will shift is their relative influence over where outcomes are produced. Increasingly, results will emerge outside formal institutional processes, created by actors who can act under uncertainty and deliver progress without waiting for consensus. In that environment, operators in Japan will become the decisive variable.
@@ -77,7 +77,7 @@ By 2026, this pattern will become increasingly visible across Japan’s business
 Technology plays a critical role here, but not as a symbol of progress. Tools are selected instrumentally, based on their ability to reduce friction and accelerate execution, not on prestige or narrative alignment. Workflows are redesigned rather than preserved. Authority is aligned with responsibility instead of diffused across committees.
 
 
-Frameworks matter more than force. Well-designed [systems](https://mkultraman.com/ultra-guild/) replace heroic effort, making success repeatable rather than exceptional. By 2026, these differences will be increasingly observable, not because operators outperform institutions in all domains, but because they outperform them where speed, learning, and adaptability matter most.
+Frameworks matter more than force. Well-designed [systems](/guild) replace heroic effort, making success repeatable rather than exceptional. By 2026, these differences will be increasingly observable, not because operators outperform institutions in all domains, but because they outperform them where speed, learning, and adaptability matter most.
 
 ## What Japan Inc. Will Continue to Do Well and Why That Will Not Be Sufficient
 

@@ -50,7 +50,7 @@ This alignment of values makes our partnership natural. We are both obsessed wit
 The Global Connector Salon taking place tonight, December 10, 2025, is a perfect example of Tokyo business done right. It is not just about people in a room. It is about the quality of the minds present.
 
 
-We are seeing a convergence of high-level operators. [Heather Dobbin Coaching](https://heatherdobbin.com) is participating in the organization, who is also a [client of mine](https://mkultraman.com/advisory-projects/heather-dobbin-coaching/). Her involvement adds another layer of professional rigor to the proceedings. She understands the psychology of performance.
+We are seeing a convergence of high-level operators. [Heather Dobbin Coaching](https://heatherdobbin.com) is participating in the organization, who is also a [client of mine](/blog/corporate-training-programs-japanese-leadership/). Her involvement adds another layer of professional rigor to the proceedings. She understands the psychology of performance.
 
 ### High-Bandwidth Intelligence
 

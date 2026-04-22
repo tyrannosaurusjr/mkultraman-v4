@@ -50,7 +50,7 @@ This is the **Investment** gap that [Kaala Music](https://www.kaalamusic.com/) i
 Before Marie Kondo, minimalism in Japan was just a way of life, not a brand. Traditional companies saw tidying as a functional necessity, not a lifestyle movement. By positioning decluttering as an emotional and transformative experience, KonMari created an entirely new market category.
 
 
-This is a powerful [strategic analysis](https://mkultraman.com/systems-strategy/) of the **Japan Market**. KonMari generated millions in book sales, consulting, and global influence. She didn't compete in an existing market; she created a new one. This demonstrates how a "soft" concept can be the basis for a highly scalable and profitable **Investment**. [Forbes has detailed her brand's success](https://www.forbes.com/sites/forbeswomen/2019/03/26/how-marie-kondo-used-minimalism-to-build-a-global-brand/) as a model of this.
+This is a powerful [strategic analysis](/blog/tag/systems-and-strategy/) of the **Japan Market**. KonMari generated millions in book sales, consulting, and global influence. She didn't compete in an existing market; she created a new one. This demonstrates how a "soft" concept can be the basis for a highly scalable and profitable **Investment**. [Forbes has detailed her brand's success](https://www.forbes.com/sites/forbeswomen/2019/03/26/how-marie-kondo-used-minimalism-to-build-a-global-brand/) as a model of this.
 
 ## Why Not-Tokyo is the Future
 
@@ -77,7 +77,7 @@ Pay attention to what younger generations are doing. This includes alternative h
 
 ### 3. Reposition Old Concepts
 
-Japan has world-class craftsmanship. But many artisans struggle because they market their products only as "traditional goods." They are not marketing them as luxury, sustainable, or modern lifestyle pieces. A simple **Investment** in new framing can unlock a global audience. This is a [business design](https://mkultraman.com/business-design/) challenge, not a product challenge.
+Japan has world-class craftsmanship. But many artisans struggle because they market their products only as "traditional goods." They are not marketing them as luxury, sustainable, or modern lifestyle pieces. A simple **Investment** in new framing can unlock a global audience. This is a [business design](/blog/blue-ocean-market-creation-strategy/) challenge, not a product challenge.
 
 ### 4. Bypass Legacy Channels
 

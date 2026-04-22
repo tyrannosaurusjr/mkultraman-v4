@@ -8,7 +8,7 @@ draft: false
 
 ## The Departure Tax Delusion
 
-Japan's government is floating its new "solution" for [overtourism](https://mkultraman.com/tourist-behavior-japan-travel-kyoto/): tripling the **Departure Tax**. I have to be direct. This is a catastrophically flawed **Travel Policy**. The **Impact** of this move will be a quiet, corrosive rot. The bureaucrats pushing this think they are being clever. They are not. They are proposing a lazy, mosquito-sized cash grab.
+Japan's government is floating its new "solution" for [overtourism](/blog/tourist-behavior-japan-travel-kyoto/): tripling the **Departure Tax**. I have to be direct. This is a catastrophically flawed **Travel Policy**. The **Impact** of this move will be a quiet, corrosive rot. The bureaucrats pushing this think they are being clever. They are not. They are proposing a lazy, mosquito-sized cash grab.
 
 
 Let me be clear. The goal of attracting high-value, low-impact tourists is absolutely correct. The goal of managing crowds is essential. But this tax is a failure of nerve and imagination. It’s a policy that is too small to deter the problematic, low-spending crowds, yet just large enough to be an insult to everyone else. This is a failure of vision, a penalty on love, and an act of profound stupidity.
@@ -63,7 +63,7 @@ This **Travel Policy** is about *adding* value, not just *taxing* entry. The **I
 
 Instead of a blanket tax, use a digital scalpel. The government has the data. They know who is coming. They know where they are from. Use that.
 
-I have discussed this in my own [marketing strategy guides](https://mkultraman.com/marketing-strategy). You must segment your audience. The government should be running targeted campaigns.
+I have discussed this in my own [marketing strategy guides](/blog/tag/business-strategy/). You must segment your audience. The government should be running targeted campaigns.
 
 
 1. **Geographic Targeting:** Run campaigns in high-value zip codes in America, Europe, and Australia. Focus on art, food, and luxury.

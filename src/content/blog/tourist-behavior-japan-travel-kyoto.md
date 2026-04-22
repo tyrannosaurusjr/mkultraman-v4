@@ -87,7 +87,7 @@ The future of **Japan travel** is not in ruins. Not yet. But the warning lights 
 
 ## Beyond the Hordes
 
-I still believe in this place. I believe in the transformative power of **Japan travel**. It is a journey into a different mode of thinking. A different way of *being*. It is a cosmic shift in perspective. But that journey is currently being smothered under the weight of its own success. It is being choked by an analog mindset. [Why I still believe in Japan](https://mkultraman.com/why-i-love-japan)
+I still believe in this place. I believe in the transformative power of **Japan travel**. It is a journey into a different mode of thinking. A different way of *being*. It is a cosmic shift in perspective. But that journey is currently being smothered under the weight of its own success. It is being choked by an analog mindset. That is why I still believe in Japan.
 
 
 We are at a junction. Japan can choose to modernize. It can make the leap. It can build a sustainable, smart, and distributed tourism model for the 21st century. Or it can continue to build walls. It can continue to complain. It can continue to slowly curdle under the pressure. The future of **Kyoto**, and of **Japan travel** itself, depends entirely on what it does next. The hordes are not the problem. They are just the catalyst. The real crisis is one of identity. It is time for Japan to decide what it wants to be.

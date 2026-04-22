@@ -48,13 +48,13 @@ My work operates on a specific visual frequency called "Neon Occultism." Think o
 The design language uses specific triggers to hack your pattern recognition. Three-eyed suns watch from the frost line. Torii gates dissolve into circuitry. Halos appear constructed from broken neon tubes.
 
 
-If you read my piece on [Tetsunori Tawaraya](https://mkultraman.com/tetsunori-tawaraya), you understand the vibe I chase. It is visceral. It is uncomfortable. It is necessary. This is where the ancient **Folklore** meets the cyberpunk future. The woodblock textures of the Edo period get injected with digital corruption. It looks like a history book from a timeline that went wrong. It feels like **Japanese Jesus** watches you from a CRT monitor buried in a snowy field.
+If you read my piece on [visual brand strategy](/blog/visual-brand-strategy-psychedelic-fashion-branding/), you understand the vibe I chase. It is visceral. It is uncomfortable. It is necessary. This is where the ancient **Folklore** meets the cyberpunk future. The woodblock textures of the Edo period get injected with digital corruption. It looks like a history book from a timeline that went wrong. It feels like **Japanese Jesus** watches you from a CRT monitor buried in a snowy field.
 
 
 The **Shingo Legend** demands this level of visual intensity. Selling a story about Christ dying in Japan at age 106 requires more than beige linen. It needs distinct and aggressive imagery. I treat every product as an artifact. These are relics from the "Herai Years" rather than SKUs in a warehouse.
 
 
-Just like the meticulous detail required for [Custom Oakleys](https://mkultraman.com/custom-oakleys), this project requires a specific vision. The style is a deliberate clash. It reflects the fundamental incompatibility of the cultures that created the **Shingo Legend** in the first place.
+Just like the meticulous detail required for custom products, this project requires a specific vision. The style is a deliberate clash. It reflects the fundamental incompatibility of the cultures that created the **Shingo Legend** in the first place.
 
 ## Decoding the Shingo Legend
 

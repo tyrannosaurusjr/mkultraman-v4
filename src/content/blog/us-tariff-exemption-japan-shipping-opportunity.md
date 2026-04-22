@@ -44,7 +44,7 @@ This is more than just a side hustle; it's a legitimate business model born from
 
 ### Leveraging your unique access and location
 
-American consumers' desire for authentic Japanese products hasn't disappeared. Your role is to solve the logistics puzzle that has stumped even multinational corporations. You can consolidate items, handle the new customs paperwork correctly, and provide a seamless experience for your clients. This is the core of the **[Japan shipping](https://mkultraman.com/japan-post-license-revocation-exposes-logistics-failure/) opportunity**: providing expertise in a chaotic market.
+American consumers' desire for authentic Japanese products hasn't disappeared. Your role is to solve the logistics puzzle that has stumped even multinational corporations. You can consolidate items, handle the new customs paperwork correctly, and provide a seamless experience for your clients. This is the core of the **[Japan shipping](/blog/japan-post-scandal-logistics-safety-accountability/) opportunity**: providing expertise in a chaotic market.
 
 ## Navigating the Future of Global E-Commerce
 

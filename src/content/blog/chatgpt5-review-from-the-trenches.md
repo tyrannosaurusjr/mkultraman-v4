@@ -6,7 +6,7 @@ tags: ["Digital Transformation & AI"]
 draft: false
 ---
 
-Consulting at the intersection of IT, business operations, and brand development demands tools that deliver under pressure. This [OpenAI](https://en.wikipedia.org/wiki/OpenAI) **ChatGPT5 review** comes from the frontlines of my work at [MKUltraman consulting](https://mkultraman.com/advisory-projects/), where each project needs both strategic clarity and tactical execution. In that environment, **AI business tools** are no longer experiments — they are essential infrastructure. The question is whether they actually deliver **innovation** or just add noise.
+Consulting at the intersection of IT, business operations, and brand development demands tools that deliver under pressure. This [OpenAI](https://en.wikipedia.org/wiki/OpenAI) **ChatGPT5 review** comes from the frontlines of my work at [MKUltraman consulting](/services), where each project needs both strategic clarity and tactical execution. In that environment, **AI business tools** are no longer experiments — they are essential infrastructure. The question is whether they actually deliver **innovation** or just add noise.
 
 
 When I integrate a tool into my work, it is judged by the deliverables that reach the client. In this **ChatGPT5 review**, I am not speculating about potential; I am reporting on real use cases that shaped board-level presentations, operational audits, and brand rollouts. Each one shows where **AI business tools** have matured into something that drives measurable **innovation** rather than simply automating repetitive tasks.

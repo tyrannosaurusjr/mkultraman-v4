@@ -34,7 +34,7 @@ One of the things I have learned in more than 12 years of **creative collaborati
 Our work together blurs boundaries between music, art, and business. Playing in bands taught us how to listen before leading, how to handle **product design**, and how to build structure from chaos. Those lessons guide how I handle digital systems and how Thom approaches **product design**. Every poster, print, or card we collaborate around still carries the pulse of rehearsal rooms and the energy of performance. It is the same creativity, just expressed through different tools.
 
 
-Our dynamic works because Thom is fearless about texture, and I am relentless about [strategy](https://mkultraman.com/business-services/strategic-advisory/). When those two align, products like his nengajo feel inevitable. You can see the Japanese influence in the brush-like gold lines and the carefully balanced red accents. You can feel the [Cooper Union](https://cooper.edu/) discipline in the geometry. You can trace the underground Tokyo energy in the decision to make each set by hand. It is not branding; it is cultural layering through design.
+Our dynamic works because Thom is fearless about texture, and I am relentless about [strategy](/services). When those two align, products like his nengajo feel inevitable. You can see the Japanese influence in the brush-like gold lines and the carefully balanced red accents. You can feel the [Cooper Union](https://cooper.edu/) discipline in the geometry. You can trace the underground Tokyo energy in the decision to make each set by hand. It is not branding; it is cultural layering through design.
 
 ## Craft, Commitment, and Continuity
 

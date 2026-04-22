@@ -6,14 +6,14 @@ tags: ["Leadership & Management", "Society & Culture"]
 draft: false
 ---
 
-Japan's Prime Minister, [Sanae Takaichi](https://en.wikipedia.org/wiki/Sanae_Takaichi), called a parliamentary meeting at 3 AM. She boasted of sleeping just two to four hours a night, quipping it was "bad for her skin." This was not a joke. It was a terrifying public confession. I am watching a leader celebrate a core symptom of a deep, national sickness. This public glorification of self-destruction is a **modern disaster** for the country. It reinforces a **dated [practice](https://mkultraman.com/local-business-strategy-japan-execution-shonan/)** of overwork that directly fuels the culture of **karoshi**. Takaichi is boasting about the very behavior that is killing her citizens.
+Japan's Prime Minister, [Sanae Takaichi](https://en.wikipedia.org/wiki/Sanae_Takaichi), called a parliamentary meeting at 3 AM. She boasted of sleeping just two to four hours a night, quipping it was "bad for her skin." This was not a joke. It was a terrifying public confession. I am watching a leader celebrate a core symptom of a deep, national sickness. This public glorification of self-destruction is a **modern disaster** for the country. It reinforces a **dated [practice](/blog/local-business-strategy-japan-execution-shonan/)** of overwork that directly fuels the culture of **karoshi**. Takaichi is boasting about the very behavior that is killing her citizens.
 
 
 This is not leadership. It is a catastrophic failure of imagination.
 
 ## The Toxic Myth of Endurance
 
-There is a stubborn myth in Japanese society, a worship of *gaman* or endurance. People are taught to praise the person who stays latest and celebrate the one who suffers in silence. This is a **dated practice**. It is a holdover from a manufacturing-based [economy](https://mkultraman.com/japan-economic-stagnation-toxic-culture-sanseito/), holding no place in a modern, knowledge-based world. Presence does not equal productivity. Long hours do not equal good work. They are often a sign of poor management and systemic inefficiency.
+There is a stubborn myth in Japanese society, a worship of *gaman* or endurance. People are taught to praise the person who stays latest and celebrate the one who suffers in silence. This is a **dated practice**. It is a holdover from a manufacturing-based [economy](/blog/japan-economic-stagnation-toxic-culture-sanseito/), holding no place in a modern, knowledge-based world. Presence does not equal productivity. Long hours do not equal good work. They are often a sign of poor management and systemic inefficiency.
 
 Prime Minister Takaichi is the new high priestess of this toxic cult. She promised to "[work, work, work.](https://www.france24.com/en/tv-shows/access-asia/20251114-work-work-work-japan-s-new-pm-under-fire-for-asking-staff-to-come-in-at-3am)" She dismisses work-life balance for herself. She tells her colleagues to "work like a horse." This is the embodiment of a **modern disaster**. She is signaling to every business manager in Japan that this behavior is not just acceptable. It is expected. She is normalizing a **dated practice** that is demonstrably false. The reality of this culture is **karoshi**. That is not a metaphor. It is the legal and literal term for death from overwork. This **dated practice** has a body count.
 
@@ -68,7 +68,7 @@ One cannot just sit here and admire the problem. Japan must dismantle it and bui
 3. **Invest in Deep Work:** Create systems that protect focus, not systems that shatter it with 3 AM meetings.
 
 
-This is the core of modern operations. My work focuses on this transformation. You can read more about it at [mkultraman.com/productivity](https://mkultraman.com/productivity). Modern work is about leverage, not endurance. This method of brute force is obsolete. The old guard is clinging to it.
+This is the core of modern operations. My work focuses on this transformation. You can read more about it in my piece on [professional communication breakdown](/blog/professional-communication-breakdown-effective-workflow/). Modern work is about leverage, not endurance. This method of brute force is obsolete. The old guard is clinging to it.
 
 ### Escaping the Dated Practice Loop
 
@@ -83,7 +83,7 @@ Japan needs leaders who boast about their 8 hours of sleep. It needs leaders who
 I am writing to the business managers. Look at your own team. Do you reward the person who emails you at midnight? Do you celebrate the employee who never takes a vacation? You are the problem. You are fostering your own cultural crisis. You are enabling this behavior.
 
 
-The paradox is staggering. Takaichi says any changes to working conditions must "prioritize workers' health." She says this while simultaneously bragging about her own suicidal sleep schedule. The cognitive dissonance is deafening. This is the crisis in a nutshell. This is the leadership failure I explore at [mkultraman.com/leadership-fails](https://mkultraman.com/leadership-fails). She is saying one thing and doing the absolute, destructive opposite. The culture of **karoshi** thrives in this hypocrisy.
+The paradox is staggering. Takaichi says any changes to working conditions must "prioritize workers' health." She says this while simultaneously bragging about her own suicidal sleep schedule. The cognitive dissonance is deafening. This is the crisis in a nutshell. This is the leadership failure I explore in [Japanese Leadership Culture](/blog/japanese-leadership-culture-wa/). She is saying one thing and doing the absolute, destructive opposite. The culture of **karoshi** thrives in this hypocrisy.
 
 
 This is the reality.
