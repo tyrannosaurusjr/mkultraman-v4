@@ -225,15 +225,15 @@ const servicesSchema = {
       </div>
     </section>
 
-    <!-- Bottom CTA -->
-    <section class="services-cta">
+    <!-- Where to start -->
+    <section class="services-close">
       <div class="container">
-        <h2>Not sure which fits?</h2>
-        <p>45 minutes. I'll dig into your situation and tell you what makes sense.</p>
-        <div class="services-cta__actions">
-          <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book an exploratory call — $175 &rarr;</a>
-          <a href="/contact" class="services-cta__alt">prefer to write? send a message</a>
-        </div>
+        <p class="services-close__text">
+          Most engagements start with the <a href="/services/stack-audit">Stack Audit</a>.
+          Low-risk, gives you clarity before committing to a build, and tells both
+          of us whether the bigger work makes sense. If you already know what you
+          need, <a href="/contact">skip the diagnostic and send a message</a>.
+        </p>
       </div>
     </section>
 
@@ -382,23 +382,28 @@ const servicesSchema = {
     font-weight: 500;
   }
 
-  /* Bottom CTA */
-  .services-cta {
-    padding: var(--space-96) 0;
-    text-align: center;
+  /* Editorial close (replaces the previous centered-button bottom CTA —
+     this page already carries three service CTAs, the close should resolve
+     ambiguity about where to start, not repeat the homepage's Calendly pitch) */
+  .services-close {
+    padding: var(--space-64) 0 var(--space-96);
+    border-top: 1px solid var(--border);
+    margin-top: var(--space-64);
   }
-  .services-cta h2 {
-    font-family: var(--font-display);
-    font-size: clamp(28px, 3vw, 40px);
-    font-weight: 900;
-    color: var(--text);
-    margin-bottom: var(--space-16);
-  }
-  .services-cta p {
+  .services-close__text {
     font-size: 17px;
     color: var(--text-muted);
-    margin-bottom: var(--space-32);
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
   }
+  .services-close__text a {
+    color: var(--text);
+    border-bottom: 1px solid var(--accent);
+    transition: color 0.15s;
+  }
+  .services-close__text a:hover { color: var(--accent); }
 
   /* Availability indicator */
   .services-availability {
@@ -445,20 +450,6 @@ const servicesSchema = {
     transition: color 0.15s;
   }
   .btn-secondary:hover { color: var(--text); }
-
-  /* Bottom CTA actions */
-  .services-cta__actions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-12);
-  }
-  .services-cta__alt {
-    font-size: 13px;
-    color: var(--text-dim);
-    transition: color 0.15s;
-  }
-  .services-cta__alt:hover { color: var(--text); }
 
   @media (max-width: 768px) {
     .service-detail__inner {
