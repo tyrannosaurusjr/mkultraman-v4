@@ -15,8 +15,9 @@
 
 ## Typography
 - **Display/Hero:** Fraunces (weight 900, optical size large) — nobody in the digital infra space uses a serif. It signals conviction and results, not technical credentials. Italic used sparingly for emotional emphasis.
+- **Stat numbers:** Fraunces (weight 900) — stats carry emotional and narrative weight ("40+", "10yr", "60 days"), so they stay in the display family rather than the mono family. The sub-label under each stat does get mono (see below).
 - **Body/UI:** Geist (weights 400, 500, 600) — sharp, clean, built for digital products
-- **Data/Mono:** Geist Mono (weights 400, 500) — labels, accents, eyebrows, stat numbers
+- **Data/Mono:** Geist Mono (weights 400, 500) — labels, accents, eyebrows, stat sub-labels, form field labels
 - **Loading:** Google Fonts CDN — `family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,400&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500`
 - **Scale:**
   - Hero: clamp(48px, 6vw, 80px) / weight 900 / line-height 1.0
@@ -75,3 +76,5 @@
 | 2026-03-31 | Single form as primary CTA | Everything on the page serves one action — fill out the inquiry form |
 | 2026-03-31 | Astro for build | Best performance for a static marketing site with one form — zero JS by default |
 | 2026-03-31 | Red evolved from #original to #C41E3A | Deeper crimson reads more premium than the coral on the old site, retains brand continuity |
+| 2026-04-22 | Stat numbers stay Fraunces, not Geist Mono | `/design-review` flagged the implementation-vs-spec drift. Fraunces on stats gives the "40+ / 10yr / 60 days" strip more narrative weight than Geist Mono would. Mono stays on the sub-labels under each stat. |
+| 2026-04-22 | `--text-dim` bumped from #555555 to #828282 | Old value failed WCAG AA at 2.66:1 on 117 small-text usages. New value is 4.90:1 (passes AA). Side effect: visual gap to `--text-muted` is now very small. Future cleanup may collapse to one token. |
