@@ -1,0 +1,964 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const pubDate = '2026-04-23';
+const updatedDate = '2026-04-23';
+const lastVerified = '2026-04-23';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://www.mkultraman.com/compare/zapier-vs-make-japan/#article",
+  "headline": "Zapier vs Make for Japan SMEs: Honest Automation Comparison",
+  "description": "Zapier vs Make (formerly Integromat) for Japan businesses — pricing, app integrations, complexity limits, and which automation tool fits your workflow.",
+  "datePublished": `${pubDate}T00:00:00+09:00`,
+  "dateModified": `${updatedDate}T00:00:00+09:00`,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.mkultraman.com/og-default.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://www.mkultraman.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mkultraman.com/#organization",
+    "name": "MKUltraman",
+    "url": "https://www.mkultraman.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mkultraman.com/compare/zapier-vs-make-japan/"
+  },
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://www.mkultraman.com/#website"
+  },
+  "about": [
+    { "@type": "SoftwareApplication", "name": "Zapier" },
+    { "@type": "SoftwareApplication", "name": "Make" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I use both Zapier and Make together?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — some teams use Zapier for simple, non-technical-owned automations and Make for complex developer-built scenarios. The integration and credential management overhead of running both platforms is real, but manageable. Most teams eventually standardize on one as their primary tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is n8n worth considering as an alternative?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — n8n is an open-source automation tool that can be self-hosted (free) or cloud-hosted (~$20/mo for 5,000 executions). It has Make's power-user feature set with the option of full data control. The learning curve is steeper than Make. For developers who handle sensitive data (financial records, customer PII) and want to keep automations on their own infrastructure, n8n is the right answer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which platform handles Kintone better?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zapier has a native Kintone integration. Make can connect via Kintone's REST API using the HTTP module. For simple Kintone triggers and actions (new record created, update a field), Zapier's native integration is faster to set up. For complex Kintone API operations, Make's HTTP module gives more control."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Make work well for Japanese businesses despite being EU-based?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Functionally yes — Make performs well from Japan. The EU data residency means data passes through EU infrastructure, which matters for GDPR compliance but is less relevant for Japan's APPI requirements. If data sovereignty is a concern, check your compliance requirements — neither Zapier nor Make offers Japan data residency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best automation stack for a Japan SME just starting out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zapier free tier to start — set up 3–5 automations covering your highest-friction manual tasks (CRM to email, form submissions to Notion, invoice notifications). Once you hit the task limit or need complexity, evaluate Make at that point. The cost of switching is low — rebuilding 5 simple automations in Make takes 2–3 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We're using Zapier and hitting the cost ceiling — should we migrate to Make?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you're spending $49+/mo on Zapier and your automations are relatively simple, Make's Core plan at $9/mo handles the same volume for significantly less. The migration effort is proportional to complexity: simple Zaps (2–3 steps) take 10–15 minutes to rebuild in Make; complex multi-path Zaps may take 30–60 minutes. For 10–15 automations, expect 4–8 hours of migration work."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.mkultraman.com/compare/" },
+    { "@type": "ListItem", "position": 3, "name": "Zapier vs Make", "item": "https://www.mkultraman.com/compare/zapier-vs-make-japan/" }
+  ]
+};
+---
+
+<Base
+  title="Zapier vs Make for Japan SMEs: Honest Automation Comparison — MKUltraman"
+  description="Zapier vs Make (formerly Integromat) for Japan businesses — pricing, app integrations, complexity limits, and which automation tool fits your workflow."
+  article={true}
+  pubDate={pubDate}
+>
+  <Nav />
+
+  <main class="compare">
+    <div class="container">
+      <article class="compare-article">
+        <header class="compare-header">
+          <a href="/compare/" class="back-link">← All comparisons</a>
+          <span class="compare-eyebrow">Comparison · Last verified {lastVerified}</span>
+          <h1>Zapier vs Make for Japan SMEs</h1>
+          <p class="compare-lead">
+            Both automation platforms promise to eliminate repetitive work, but
+            they approach complexity and cost completely differently. Here's
+            the honest breakdown — when Zapier's simplicity wins, when Make's
+            power is worth the learning curve, and the pricing reality.
+          </p>
+          <div class="compare-meta">
+            <span>By <a href="/about/" rel="author">Matt Ketchum</a></span>
+            <span>·</span>
+            <span>Tokyo</span>
+            <span>·</span>
+            <span>~8 min read</span>
+          </div>
+        </header>
+
+        <aside class="tldr" aria-label="Verdict summary">
+          <h2 class="tldr__heading">Verdict</h2>
+          <div class="verdict">
+            <div class="verdict__side">
+              <h3>Zapier wins for</h3>
+              <ul>
+                <li>Automation beginners</li>
+                <li>Simple 2–3 step workflows</li>
+                <li>Teams where non-technical people need to build and maintain automations</li>
+                <li>Highest app coverage (7,000+ integrations)</li>
+                <li>Reliability-first teams</li>
+              </ul>
+            </div>
+            <div class="verdict__side">
+              <h3>Make wins for</h3>
+              <ul>
+                <li>Power users who need complex branching logic, loops, or iterators</li>
+                <li>Cost-sensitive teams running high task volumes</li>
+                <li>Developers comfortable with a visual canvas</li>
+                <li>Automations that process structured data (JSON parsing, arrays, conditions)</li>
+              </ul>
+            </div>
+          </div>
+          <p class="verdict__conclusion">
+            For a Japan SME building its first automations, <strong>Zapier is the right starting point</strong> —
+            the learning curve is dramatically lower. Once you hit its complexity or cost ceiling, Make is worth
+            migrating to. Most businesses end up on one or the other based on who sets up the first automation.
+          </p>
+        </aside>
+
+        <nav class="toc" aria-label="Table of contents">
+          <h2 class="toc__heading">On this page</h2>
+          <ol class="toc__list">
+            <li><a href="#at-a-glance">At a glance</a></li>
+            <li><a href="#pricing">Pricing reality: tasks vs operations</a></li>
+            <li><a href="#complexity-ceiling">The complexity ceiling</a></li>
+            <li><a href="#japan-integrations">Japan SaaS ecosystem integrations</a></li>
+            <li><a href="#team-usability">Team usability in Japan context</a></li>
+            <li><a href="#reliability">Reliability and error handling</a></li>
+            <li><a href="#decision-framework">Decision framework</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <section id="at-a-glance" class="compare-section">
+          <h2>At a glance</h2>
+          <div class="compare-table-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>Zapier</th>
+                  <th>Make</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Vendor</td>
+                  <td>Zapier Inc. (US)</td>
+                  <td>Celonis / Make (Czech/US)</td>
+                </tr>
+                <tr>
+                  <td>Free tier</td>
+                  <td>5 Zaps, 100 tasks/mo</td>
+                  <td>1,000 operations/mo</td>
+                </tr>
+                <tr>
+                  <td>Entry paid pricing</td>
+                  <td>Starter ~$19.99/mo (750 tasks)</td>
+                  <td>Core ~$9/mo (10,000 operations)</td>
+                </tr>
+                <tr>
+                  <td>Mid-tier</td>
+                  <td>Professional ~$49/mo (2,000 tasks)</td>
+                  <td>Pro ~$16/mo (10,000 ops + advanced)</td>
+                </tr>
+                <tr>
+                  <td>App integrations</td>
+                  <td>7,000+</td>
+                  <td>1,500+</td>
+                </tr>
+                <tr>
+                  <td>Visual interface</td>
+                  <td>Linear step-by-step editor</td>
+                  <td>Visual flow canvas</td>
+                </tr>
+                <tr>
+                  <td>Complexity ceiling</td>
+                  <td>Moderate — branching is limited</td>
+                  <td>High — full logic, loops, iterators</td>
+                </tr>
+                <tr>
+                  <td>Japanese SaaS integrations</td>
+                  <td>Good — Chatwork, Kintone, LINE</td>
+                  <td>Moderate — fewer Japan-native apps</td>
+                </tr>
+                <tr>
+                  <td>Error handling</td>
+                  <td>Basic — retry on error</td>
+                  <td>Advanced — error routes, rollback</td>
+                </tr>
+                <tr>
+                  <td>Learning curve</td>
+                  <td>Low</td>
+                  <td>Moderate–High</td>
+                </tr>
+                <tr>
+                  <td>Real-time triggers</td>
+                  <td>Yes (paid)</td>
+                  <td>Yes (paid)</td>
+                </tr>
+                <tr>
+                  <td>Japan/Asia data center</td>
+                  <td>US-based</td>
+                  <td>EU-based</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="compare-sidenote">
+            Pricing note: Zapier uses "tasks" (each action step = 1 task); Make uses "operations"
+            (each module execution = 1 operation). Direct comparison requires mapping your workflow
+            structure. As of {lastVerified}.
+          </p>
+        </section>
+
+        <section id="pricing" class="compare-section">
+          <h2>Pricing reality: tasks vs operations</h2>
+          <p>
+            Zapier and Make use different billing units that make direct comparison
+            tricky. A Zapier "task" = one action step executed. A Make "operation" =
+            one module run. A 3-step Zap = 3 tasks per trigger. A 3-step Make scenario = 3 operations.
+          </p>
+          <p>
+            The key difference: Make's free tier gives 1,000 operations vs Zapier's 100 tasks.
+            At equivalent complexity, Make is typically <strong>3–5x cheaper at scale</strong>.
+            The Starter tier gap is stark: $19.99/mo (Zapier) vs $9/mo (Make) for roughly
+            equivalent usage volume.
+          </p>
+
+          <h3>Cost examples at different scales</h3>
+          <ul class="compare-list">
+            <li><strong>Small team (5 simple automations, ~500 tasks/ops monthly):</strong> Zapier $19.99/mo vs Make $0/mo (fits free tier)</li>
+            <li><strong>Growing business (15 automations, ~2,000 tasks/ops monthly):</strong> Zapier $49/mo vs Make $9/mo</li>
+            <li><strong>Automation-heavy SME (50 automations, ~10,000 tasks/ops monthly):</strong> Zapier $299/mo vs Make $16/mo</li>
+          </ul>
+          <p>
+            The pricing difference compounds as you scale. Most businesses discover this
+            only after they're deep into their first automation platform.
+          </p>
+        </section>
+
+        <section id="complexity-ceiling" class="compare-section">
+          <h2>The complexity ceiling</h2>
+          <p>
+            Zapier's linear model is intuitive but hits limits fast. Branching is possible
+            (Paths) but becomes unwieldy beyond 2–3 branches. Loops are not natively supported.
+            For complex data transformations — parsing JSON arrays, conditional logic based on
+            multiple variables, iterating over a list of records — Zapier requires workarounds
+            or multiple chained Zaps.
+          </p>
+          <p>
+            Make's visual canvas handles these natively. If your automation requires "for each
+            record in this array, do X" logic, Make is significantly better. The trade-off is
+            complexity — Make requires understanding modules, data structures, and visual flow
+            logic that Zapier abstracts away.
+          </p>
+
+          <h3>When you hit the complexity wall</h3>
+          <ul class="compare-list">
+            <li><strong>Zapier struggles with:</strong> Complex branching, loops, array processing, JSON manipulation, conditional logic with multiple variables</li>
+            <li><strong>Make handles natively:</strong> Iterators, routers, error handling routes, data transformations, conditional paths based on multiple criteria</li>
+            <li><strong>The migration signal:</strong> When you find yourself creating 5+ separate Zaps to handle one logical process</li>
+          </ul>
+        </section>
+
+        <section id="japan-integrations" class="compare-section">
+          <h2>Japan SaaS ecosystem integrations</h2>
+          <p>
+            Zapier has better coverage of Japanese business tools: native integrations for
+            Chatwork, Kintone (limited), LINE Notify, and some Freee flows. Make has fewer
+            Japan-native integrations but its HTTP module makes custom API calls to any tool
+            with an API, compensating for the gap.
+          </p>
+          <p>
+            For pure Japanese domestic SaaS automation, Zapier has more pre-built connectors.
+            For anything requiring custom API work, Make's HTTP module is more powerful.
+          </p>
+
+          <h3>Integration reality check</h3>
+          <ul class="compare-list">
+            <li><strong>Zapier wins for:</strong> Chatwork, LINE notifications, basic Kintone triggers, Freee accounting sync</li>
+            <li><strong>Make wins for:</strong> Custom API integrations, complex Kintone operations, multi-step API workflows</li>
+            <li><strong>Both handle well:</strong> Gmail, Google Workspace, Slack, Notion, Airtable, most international SaaS</li>
+          </ul>
+        </section>
+
+        <section id="team-usability" class="compare-section">
+          <h2>Team usability in Japan context</h2>
+          <p>
+            Zapier was designed for non-technical users from the start. The language is
+            "When X happens, do Y" — universally intuitive. Japanese teams with non-technical
+            operators (accounting, sales, HR) can learn Zapier in an hour.
+          </p>
+          <p>
+            Make requires understanding of modules, data structures, and visual flow logic —
+            the learning curve is real. If automations will be owned by non-developers,
+            Zapier's UX advantage is meaningful. If a developer is setting up and maintaining
+            automations for the team, Make's power is worth the complexity.
+          </p>
+
+          <h3>Training time investment</h3>
+          <ul class="compare-list">
+            <li><strong>Zapier onboarding:</strong> 30–60 minutes for basic automations, 2–4 hours to become proficient</li>
+            <li><strong>Make onboarding:</strong> 2–4 hours for basic scenarios, 8–16 hours to become proficient with advanced features</li>
+            <li><strong>Maintenance burden:</strong> Zapier can be maintained by operations staff; Make often requires ongoing developer involvement</li>
+          </ul>
+        </section>
+
+        <section id="reliability" class="compare-section">
+          <h2>Reliability and error handling</h2>
+          <p>
+            Zapier has a strong reliability track record and basic error handling (retry on
+            failure, email alerts). Make has more sophisticated error handling — dedicated
+            error routes, catch-and-log patterns, rollback-style error management — which
+            matters for business-critical automations where partial failures need specific handling.
+          </p>
+          <p>
+            For simple automations, both are reliable. For complex multi-step business processes,
+            Make's error handling is more robust. The question is whether you need that sophistication
+            or if Zapier's "just retry" approach is sufficient.
+          </p>
+
+          <h3>Error handling comparison</h3>
+          <ul class="compare-list">
+            <li><strong>Zapier approach:</strong> Automatic retry (up to 3x), email notifications, basic error logging</li>
+            <li><strong>Make approach:</strong> Error routes, break error handling, rollback capabilities, detailed execution logs</li>
+            <li><strong>Business impact:</strong> Make's error handling prevents partial data corruption; Zapier's simplicity prevents over-engineering</li>
+          </ul>
+        </section>
+
+        <section id="decision-framework" class="compare-section">
+          <h2>Decision framework</h2>
+          <p>Work through these in order. First match determines your choice.</p>
+          <ol class="compare-list">
+            <li>
+              <strong>Will non-technical team members build or maintain these automations?</strong>
+              Yes → Zapier. No → continue.
+            </li>
+            <li>
+              <strong>Do you need more than 5,000 operations/tasks per month at low cost?</strong>
+              Yes → Make. No → continue.
+            </li>
+            <li>
+              <strong>Do your automations require loops, iterators, or complex JSON parsing?</strong>
+              Yes → Make. No → continue.
+            </li>
+            <li>
+              <strong>Do you rely heavily on Japanese SaaS tools (Chatwork, LINE, Kintone)?</strong>
+              Yes → Zapier (better Japan integrations). No → continue.
+            </li>
+            <li>
+              <strong>Starting with automation for the first time?</strong>
+              Yes → Zapier. No → evaluate based on complexity needs.
+            </li>
+          </ol>
+          <p>
+            This framework gets 85% of SMEs to the right answer. The edge cases usually
+            involve specific technical requirements or unusual cost sensitivity that
+            warrant deeper evaluation.
+          </p>
+        </section>
+
+        <section id="faq" class="compare-section">
+          <h2>Frequently asked questions</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>Can I use both Zapier and Make together?</summary>
+              <p>
+                Yes — some teams use Zapier for simple, non-technical-owned automations
+                and Make for complex developer-built scenarios. The integration and credential
+                management overhead of running both platforms is real, but manageable. Most
+                teams eventually standardize on one as their primary tool.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Is n8n worth considering as an alternative?</summary>
+              <p>
+                Yes — n8n is an open-source automation tool that can be self-hosted (free)
+                or cloud-hosted (~$20/mo for 5,000 executions). It has Make's power-user
+                feature set with the option of full data control. The learning curve is
+                steeper than Make. For developers who handle sensitive data (financial records,
+                customer PII) and want to keep automations on their own infrastructure, n8n
+                is the right answer.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Which platform handles Kintone better?</summary>
+              <p>
+                Zapier has a native Kintone integration. Make can connect via Kintone's REST
+                API using the HTTP module. For simple Kintone triggers and actions (new record
+                created, update a field), Zapier's native integration is faster to set up.
+                For complex Kintone API operations, Make's HTTP module gives more control.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Does Make work well for Japanese businesses despite being EU-based?</summary>
+              <p>
+                Functionally yes — Make performs well from Japan. The EU data residency
+                means data passes through EU infrastructure, which matters for GDPR compliance
+                but is less relevant for Japan's APPI requirements. If data sovereignty is
+                a concern, check your compliance requirements — neither Zapier nor Make offers
+                Japan data residency.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What's the best automation stack for a Japan SME just starting out?</summary>
+              <p>
+                Zapier free tier to start — set up 3–5 automations covering your highest-friction
+                manual tasks (CRM to email, form submissions to Notion, invoice notifications).
+                Once you hit the task limit or need complexity, evaluate Make at that point.
+                The cost of switching is low — rebuilding 5 simple automations in Make takes 2–3 hours.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>We're using Zapier and hitting the cost ceiling — should we migrate to Make?</summary>
+              <p>
+                If you're spending $49+/mo on Zapier and your automations are relatively simple,
+                Make's Core plan at $9/mo handles the same volume for significantly less. The
+                migration effort is proportional to complexity: simple Zaps (2–3 steps) take
+                10–15 minutes to rebuild in Make; complex multi-path Zaps may take 30–60 minutes.
+                For 10–15 automations, expect 4–8 hours of migration work.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="compare-related">
+          <h2>Related reading</h2>
+          <ul class="compare-related__list">
+            <li>
+              <a href="/compare/webflow-vs-wordpress-japan/">Webflow vs WordPress for Japan →</a>
+              <span>Another Japan-SME tool comparison with the same honest framing.</span>
+            </li>
+            <li>
+              <a href="/compare/google-workspace-vs-microsoft-365-japan/">Google Workspace vs Microsoft 365 →</a>
+              <span>Productivity platform comparison for Japanese teams.</span>
+            </li>
+            <li>
+              <a href="/blog/japan-sme-tech-stack-2026/">What a Healthy Japan SME Tech Stack Looks Like in 2026 →</a>
+              <span>Where automation tools fit in the broader picture.</span>
+            </li>
+            <li>
+              <a href="/guides/fractional-it-manager-japan/">Fractional IT Manager in Japan: The Complete Guide →</a>
+              <span>Who handles automation platform decisions like this one.</span>
+            </li>
+            <li>
+              <a href="/services/stack-audit/">Stack Audit: Get an unbiased tool assessment →</a>
+              <span>Automation platform evaluation as part of a full tech stack review.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="compare-cta">
+          <h2>Want a second opinion before you commit?</h2>
+          <p>
+            A <a href="/services/stack-audit/">Stack Audit</a> includes automation
+            platform fit assessment. If you're mid-deployment on either platform
+            and want a diagnostic, the audit covers automation strategy as part
+            of the scope. Starting from $1,000.
+          </p>
+          <div class="compare-cta__actions">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book an exploratory call — $175 →
+            </a>
+            <a href="/contact/" class="compare-cta__alt">or send a message</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Base>
+
+<style>
+  .compare {
+    padding: var(--space-64) 0 var(--space-96);
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  .compare-article {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-24);
+    display: inline-block;
+    transition: color 0.15s ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .compare-header {
+    margin-bottom: var(--space-48);
+  }
+
+  .compare-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .compare-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: var(--space-24);
+  }
+
+  .compare-lead {
+    font-size: 19px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-24);
+  }
+
+  .compare-meta {
+    display: flex;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  .compare-meta a {
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .compare-meta a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* Verdict */
+  .tldr {
+    margin: var(--space-48) 0;
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+  }
+  .tldr__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: var(--space-24);
+  }
+  .verdict {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-32);
+    margin-bottom: var(--space-24);
+  }
+  .verdict__side h3 {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-12);
+    letter-spacing: -0.01em;
+  }
+  .verdict__side ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+  .verdict__side li {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.55;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .verdict__side li::before {
+    content: '·';
+    position: absolute;
+    left: 4px;
+    color: var(--accent);
+    font-weight: 900;
+  }
+  .verdict__conclusion {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-top: var(--space-20);
+    border-top: 1px dashed var(--border);
+    margin: 0;
+  }
+  .verdict__conclusion strong { color: var(--text); font-weight: 600; }
+
+  /* TOC */
+  .toc {
+    margin: var(--space-48) 0;
+    padding: var(--space-24) var(--space-32);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+  }
+  .toc__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: var(--space-16);
+  }
+  .toc__list {
+    list-style: decimal inside;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: 0;
+  }
+  .toc__list li {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .toc__list a {
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .toc__list a:hover { color: var(--accent); }
+
+  /* Sections */
+  .compare-section {
+    margin: var(--space-64) 0;
+    scroll-margin-top: 80px;
+  }
+  .compare-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-24);
+    line-height: 1.2;
+  }
+  .compare-section h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin: var(--space-32) 0 var(--space-16);
+  }
+  .compare-section p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-20);
+  }
+  .compare-section strong { color: var(--text); font-weight: 600; }
+  .compare-section em { font-style: italic; }
+  .compare-section a {
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .compare-section a:hover { border-color: var(--accent); }
+
+  .compare-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    margin: var(--space-20) 0;
+  }
+  .compare-list li {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: var(--space-24);
+    position: relative;
+  }
+  .compare-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 13px;
+    top: 4px;
+  }
+  ol.compare-list {
+    counter-reset: compare-counter;
+  }
+  ol.compare-list li::before {
+    counter-increment: compare-counter;
+    content: counter(compare-counter) '.';
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .compare-sidenote {
+    padding: var(--space-16) var(--space-20);
+    background: var(--surface);
+    border-left: 3px solid var(--text-dim);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 13px !important;
+    color: var(--text-dim) !important;
+    margin: var(--space-24) 0 !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Comparison table */
+  .compare-table-wrap {
+    margin: var(--space-32) 0;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .compare-table thead {
+    background: var(--surface);
+  }
+  .compare-table th {
+    padding: var(--space-16);
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+  .compare-table th:nth-child(2),
+  .compare-table th:nth-child(3) {
+    color: var(--accent);
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .compare-table td {
+    padding: var(--space-14, 14px) var(--space-16);
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table td:first-child {
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  /* FAQ */
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-top: var(--space-24);
+  }
+  .faq__item {
+    padding: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .faq__item:last-child { border-bottom: none; }
+  .faq__item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-left: var(--space-16);
+  }
+  .faq__item[open] summary::after { content: '–'; }
+  .faq__item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: var(--space-16) !important;
+  }
+  .faq__item a { color: var(--accent); }
+
+  /* Related */
+  .compare-related {
+    margin: var(--space-64) 0;
+    padding-top: var(--space-48);
+    border-top: 1px solid var(--border);
+  }
+  .compare-related h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-24);
+    letter-spacing: -0.015em;
+  }
+  .compare-related__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  .compare-related__list li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-16) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .compare-related__list li:last-child { border-bottom: none; }
+  .compare-related__list a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.15s;
+  }
+  .compare-related__list a:hover { color: var(--accent); }
+  .compare-related__list span {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* CTA */
+  .compare-cta {
+    margin-top: var(--space-64);
+    padding: var(--space-48);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .compare-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.02em;
+  }
+  .compare-cta p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-32);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .compare-cta p a { color: var(--accent); }
+  .compare-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+  }
+  .compare-cta__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .compare-cta__alt:hover { color: var(--text); }
+
+  @media (max-width: 768px) {
+    .tldr { padding: var(--space-24); }
+    .toc { padding: var(--space-16) var(--space-20); }
+    .compare-cta { padding: var(--space-32) var(--space-24); }
+    .compare-table th, .compare-table td { padding: var(--space-12); font-size: 13px; }
+    .verdict { grid-template-columns: 1fr; gap: var(--space-24); }
+  }
+</style>

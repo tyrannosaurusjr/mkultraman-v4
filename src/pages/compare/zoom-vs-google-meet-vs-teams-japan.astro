@@ -1,0 +1,961 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const pubDate = '2026-04-23';
+const updatedDate = '2026-04-23';
+const lastVerified = '2026-04-23';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://www.mkultraman.com/compare/zoom-vs-google-meet-vs-teams-japan/#article",
+  "headline": "Zoom vs Google Meet vs Teams for Japan: Honest Comparison from an Operator",
+  "description": "Zoom vs Google Meet vs Microsoft Teams for Japan teams — pricing, Japan enterprise usage, video quality, and how to choose based on your tech stack.",
+  "datePublished": `${pubDate}T00:00:00+09:00`,
+  "dateModified": `${updatedDate}T00:00:00+09:00`,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.mkultraman.com/og-default.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://www.mkultraman.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mkultraman.com/#organization",
+    "name": "MKUltraman",
+    "url": "https://www.mkultraman.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mkultraman.com/compare/zoom-vs-google-meet-vs-teams-japan/"
+  },
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://www.mkultraman.com/#website"
+  },
+  "about": [
+    { "@type": "SoftwareApplication", "name": "Zoom" },
+    { "@type": "SoftwareApplication", "name": "Google Meet" },
+    { "@type": "SoftwareApplication", "name": "Microsoft Teams" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which platform is most commonly used for business in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoom is the default expectation for external business meetings in Japan — sending a Zoom link to a Japanese client is universally understood. For internal meetings, it depends on the organization: large enterprises use Teams, Google Workspace shops use Meet, and smaller organizations often use Zoom internally as well. If in doubt for external meetings, use Zoom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I avoid paying for Zoom by using Google Meet or Teams for everything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if your use case fits. Google Meet handles up to 500 participants with a Workspace paid plan and records to Drive. Teams handles up to 300 participants and records to SharePoint. Both have improved enough to replace Zoom for internal use at most SMEs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best option for a Japan SME running client-facing events and workshops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoom Webinars is the most polished option for paid or registration-gated events. Google Meet with registration is a reasonable free alternative. Teams Live Events is viable if your audience is already on M365. For anything over 100 external attendees with registration, Zoom is hard to beat on polish and familiarity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a meaningful difference in Japanese language support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All three platforms have full Japanese interfaces. The difference is in support responsiveness: Microsoft Japan has the most robust enterprise support network in Japan. Google Japan support is adequate. Zoom's Japan support is available but smaller. For enterprise-level SLA needs, Teams/Microsoft has the strongest support posture in Japan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What about security — are there any Japan-specific concerns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All three are SOC 2 Type II certified. Microsoft Teams has Japanese government cloud certifications that matter for public sector and certain regulated industries. Zoom went through significant security scrutiny in 2020 and has improved substantially. For most SMEs, all three are adequate; for regulated industries, check your specific compliance requirements with each vendor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We use Zoom now but our clients are asking us to use Teams — do we need to buy Teams?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can join Teams meetings as a guest without a paid account — the Microsoft Teams web client works without installation or login for joining. So your clients can send you Teams links and you can attend for free. Only if you need to schedule and run Teams meetings yourself do you need an account."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.mkultraman.com/compare/" },
+    { "@type": "ListItem", "position": 3, "name": "Zoom vs Google Meet vs Teams", "item": "https://www.mkultraman.com/compare/zoom-vs-google-meet-vs-teams-japan/" }
+  ]
+};
+---
+
+<Base
+  title="Zoom vs Google Meet vs Teams for Japan: Honest Comparison — MKUltraman"
+  description="Zoom vs Google Meet vs Microsoft Teams for Japan teams — pricing, Japan enterprise usage, video quality, and how to choose based on your tech stack."
+  article={true}
+  pubDate={pubDate}
+>
+  <Nav />
+
+  <main class="compare">
+    <div class="container">
+      <article class="compare-article">
+        <header class="compare-header">
+          <a href="/compare/" class="back-link">← All comparisons</a>
+          <span class="compare-eyebrow">Comparison · Last verified {lastVerified}</span>
+          <h1>Zoom vs Google Meet vs Teams for Japan</h1>
+          <p class="compare-lead">
+            All three video platforms work in Japan. None is universally right.
+            Here's the honest breakdown — pricing reality, Japan usage patterns,
+            video quality differences, and when each one actually makes sense based
+            on your existing tech stack.
+          </p>
+          <div class="compare-meta">
+            <span>By <a href="/about/" rel="author">Matt Ketchum</a></span>
+            <span>·</span>
+            <span>Tokyo</span>
+            <span>·</span>
+            <span>~9 min read</span>
+          </div>
+        </header>
+
+        <aside class="tldr" aria-label="Verdict summary">
+          <h2 class="tldr__heading">Verdict</h2>
+          <div class="verdict">
+            <div class="verdict__side">
+              <h3>Zoom wins for</h3>
+              <ul>
+                <li>Video quality-first meetings</li>
+                <li>External client calls</li>
+                <li>Businesses with mixed tool stacks (neither Google nor Microsoft)</li>
+                <li>Large webinars and events</li>
+                <li>High-stakes client presentations</li>
+              </ul>
+            </div>
+            <div class="verdict__side">
+              <h3>Google Meet wins for</h3>
+              <ul>
+                <li>Google Workspace users</li>
+                <li>Internal meetings on tight budget</li>
+                <li>Teams that prefer browser-based with no installs</li>
+                <li>Quick external calls without formality</li>
+              </ul>
+            </div>
+            <div class="verdict__side">
+              <h3>Teams wins for</h3>
+              <ul>
+                <li>Microsoft 365 users (it's already bundled — use it)</li>
+                <li>Japan enterprise that's standardized on Microsoft</li>
+                <li>Organizations needing Teams Phone/PSTN</li>
+                <li>Heavy chat collaboration workflows</li>
+              </ul>
+            </div>
+          </div>
+          <p class="verdict__conclusion">
+            The right answer depends almost entirely on what you're already paying for. If you're on Google Workspace, <strong>Meet is free and good enough</strong>. If you're on M365, <strong>Teams is already there</strong>. Zoom only wins when you need the best video quality or run external events, or when neither ecosystem applies.
+          </p>
+        </aside>
+
+        <nav class="toc" aria-label="Table of contents">
+          <h2 class="toc__heading">On this page</h2>
+          <ol class="toc__list">
+            <li><a href="#at-a-glance">At a glance</a></li>
+            <li><a href="#pricing">Pricing reality</a></li>
+            <li><a href="#japan-enterprise">Japan enterprise context</a></li>
+            <li><a href="#video-quality">Video quality and reliability</a></li>
+            <li><a href="#teams-chat-problem">The Teams-as-chat problem</a></li>
+            <li><a href="#japan-factors">Japan-specific factors</a></li>
+            <li><a href="#decision-framework">Decision framework</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <section id="at-a-glance" class="compare-section">
+          <h2>At a glance</h2>
+          <div class="compare-table-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>Zoom</th>
+                  <th>Google Meet</th>
+                  <th>Microsoft Teams</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Vendor</td>
+                  <td>Zoom Video Communications (US)</td>
+                  <td>Google (US)</td>
+                  <td>Microsoft (US)</td>
+                </tr>
+                <tr>
+                  <td>Free tier</td>
+                  <td>40-min limit on group calls</td>
+                  <td>Unlimited (Google Account required)</td>
+                  <td>Free tier available, limited</td>
+                </tr>
+                <tr>
+                  <td>Entry paid pricing</td>
+                  <td>Pro ~¥2,050/user/mo</td>
+                  <td>Included in Google Workspace Starter ($6/user/mo)</td>
+                  <td>Included in M365 Business Basic ($6/user/mo)</td>
+                </tr>
+                <tr>
+                  <td>Video quality</td>
+                  <td>Best-in-class</td>
+                  <td>Very good</td>
+                  <td>Very good</td>
+                </tr>
+                <tr>
+                  <td>Max participants (paid)</td>
+                  <td>300 (Pro), 1,000 (Business)</td>
+                  <td>500 (Workspace)</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>Recording</td>
+                  <td>Cloud recording (paid)</td>
+                  <td>Cloud recording (Workspace paid)</td>
+                  <td>Cloud recording (paid)</td>
+                </tr>
+                <tr>
+                  <td>Chat integration</td>
+                  <td>Zoom Chat (separate)</td>
+                  <td>Google Chat (separate)</td>
+                  <td>Teams Chat (native, excellent)</td>
+                </tr>
+                <tr>
+                  <td>Japan enterprise usage</td>
+                  <td>High — most client calls</td>
+                  <td>High — Workspace shops</td>
+                  <td>Very high — large Japanese enterprise</td>
+                </tr>
+                <tr>
+                  <td>Webinar/events</td>
+                  <td>Zoom Webinars (paid add-on)</td>
+                  <td>Google Meet with registration</td>
+                  <td>Teams Live Events</td>
+                </tr>
+                <tr>
+                  <td>Calendar integration</td>
+                  <td>Google/Outlook</td>
+                  <td>Google Calendar native</td>
+                  <td>Outlook native</td>
+                </tr>
+                <tr>
+                  <td>Japanese support</td>
+                  <td>Available</td>
+                  <td>Available</td>
+                  <td>Available</td>
+                </tr>
+                <tr>
+                  <td>Standalone (no ecosystem)</td>
+                  <td>Yes — works without Google/Microsoft</td>
+                  <td>Requires Google Account</td>
+                  <td>Best with M365</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="compare-sidenote">
+            Prices shown are publicly listed starting prices in Japan as of
+            {lastVerified}. Zoom pricing is in JPY; Google and Microsoft pricing is in USD for Japan market.
+          </p>
+        </section>
+
+        <section id="pricing" class="compare-section">
+          <h2>Pricing reality</h2>
+          <p>
+            Zoom is the only one you pay for standalone. Google Meet is included in
+            every Google Workspace plan ($6+/user/mo). Teams is included in every
+            M365 plan ($6+/user/mo). If you're already paying for Workspace or M365,
+            using the bundled video tool has zero marginal cost.
+          </p>
+          <p>
+            Zoom Pro at ~¥2,050/user/mo is only worth paying if the bundled
+            alternatives genuinely don't meet your needs. For most businesses,
+            the question isn't "which video platform is best" but "are we
+            already paying for an ecosystem that includes video?"
+          </p>
+          <p>
+            The math changes for large events. Zoom Webinars starts around
+            ¥27,000/month for 500 attendees. Google Meet registration features
+            are free with Workspace. Teams Live Events are included in
+            enterprise plans. If you run regular external events, factor this
+            into your calculation.
+          </p>
+        </section>
+
+        <section id="japan-enterprise" class="compare-section">
+          <h2>Japan enterprise context</h2>
+          <p>
+            Microsoft Teams is dominant in large Japanese enterprises (>300
+            employees) where M365 is the standard. Zoom surged during COVID and
+            is the default for external business calls in Japan — most Japanese
+            businesspeople know how to join a Zoom link without confusion.
+          </p>
+          <p>
+            Google Meet is growing among foreign-owned SMEs and tech companies
+            already on Google Workspace. For external client meetings with
+            Japanese enterprises, Zoom is the safest choice because it's what
+            they expect and know how to use.
+          </p>
+          <p>
+            The pattern: large Japanese enterprises use Teams internally but
+            expect Zoom for external meetings. Foreign SMEs use Meet internally
+            but often pay for Zoom for client calls. Only organizations fully
+            committed to one ecosystem (Google or Microsoft) use a single
+            platform for both internal and external meetings consistently.
+          </p>
+        </section>
+
+        <section id="video-quality" class="compare-section">
+          <h2>Video quality and reliability</h2>
+          <p>
+            Zoom's video compression and background noise cancellation are still
+            considered best-in-class in the market. The difference is most
+            noticeable in challenging network conditions, large meetings (20+
+            participants), or when screen sharing detailed content.
+          </p>
+          <p>
+            Google Meet has improved significantly since 2021 and is very good
+            for meetings under 15 people with stable connections. Teams has had
+            more reliability issues historically, though Microsoft has invested
+            heavily in improvements over the past two years.
+          </p>
+          <p>
+            For high-stakes client presentations, large-scale events, or
+            situations where video quality directly impacts business outcomes,
+            Zoom still has an edge. For internal team meetings where everyone
+            knows each other and minor technical hiccups are forgivable,
+            the difference is negligible.
+          </p>
+        </section>
+
+        <section id="teams-chat-problem" class="compare-section">
+          <h2>The Teams-as-chat problem</h2>
+          <p>
+            Microsoft Teams bundles video with its chat platform, which creates
+            a UX problem: Teams is trying to replace both Slack AND Zoom
+            simultaneously, and does neither as well as the dedicated tools.
+          </p>
+          <p>
+            Many M365 organizations end up using Teams Chat for messaging and
+            Zoom for video anyway, paying for both. The Teams video experience
+            is tightly integrated with the Teams workspace, which is great if
+            your team lives in Teams all day, but confusing if you're just
+            trying to join a meeting.
+          </p>
+          <p>
+            This is worth acknowledging explicitly: if your organization uses
+            Teams Chat heavily, the video integration is a strength. If you
+            use Slack or another chat platform, Teams video feels unnecessarily
+            complex compared to Zoom's single-purpose focus.
+          </p>
+        </section>
+
+        <section id="japan-factors" class="compare-section">
+          <h2>Japan-specific factors</h2>
+          <p>
+            All three platforms have Japanese language interfaces and local
+            support. None has Japan data residency by default, though all three
+            can be configured for Japanese data centers for enterprise customers.
+          </p>
+          <p>
+            For regulated industries, check data residency compliance carefully.
+            Teams has some Japanese government certifications that make it more
+            viable for public sector and regulated finance contexts. Zoom and
+            Meet lack these certifications at the same level.
+          </p>
+          <p>
+            The practical difference in Japan usage: Zoom links are universally
+            understood by Japanese business users. Teams links require more
+            explanation ("please use the web client if you don't have Teams
+            installed"). Meet links work reliably but some older Japanese
+            businesspeople are less familiar with Google accounts for business use.
+          </p>
+        </section>
+
+        <section id="decision-framework" class="compare-section">
+          <h2>Decision framework</h2>
+          <p>Work through these five steps in order. First answer that applies determines your choice.</p>
+          <ol class="compare-list">
+            <li>
+              <strong>Are you on Google Workspace and your calls are primarily internal?</strong>
+              Yes → Google Meet. No → continue.
+            </li>
+            <li>
+              <strong>Are you on Microsoft 365 and your org is already using Teams Chat?</strong>
+              Yes → Teams. No → continue.
+            </li>
+            <li>
+              <strong>Do you run large external events (50+ attendees), webinars, or high-stakes client video?</strong>
+              Yes → Zoom. No → continue.
+            </li>
+            <li>
+              <strong>Are your external clients primarily large Japanese enterprises?</strong>
+              Yes → Zoom (they'll know it). No → continue.
+            </li>
+            <li>
+              <strong>Neither Google nor Microsoft ecosystem applies?</strong>
+              → Zoom Pro.
+            </li>
+          </ol>
+          <p>
+            This framework gets 90% of organizations to the right answer without
+            overthinking it. The key insight: ecosystem fit matters more than
+            feature comparison for most businesses.
+          </p>
+        </section>
+
+        <section id="faq" class="compare-section">
+          <h2>Frequently asked questions</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>Which platform is most commonly used for business in Japan?</summary>
+              <p>
+                Zoom is the default expectation for external business meetings in Japan — sending a Zoom link to a Japanese client is universally understood. For internal meetings, it depends on the organization: large enterprises use Teams, Google Workspace shops use Meet, and smaller organizations often use Zoom internally as well. If in doubt for external meetings, use Zoom.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Can I avoid paying for Zoom by using Google Meet or Teams for everything?</summary>
+              <p>
+                Yes, if your use case fits. Google Meet handles up to 500 participants with a Workspace paid plan and records to Drive. Teams handles up to 300 participants and records to SharePoint. Both have improved enough to replace Zoom for internal use at most SMEs.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What's the best option for a Japan SME running client-facing events and workshops?</summary>
+              <p>
+                Zoom Webinars is the most polished option for paid or registration-gated events. Google Meet with registration is a reasonable free alternative. Teams Live Events is viable if your audience is already on M365. For anything over 100 external attendees with registration, Zoom is hard to beat on polish and familiarity.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Is there a meaningful difference in Japanese language support?</summary>
+              <p>
+                All three platforms have full Japanese interfaces. The difference is in support responsiveness: Microsoft Japan has the most robust enterprise support network in Japan. Google Japan support is adequate. Zoom's Japan support is available but smaller. For enterprise-level SLA needs, Teams/Microsoft has the strongest support posture in Japan.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What about security — are there any Japan-specific concerns?</summary>
+              <p>
+                All three are SOC 2 Type II certified. Microsoft Teams has Japanese government cloud certifications that matter for public sector and certain regulated industries. Zoom went through significant security scrutiny in 2020 and has improved substantially. For most SMEs, all three are adequate; for regulated industries, check your specific compliance requirements with each vendor.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>We use Zoom now but our clients are asking us to use Teams — do we need to buy Teams?</summary>
+              <p>
+                You can join Teams meetings as a guest without a paid account — the Microsoft Teams web client works without installation or login for joining. So your clients can send you Teams links and you can attend for free. Only if you need to schedule and run Teams meetings yourself do you need an account.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="compare-related">
+          <h2>Related reading</h2>
+          <ul class="compare-related__list">
+            <li>
+              <a href="/compare/chatwork-vs-slack-japan/">Chatwork vs Slack for Japan Teams →</a>
+              <span>Another Japan-focused business tool comparison.</span>
+            </li>
+            <li>
+              <a href="/compare/google-workspace-vs-microsoft-365-japan/">Google Workspace vs Microsoft 365 for Japan SMEs →</a>
+              <span>The ecosystem decision that determines your video platform choice.</span>
+            </li>
+            <li>
+              <a href="/blog/japan-sme-tech-stack-2026/">What a Healthy Japan SME Tech Stack Looks Like in 2026 →</a>
+              <span>Where video conferencing fits in the broader picture.</span>
+            </li>
+            <li>
+              <a href="/guides/fractional-it-manager-japan/">Fractional IT Manager in Japan: The Complete Guide →</a>
+              <span>Who handles tool selection decisions like this one.</span>
+            </li>
+            <li>
+              <a href="/services/stack-audit/">Stack Audit: Get an unbiased tool assessment →</a>
+              <span>If you need help choosing the right video platform for your specific situation.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="compare-cta">
+          <h2>Want a second opinion before you commit?</h2>
+          <p>
+            A <a href="/services/stack-audit/">Stack Audit</a> includes an
+            unbiased assessment of your video conferencing needs within your
+            broader tech stack. If you're unsure which platform fits your
+            Japan operations, the audit is designed for exactly this. Starting from $1,000.
+          </p>
+          <div class="compare-cta__actions">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book an exploratory call — $175 →
+            </a>
+            <a href="/contact/" class="compare-cta__alt">or send a message</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Base>
+
+<style>
+  .compare {
+    padding: var(--space-64) 0 var(--space-96);
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  .compare-article {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-24);
+    display: inline-block;
+    transition: color 0.15s ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .compare-header {
+    margin-bottom: var(--space-48);
+  }
+
+  .compare-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .compare-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: var(--space-24);
+  }
+
+  .compare-lead {
+    font-size: 19px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-24);
+  }
+
+  .compare-meta {
+    display: flex;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  .compare-meta a {
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .compare-meta a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* Verdict */
+  .tldr {
+    margin: var(--space-48) 0;
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+  }
+  .tldr__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: var(--space-24);
+  }
+  .verdict {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-24);
+    margin-bottom: var(--space-24);
+  }
+  .verdict__side h3 {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-12);
+    letter-spacing: -0.01em;
+  }
+  .verdict__side ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+  .verdict__side li {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.55;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .verdict__side li::before {
+    content: '·';
+    position: absolute;
+    left: 4px;
+    color: var(--accent);
+    font-weight: 900;
+  }
+  .verdict__conclusion {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-top: var(--space-20);
+    border-top: 1px dashed var(--border);
+    margin: 0;
+  }
+  .verdict__conclusion strong { color: var(--text); font-weight: 600; }
+
+  /* TOC */
+  .toc {
+    margin: var(--space-48) 0;
+    padding: var(--space-24) var(--space-32);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+  }
+  .toc__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: var(--space-16);
+  }
+  .toc__list {
+    list-style: decimal inside;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: 0;
+  }
+  .toc__list li {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .toc__list a {
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .toc__list a:hover { color: var(--accent); }
+
+  /* Sections */
+  .compare-section {
+    margin: var(--space-64) 0;
+    scroll-margin-top: 80px;
+  }
+  .compare-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-24);
+    line-height: 1.2;
+  }
+  .compare-section h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin: var(--space-32) 0 var(--space-16);
+  }
+  .compare-section p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-20);
+  }
+  .compare-section strong { color: var(--text); font-weight: 600; }
+  .compare-section em { font-style: italic; }
+  .compare-section a {
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .compare-section a:hover { border-color: var(--accent); }
+
+  .compare-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    margin: var(--space-20) 0;
+  }
+  .compare-list li {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: var(--space-24);
+    position: relative;
+  }
+  .compare-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 13px;
+    top: 4px;
+  }
+  ol.compare-list {
+    counter-reset: compare-counter;
+  }
+  ol.compare-list li::before {
+    counter-increment: compare-counter;
+    content: counter(compare-counter) '.';
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .compare-sidenote {
+    padding: var(--space-16) var(--space-20);
+    background: var(--surface);
+    border-left: 3px solid var(--text-dim);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 13px !important;
+    color: var(--text-dim) !important;
+    margin: var(--space-24) 0 !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Comparison table */
+  .compare-table-wrap {
+    margin: var(--space-32) 0;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .compare-table thead {
+    background: var(--surface);
+  }
+  .compare-table th {
+    padding: var(--space-16);
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+  .compare-table th:nth-child(2),
+  .compare-table th:nth-child(3),
+  .compare-table th:nth-child(4) {
+    color: var(--accent);
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .compare-table td {
+    padding: var(--space-14, 14px) var(--space-16);
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table td:first-child {
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  /* FAQ */
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-top: var(--space-24);
+  }
+  .faq__item {
+    padding: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .faq__item:last-child { border-bottom: none; }
+  .faq__item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-left: var(--space-16);
+  }
+  .faq__item[open] summary::after { content: '–'; }
+  .faq__item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: var(--space-16) !important;
+  }
+  .faq__item a { color: var(--accent); }
+
+  /* Related */
+  .compare-related {
+    margin: var(--space-64) 0;
+    padding-top: var(--space-48);
+    border-top: 1px solid var(--border);
+  }
+  .compare-related h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-24);
+    letter-spacing: -0.015em;
+  }
+  .compare-related__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  .compare-related__list li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-16) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .compare-related__list li:last-child { border-bottom: none; }
+  .compare-related__list a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.15s;
+  }
+  .compare-related__list a:hover { color: var(--accent); }
+  .compare-related__list span {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* CTA */
+  .compare-cta {
+    margin-top: var(--space-64);
+    padding: var(--space-48);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .compare-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.02em;
+  }
+  .compare-cta p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-32);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .compare-cta p a { color: var(--accent); }
+  .compare-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+  }
+  .compare-cta__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .compare-cta__alt:hover { color: var(--text); }
+
+  @media (max-width: 768px) {
+    .tldr { padding: var(--space-24); }
+    .toc { padding: var(--space-16) var(--space-20); }
+    .compare-cta { padding: var(--space-32) var(--space-24); }
+    .compare-table th, .compare-table td { padding: var(--space-12); font-size: 13px; }
+    .verdict { grid-template-columns: 1fr; gap: var(--space-24); }
+  }
+</style>
