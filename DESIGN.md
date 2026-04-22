@@ -46,7 +46,8 @@
 ## Spacing
 - **Base unit:** 8px
 - **Density:** Comfortable to spacious — generous margins, nothing cramped
-- **Scale:** 2px / 4px / 8px / 16px / 24px / 32px / 48px / 64px / 96px / 128px
+- **Scale:** 2px / 4px / 8px / 12px / 16px / 24px / 32px / 48px / 64px / 96px / 128px
+- **On 12px:** The scale is 8-based for macro-layout spacing (sections, gutters, page rhythm). 12px exists as a legitimate UI-micro value for things where 8 is too tight and 16 is too loose: pill-button vertical padding, label-to-input gap, icon-text pair gap inside a nav link. Use sparingly — if you reach for 12 for a section-level rhythm, you probably want 16 or 24.
 
 ## Layout
 - **Approach:** Poster-first. The first viewport is a single statement — headline left, form right. Everything below the fold supports the CTA, it doesn't compete with it.
@@ -78,3 +79,4 @@
 | 2026-03-31 | Red evolved from #original to #C41E3A | Deeper crimson reads more premium than the coral on the old site, retains brand continuity |
 | 2026-04-22 | Stat numbers stay Fraunces, not Geist Mono | `/design-review` flagged the implementation-vs-spec drift. Fraunces on stats gives the "40+ / 10yr / 60 days" strip more narrative weight than Geist Mono would. Mono stays on the sub-labels under each stat. |
 | 2026-04-22 | `--text-dim` bumped from #555555 to #828282 | Old value failed WCAG AA at 2.66:1 on 117 small-text usages. New value is 4.90:1 (passes AA). Side effect: visual gap to `--text-muted` is now very small. Future cleanup may collapse to one token. |
+| 2026-04-22 | 12px formalized in the spacing scale | `--space-12` had been used 37 times across the codebase as a UI-micro value (pill padding, label-to-input gaps). Either the scale was wrong or the code was wrong. Code was right — 12px is a legitimate UI tier between 8 and 16. Added to the scale with guidance on when to use it. |
