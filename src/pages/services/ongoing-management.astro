@@ -71,6 +71,16 @@ const serviceSchema = {
     "billingDuration": "P1M"
   }
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.mkultraman.com/services/" },
+    { "@type": "ListItem", "position": 3, "name": "Ongoing Management", "item": "https://www.mkultraman.com/services/ongoing-management/" }
+  ]
+};
 ---
 
 <Base
@@ -292,6 +302,7 @@ const serviceSchema = {
 
   <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <Footer />
 </Base>

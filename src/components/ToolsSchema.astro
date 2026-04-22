@@ -83,6 +83,25 @@ const schema = {
   '@context': 'https://schema.org',
   '@graph': graph,
 };
+
+// Breadcrumb for individual tool pages only (skipped on /tools index).
+const toolDisplayNames: Record<string, string> = {
+  'redditreach': 'RedditReach',
+  'tetsuno-claw': 'TetsuClaw',
+  'japan-money-tracker': 'Japan Money Tracker',
+  'hitoe': 'Hitoe',
+};
+
+const breadcrumbSchema = tool && toolDisplayNames[tool] ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.mkultraman.com/' },
+    { '@type': 'ListItem', 'position': 2, 'name': 'Tools', 'item': 'https://www.mkultraman.com/tools/' },
+    { '@type': 'ListItem', 'position': 3, 'name': toolDisplayNames[tool], 'item': `https://www.mkultraman.com/tools/${tool}/` },
+  ],
+} : null;
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}

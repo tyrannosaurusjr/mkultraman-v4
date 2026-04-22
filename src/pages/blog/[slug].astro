@@ -80,6 +80,16 @@ const blogPostingSchema = {
     "@id": "https://www.mkultraman.com/#website"
   }
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://www.mkultraman.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": post.data.title, "item": `https://www.mkultraman.com/blog/${post.id}/` }
+  ]
+};
 ---
 
 <Base
@@ -121,6 +131,7 @@ const blogPostingSchema = {
   <Footer />
 
   <script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 </Base>
 
 <style>
