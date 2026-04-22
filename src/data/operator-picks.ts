@@ -411,7 +411,7 @@ export const operatorPicks: OperatorPick[] = [
     url: 'https://wise.com',
     operatorTake: 'International transfers at mid-market exchange rate with transparent fees. Essential for foreign founders in Japan moving money between JPY and USD/EUR. Killed my SWIFT wire habit.',
     hasReferral: true,
-    referralUrl: null,
+    referralUrl: 'https://wise.com/invite/dic/matthewk1771',
     referralSignupUrl: 'https://wise.com/invite',
   },
   {
