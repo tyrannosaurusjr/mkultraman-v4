@@ -12,6 +12,15 @@
   --accent-hover: #A01830;
   --accent-soft:  rgba(196, 30, 58, 0.12);
 
+  /* Semantic (per DESIGN.md). info intentionally aliases accent. */
+  --success:      #22c55e;
+  --warning:      #eab308;
+  --error:        #ef4444;
+  --info:         var(--accent);
+
+  /* Derived (used by nav backdrop, tooltips) */
+  --bg-rgb:       17, 17, 17;
+
   /* Typography */
   --font-display: 'Fraunces', Georgia, serif;
   --font-body:    'Geist', system-ui, sans-serif;
