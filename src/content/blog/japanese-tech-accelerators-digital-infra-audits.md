@@ -263,3 +263,7 @@ The blind guide is bad enough.
 
 
 The fortress is worse.
+
+---
+
+*Further reading: [what a healthy Japan SME tech stack looks like](/blog/japan-sme-tech-stack-2026/) · [when to stop DIY-ing your infrastructure](/blog/stop-diying-infrastructure-japan-sme-checklist/) · [Stack Audit: what a real infrastructure audit looks like](/services/stack-audit/)*

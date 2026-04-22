@@ -31,3 +31,7 @@ This leads to a stark conclusion. If an artisan or a specific craft community ac
 
 
 This is not an act of cultural destruction. It is a recognition of reality. The future of Japan's [Heritage Crafts](/blog/artisan-mindset-business-growth-craftsmanship/) as a living, breathing sector depends on supporting the innovators, the collaborators, and the pragmatists. Allowing unwilling participants to follow their chosen path to obsolescence frees up critical resources—financial and intellectual—to be invested in the artisans who are building a future for **kogei**. This strategic abandonment is the most potent form of support for the sector as a whole, ensuring that the wider tradition thrives rather than slowly declining alongside its most resistant practitioners. The choice is between becoming a historical artifact or remaining a vital part of contemporary culture.
+
+---
+
+*Further reading: [artisan mindset and business growth](/blog/artisan-mindset-business-growth-craftsmanship/) · [Japan entrepreneurship and rural revitalization](/blog/japan-entrepreneurship-rural-revitalization-akiya/)*

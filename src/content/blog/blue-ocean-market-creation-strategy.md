@@ -53,3 +53,7 @@ Your job isn’t to fight harder. It’s to see clearer.
 
 
 Whether it’s identity, convenience, ethics, fun, or access—there’s always a layer of value waiting to be reimagined. That’s where the opportunity lives.
+
+---
+
+*Further reading: [Japan market and untapped value](/blog/japan-market-untapped-value-investment/) · [when to stop DIY-ing your infrastructure](/blog/stop-diying-infrastructure-japan-sme-checklist/) · [Stack Audit: identify what's holding your business back](/services/stack-audit/)*

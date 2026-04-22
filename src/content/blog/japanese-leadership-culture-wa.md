@@ -102,3 +102,7 @@ The Samurai era ended when the black ships arrived. Japan is facing a new fleet 
 Only decisive, autonomous action will.
 
 ### Q&A: Deconstructing the Crisis
+
+---
+
+*Further reading: [corporate training programs for Japanese leadership](/blog/corporate-training-programs-japanese-leadership/) · [Japanese business culture's disorganized approach](/blog/japanese-business-culture-disorganized-approach/) · [Ongoing Management: operational structure for Japan teams](/services/ongoing-management/)*

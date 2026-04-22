@@ -123,3 +123,7 @@ Price it. Publish it. Mean it.
 
 
 And then? Let them buy.
+
+---
+
+*Further reading: [salary transparency and a powerful hiring process](/blog/salary-transparency-hiring-process-recruitment/)*

@@ -148,3 +148,7 @@ It is time to recognize that "Japan is Back!" is a marketing slogan, not an econ
 
 
 The boardroom of Japan Inc. is effectively dead. The future belongs to those who move with the urgency of a nation that has already run out of time.
+
+---
+
+*Further reading: [hollow empire and Japan Inc.'s visa barrier](/blog/hollow-empire-japan-inc-visa-barrier/) · [Japan agetech strategy fails human care](/blog/japan-agetech-strategy-fails-human-care/) · [Infrastructure Build: build with what you actually have](/services/infrastructure-build/)*

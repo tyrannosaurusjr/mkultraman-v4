@@ -25,3 +25,7 @@ Adults who spend their working lives in rigid, hierarchical structures are the v
 The path to correcting **AI misuse** is paved with intention. It requires us to slow down and be more deliberate in our interactions. For those of us working with **AI in Japan**, this might mean pushing back against the cultural impulse for immediate results, in favor of better, more robust outcomes. These three keys are not technical tricks; they are a strategic shift in how we approach the technology.
 
 Ultimately, the burden of quality rests on the user. We must move beyond lazy prompting and embrace a more disciplined, thoughtful approach. By doing so, we can transform AI from a source of plausible-sounding nonsense into a genuine partner in creation and analysis.
+
+---
+
+*Further reading: [what a healthy Japan SME tech stack looks like](/blog/japan-sme-tech-stack-2026/)*

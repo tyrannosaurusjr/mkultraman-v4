@@ -61,3 +61,7 @@ Japan’s digital literacy crisis is also its greatest opportunity. The demand f
 The nation's **workers**are its greatest asset. But that asset is currently trapped by **accepted practice**. Unlocking its potential requires a national commitment to **digitalization**. This is the only way forward.
 
 Key steps include:
+
+---
+
+*Further reading: [technology adoption in Japan fails at procurement](/blog/technology-adoption-japan-systems-procurement/) · [digital literacy crisis in Japan business](/blog/digital-literacy-crisis-japan-business/) · [Infrastructure Build: replace legacy systems with working ones](/services/infrastructure-build/)*

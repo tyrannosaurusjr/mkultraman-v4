@@ -36,3 +36,7 @@ Ultimately, the narrative that **Japan’s political paralysis** is a sign of im
 
 
 If the LDP continues to prioritize the internal balance of its factions over the need for national **reform**, this paralysis will only deepen. The economy will continue to stagnate, the population will continue to age without adequate policy solutions, and Japan's standing in the world will continue to erode. At a certain point, the slow, managed decline becomes more terrifying than a sudden, chaotic fall. If the system cannot be reformed from within, a collapse might eventually become the only path to progress.
+
+---
+
+*Further reading: [Japan's political paralysis: a call for national vision](/blog/japans-political-paralysis/) · [hollow empire and Japan Inc.'s visa barrier](/blog/hollow-empire-japan-inc-visa-barrier/)*

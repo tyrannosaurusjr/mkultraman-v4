@@ -134,3 +134,7 @@ Once the funds start coming in I will expand beyond physical goods. I will look 
 
 
 I avoid words like "Salvation" and use words like "Signal" or "Portal." This is about transmission. It is about receiving the data from the **Shingo Legend** and broadcasting it to the world.
+
+---
+
+*Further reading: [Aizu strategy: 5 steps to awesome cultural assets](/blog/aizu-strategy-rural-japan-blueprint/) · [Japan entrepreneurship and rural revitalization](/blog/japan-entrepreneurship-rural-revitalization-akiya/)*

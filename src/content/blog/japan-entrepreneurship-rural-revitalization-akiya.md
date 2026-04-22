@@ -21,3 +21,7 @@ After the tsunami, I began to see a different kind of disaster unfolding in slow
 My focus on **rural revitalization Japan** is the logical conclusion of my experiences. It addresses both the sudden destruction I survived and the gradual decay I now witness. The mission is simple in theory but complex in practice.
 
 The podcast hosts wanted practical advice, and I gave it to them straight. My path has been unconventional, and the obstacles are significant. One major lesson we discussed is the peril of "thinking too big" at the outset. In Japan, credibility is everything, and it's built on a foundation of tangible, delivered results. Grandiose promises without a track record often fall on deaf ears. My advice is to start small, build trust through consistent execution, and let your successful work become your best marketing tool. This pragmatic approach has been crucial to my work with **Akiya** and my overall journey in **Japan entrepreneurship**.
+
+---
+
+*Further reading: [Aizu strategy: 5 steps to awesome cultural assets](/blog/aizu-strategy-rural-japan-blueprint/) · [rural revitalization Japan and SoftBank investment](/blog/rural-revitalization-japan-softbank-investment/) · [Stack Audit: build a foundation for your Japan venture](/services/stack-audit/)*

@@ -98,3 +98,7 @@ This is where the real fight is. The future of **Japanese society** will be decg
 
 
 It's time to stop letting "ad hoc policy responses" dictate the future. The Diet must act. We need legislation. We need to face reality. We need to build systems grounded in a new, modern agreement. A vision based on data, not fear. A vision that sees these new arrivals as people, not just "labor."
+
+---
+
+*Further reading: [foreign labor data: 60% oppose active entry](/blog/foreign-labor-public-order-data-shift/) · [Japan's systemic labor shortfall: the 2040 collapse](/blog/japan-systemic-labor-shortfall-collapse/) · [hollow empire and Japan Inc.'s visa barrier](/blog/hollow-empire-japan-inc-visa-barrier/)*

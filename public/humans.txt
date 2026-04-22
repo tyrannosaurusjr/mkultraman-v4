@@ -1,0 +1,30 @@
+/* TEAM */
+
+Consultant: Matt Ketchum
+Site: https://www.mkultraman.com/about/
+Email: hello@mkultraman.com
+Location: Tokyo, Japan
+Languages: English (primary), Japanese (working)
+
+/* SITE */
+
+Last update: 2026-04-22
+Standards: HTML5, CSS3, Schema.org (JSON-LD)
+Components: Astro, Vercel
+Fonts: Fraunces, Geist, Geist Mono (Google Fonts)
+Analytics: Google Analytics 4, Vercel Analytics
+Forms: Formspree
+Domain: mkultraman.com
+
+/* BUSINESS */
+
+Practice: Digital infrastructure consultancy for foreign-owned SMEs in Japan
+Founded: 2020
+Services: Stack Audit, Infrastructure Build, Ongoing Management
+Clients served: 40+
+Industries: Food & Beverage, Media, Professional Services, Events, Retail
+
+/* THANKS */
+
+To every operator who has trusted me with their stack.
+Guild network: https://www.mkultraman.com/guild/

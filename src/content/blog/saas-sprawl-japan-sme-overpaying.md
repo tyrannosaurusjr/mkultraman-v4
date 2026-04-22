@@ -71,3 +71,7 @@ Once you've identified your waste, the decision tree is simple:
 - **Broken automation:** Fix it or remove it. A broken automation that looks like it's running is worse than no automation — it creates false confidence that a workflow is happening when it isn't.
 
 If you want someone to do this systematically — inventory, prioritized recommendations, and a clear picture of your full stack — that's what a [Stack Audit](/services/stack-audit) delivers.
+
+---
+
+*Further reading: [what a healthy Japan SME tech stack looks like](/blog/japan-sme-tech-stack-2026/)*

@@ -95,3 +95,7 @@ This hybrid approach to Tokyo Businessis the future. It combines the human eleme
 
 
 We need more of this. We need more organizations that refuse to accept the status quo. We need more leaders who are willing to curate their ecosystems.
+
+---
+
+*Further reading: [Tokyo business mindset and strategic agility](/blog/tokyo-business-mindset-strategic-agility-leadership/) · [Japan business execution 2026](/blog/japan-business-execution-2026/)*

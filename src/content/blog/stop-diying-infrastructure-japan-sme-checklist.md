@@ -103,3 +103,7 @@ If you scored 6 or more, the most useful next step is a full picture of what you
 If you scored 3-5 and want to stay ahead of it without a full engagement, [a conversation is a reasonable starting point](/contact). Sometimes 45 minutes is enough to know whether you need professional help or can handle it internally.
 
 If you scored under 3 — genuinely, you're doing fine. Come back when something in this list changes.
+
+---
+
+*Further reading: [what fractional IT management means for a 10-person business](/blog/fractional-it-management-japan-sme/)*

@@ -47,3 +47,7 @@ This resistance to change feeds a powerful narrative of a stagnant, aging nation
 This brand paradox is not an abstract academic problem; it has tangible consequences for how Japan engages with the world.
 
 For the **Japan national brand** to evolve, it must move beyond this curated duality. It needs to tell the stories from the vast, unrepresented middle ground where most modern Japanese adults actually live.
+
+---
+
+*Further reading: [the digital facade: Japan Inc. is a dangerous mirage](/blog/digital-facade-japan-inc-mirage/) · [systemic failure in Japan: need for a global mindset](/blog/systemic-failure-japan-global-mindset-modernity/) · [Japan business execution 2026](/blog/japan-business-execution-2026/)*

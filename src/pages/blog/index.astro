@@ -18,6 +18,37 @@ const formatDate = (date: Date) => {
 };
 
 const toIsoDate = (date: Date) => date.toISOString().split('T')[0];
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "https://www.mkultraman.com/blog/#blog",
+  "url": "https://www.mkultraman.com/blog/",
+  "name": "MKUltraman Blog — Japan SME Digital Infrastructure Analysis",
+  "description": "Field notes on digital infrastructure, business strategy, and market dynamics in Japan. Written by Matt Ketchum from Tokyo.",
+  "inLanguage": "en",
+  "publisher": { "@id": "https://www.mkultraman.com/#organization" },
+  "author": { "@id": "https://www.mkultraman.com/#person" },
+  "blogPost": sortedPosts.slice(0, 20).map(post => ({
+    "@type": "BlogPosting",
+    "@id": `https://www.mkultraman.com/blog/${post.id}/#blogposting`,
+    "url": `https://www.mkultraman.com/blog/${post.id}/`,
+    "headline": post.data.title,
+    "description": post.data.description,
+    "datePublished": post.data.pubDate.toISOString(),
+    "author": { "@id": "https://www.mkultraman.com/#person" },
+    "keywords": post.data.tags.join(", ")
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.mkultraman.com/blog/" }
+  ]
+};
 ---
 
 <Base title="Blog — MKUltraman | Japan SME Digital Infrastructure Analysis" description="Field notes on digital infrastructure, business strategy, and market dynamics in Japan. Written by Tetsu from Tokyo.">
@@ -60,6 +91,9 @@ const toIsoDate = (date: Date) => date.toISOString().split('T')[0];
       </div>
     </div>
   </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify(blogSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <Footer />
 </Base>

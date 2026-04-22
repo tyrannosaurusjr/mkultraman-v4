@@ -56,3 +56,7 @@ The "Aizu Strategy" is a replicable blueprint for the hundreds of other towns in
 ## Action Plan for Travel Operators
 
 The failure of local governments is an opportunity for savvy travel operators. You cannot wait for these municipalities to get their act together. You must build the product yourself.
+
+---
+
+*Further reading: [rural revitalization Japan and SoftBank investment](/blog/rural-revitalization-japan-softbank-investment/) · [Japan entrepreneurship and akiya success](/blog/japan-entrepreneurship-rural-revitalization-akiya/) · [Stack Audit for local Japan operations](/services/stack-audit/)*

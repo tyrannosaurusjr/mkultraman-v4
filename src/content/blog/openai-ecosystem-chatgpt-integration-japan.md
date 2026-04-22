@@ -50,3 +50,7 @@ This is a developing story, and you can read the original report from [TechCrunc
 
 
 This announcement solidifies a new direction for **AI**. ChatGPT is no longer just a place to ask questions. It is aggressively becoming the central platform where you get things done. As we explore what this means for technology and society, staying informed is more important than ever. You can learn more about our mission to track these changes on our [about page](https://icanjapan.ai/about).
+
+---
+
+*Further reading: [ChatGPT 5 review from the trenches](/blog/chatgpt5-review-from-the-trenches/) · [AI hype cycle and Japanese tech startups](/blog/ai-hype-cycle-japanese-tech-startups-innovation/)*

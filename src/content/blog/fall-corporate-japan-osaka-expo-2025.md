@@ -26,3 +26,7 @@ The spectacular failure of the **Osaka Expo 2025** does not have to be Japan's o
 It is rising in the towns and prefectures that the centralized system left behind. This new wave of **innovation** is driven by a different set of principles:
 
 It is rising in the towns and prefectures that the centralized system left behind. This new wave of **innovation** is driven by a different set of principles, including smart digitization and bottom-up leadership. This emerging economy is being built by a new generation of founders—digitally native, globally aware, and untethered from the rigid hierarchies that led to the current decline. They are launching smart hotels in Gunma, advanced remote work hubs in Kumamoto, and Web3 community currencies in Tottori. These are Japan’s true pavilions of the future, and their success depends on moving beyond the shadow of the past. The Expo's failure is the permission slip they need to build something better.
+
+---
+
+*Further reading: [Osaka Expo 2025: Japan's costly nostalgia](/blog/osaka-expo-2025-japan-economic-stagnation/) · [Stack Audit: build operational infrastructure that actually works](/services/stack-audit/)*

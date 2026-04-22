@@ -71,3 +71,7 @@ One of the best parts is the flexibility. Camping is available and encouraged fo
 
 
 For more information on the area, I recommend checking out the official **Chigasaki City Tourism Association** ([https://www.chigasaki-kankou.org/](https://www.chigasaki-kankou.org/)). To dive deeper into the world of Japanese craft beverages, **Japan Beer Times** ([https://japanbeertimes.com/](https://japanbeertimes.com/)) is an excellent resource. And if you're inspired to start your own journey with **fermentation**, a great place for information and supplies is **Cultures for Health** ([https://culturesforhealth.com/](https://culturesforhealth.com/)).
+
+---
+
+*Further reading: [modern event management vs outdated logistics](/blog/modern-event-management-outdated-event-logistics/) · [RedditReach: organic growth for Japan communities](/tools/redditreach/)*

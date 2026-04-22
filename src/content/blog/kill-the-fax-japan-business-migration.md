@@ -99,3 +99,7 @@ The migration itself isn't technically complex. The bottleneck is almost always 
 Without a named owner and a clear timeline, paper-based workflows persist indefinitely because they're not urgent enough to fix right now but always need to be fixed someday.
 
 If you want to map this migration for your specific situation — which processes to migrate first, which external dependencies are real versus assumed, and what tools make sense for your team — that's exactly what a [Stack Audit](/services/stack-audit) covers.
+
+---
+
+*Further reading: [digital paradox in Japan: 6 ways to smash analog systems](/blog/digital-paradox-analog-transformation/) · [technology adoption in Japan fails at procurement](/blog/technology-adoption-japan-systems-procurement/)*

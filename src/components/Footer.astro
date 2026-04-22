@@ -34,6 +34,16 @@ const year = new Date().getFullYear();
       </div>
 
       <div class="footer__col">
+        <p class="footer__col-title">Resources</p>
+        <ul class="footer__links">
+          <li><a href="/guides">Guides</a></li>
+          <li><a href="/blog">Writing</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/white-label">White Label</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
         <p class="footer__col-title">Connect</p>
         <ul class="footer__links">
           <li><a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener">Book a call</a></li>
@@ -64,8 +74,8 @@ const year = new Date().getFullYear();
 
   .footer__top {
     display: grid;
-    grid-template-columns: 1fr auto auto auto;
-    gap: var(--space-64);
+    grid-template-columns: 1.2fr repeat(4, auto);
+    gap: var(--space-48);
     margin-bottom: var(--space-48);
   }
 

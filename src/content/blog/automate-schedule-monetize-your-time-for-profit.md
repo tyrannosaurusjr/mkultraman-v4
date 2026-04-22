@@ -43,3 +43,7 @@ The tools you use are a subtle but powerful form of marketing. A clunky, manual 
 
 
 When you **automate your schedule**, you are making a conscious decision to build a brand that reflects modern efficiency. Embedding a scheduling link on your website or in your email signature reinforces your credibility and sets you apart from competitors. This seamless first impression can be the deciding factor for a client choosing between you and someone else. This is how you win in a crowded market—not just by what you do, but by how effortlessly you do it.
+
+---
+
+*Further reading: [the hidden cost of SaaS sprawl for Japan SMEs](/blog/saas-sprawl-japan-sme-overpaying/) · [shared systems and Japan's business model](/blog/shared-systems-japan-business-failure/) · [Stack Audit: map your full digital infrastructure](/services/stack-audit/)*

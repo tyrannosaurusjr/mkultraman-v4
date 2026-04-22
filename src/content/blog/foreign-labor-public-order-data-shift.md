@@ -85,3 +85,7 @@ Japan is pivoting inward. The "America First" sympathy among the youth points to
 **Stay Informed, Stay Sharp.** Do not just read the headlines. You must understand the currents beneath them. If you want to navigate this new landscape you need to know exactly how these political shifts affect your visa.
 
 Would you like me to break down the specific policy proposals of the Takaichi Cabinet regarding visa renewals and permanent residency requirements based on this new wave of sentiment?
+
+---
+
+*Further reading: [Japan's systemic labor shortfall: the 2040 collapse](/blog/japan-systemic-labor-shortfall-collapse/) · [Japanese society and foreign workers](/blog/japanese-society-foreign-workers-consensus/) · [zombie companies and tough business visas in Japan](/blog/zombie-companies-japan-stifled-entrepreneurship/)*

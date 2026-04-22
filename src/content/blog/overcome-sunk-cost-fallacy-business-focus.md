@@ -35,3 +35,7 @@ Letting go isn’t a cold or heartless act. It is the pinnacle of [strategic cla
 
 
 The **Sunk Cost Fallacy** preys on our best intentions—our loyalty, our persistence, our desire to see things through. But true leadership isn't about finishing everything you start. It's about finishing the *right* things. It's about having the discipline to let failing partners fail, to let doomed products die, and to reallocate your precious resources toward genuine opportunities. You don’t owe your bad ideas a future. You owe your best ideas a chance.
+
+---
+
+*Further reading: [blue ocean market creation strategy](/blog/blue-ocean-market-creation-strategy/) · [when to stop DIY-ing your infrastructure: a Japan SME checklist](/blog/stop-diying-infrastructure-japan-sme-checklist/) · [Stack Audit: cut what's not working](/services/stack-audit/)*

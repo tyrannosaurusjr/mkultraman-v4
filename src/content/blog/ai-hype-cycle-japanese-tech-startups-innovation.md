@@ -53,3 +53,7 @@ So, how do we assess these ambitious claims? The companies are undoubtedly legit
 However, the central claims often lean dangerously close to the bullshit end of the spectrum. They represent a masterclass in branding and narrative-crafting, perfectly timed to capitalize on the global AI frenzy. They take a real, existing technology (LLMs) and cloak it in a near-mythical concept (manufactured human connection) to create a product that sounds more revolutionary than it may actually be.
 
 Rather than a simple seal of approval or disapproval, I propose a verdict based on critical thinking. The danger of the current **AI hype cycle** is that it muddies the waters of genuine **innovation**. It risks creating a "human connection" bubble that, when it inevitably pops, could lead to widespread cynicism. These **Japanese tech startups** are selling a promise. And in this high-stakes world, both investors and customers should be profoundly wary. True progress requires us to ask the hard questions and demand proof, not just promises.
+
+---
+
+*Further reading: [what a healthy Japan SME tech stack looks like in 2026](/blog/japan-sme-tech-stack-2026/) · [how technology adoption stalls at procurement](/blog/technology-adoption-japan-systems-procurement/) · [TetsuClaw: AI work OS for operators in Japan](/tools/tetsuno-claw/)*

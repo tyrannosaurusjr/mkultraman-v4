@@ -102,3 +102,7 @@ Japan’s next phase will not be delivered by reform alone, nor will it be drive
 These operators will not replace institutions. They will coexist with them, complement them, and occasionally challenge them. In doing so, they will expand the range of outcomes that can realistically be achieved.
 
 The year will not mark the arrival of a new system. It will mark the moment when execution begins to matter more than permission.
+
+---
+
+*Further reading: [future of Japan: why 2026 makes change visible](/blog/future-of-japan-2026-visible-shift/)*

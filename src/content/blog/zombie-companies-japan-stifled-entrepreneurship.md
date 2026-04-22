@@ -37,3 +37,7 @@ When you systematically eliminate weaker businesses but simultaneously block the
 Japan is clearing the field of **Zombie Companies** but refusing to plant new seeds. The voids left behind will not automatically be filled with vibrant new growth. This is especially dangerous given Japan's severe demographic crisis, a challenge detailed by think tanks like the [Center for Strategic and International Studies](https://www.csis.org/analysis/japans-demographic-dilemma-and-implications-future-indo-pacific-security-architecture). The nation desperately needs an influx of new people, radical **innovation**, and a flexible **Business Visa** process to attract them.
 
 This restrictive policy ensures the "destruction" of **Zombie Companies** is far more potent than the "creation" of new ventures, leading to a net loss of economic vitality. Japan is performing a necessary amputation of its **Zombie Companies** but refusing the prosthetic of foreign-led **innovation** that would allow it to walk again. A flexible **Business Visa** program is not a luxury; it is a necessity for the nation's economic survival and future growth.
+
+---
+
+*Further reading: [hollow empire and Japan Inc.'s visa barrier](/blog/hollow-empire-japan-inc-visa-barrier/) · [Japan economic stagnation and toxic culture](/blog/japan-economic-stagnation-toxic-culture-sanseito/) · [Stack Audit: build operations that outlast the zombie cohort](/services/stack-audit/)*

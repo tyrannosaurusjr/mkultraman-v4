@@ -97,3 +97,7 @@ If you have that picture in a spreadsheet and the spreadsheet is accurate and ma
 Start simple. Get it adopted. Add complexity only if the simple version breaks.
 
 If you're in the middle of a failed CRM deployment and want help untangling it, or if you want to build something functional from scratch, [start with a conversation](/contact).
+
+---
+
+*Further reading: [what a healthy Japan SME tech stack looks like](/blog/japan-sme-tech-stack-2026/)*

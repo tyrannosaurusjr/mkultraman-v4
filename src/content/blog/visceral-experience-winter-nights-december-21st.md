@@ -160,3 +160,7 @@ That is what we do in Yugawara. We build the soil. We plant the seeds. We let th
 
 
 **New development** requires this soil. It cannot grow on concrete. It cannot grow in fluorescent light. It needs the messiness of real life. It needs the heat of real fire. It needs the cold of real winter.
+
+---
+
+*Further reading: [Chigasaki beach event: fire and fermentation](/blog/chigasaki-beach-event-wild-food-experience/) · [RedditReach: organic growth for event communities](/tools/redditreach/)*

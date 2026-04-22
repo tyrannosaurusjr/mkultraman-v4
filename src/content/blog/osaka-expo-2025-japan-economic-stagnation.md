@@ -35,3 +35,7 @@ The **Osaka Expo 2025** is not a forward-looking vision. It is an accidental mus
 
 
 Japan does not need another multi-billion-yen spectacle. It requires a fundamental reboot—a shift away from centralized, top-down projects and toward fostering local innovation and resilience. To remain relevant and build a truly sustainable future, Japan must stop designing societies based on memories and start redesigning its governance for the complex realities of the 21st century.
+
+---
+
+*Further reading: [fall of corporate Japan and Osaka Expo 2025 innovation](/blog/fall-corporate-japan-osaka-expo-2025/) · [Japan economic stagnation and toxic culture](/blog/japan-economic-stagnation-toxic-culture-sanseito/) · [Japan business execution 2026](/blog/japan-business-execution-2026/)*

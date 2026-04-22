@@ -67,3 +67,7 @@ Faced with these complex domestic challenges, Japan's political discourse increa
 
 
 The political function of this scapegoating is transparent. It is a classic populist tactic. It diverts public anger away from the failures of the ruling establishment and directs it toward a visible minority. It is far easier to blame foreigners than it is to undertake the politically costly work of reforming the pension system, liberalizing the labor market, or dismantling patriarchal corporate structures. The system's inertia protects the interests of the powerful at the direct expense of the nation's long-term viability.
+
+---
+
+*Further reading: [Japan's political paralysis: entrenched LDP factions](/blog/japans-political-paralysis-entrenched-ldp-factions/) · [Japan economic stagnation and toxic culture](/blog/japan-economic-stagnation-toxic-culture-sanseito/) · [zombie companies and stifled entrepreneurship in Japan](/blog/zombie-companies-japan-stifled-entrepreneurship/)*

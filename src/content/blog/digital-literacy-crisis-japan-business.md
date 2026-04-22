@@ -237,3 +237,7 @@ You need to stop squeezing the rock. You need to look at your hands. They are bl
 
 
 You have a choice. You can continue to feel right while your business shrinks into irrelevance. You can continue to tell yourself that "pretty good" is acceptable while the rest of the world laps you. Or you can admit that you do not understand this world. You can hand the keys to someone who does.
+
+---
+
+*Further reading: [digital paradox in Japan: 6 ways to smash analog systems](/blog/digital-paradox-analog-transformation/) · [digital skills and Japan's legacy systems](/blog/digital-skills-japan-legacy-systems-workforce/) · [Infrastructure Build: rebuild your digital stack from the ground up](/services/infrastructure-build/)*

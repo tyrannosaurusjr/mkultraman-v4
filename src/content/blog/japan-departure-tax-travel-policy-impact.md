@@ -117,3 +117,7 @@ I am writing this as a warning. The path Japan is on is a mistake. This **Depart
 The real **Impact** will be a loss of soft power. A loss of goodwill. A loss of the very thing that makes Japan so powerful: its magnetic, open, and profound culture. This **Travel Policy** corrodes that.
 
 I am telling the government now. Stop. Think. There is a better way. You have the tools. You have the data. You have the culture. Use them. Do not use this hammer. Do not build this wall. Do not fall for the **Departure Tax** delusion. The **Impact** is too high. This **Travel Policy** is a dead end.
+
+---
+
+*Further reading: [Japan dual pricing and the case for resident discounts](/blog/japan-dual-pricing-resident-discounts/)*

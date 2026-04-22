@@ -118,3 +118,7 @@ The winning strategy for the next decade is **hybridization**:
 
 
 The "digital immigrants" are here. They are faster and cheaper than you. But they are not *you*. Your humanity is no longer just a philosophical trait; it is your unique selling proposition.
+
+---
+
+*Further reading: [AI hype cycle and Japanese tech startups](/blog/ai-hype-cycle-japanese-tech-startups-innovation/) · [AI misuse in Japan: fix with better reasoning](/blog/ai-misuse-ai-in-japan-reasoning-guide/) · [TetsuClaw: AI work OS for operators in Japan](/tools/tetsuno-claw/)*

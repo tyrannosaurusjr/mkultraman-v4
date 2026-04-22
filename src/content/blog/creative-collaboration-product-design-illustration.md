@@ -47,3 +47,7 @@ That is where quality comes from. Not perfection, but persistence.
 Thom’s nengajo project represents that perfectly. Even though I only handle the ecommerce setup, it feels like an echo of our shared history. Each release is a timestamp in a long, ongoing conversation between sound, form, and friendship.
 
 Whether we are rehearsing or discussing typography, the process always involves three steps:
+
+---
+
+*Further reading: [visual brand strategy in Japan](/blog/visual-brand-strategy-psychedelic-fashion-branding/) · [visual identity strategy and branding in Japan](/blog/visual-identity-strategy-branding-japan/)*

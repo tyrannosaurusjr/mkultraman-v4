@@ -46,3 +46,7 @@ This shift towards premium pricing is not a temporary trend. It represents a mor
 
 
 Furthermore, this pricing power allows businesses to invest in innovation and maintain high standards. It ensures that the traditions of Japanese craftsmanship can be passed down to the next generation. The incredible boom in **tourism** was the spark, but the fuel for this long-term growth is the renewed pride of Japanese entrepreneurs. The era of bowing in apology for a price increase is over. The era of bowing in gratitude for a premium purchase has just begun.
+
+---
+
+*Further reading: [Japan dual pricing and the case for resident discounts](/blog/japan-dual-pricing-resident-discounts/) · [service pricing: 3 ways to build client trust](/blog/service-pricing-client-trust-confidence/) · [Stack Audit: build operations that support premium positioning](/services/stack-audit/)*

@@ -28,3 +28,7 @@ The Oakleys did not begin as part of a grand plan, nor did my choice to wear shi
 
 
 This is how you build a **visual identity strategy** with strategic weight and undeniable impact.
+
+---
+
+*Further reading: [visual brand strategy: psychedelic branding](/blog/visual-brand-strategy-psychedelic-fashion-branding/) · [creative collaboration in product design and illustration](/blog/creative-collaboration-product-design-illustration/) · [Ongoing Management: brand operations that run themselves](/services/ongoing-management/)*

@@ -53,3 +53,7 @@ For instance, a founder might spend three weeks in their regional town building 
 ### The Ultimate Goal of Decentralization
 
 The stability of the center is leveraged to foster dynamism on the periphery. The long-term goal of the **Japan Third Cities** movement is to create such robust and interconnected regional hubs that they form new, resilient networks. Eventually, this will render the Tokyo **launchpad** less critical. The ultimate success of this movement will be a Japan with many thriving centers of gravity. It will be a nation that has finally cured itself of its fragile dependence on a single city. This is the **frontier** I am dedicated to helping my clients build.
+
+---
+
+*Further reading: [Aizu strategy: 5 steps to awesome cultural assets](/blog/aizu-strategy-rural-japan-blueprint/) · [Japan entrepreneurship and akiya success](/blog/japan-entrepreneurship-rural-revitalization-akiya/) · [Stack Audit: right-size your operations for a regional base](/services/stack-audit/)*

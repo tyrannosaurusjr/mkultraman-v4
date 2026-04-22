@@ -136,3 +136,7 @@ This is not the year Japan Inc. reforms. It is the year its execution deficit be
 
 
 And once execution becomes the standard by which legitimacy is measured, the center of gravity in Japanese business begins to shift.
+
+---
+
+*Further reading: [what a healthy Japan SME tech stack looks like](/blog/japan-sme-tech-stack-2026/) · [digital literacy crisis in Japan business](/blog/digital-literacy-crisis-japan-business/) · [Stack Audit: assess your technology adoption reality](/services/stack-audit/)*

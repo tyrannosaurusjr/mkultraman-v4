@@ -59,3 +59,7 @@ If the current trajectory leads to a dead end, what alternative models exist? Th
 
 
 In conclusion, caring for an aging population is ultimately about *caring*—a fundamentally human act. Japan’s elders deserve dignity and companionship, not just efficiency. The nation's **Agetech Strategy**, born from the logic of a declining Japan Inc., is a clever but hollow answer. It offers **robotics** when it should be offering relationships. Real wisdom lies in reviving community and using technology wisely to support, not supplant, the human touch. The future must be built on **Human Eldercare**.
+
+---
+
+*Further reading: [Japan's systemic labor shortfall: the 2040 collapse](/blog/japan-systemic-labor-shortfall-collapse/) · [technology adoption in Japan fails at procurement](/blog/technology-adoption-japan-systems-procurement/) · [Infrastructure Build: sustainable operations over tech shortcuts](/services/infrastructure-build/)*

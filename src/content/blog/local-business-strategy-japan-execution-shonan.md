@@ -39,3 +39,7 @@ The pizza parlor did not invent pizza. It did not "disrupt" the restaurant indus
 This mindset translates into a practical framework for building a **local business strategy** that works. It is a continuous cycle of focused **execution**, not a one-time plan.
 
 This is the path to building a business that is not only profitable but also resilient and meaningful. It requires you to stop looking over your shoulder and start paying closer attention to the ground beneath your feet. Stop trying to import success. Start building a real **local business strategy**.
+
+---
+
+*Further reading: [Japan third cities and the frontier beyond Tokyo](/blog/japan-third-cities-frontier-escape-tokyo/) · [Japan entrepreneurship and rural revitalization](/blog/japan-entrepreneurship-rural-revitalization-akiya/) · [Stack Audit: build the right foundation for local operations](/services/stack-audit/)*

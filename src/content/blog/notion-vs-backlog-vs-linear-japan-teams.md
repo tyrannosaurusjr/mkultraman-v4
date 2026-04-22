@@ -119,3 +119,7 @@ Linear is the right answer if you're a software-first team and your engineers ar
 The worst outcome is a team with three tools that all partially overlap. If your business is currently running on Backlog AND Notion AND a task list in Slack, that's a consolidation problem — not a "use all three properly" problem.
 
 If you want a clear read on which tools your team should be using and which you should cut, a [Stack Audit](/services/stack-audit) is the fastest way to get there.
+
+---
+
+*Further reading: [the hidden cost of SaaS sprawl for Japan SMEs](/blog/saas-sprawl-japan-sme-overpaying/) · [what a healthy Japan SME tech stack looks like](/blog/japan-sme-tech-stack-2026/)*

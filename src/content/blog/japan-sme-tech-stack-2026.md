@@ -116,3 +116,7 @@ This is a benchmark, not a prescription. Your specific situation matters — the
 The point is to have a picture of what "good" looks like so you can measure the gap between where you are and where you want to be. Most Japan SMEs I work with are further from this than they think.
 
 If you want to know exactly where your stack stands, that's what a [Stack Audit](/services/stack-audit) is for.
+
+---
+
+*Further reading: [the hidden cost of SaaS sprawl for Japan SMEs](/blog/saas-sprawl-japan-sme-overpaying/) · [when to stop DIY-ing your infrastructure](/blog/stop-diying-infrastructure-japan-sme-checklist/)*

@@ -91,3 +91,7 @@ I still believe in this place. I believe in the transformative power of **Japan 
 
 
 We are at a junction. Japan can choose to modernize. It can make the leap. It can build a sustainable, smart, and distributed tourism model for the 21st century. Or it can continue to build walls. It can continue to complain. It can continue to slowly curdle under the pressure. The future of **Kyoto**, and of **Japan travel** itself, depends entirely on what it does next. The hordes are not the problem. They are just the catalyst. The real crisis is one of identity. It is time for Japan to decide what it wants to be.
+
+---
+
+*Further reading: [Japan dual pricing and the case for resident discounts](/blog/japan-dual-pricing-resident-discounts/) · [Japan departure tax and travel policy](/blog/japan-departure-tax-travel-policy-impact/) · [Japan Money Tracker: multi-currency expense tracking for Japan](/tools/japan-money-tracker/)*

@@ -74,3 +74,7 @@ Japan stands at a critical juncture. In my view, its nationalist turn represents
 
 
 The populist genius of **Sanseito** is its ability to redirect this legitimate anger toward a powerless scapegoat. Yet, blaming foreigners will not fix Japan’s broken wage system, reform its rigid labor market, or foster the innovation it desperately needs. The true path forward requires profound and painful domestic reform. The choice for Japan is stark: confront the difficult reality of its own failures or continue down the self-defeating path of nationalist delusion.
+
+---
+
+*Further reading: [fall of corporate Japan and Osaka Expo 2025](/blog/fall-corporate-japan-osaka-expo-2025/) · [zombie companies and stifled entrepreneurship in Japan](/blog/zombie-companies-japan-stifled-entrepreneurship/)*

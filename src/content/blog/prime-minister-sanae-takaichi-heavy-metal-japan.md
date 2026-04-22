@@ -73,3 +73,7 @@ As someone who has lived and breathed that scene, I can state this definitively:
 
 
 This fabricated narrative is all noise. It is the sound of media static, of PR spin, and of calculated political distraction. It is a spectacle designed to make you look at the "quirky" drummer so you don't look too closely at the politician. Do not consume the PR. Do not believe the hype. Listen to the real sound of **Japan**.
+
+---
+
+*Further reading: [Japan's political paralysis: entrenched LDP factions](/blog/japans-political-paralysis-entrenched-ldp-factions/) · [Japan economic stagnation and toxic culture](/blog/japan-economic-stagnation-toxic-culture-sanseito/)*

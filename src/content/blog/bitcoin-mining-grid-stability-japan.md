@@ -82,3 +82,7 @@ This prompts several questions. What specific technology or terms did Canaan off
 
 
 The concept is sound. The project is a positive signal for the industry. However, the implementation requires further observation.
+
+---
+
+*Further reading: [Japan's systemic labor shortfall](/blog/japan-systemic-labor-shortfall-collapse/) · [Japan technology and AI copyright law](/blog/japan-technology-ai-copyright-innovation/) · [TetsuClaw: AI work OS for operators in Japan](/tools/tetsuno-claw/)*

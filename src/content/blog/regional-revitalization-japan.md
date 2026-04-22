@@ -32,3 +32,7 @@ The theory of **Regional Revitalization Japan** is already being put into practi
 
 
 Similarly, I see great potential in *onsen* startups creating new experiences around Japan's hot spring culture, blending it with modern spa treatments and digital nomad packages. In manufacturing, a new wave of micro-producers is using e-commerce to sell high-quality, locally made crafts to a global audience. They are revitalizing traditions with modern business savvy. In all these cases, a strategic **Akiya Investment** serves as the foundational first step toward a much larger, more integrated business concept.
+
+---
+
+*Further reading: [Aizu strategy: 5 steps to awesome cultural assets](/blog/aizu-strategy-rural-japan-blueprint/) · [Japan entrepreneurship and akiya success](/blog/japan-entrepreneurship-rural-revitalization-akiya/)*

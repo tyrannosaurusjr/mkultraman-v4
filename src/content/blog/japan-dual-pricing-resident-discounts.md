@@ -116,3 +116,7 @@ To avoid another Osaka ramen controversy, businesses should follow this roadmap:
 
 The Osaka ramen controversy was a wake-up call. It proved that while Japan dual pricing is an economic necessity, the “foreigner surcharge” is a failed implementation strategy. By adopting a resident discount model inspired by the Kama’aina discount, Japan can build a tourism economy that is both profitable and respectful of its citizens.
 The goal for 2026 should be a Japan where the world is welcome, but the locals are never priced out of their own homes. Through transparent, residency-based pricing, we can solve the riddle of overtourism and preserve the “Omotenashi” that makes Japan a world-class destination. The shift from “Foreigner Prices” to “Resident Benefits” is more than just semantics; it is the evolution of Japanese hospitality for a global age.
+
+---
+
+*Further reading: [Japan departure tax and travel policy impact](/blog/japan-departure-tax-travel-policy-impact/) · [premium pricing in Japan: overcoming deflation](/blog/premium-pricing-japan-overcoming-deflation-tourism/) · [Japan Money Tracker: multi-currency expense tracking](/tools/japan-money-tracker/)*

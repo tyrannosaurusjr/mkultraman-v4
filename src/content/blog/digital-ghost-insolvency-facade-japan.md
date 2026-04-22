@@ -172,3 +172,7 @@ We have seen the top of the food chain, and the machinery is missing. But surely
 
 
 In Part 3, we will look at The Blind Guide. We will audit a famous "Innovation Accelerator" and find out why the people teaching startups to drive are struggling to start their own engines.
+
+---
+
+*Further reading: [the digital facade: Japan Inc. is a dangerous mirage](/blog/digital-facade-japan-inc-mirage/) · [what a healthy Japan SME tech stack looks like](/blog/japan-sme-tech-stack-2026/) · [Stack Audit: map your full digital infrastructure](/services/stack-audit/)*

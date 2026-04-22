@@ -30,3 +30,7 @@ Are you tired of confusing message threads, misaligned calendars, and the endles
 
 
 Let’s fix these challenges together. I help teams and organizations cut through the digital noise by designing and implementing the right systems, tools, and habits.
+
+---
+
+*Further reading: [Notion vs Backlog vs Linear for Japanese teams](/blog/notion-vs-backlog-vs-linear-japan-teams/) · [the hidden cost of SaaS sprawl](/blog/saas-sprawl-japan-sme-overpaying/) · [Stack Audit: audit your communication tool stack](/services/stack-audit/)*

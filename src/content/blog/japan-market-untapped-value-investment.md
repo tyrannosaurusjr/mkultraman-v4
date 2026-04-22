@@ -93,3 +93,7 @@ The **Japan Market** is at a critical turning point. Rural depopulation, shiftin
 
 
 At the same time, venture capital **Investment** in Japan is growing. However, much of it is still chasing "me-too" models. [KPMG notes](https://kpmg.com/jp/en/home/insights/2023/08/venture-pulse-q2-2023-japan.html) that while funding is maturing, it often follows established trends. The real opportunity—the real **Alpha**—is in funding these Blue Ocean categories. Those who stick to traditional playbooks will miss it. But those who can see what’s functionally invisible? They will build the next generation of Japanese success stories.
+
+---
+
+*Further reading: [hidden markets and Japan's investor alpha](/blog/hidden-markets-japan-investor-insight-alpha/)*

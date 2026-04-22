@@ -70,3 +70,7 @@ For marketers and businesses, working with Japanese artisans requires a new fram
 
 
 Japanese **crafts are** a cultural treasure. But to survive, it must adapt. By integrating modern business strategy, we can unlock its immense potential, fostering sustainable **Business Growth** that honors tradition while embracing the future.
+
+---
+
+*Further reading: [heritage crafts and artisan decline in Japan](/blog/heritage-crafts-artisan-decline-kogei/) · [blue ocean market creation strategy](/blog/blue-ocean-market-creation-strategy/) · [when to stop DIY-ing your infrastructure](/blog/stop-diying-infrastructure-japan-sme-checklist/)*

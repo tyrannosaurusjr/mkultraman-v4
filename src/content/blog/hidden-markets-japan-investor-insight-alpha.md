@@ -93,3 +93,7 @@ For those looking to explore these concepts further, specific resources provide 
 ## The Future is in the Blind Spots
 
 Functional invisibility isn’t a barrier—it’s an invitation. It is a clear signal that Japan’s most valuable opportunities exist outside the obvious. For entrepreneurs, investors, and analysts, understanding what isn’t being said, sold, or serviced is the key to unlocking Japan’s next wave of innovation. The future here will not be found in the markets Japan Inc. is focused on. It will be built in the **Hidden Markets** it has ignored. This is the new frontier for **Alpha**.
+
+---
+
+*Further reading: [Japan market and untapped investment value](/blog/japan-market-untapped-value-investment/)*

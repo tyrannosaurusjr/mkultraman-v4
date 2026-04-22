@@ -60,3 +60,7 @@ This is the ultimate **systemic failure**: when a nation's corporate culture act
 ## A Warning on the High Cost of Insularity
 
 These seven signs are not isolated issues. They are interconnected symptoms of a deep and pervasive **systemic failure**. The inability of expatriates to adapt is born from the same insularity that creates "Galapagos" products and leadership pipelines that reward domestic loyalty over global competence. This is no longer an academic debate; it is an economic and cultural emergency. Without a radical, intentional shift toward a genuine **global mindset**, Japan's corporate and social structures will find themselves unable to cope with the fundamental demands of **modernity**, risking a future of accelerating irrelevance.
+
+---
+
+*Further reading: [Japan national brand paradox](/blog/japan-national-brand-paradox-cool-japan-inc/) · [hollow empire and Japan Inc.'s visa barrier](/blog/hollow-empire-japan-inc-visa-barrier/) · [Japan business execution 2026: operators destroy competition](/blog/japan-business-execution-2026/)*

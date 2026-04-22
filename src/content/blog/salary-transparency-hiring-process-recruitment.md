@@ -117,3 +117,7 @@ But when you lead with **salary transparency**, you stand out. You signal alignm
 
 
 If your goal is to attract people who are sharp, skilled, and selective, you have to act the same way.
+
+---
+
+*Further reading: [Japanese business culture's disorganized approach](/blog/japanese-business-culture-disorganized-approach/) · [Ongoing Management: operational HR support for Japan SMEs](/services/ongoing-management/)*

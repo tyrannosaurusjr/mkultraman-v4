@@ -142,3 +142,7 @@ Japan Inc. is content to live in a **Mirage**. But the rest of us have to live i
 
 
 Let’s tear the facade down.
+
+---
+
+*Further reading: [digital ghost: insolvency and the digital façade](/blog/digital-ghost-insolvency-facade-japan/) · [technology adoption in Japan fails at procurement](/blog/technology-adoption-japan-systems-procurement/) · [Stack Audit: see what's actually in your stack](/services/stack-audit/)*

@@ -42,3 +42,7 @@ For outsiders, this is frustrating. But for insiders—or those patient enough t
 
 
 The next great **transformation** companies won’t force Japan to leap forward. They’ll meet it where it is and guide it forward—one analog inefficiency at a time.
+
+---
+
+*Further reading: [how to kill the fax in Japan businesses](/blog/kill-the-fax-japan-business-migration/) · [digital literacy crisis in Japan business](/blog/digital-literacy-crisis-japan-business/)*

@@ -197,3 +197,7 @@ But in 2026, the door finally opens as the virility of Japan Inc. wanes.
 
 
 What happens next depends entirely on who chooses to walk through it.
+
+---
+
+*Further reading: [Japan business execution 2026: operators destroy competition](/blog/japan-business-execution-2026/) · [Japan third cities and the frontier beyond Tokyo](/blog/japan-third-cities-frontier-escape-tokyo/) · [Stack Audit: position your operations for what's next](/services/stack-audit/)*

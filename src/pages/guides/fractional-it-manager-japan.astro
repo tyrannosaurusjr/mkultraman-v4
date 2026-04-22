@@ -1,0 +1,1117 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const pubDate = '2026-04-22';
+const updatedDate = '2026-04-22';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://www.mkultraman.com/guides/fractional-it-manager-japan/#article",
+  "headline": "Fractional IT Manager in Japan: The Complete Guide for SMEs",
+  "description": "A definitive guide to fractional IT management for foreign-owned and Japanese SMEs — what the role covers, what it costs vs a full-time hire or DIY, when to engage one, and how to evaluate candidates.",
+  "datePublished": `${pubDate}T00:00:00+09:00`,
+  "dateModified": `${updatedDate}T00:00:00+09:00`,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.mkultraman.com/og-default.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://www.mkultraman.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mkultraman.com/#organization",
+    "name": "MKUltraman",
+    "url": "https://www.mkultraman.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mkultraman.com/guides/fractional-it-manager-japan/"
+  },
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://www.mkultraman.com/#website"
+  },
+  "about": [
+    { "@type": "Thing", "name": "Fractional IT Management" },
+    { "@type": "Thing", "name": "Small and Medium Enterprises in Japan" },
+    { "@type": "Thing", "name": "Digital Infrastructure" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a fractional IT manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A fractional IT manager is a senior operator engaged part-time or on retainer to oversee a company's digital infrastructure — tool stack, vendor relationships, workflow automations, incident response, and strategic technology decisions — without becoming a full-time employee. The model delivers senior-level capability at a fraction of the cost of a full-time hire, with defined scope and accountability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a fractional IT manager cost in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fractional IT management in Japan typically runs USD $1,100–$3,500 per month on retainer, depending on scope and hours. Compare this to a full-time IT hire at ¥5–8 million annually (USD $33,000–$53,000) before benefits, recruiting cost, and the 6+ months needed to ramp. A fractional engagement is usually 3–10x cheaper over 12 months for businesses in the 5–50 person range."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should hire a fractional IT manager instead of a full-time one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Businesses with 5–50 employees and $1M–$20M in revenue that don't have the volume of technology work to justify a full-time hire, but are past the stage where the CEO or operations manager can keep handling it as a side duty. The tell is that at least one person on the team is spending 5+ hours a week on tool management, vendor calls, or fixing broken integrations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a fractional IT manager actually do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vendor and tool management (renewals, pricing negotiations, evaluating new tools, canceling unused subscriptions), stack monitoring (automations, integrations, data flow), incident response when something breaks, team onboarding and offboarding for tech access, and strategic input when the business changes (new hires, new products, new markets). They're paying for senior-level oversight, not for someone at a desk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is fractional IT management different from a managed service provider (MSP)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Managed service providers typically focus on hardware, networks, and helpdesk support — break/fix IT. Fractional IT managers operate at the business layer: tool stack strategy, SaaS spend management, workflow design, and vendor accountability. An MSP keeps your laptops running. A fractional IT manager makes sure the tools your team uses are the right ones, configured correctly, and paid for at the right price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I evaluate a fractional IT manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for three things: (1) direct SME experience — not enterprise consulting — because the constraints and decisions are fundamentally different; (2) tool-agnostic stance, since anyone pushing a specific vendor in a discovery call has incentives you don't want in this role; (3) documented deliverables — reports, audits, runbooks — because fractional work depends on asynchronous trust and a paper trail. References from similar-size businesses are non-negotiable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a fractional engagement look like month to month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most retainers include a monthly review call (60 minutes), async access via Slack or email for questions and incident response, vendor renewal handling, and a quarterly strategic review. Month one is usually inventory and baseline establishment. From month two forward, the work is steady-state: monitoring, optimization, incident handling, and reviewing new tool decisions before they're made."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a fractional IT manager work with Japanese-speaking teams?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depends on the operator. Bilingual English/Japanese fractional IT managers exist but are rare. For foreign-owned SMEs in Japan with mixed-language teams, look for someone who has direct experience with both Japanese vendor relationships (Chatwork, Kintone, Freee, etc.) and international tools (Slack, Notion, HubSpot). The intersection matters more than raw language fluency."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.mkultraman.com/guides/" },
+    { "@type": "ListItem", "position": 3, "name": "Fractional IT Manager Japan", "item": "https://www.mkultraman.com/guides/fractional-it-manager-japan/" }
+  ]
+};
+---
+
+<Base
+  title="Fractional IT Manager in Japan: The Complete Guide for SMEs — MKUltraman"
+  description="What a fractional IT manager does, what it costs vs a full-time hire in Japan, when to engage one, and how to evaluate candidates. A definitive guide for foreign-owned and Japanese SMEs."
+  article={true}
+  pubDate={pubDate}
+>
+  <Nav />
+
+  <main class="guide">
+    <div class="container">
+      <article class="guide-article">
+        <header class="guide-header">
+          <a href="/" class="back-link">← Home</a>
+          <span class="guide-eyebrow">Guide · Updated April 2026</span>
+          <h1>Fractional IT Manager in Japan: The Complete Guide for SMEs</h1>
+          <p class="guide-lead">
+            A senior operator watching your tech stack, managing vendors, and handling
+            the technology decisions that would otherwise fall on your CEO or ops
+            lead. Without hiring full-time. This is what it is, what it costs, and
+            when it's the right move for a business in Japan.
+          </p>
+          <div class="guide-meta">
+            <span>By <a href="/about/" rel="author">Matt Ketchum</a></span>
+            <span>·</span>
+            <span>Tokyo</span>
+            <span>·</span>
+            <span>~12 min read</span>
+          </div>
+        </header>
+
+        <aside class="tldr" aria-label="TL;DR summary">
+          <h2 class="tldr__heading">TL;DR</h2>
+          <ul class="tldr__list">
+            <li><strong>Fractional IT management</strong> is a retained engagement where a senior operator oversees a company's digital infrastructure part-time — not a break/fix helpdesk and not a developer shop.</li>
+            <li><strong>Cost in Japan:</strong> typically USD $1,100–$3,500 per month on retainer. A full-time IT hire runs ¥5–8M/year before benefits and takes 6+ months to ramp.</li>
+            <li><strong>Right fit:</strong> businesses with 5–50 employees where a team member is already spending 5+ hours per week on tool management, vendor calls, or fixing broken integrations.</li>
+            <li><strong>Wrong fit:</strong> pre-revenue startups, businesses with internal IT teams, or Fortune 500–scale transformation programs.</li>
+            <li><strong>Key difference from MSPs:</strong> MSPs manage hardware and networks. Fractional IT managers operate at the business layer — tool stack strategy, SaaS spend, vendor accountability.</li>
+          </ul>
+        </aside>
+
+        <nav class="toc" aria-label="Table of contents">
+          <h2 class="toc__heading">On this page</h2>
+          <ol class="toc__list">
+            <li><a href="#category-gap">The category gap in Japan SMEs</a></li>
+            <li><a href="#what-it-does">What a fractional IT manager actually does</a></li>
+            <li><a href="#cost-comparison">Cost comparison: fractional vs full-time vs DIY</a></li>
+            <li><a href="#when-right">When fractional IT management is the right move</a></li>
+            <li><a href="#when-wrong">When it's the wrong move</a></li>
+            <li><a href="#evaluation">How to evaluate a fractional IT manager</a></li>
+            <li><a href="#how-engagement-works">How a fractional engagement works</a></li>
+            <li><a href="#japan-specific">Japan-specific considerations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <section id="category-gap" class="guide-section">
+          <h2>The category gap in Japan SMEs</h2>
+          <p>
+            There's a structural gap in how small and medium enterprises in Japan
+            handle their technology infrastructure, and it's hurting businesses
+            that don't realize they're in it.
+          </p>
+          <p>
+            On one end: large Japanese enterprises with dedicated IT departments,
+            internal system administrators, and formal procurement processes. They
+            don't need fractional help. On the other end: solo founders and
+            freelancers who manage everything themselves because the stack is
+            small enough to fit in one person's head.
+          </p>
+          <p>
+            In the middle — businesses with 10 to 50 employees — there's almost
+            nobody. These companies typically don't have internal IT staff. They
+            rely on a combination of vendor support lines, whatever the most
+            tech-savvy team member can figure out, and a lot of hope.
+          </p>
+          <p>
+            The fractional IT manager role exists to fill this gap. It delivers
+            senior-level operational oversight at a fraction of the cost of a
+            full-time hire, without the risk of a single point of failure or the
+            6+ months needed to ramp an internal hire in the Japan market.
+          </p>
+          <p>
+            In the United States, this role has a clear name — "fractional CTO,"
+            "fractional IT manager," "fractional head of ops." In Japan, the
+            category barely has a name, which is part of why the gap persists.
+            Most business owners assume the only options are DIY, full-time hire,
+            or a traditional consulting firm. None of those are usually the right
+            answer for a 20-person business.
+          </p>
+        </section>
+
+        <section id="what-it-does" class="guide-section">
+          <h2>What a fractional IT manager actually does</h2>
+          <p>
+            "Fractional" means you get the expertise of a senior operator without
+            hiring one full-time. You pay for a defined scope of work and access,
+            not a salary and benefits package. The person is responsible — not
+            just available.
+          </p>
+          <p>In an IT and operations context, the typical scope covers five areas:</p>
+          <ol class="guide-list">
+            <li>
+              <strong>Vendor and tool management.</strong> Renewals, pricing
+              negotiations, evaluating new tools when vendors pitch your team,
+              canceling subscriptions that nobody uses. Contracts in Japanese
+              from Japanese vendors get handled in Japanese.
+            </li>
+            <li>
+              <strong>Stack monitoring.</strong> Making sure automations are
+              actually running, integrations haven't broken, and data is flowing
+              where it needs to go. The hardest part of this job is catching
+              silently broken systems — automations that look like they're
+              working but aren't, integrations that stopped syncing three weeks
+              ago that nobody noticed.
+            </li>
+            <li>
+              <strong>Incident response.</strong> When something breaks, someone
+              who already knows your stack picks it up. Not whoever on the team
+              happens to be nominated by default. This alone pays for the
+              engagement in a bad quarter.
+            </li>
+            <li>
+              <strong>Strategic input.</strong> New team member joining? New
+              product line launching? Moving to a new office? Your fractional IT
+              manager thinks through the infrastructure implications before you
+              commit, not after you discover them in production.
+            </li>
+            <li>
+              <strong>Documentation and handoff readiness.</strong> Every
+              decision, every vendor, every automation should be documented in a
+              way that survives turnover. The goal is to reduce your
+              organization's dependence on any one person — including the
+              fractional manager.
+            </li>
+          </ol>
+          <p>
+            Note what this list does <em>not</em> include: writing custom software,
+            managing employee laptops, network cable installation, or sitting in
+            an office answering "how do I reset my password" tickets. Those are
+            MSP or helpdesk functions. Fractional IT management operates one
+            layer up.
+          </p>
+        </section>
+
+        <section id="cost-comparison" class="guide-section">
+          <h2>Cost comparison: fractional vs full-time vs DIY</h2>
+          <p>
+            The real decision isn't "should we hire a fractional IT manager."
+            It's "what is this problem actually costing us right now, and what's
+            the cheapest way to make it stop." Here's the math.
+          </p>
+          <div class="cost-table-wrap">
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Annual cost (Japan)</th>
+                  <th>Ramp time</th>
+                  <th>Risk profile</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Full-time IT manager</strong></td>
+                  <td>¥5–8M + benefits (~¥7–11M loaded)</td>
+                  <td>6+ months to hire and ramp</td>
+                  <td>Single point of failure; if they leave, institutional knowledge walks out the door</td>
+                </tr>
+                <tr>
+                  <td><strong>Fractional IT manager</strong></td>
+                  <td>$13,200–$42,000 (~¥2–6.5M)</td>
+                  <td>1–2 months including stack audit</td>
+                  <td>Lower; documented work product, contract boundaries, defined scope</td>
+                </tr>
+                <tr>
+                  <td><strong>DIY (CEO or ops lead)</strong></td>
+                  <td>"Free" — but 5–10 hours/week of senior time</td>
+                  <td>Zero ramp, but steady-state cost is high</td>
+                  <td>High; senior time going to low-leverage work, broken systems slip through, incident response is ad-hoc</td>
+                </tr>
+                <tr>
+                  <td><strong>Traditional IT consultancy</strong></td>
+                  <td>¥10M+ for a multi-month engagement</td>
+                  <td>3–6 months for a typical SOW</td>
+                  <td>Mismatched to SME scale; priced for enterprise</td>
+                </tr>
+                <tr>
+                  <td><strong>Managed service provider (MSP)</strong></td>
+                  <td>¥50,000–¥300,000/month depending on scope</td>
+                  <td>1–3 months</td>
+                  <td>Narrower scope; solves helpdesk and hardware, not business-layer tool strategy</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            For a business in the 10–30 person range, fractional is usually the
+            best math. A full-time hire is overcapacity unless the stack is
+            genuinely complex. DIY looks free but consumes senior time at a
+            cost that compounds. Traditional consultancies are priced for
+            businesses 10x larger.
+          </p>
+          <p class="guide-sidenote">
+            <strong>The hidden DIY cost most CEOs miss.</strong> A founder
+            spending 8 hours per week on tool management at a $150/hour
+            equivalent rate is consuming $62,400 per year of their own
+            opportunity cost. That number doesn't show up on any invoice, which
+            is exactly why it's usually the most expensive option.
+          </p>
+        </section>
+
+        <section id="when-right" class="guide-section">
+          <h2>When fractional IT management is the right move</h2>
+          <p>
+            The businesses that get the most out of fractional engagements tend
+            to share five signals. You don't need all five — three is usually
+            enough.
+          </p>
+          <ul class="guide-list">
+            <li>
+              <strong>You're past the scrappy startup phase.</strong> Systems
+              actually matter now. If a critical workflow broke tomorrow, it
+              would cost the business real money — not just be an annoyance.
+            </li>
+            <li>
+              <strong>You don't have the volume to justify a full-time hire.</strong>
+              You're in that 5–50 person range where a dedicated IT hire would
+              be overcapacity, but the current ad-hoc approach is leaking time.
+            </li>
+            <li>
+              <strong>Someone on your team is doing this work they shouldn't be
+              doing.</strong> Usually the ops manager, sometimes the CEO,
+              occasionally a designer or developer whose skill set is being
+              misapplied. If you can identify who this is in under five
+              seconds, that's your signal.
+            </li>
+            <li>
+              <strong>You've had at least one incident in the last year.</strong>
+              A broken tool cost you real time or money. An integration silently
+              stopped syncing. A subscription auto-renewed for something you'd
+              cancelled. A data export failed during a vendor migration.
+            </li>
+            <li>
+              <strong>You're planning a change.</strong> New office, new
+              product, new team, new market, new tool selection. Changes
+              expose stack weaknesses. Better to have someone watching before
+              the change than after the wreckage.
+            </li>
+          </ul>
+        </section>
+
+        <section id="when-wrong" class="guide-section">
+          <h2>When it's the wrong move</h2>
+          <p>Fractional IT management is not a universal answer. Three cases where it doesn't fit:</p>
+          <ul class="guide-list">
+            <li>
+              <strong>You're pre-revenue or pre-product.</strong> You don't have
+              enough operational complexity yet. Spend the money on building
+              your product, not on managing a stack that doesn't exist.
+            </li>
+            <li>
+              <strong>You already have internal IT staff.</strong> If you have a
+              functional IT lead, fractional management creates overlap and
+              dilutes accountability. You may benefit from a stack audit as a
+              one-time engagement, but not ongoing management.
+            </li>
+            <li>
+              <strong>You're running an enterprise transformation.</strong> If
+              your scale is Fortune 500, your problem is organizational change
+              management, not fractional oversight. A Big 4 consultancy is
+              probably the right partner.
+            </li>
+          </ul>
+          <p>
+            There's also a category of client who asks for fractional IT
+            management but actually needs a developer. "We want to build X"
+            is a development problem. Fractional IT management is about the
+            stack you already have, not the custom code you haven't written
+            yet.
+          </p>
+        </section>
+
+        <section id="evaluation" class="guide-section">
+          <h2>How to evaluate a fractional IT manager</h2>
+          <p>
+            The market for fractional IT and ops talent in Japan is small but
+            growing. The quality range is wide. When evaluating candidates,
+            look for specific, verifiable signals — not pitches or promises.
+          </p>
+          <h3>Look for</h3>
+          <ul class="guide-list">
+            <li>
+              <strong>Direct SME experience.</strong> Someone whose background
+              is Fortune 500 consulting will have instincts that don't transfer
+              to a 25-person business. The constraints, the decision speed, the
+              tolerance for process overhead — all different. Ask how many
+              businesses under 50 people they've worked with directly.
+            </li>
+            <li>
+              <strong>Tool-agnostic stance.</strong> In a discovery call, a
+              qualified fractional IT manager asks about your current stack and
+              business needs before recommending anything. If someone is pushing
+              a specific vendor — especially their own SaaS product — in the
+              first conversation, they have incentives that don't align with
+              yours.
+            </li>
+            <li>
+              <strong>Documented deliverables.</strong> Can they show you a
+              sample audit report, runbook, or strategic review? Fractional
+              work depends on asynchronous trust. If the deliverables are
+              verbal or ad-hoc, the engagement will collapse under its own
+              weight within six months.
+            </li>
+            <li>
+              <strong>References from similar-size businesses.</strong>
+              Non-negotiable. Two references minimum. Ask the references
+              specifically: "What surprised you — good or bad — about working
+              with this person?" Vague positive answers are a signal to dig
+              harder.
+            </li>
+          </ul>
+          <h3>Watch out for</h3>
+          <ul class="guide-list">
+            <li>
+              <strong>Generalist "consultants" who pivot into IT.</strong>
+              Someone whose career was marketing or strategy but now offers
+              fractional IT management is usually operating outside their
+              competence. The knowledge compounds from years of hands-on tool
+              and vendor work — not from a LinkedIn title change.
+            </li>
+            <li>
+              <strong>White-glove firms with hourly billing.</strong> Open-ended
+              hourly engagements misalign incentives. A fractional IT manager
+              should be paid a retainer for a defined scope, with a clear
+              exit clause if the scope changes materially.
+            </li>
+            <li>
+              <strong>Anyone who pitches "AI-powered infrastructure."</strong>
+              AI is a useful tool in this work. It is not a substitute for a
+              human who understands your business. Pitches that lean heavily
+              on AI automation are usually hiding an inexperienced operator
+              behind a product.
+            </li>
+          </ul>
+        </section>
+
+        <section id="how-engagement-works" class="guide-section">
+          <h2>How a fractional engagement works</h2>
+          <p>
+            Most fractional IT retainers follow a similar cadence, regardless of
+            the operator. The mechanics matter because async access and clear
+            reporting are what make the model work.
+          </p>
+          <h3>Onboarding (month one)</h3>
+          <p>
+            Month one is inventory. A stack audit across tools, vendors,
+            subscriptions, workflows, and access permissions. Most businesses
+            are surprised by what this turns up. Ghost subscriptions from
+            vendors they no longer work with. Integrations set up by employees
+            who have since left. Subscriptions billing to credit cards that
+            nobody monitors.
+          </p>
+          <p>
+            The audit produces a written baseline document — what you have,
+            what it costs, how it fits together, and what the priority issues
+            are. This becomes the foundation for everything the fractional
+            manager does next.
+          </p>
+          <h3>Steady state (month two onward)</h3>
+          <p>A typical monthly rhythm looks like this:</p>
+          <ul class="guide-list">
+            <li><strong>Monthly review call</strong> — 60 minutes. What happened, what's coming up, what decisions need your input.</li>
+            <li><strong>Async access</strong> — Slack, email, or LINE. Questions and incidents handled within business hours; critical incidents within 4 hours.</li>
+            <li><strong>Vendor renewal handling</strong> — renewal calendar maintained proactively, not reactively. Negotiations happen before the renewal date, not after.</li>
+            <li><strong>Tool evaluation</strong> — when new tools get proposed by vendors or internal staff, the fractional manager assesses fit and reports back with a recommendation.</li>
+            <li><strong>Incident log</strong> — every incident documented, including root cause and prevention.</li>
+          </ul>
+          <h3>Quarterly review</h3>
+          <p>
+            Every three months, a written report covering stack health,
+            spending trends, action items completed, and strategic
+            recommendations. This is the document that your CFO or board sees,
+            even if they don't attend the monthly calls.
+          </p>
+        </section>
+
+        <section id="japan-specific" class="guide-section">
+          <h2>Japan-specific considerations</h2>
+          <p>
+            Running fractional IT management for a business in Japan is not
+            the same as running it for a business in the US or UK. A few
+            factors that matter:
+          </p>
+          <ul class="guide-list">
+            <li>
+              <strong>Japanese vendor relationships.</strong> Chatwork,
+              Kintone, Freee, Money Forward, Sansan, and the rest of the
+              Japanese SaaS ecosystem operate on different norms than their
+              international equivalents. Contracts are in Japanese. Support
+              is in Japanese. Renewal negotiations require Japanese-language
+              capability, or at minimum a trusted bilingual intermediary.
+            </li>
+            <li>
+              <strong>インボイス制度 (qualified invoice system).</strong> Any
+              vendor you work with needs to be evaluated for qualified invoice
+              registration. Missing this detail costs real tax money for
+              businesses above the exemption threshold.
+            </li>
+            <li>
+              <strong>電子帳簿保存法 (electronic record-keeping law).</strong>
+              All digitally-received invoices must be stored in compliance
+              with specific requirements. This affects which tools you use
+              for accounting, receipt capture, and document management. An
+              IT manager working in Japan needs to understand the rule, not
+              just defer to the accountant.
+            </li>
+            <li>
+              <strong>Fax and hanko culture.</strong> Some workflows still
+              run through fax and physical seals. A fractional IT manager in
+              Japan needs to respect the pace of migration, not force a
+              purely digital solution onto relationships that depend on
+              existing process.
+            </li>
+            <li>
+              <strong>APPI compliance.</strong> The Act on Protection of
+              Personal Information has specific requirements that differ from
+              GDPR. Using foreign SaaS for customer data requires
+              documentation of international transfer safeguards.
+            </li>
+          </ul>
+          <p>
+            A fractional IT manager who hasn't worked inside a Japan business
+            will miss all of this. The compliance and vendor-relationship
+            layer is specific enough that it's not realistic to learn on the
+            job with client budget.
+          </p>
+        </section>
+
+        <section id="faq" class="guide-section">
+          <h2>Frequently asked questions</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>What's the difference between a fractional IT manager and a fractional CTO?</summary>
+              <p>
+                A fractional CTO is usually product- and engineering-focused —
+                architecture decisions, hiring developers, technical strategy
+                for a software business. A fractional IT manager is
+                operations-focused — tool stack, vendor management, workflow
+                automation, compliance. A software startup needs a CTO. A
+                non-software SME usually needs an IT manager. Some operators
+                do both, but the skill sets are genuinely different.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Can a fractional IT manager replace a full-time hire permanently?</summary>
+              <p>
+                For most businesses in the 5–50 person range, yes — indefinitely.
+                For businesses growing past 50 and with increasing technology
+                complexity, a fractional engagement often becomes the bridge
+                to a full-time hire, with the fractional manager helping
+                define the role, run the search, and onboard the internal
+                replacement.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>How do I know if my business is too small for this?</summary>
+              <p>
+                If your entire tech stack is Gmail, a single CRM or
+                spreadsheet, and maybe Slack — you're too small. If you're
+                paying for more than 8–10 SaaS tools, handling renewals from
+                multiple vendors, and finding that decisions about tools keep
+                falling on one person who has other things to do — you're
+                probably in range.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What happens if I'm not happy with the work?</summary>
+              <p>
+                Any reputable fractional engagement has a clear exit clause,
+                typically a 30-day notice period. All documented work product
+                — audits, runbooks, reports — becomes yours at the end of the
+                engagement. No lock-in, no retention of access that can't be
+                revoked in 24 hours.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>How does billing usually work?</summary>
+              <p>
+                Monthly retainer invoiced at the start of each month, for a
+                defined scope. Most Japan-based engagements are billed in USD
+                or JPY depending on the operator. Invoices should be
+                qualified invoice-compliant if you need to deduct the
+                expense — confirm before signing.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Can you start with just an audit and decide later?</summary>
+              <p>
+                Yes, and this is the recommended path for most businesses. A
+                one-time audit gives you a clear baseline, a prioritized
+                action list, and enough information to decide whether
+                ongoing management makes sense. At MKUltraman, the audit
+                is available as a <a href="/services/stack-audit/">Stack Audit</a>,
+                and the cost is typically credited toward a retainer if you
+                decide to proceed.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="guide-related">
+          <h2>Related reading</h2>
+          <ul class="guide-related__list">
+            <li>
+              <a href="/blog/fractional-it-management-japan-sme/">What Fractional IT Management Means for a 10-Person Business in Japan →</a>
+              <span>Field notes from inside the engagement model.</span>
+            </li>
+            <li>
+              <a href="/blog/saas-sprawl-japan-sme-overpaying/">The Hidden Cost of SaaS Sprawl →</a>
+              <span>Why Japan SMEs overpay for tools they don't use, and how to audit the damage.</span>
+            </li>
+            <li>
+              <a href="/blog/japan-sme-tech-stack-2026/">What a Healthy Japan SME Tech Stack Looks Like in 2026 →</a>
+              <span>The operational baseline most SMEs are measuring themselves against.</span>
+            </li>
+            <li>
+              <a href="/blog/stop-diying-infrastructure-japan-sme-checklist/">When to Stop DIY-ing Your Business Infrastructure →</a>
+              <span>The specific signals that it's time to bring someone in.</span>
+            </li>
+            <li>
+              <a href="/blog/crm-japan-sme-why-deployments-fail/">CRM for Japan SMEs: Why Most Deployments Fail →</a>
+              <span>A worked example of the tooling decisions this role handles.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="guide-cta">
+          <h2>Ready to talk?</h2>
+          <p>
+            If any of this maps to your current situation, the right next step
+            is usually a 45-minute diagnostic call. We'll dig into your stack
+            and figure out whether fractional IT management, a one-time
+            <a href="/services/stack-audit/">Stack Audit</a>, or something
+            else entirely is the right move.
+          </p>
+          <div class="guide-cta__actions">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book an exploratory call — $175 →
+            </a>
+            <a href="/contact/" class="guide-cta__alt">or send a message</a>
+          </div>
+          <div class="guide-cta__services">
+            <span>Related services:</span>
+            <a href="/services/stack-audit/">Stack Audit</a>
+            <a href="/services/ongoing-management/">Ongoing Management</a>
+            <a href="/services/infrastructure-build/">Infrastructure Build</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Base>
+
+<style>
+  .guide {
+    padding: var(--space-64) 0 var(--space-96);
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  .guide-article {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-24);
+    display: inline-block;
+    transition: color 0.15s ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .guide-header {
+    margin-bottom: var(--space-48);
+  }
+
+  .guide-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .guide-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: var(--space-24);
+  }
+
+  .guide-lead {
+    font-size: 19px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-24);
+  }
+
+  .guide-meta {
+    display: flex;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  .guide-meta a {
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .guide-meta a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* TL;DR */
+  .tldr {
+    margin: var(--space-48) 0;
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+  }
+  .tldr__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+  .tldr__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  .tldr__list li {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .tldr__list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .tldr__list strong { color: var(--text); font-weight: 600; }
+
+  /* TOC */
+  .toc {
+    margin: var(--space-48) 0;
+    padding: var(--space-24) var(--space-32);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+  }
+  .toc__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: var(--space-16);
+  }
+  .toc__list {
+    list-style: decimal inside;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: 0;
+  }
+  .toc__list li {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .toc__list a {
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .toc__list a:hover { color: var(--accent); }
+
+  /* Sections */
+  .guide-section {
+    margin: var(--space-64) 0;
+    scroll-margin-top: 80px;
+  }
+  .guide-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-24);
+    line-height: 1.2;
+  }
+  .guide-section h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin: var(--space-32) 0 var(--space-16);
+  }
+  .guide-section p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-20);
+  }
+  .guide-section strong { color: var(--text); font-weight: 600; }
+  .guide-section em { font-style: italic; }
+  .guide-section a {
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .guide-section a:hover { border-color: var(--accent); }
+
+  .guide-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    margin: var(--space-20) 0;
+  }
+  .guide-list li {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: var(--space-24);
+    position: relative;
+  }
+  .guide-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 13px;
+    top: 4px;
+  }
+  ol.guide-list {
+    counter-reset: guide-counter;
+  }
+  ol.guide-list li::before {
+    counter-increment: guide-counter;
+    content: counter(guide-counter) '.';
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .guide-sidenote {
+    padding: var(--space-20) var(--space-24);
+    background: var(--surface);
+    border-left: 3px solid var(--text-dim);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 15px !important;
+    margin: var(--space-32) 0 !important;
+  }
+
+  /* Cost table */
+  .cost-table-wrap {
+    margin: var(--space-32) 0;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .cost-table thead {
+    background: var(--surface);
+  }
+  .cost-table th {
+    padding: var(--space-16);
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+  .cost-table td {
+    padding: var(--space-16);
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .cost-table tr:last-child td { border-bottom: none; }
+  .cost-table td strong { color: var(--text); font-weight: 600; }
+
+  /* FAQ */
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-top: var(--space-24);
+  }
+  .faq__item {
+    padding: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .faq__item:last-child { border-bottom: none; }
+  .faq__item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-left: var(--space-16);
+  }
+  .faq__item[open] summary::after { content: '–'; }
+  .faq__item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: var(--space-16) !important;
+  }
+  .faq__item a { color: var(--accent); }
+
+  /* Related */
+  .guide-related {
+    margin: var(--space-64) 0;
+    padding-top: var(--space-48);
+    border-top: 1px solid var(--border);
+  }
+  .guide-related h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-24);
+    letter-spacing: -0.015em;
+  }
+  .guide-related__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  .guide-related__list li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-16) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .guide-related__list li:last-child { border-bottom: none; }
+  .guide-related__list a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.15s;
+  }
+  .guide-related__list a:hover { color: var(--accent); }
+  .guide-related__list span {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* CTA */
+  .guide-cta {
+    margin-top: var(--space-64);
+    padding: var(--space-48);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .guide-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.02em;
+  }
+  .guide-cta p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-32);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .guide-cta p a { color: var(--accent); }
+  .guide-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+    margin-bottom: var(--space-32);
+  }
+  .guide-cta__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .guide-cta__alt:hover { color: var(--text); }
+  .guide-cta__services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-16);
+    flex-wrap: wrap;
+    padding-top: var(--space-24);
+    border-top: 1px dashed var(--border);
+  }
+  .guide-cta__services span {
+    font-size: 12px;
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .guide-cta__services a {
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .guide-cta__services a:hover { color: var(--accent); }
+
+  @media (max-width: 768px) {
+    .tldr { padding: var(--space-24); }
+    .toc { padding: var(--space-16) var(--space-20); }
+    .guide-cta { padding: var(--space-32) var(--space-24); }
+    .cost-table th, .cost-table td { padding: var(--space-12); font-size: 13px; }
+  }
+</style>

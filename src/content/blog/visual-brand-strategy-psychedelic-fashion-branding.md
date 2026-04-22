@@ -24,3 +24,7 @@ Ultimately, a **visual brand strategy** built on **psychedelic fashion** or othe
 
 
 Every visual choice is a declaration. A bold aesthetic communicates a refusal to dilute one's message or mission for the comfort of the status quo. That level of conviction is magnetic. It commands attention and, more importantly, it commands respect. When your external appearance is finally aligned with your internal vision, you begin to operate with a new level of integrity and power.
+
+---
+
+*Further reading: [visual identity strategy and branding in Japan](/blog/visual-identity-strategy-branding-japan/) · [creative collaboration in product design and illustration](/blog/creative-collaboration-product-design-illustration/) · [Stack Audit: build brand operations that compound](/services/stack-audit/)*

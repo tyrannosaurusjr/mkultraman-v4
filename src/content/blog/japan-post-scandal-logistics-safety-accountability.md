@@ -50,3 +50,7 @@ A [board](https://bdti.or.jp/en/)'s primary function is to oversee management an
 ### Where Was the Board of Directors?
 
 A company of this scale should have a robust internal audit function. Clearly, it did not. This points to one of two scenarios: either the [auditors were incompetent](https://www.reuters.com/article/technology/olympus-scandal-puts-auditors-under-scrutiny-idUSTRE7A91SK/), or their findings were deliberately suppressed by management to maintain the illusion of operational stability. In either case, it demonstrates a complete breakdown of the internal controls necessary to ensure **accountability**. This failure is why independent, third-party audits are no longer a recommendation but an absolute necessity to restore any semblance of credibility to the organization's safety reporting. The **Japan Post scandal** is a textbook case of what happens when a company is allowed to grade its own homework.
+
+---
+
+*Further reading: [shared systems and why Japan's business model is failing](/blog/shared-systems-japan-business-failure/) · [technology adoption in Japan fails at procurement](/blog/technology-adoption-japan-systems-procurement/) · [Infrastructure Build: replace broken systems with accountable ones](/services/infrastructure-build/)*

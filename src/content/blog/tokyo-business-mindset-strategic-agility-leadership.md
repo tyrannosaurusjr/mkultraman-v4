@@ -64,3 +64,7 @@ When you successfully blend the stability of the **Tokyo business mindset** with
 The benefits are immediate and transformative:
 
 Ultimately, the ability to pivot is just as valuable as the ability to persevere. Having the clarity to know the difference is the foundation of modern market **leadership** in Japan.
+
+---
+
+*Further reading: [Japan business execution 2026: operators destroy competition](/blog/japan-business-execution-2026/) · [Tokyo business curation and the startup lady effect](/blog/tokyo-business-curation-startup-lady/) · [Ongoing Management: strategic operations for Tokyo-based operators](/services/ongoing-management/)*
