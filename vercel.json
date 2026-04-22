@@ -558,6 +558,16 @@
       "source": "/author/(.*)",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/blog/japan-dual-pricing-resident-discounts-osaka-ramen",
+      "destination": "/blog/japan-dual-pricing-resident-discounts",
+      "permanent": true
+    },
+    {
+      "source": "/blog/japan-dual-pricing-resident-discounts-osaka-ramen/",
+      "destination": "/blog/japan-dual-pricing-resident-discounts/",
+      "permanent": true
     }
   ]
 }
