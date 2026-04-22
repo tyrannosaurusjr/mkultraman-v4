@@ -134,3 +134,26 @@ describe('Build output', () => {
     expect(brokenLinks).toEqual([]);
   });
 });
+
+// Regression: ISSUE-001 — the USD->JPY fetch in Base.astro hit api.frankfurter.app,
+// which now 301-redirects to api.frankfurter.dev. Browsers don't carry CORS
+// headers across the cross-origin redirect, so every fetch silently failed and
+// the hardcoded fallback rate of 159 was shown on all service pricing pages.
+// Found by /qa on 2026-04-22. Report: .gstack/qa-reports/qa-report-mkultraman-com-2026-04-22.md
+describe('USD/JPY price conversion (ISSUE-001 regression)', () => {
+  it('ships the post-redirect frankfurter URL, not the legacy one', () => {
+    const html = readFileSync(join(DIST, 'services/index.html'), 'utf-8');
+    expect(html).toContain('api.frankfurter.dev/v1/latest');
+    expect(html).not.toContain('api.frankfurter.app/latest');
+  });
+
+  it('every page with [data-usd] also ships the conversion script', () => {
+    const broken = walk(DIST, (p) => p.endsWith('.html')).flatMap((fullPath) => {
+      const html = readFileSync(fullPath, 'utf-8');
+      if (!html.includes('data-usd=')) return [];
+      if (html.includes('api.frankfurter.dev')) return [];
+      return [fullPath.replace(`${DIST}/`, '')];
+    });
+    expect(broken).toEqual([]);
+  });
+});
