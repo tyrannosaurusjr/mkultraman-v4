@@ -1,0 +1,1047 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const pubDate = '2026-04-22';
+const updatedDate = '2026-04-22';
+const lastVerified = '2026-04-22';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://www.mkultraman.com/compare/freee-vs-money-forward/#article",
+  "headline": "freee vs Money Forward Cloud for Japan SMEs: Honest Comparison from an Operator",
+  "description": "A detailed, unbiased comparison of freee and Money Forward Cloud for small and medium enterprises in Japan. Pricing, use cases, tax compliance, and when each platform actually makes sense.",
+  "datePublished": `${pubDate}T00:00:00+09:00`,
+  "dateModified": `${updatedDate}T00:00:00+09:00`,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.mkultraman.com/og-default.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://www.mkultraman.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mkultraman.com/#organization",
+    "name": "MKUltraman",
+    "url": "https://www.mkultraman.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mkultraman.com/compare/freee-vs-money-forward/"
+  },
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://www.mkultraman.com/#website"
+  },
+  "about": [
+    { "@type": "SoftwareApplication", "name": "freee" },
+    { "@type": "SoftwareApplication", "name": "Money Forward Cloud" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is freee or Money Forward cheaper for a Japan SME?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Money Forward Cloud Mini starts at ¥1,078/month (annual billing), making it slightly cheaper than freee's Starter at ¥1,980/month. However, freee includes more features at the base tier — notably invoicing and expense management — that require add-ons or a higher tier in Money Forward. For most small businesses, the all-in cost difference is minimal. Prioritize fit over price at this level; both are among Japan's most affordable cloud accounting options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a sole proprietor (個人事業主) in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "freee has historically had a stronger sole proprietor focus — particularly for 青色申告 (blue return) automation and 確定申告 (annual tax filing). The UI guides non-accountants through categorization and produces compliant tax forms with less manual work. Money Forward has improved in this area, but freee remains the more common recommendation for sole proprietors who do their own bookkeeping without a tax accountant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do both support インボイス制度 (qualified invoice system)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — both freee and Money Forward Cloud are fully compliant with インボイス制度 (the qualified invoice system that became mandatory in October 2023). Both can issue 適格請求書 (qualified invoices), record your 登録番号, and handle both the seller and buyer sides of invoice compliance. Either platform is a safe choice for インボイス compliance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do both support 電子帳簿保存法 (electronic bookkeeping law)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — both platforms support 電子帳簿保存法 compliance, including electronic receipt preservation and the スキャン保存 (scan storage) requirements. As of 2024, electronic preservation of digital-origin documents (emails, PDF invoices) became mandatory. Both freee and Money Forward have workflows for capturing and storing these documents compliantly. Neither has a clear advantage here; both have invested heavily in this compliance layer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better if I have a tax accountant (税理士) in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask your 税理士 which they prefer before committing. Many Japanese tax accountants have a preferred platform — some offices have standardized on one or the other, and switching mid-year is disruptive. Money Forward has historically had stronger traction with established accounting firms due to more granular journal-level controls. freee is more common in younger, tech-forward practices. If you don't yet have a 税理士 and are starting fresh, either platform is fine — choose based on your own workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for foreign founders in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "freee has a slight edge for foreign founders — it has English-language help resources, a more internationally-oriented onboarding flow, and its UI is designed to be accessible to non-accountants. Money Forward's UI assumes more familiarity with Japanese accounting conventions (仕訳, 勘定科目) and is primarily Japanese-only in support. Neither platform provides an English-language UI. For foreign founders who need a Japanese accountant, this often matters less than which platform your 税理士 prefers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can freee or Money Forward handle payroll (給与計算)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both offer payroll modules. freee HR (freee人事労務) handles payroll, social insurance, resident tax, and year-end adjustment (年末調整). Money Forward Cloud HR (マネーフォワードクラウド給与) covers the same scope. Both charge extra for the HR/payroll module on top of the accounting subscription. If payroll is a priority, evaluate both HR modules specifically — they differ more from each other than the accounting modules do."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What about freee vs Money Forward for bank sync?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Money Forward originated as a bank aggregation product (Money Forward ME), and its data-sync infrastructure is mature — it connects to 2,500+ Japanese financial institutions. freee also has strong bank sync for all major Japanese banks, but Money Forward's breadth of institution coverage is wider, particularly for regional banks (地方銀行), credit unions (信用金庫), and Japan Post. If you bank with an obscure regional institution, check Money Forward's connection list first."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.mkultraman.com/compare/" },
+    { "@type": "ListItem", "position": 3, "name": "freee vs Money Forward", "item": "https://www.mkultraman.com/compare/freee-vs-money-forward/" }
+  ]
+};
+---
+
+<Base
+  title="freee vs Money Forward Cloud for Japan SMEs: Honest Comparison — MKUltraman"
+  description="Detailed comparison of freee and Money Forward Cloud for small and medium enterprises in Japan. Pricing, tax compliance (インボイス, 電子帳簿保存法), use cases, and when each platform actually makes sense."
+  article={true}
+  pubDate={pubDate}
+>
+  <Nav />
+
+  <main class="compare">
+    <div class="container">
+      <article class="compare-article">
+        <header class="compare-header">
+          <a href="/compare/" class="back-link">← All comparisons</a>
+          <span class="compare-eyebrow">Comparison · Last verified {lastVerified}</span>
+          <h1>freee vs Money Forward Cloud for Japan SMEs</h1>
+          <p class="compare-lead">
+            These are Japan's two dominant cloud accounting platforms — and they're
+            more different than they look. Here's the honest breakdown: pricing,
+            compliance coverage, who each is actually built for, and what to ask
+            before you pick one.
+          </p>
+          <div class="compare-meta">
+            <span>By <a href="/about/" rel="author">Matt Ketchum</a></span>
+            <span>·</span>
+            <span>Tokyo</span>
+            <span>·</span>
+            <span>~9 min read</span>
+          </div>
+        </header>
+
+        <aside class="tldr" aria-label="Verdict summary">
+          <h2 class="tldr__heading">Verdict</h2>
+          <div class="verdict">
+            <div class="verdict__side">
+              <h3>freee wins for</h3>
+              <ul>
+                <li>Sole proprietors doing their own bookkeeping</li>
+                <li>青色申告 and 確定申告 automation</li>
+                <li>Non-accountants who need guided categorization</li>
+                <li>Foreign founders navigating Japanese compliance</li>
+                <li>Simpler, cleaner UX out of the box</li>
+              </ul>
+            </div>
+            <div class="verdict__side">
+              <h3>Money Forward wins for</h3>
+              <ul>
+                <li>Medium businesses needing granular accounting control</li>
+                <li>Teams working with established 税理士 offices</li>
+                <li>Businesses banking with regional/community institutions</li>
+                <li>Wider financial institution sync coverage</li>
+                <li>Businesses building out an MF Cloud suite</li>
+              </ul>
+            </div>
+          </div>
+          <p class="verdict__conclusion">
+            <strong>If you're a sole proprietor or small team doing your own books:</strong> start with freee.
+            <strong>If you have a 税理士:</strong> ask them first — many have standardized on one platform.
+            <strong>If you need deep bank sync across regional institutions:</strong> lean Money Forward.
+          </p>
+        </aside>
+
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc__title">In this comparison</p>
+          <ol>
+            <li><a href="#quick-comparison">At-a-glance comparison</a></li>
+            <li><a href="#pricing">Pricing breakdown</a></li>
+            <li><a href="#who-theyre-built-for">Who each platform is actually built for</a></li>
+            <li><a href="#compliance">Japanese compliance: インボイス + 電子帳簿保存法</a></li>
+            <li><a href="#bank-sync">Bank sync and financial institution coverage</a></li>
+            <li><a href="#accountant-angle">The 税理士 angle</a></li>
+            <li><a href="#payroll">Payroll and HR modules</a></li>
+            <li><a href="#foreign-founders">For foreign founders in Japan</a></li>
+            <li><a href="#alternatives">Alternatives to consider</a></li>
+            <li><a href="#decision">How to decide in 5 steps</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <section id="quick-comparison">
+          <h2>At-a-glance comparison</h2>
+          <div class="table-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Factor</th>
+                  <th class="col-a">freee</th>
+                  <th class="col-b">Money Forward Cloud</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Base price (annual)</td>
+                  <td>¥1,980/mo (Starter)</td>
+                  <td>¥1,078/mo (Mini)</td>
+                </tr>
+                <tr>
+                  <td>Standard tier</td>
+                  <td>¥3,960/mo</td>
+                  <td>¥2,178/mo (Basic)</td>
+                </tr>
+                <tr>
+                  <td>Sole proprietor focus</td>
+                  <td>Strong</td>
+                  <td>Moderate</td>
+                </tr>
+                <tr>
+                  <td>SME / corporate focus</td>
+                  <td>Good</td>
+                  <td>Strong</td>
+                </tr>
+                <tr>
+                  <td>青色申告 automation</td>
+                  <td>Excellent</td>
+                  <td>Good</td>
+                </tr>
+                <tr>
+                  <td>インボイス制度</td>
+                  <td>Full</td>
+                  <td>Full</td>
+                </tr>
+                <tr>
+                  <td>電子帳簿保存法</td>
+                  <td>Full</td>
+                  <td>Full</td>
+                </tr>
+                <tr>
+                  <td>Bank sync institutions</td>
+                  <td>Major banks + most regional</td>
+                  <td>2,500+ institutions</td>
+                </tr>
+                <tr>
+                  <td>UI complexity</td>
+                  <td>Guided, beginner-friendly</td>
+                  <td>More journal-level control</td>
+                </tr>
+                <tr>
+                  <td>Payroll module</td>
+                  <td>Yes (freee HR)</td>
+                  <td>Yes (MF Cloud HR)</td>
+                </tr>
+                <tr>
+                  <td>English support</td>
+                  <td>Help docs + limited</td>
+                  <td>Japanese-only</td>
+                </tr>
+                <tr>
+                  <td>Tax accountant preference</td>
+                  <td>Tech-forward practices</td>
+                  <td>Traditional firms</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Pricing as of {lastVerified}. Plans and pricing change — verify before committing.</p>
+        </section>
+
+        <section id="pricing">
+          <h2>Pricing breakdown</h2>
+
+          <h3>freee pricing</h3>
+          <p>
+            freee structures its accounting product around two core plans. The
+            Starter plan (¥1,980/month annual, ¥2,380/month monthly) covers
+            invoicing, expense management, bank sync, and financial reporting —
+            everything a sole proprietor or small team needs. The Standard plan
+            (¥3,960/month annual) adds multi-user access, project-level
+            cost tracking, and more advanced reporting.
+          </p>
+          <p>
+            Corporate accounting (法人向け) uses the same tier structure but is
+            priced separately from the sole proprietor (個人向け) product. If
+            you've incorporated, make sure you're looking at the 法人 pricing page,
+            not the 個人 one — freee sells both, and the pages look similar.
+          </p>
+          <p>
+            Payroll (freee HR) and expense reimbursement are separate subscription
+            add-ons. Plan for ¥1,980–¥3,960/month on top of accounting if you
+            need payroll for even a small team.
+          </p>
+
+          <h3>Money Forward Cloud pricing</h3>
+          <p>
+            Money Forward Cloud has a wider tier ladder. The Mini plan
+            (¥1,078/month annual) is the entry point but is limited in
+            transaction volume and doesn't include the full invoice module. The
+            Basic plan (¥2,178/month annual) is the working tier for most small
+            businesses. The Professional plan (¥4,378/month annual) adds
+            consolidated reporting and more complex accounting workflows suited to
+            growing companies.
+          </p>
+          <p>
+            Like freee, Money Forward separates its HR, payroll, expense, and
+            invoicing products — each is a separate subscription. The "MF Cloud
+            Suite" bundles are available at negotiated prices for larger businesses,
+            but most SMEs piece together what they need. Add up all the modules
+            you'll actually use before comparing sticker prices.
+          </p>
+
+          <h3>Real cost comparison</h3>
+          <p>
+            For a sole proprietor doing their own books with no payroll: freee
+            Starter at ¥1,980/month vs MF Cloud Basic at ¥2,178/month — effectively
+            the same. For a small incorporated business with 3–5 employees needing
+            accounting + payroll: expect ¥6,000–8,000/month on either platform once
+            all modules are included. Neither platform is meaningfully cheaper than
+            the other once you're using equivalent feature sets.
+          </p>
+        </section>
+
+        <section id="who-theyre-built-for">
+          <h2>Who each platform is actually built for</h2>
+
+          <h3>freee: Built for the non-accountant operator</h3>
+          <p>
+            freee launched in 2013 with a specific thesis: most small business owners
+            in Japan had no accounting background and were terrified of bookkeeping.
+            The product was designed to abstract away accounting concepts — instead of
+            asking you to classify transactions by 勘定科目 (account category), freee
+            asks plain-language questions and handles the mapping.
+          </p>
+          <p>
+            This philosophy is still visible throughout the product. Bank transactions
+            surface as an actionable queue. Invoice creation is a form, not a journal
+            entry. The 確定申告 (annual tax return) wizard holds your hand through the
+            entire process and outputs the forms you need. For a sole proprietor who
+            wants to spend 30 minutes a month on bookkeeping, freee is a much better
+            fit than software that exposes the underlying double-entry ledger.
+          </p>
+
+          <h3>Money Forward: Built for businesses with accounting sophistication</h3>
+          <p>
+            Money Forward Cloud came from a different direction — the company started
+            as a personal finance aggregation tool (Money Forward ME) and built upward
+            toward business accounting. The product shows its financial-data-aggregation
+            roots: excellent at pulling in transaction data from many sources, presenting
+            dashboards, and giving accountants access to the underlying journal (仕訳帳)
+            with precision.
+          </p>
+          <p>
+            The UI assumes you know what a 仕訳 (journal entry) is. The account
+            category (勘定科目) selector is prominent, not hidden. This is a feature
+            for businesses that want direct control, or for teams where a bookkeeper
+            or 税理士 is doing the primary data entry. It's a weakness for founders
+            who just want their receipts to turn into a tax return automatically.
+          </p>
+        </section>
+
+        <section id="compliance">
+          <h2>Japanese compliance: インボイス制度 + 電子帳簿保存法</h2>
+
+          <h3>インボイス制度 (Qualified Invoice System)</h3>
+          <p>
+            The qualified invoice system (適格請求書等保存方式) became mandatory in
+            October 2023. Both platforms are fully compliant — they can issue qualified
+            invoices with your 登録番号, record the consumption tax breakdown by rate
+            (8% / 10%), and handle the buyer-side requirements for input tax credit
+            documentation.
+          </p>
+          <p>
+            If you're a registered qualified invoice issuer (適格請求書発行事業者),
+            either platform handles the full workflow. If you're still deciding whether
+            to register, both platforms have guidance in-app. There is no meaningful
+            インボイス compliance difference between freee and Money Forward.
+          </p>
+
+          <h3>電子帳簿保存法 (Electronic Books Preservation Act)</h3>
+          <p>
+            The 電子帳簿保存法 requirements — particularly the mandate for electronic
+            preservation of digitally-originated documents — became fully mandatory in
+            January 2024. Both platforms support:
+          </p>
+          <ul>
+            <li>電子取引データの保存 (electronic transaction data preservation)</li>
+            <li>スキャン保存 (scan storage for paper originals)</li>
+            <li>Search functions required by the law (date, amount, counterparty)</li>
+            <li>Tamper-evident storage for compliant data integrity</li>
+          </ul>
+          <p>
+            Again, no meaningful compliance difference. Both have invested heavily in
+            this layer because it's a regulatory requirement, not a differentiator.
+            If you have a specific compliance audit requirement, verify with your 税理士
+            that either platform meets your sector's interpretation.
+          </p>
+        </section>
+
+        <section id="bank-sync">
+          <h2>Bank sync and financial institution coverage</h2>
+          <p>
+            Money Forward's bank sync infrastructure is the strongest in the market —
+            not just in accounting software, but overall. The company connects to 2,500+
+            Japanese financial institutions, including major city banks (メガバンク),
+            regional banks (地方銀行), credit unions (信用金庫), agricultural cooperatives
+            (農業協同組合), securities accounts, credit cards, and e-money services.
+          </p>
+          <p>
+            freee's bank sync covers all major Japanese banks, most regional banks, and
+            the major credit card networks — sufficient for the vast majority of
+            businesses. Where you might hit limits with freee is obscure regional
+            institutions or niche financial products.
+          </p>
+          <p>
+            If you bank with a smaller regional institution or use a credit union, check
+            Money Forward's institution list before committing to either platform. This
+            is the one area where Money Forward has a clear, structural advantage.
+          </p>
+        </section>
+
+        <section id="accountant-angle">
+          <h2>The 税理士 angle</h2>
+          <p>
+            This is the most practical decision factor that most comparison articles skip:
+            <strong>ask your 税理士 which platform they prefer before you buy anything.</strong>
+          </p>
+          <p>
+            Many Japanese tax accountant offices have standardized their practice on one
+            platform. They've built their review workflows, client access templates, and
+            year-end procedures around either freee or Money Forward. If you pick the
+            other one, you'll either be paying extra for them to work outside their system,
+            or getting slower service while they adapt.
+          </p>
+          <p>
+            Anecdotally, Money Forward has stronger traction in traditional, established
+            accounting practices — the kind that have been operating for 20+ years and are
+            comfortable with journal-level access. freee is more common in younger
+            practices and those targeting startups and tech-forward sole proprietors.
+          </p>
+          <p>
+            If you don't yet have a 税理士 and plan to hire one, knowing your software
+            choice first lets you look for an accountant already familiar with it. If
+            you already have an accountant you trust, their preference should override
+            most other considerations — the productivity cost of misalignment is real.
+          </p>
+        </section>
+
+        <section id="payroll">
+          <h2>Payroll and HR modules</h2>
+          <p>
+            Both platforms offer full Japanese payroll capabilities as separate subscription
+            modules. Core feature coverage is equivalent:
+          </p>
+          <ul>
+            <li>給与計算 (payroll calculation) including overtime and various allowances</li>
+            <li>社会保険 (health + pension) deduction and payment filing</li>
+            <li>住民税 (resident tax) — both Special Collection (特別徴収) and Ordinary Collection (普通徴収)</li>
+            <li>年末調整 (year-end tax adjustment)</li>
+            <li>給与明細 (pay slip) generation and distribution</li>
+            <li>マイナンバー (My Number) management</li>
+          </ul>
+          <p>
+            The payroll modules differ mainly in UI and workflow. freee HR tends to be
+            more guided — good for a founder running payroll without HR expertise. Money
+            Forward Cloud HR is more control-oriented — better for a dedicated HR staff
+            member or outsourced payroll service.
+          </p>
+          <p>
+            If payroll is a significant factor, trial both payroll modules specifically —
+            they diverge more from each other than the accounting modules do.
+          </p>
+        </section>
+
+        <section id="foreign-founders">
+          <h2>For foreign founders in Japan</h2>
+          <p>
+            Neither platform offers a full English-language UI. If you need Japanese
+            accounting software to be in English, there are no good native options —
+            your choices are to use an English-language international platform (QuickBooks,
+            Xero) that lacks Japan-specific compliance, or to use freee or Money Forward
+            with Japanese UI.
+          </p>
+          <p>
+            Of the two, freee has:
+          </p>
+          <ul>
+            <li>More English-language help documentation and blog posts</li>
+            <li>UI that hides accounting jargon behind plain-language prompts</li>
+            <li>A more internationally-aware onboarding flow</li>
+            <li>Active community support for foreign business owners in Japan</li>
+          </ul>
+          <p>
+            Money Forward's documentation and support are Japanese-only in practice.
+            The UI uses accounting terminology (仕訳, 勘定科目, 補助科目) that is
+            difficult to navigate without Japanese accounting vocabulary.
+          </p>
+          <p>
+            If you're a foreign founder who reads enough Japanese to navigate a
+            software UI but not to understand Japanese accounting conventions, freee
+            will be significantly less painful. If you're working with a Japanese
+            bookkeeper who handles all data entry, this distinction matters less — the
+            software UI is their problem, not yours.
+          </p>
+        </section>
+
+        <section id="alternatives">
+          <h2>Alternatives to consider</h2>
+          <p>
+            Before committing to either platform, it's worth knowing what else exists:
+          </p>
+          <ul>
+            <li>
+              <strong>弥生会計 (Yayoi):</strong> The legacy Japanese accounting software
+              company — desktop-based (クラウドは後付け), preferred by many older 税理士
+              offices, strong in manufacturing and traditional industries. If your
+              accountant uses Yayoi, consider matching.
+            </li>
+            <li>
+              <strong>マネーフォワード会計 for スタートアップ:</strong> Money Forward has
+              a specific startup-oriented pricing with VC-backed benefits — worth checking
+              if you're a funded startup with runway.
+            </li>
+            <li>
+              <strong>Xero / QuickBooks:</strong> International platforms that work in
+              Japan but lack native インボイス, 電子帳簿保存法, and 年末調整 support.
+              Viable if you have a bilingual accountant who bridges the gap, inadvisable
+              if your 税理士 uses Japanese-native tools.
+            </li>
+            <li>
+              <strong>Excel + 税理士:</strong> Still common for very small operations.
+              If your accountant is doing 90% of the work and you're just sending them
+              receipts, the software choice matters much less than you think.
+            </li>
+          </ul>
+        </section>
+
+        <section id="decision">
+          <h2>How to decide in 5 steps</h2>
+          <ol class="decision-steps">
+            <li>
+              <strong>Check with your 税理士 first.</strong> If you have a tax accountant,
+              their platform preference overrides most other factors. Ask directly: "どちらのクラウド会計を使っていますか？freeeですか、それともマネーフォワードですか？"
+              Use what they use.
+            </li>
+            <li>
+              <strong>Determine your accounting sophistication.</strong> If you're doing
+              your own books without an accountant background, freee's guided UI will
+              save significant time. If you or your bookkeeper are comfortable with
+              journal entries and account categories, Money Forward's precision may be
+              worth it.
+            </li>
+            <li>
+              <strong>Check your bank's sync status.</strong> If you bank with a regional
+              institution (地方銀行, 信用金庫), verify Money Forward's connection list.
+              If it connects and freee doesn't, the decision is easy.
+            </li>
+            <li>
+              <strong>Consider the full module cost.</strong> List every module you'll
+              actually use — accounting, invoicing, expense management, payroll — and
+              price out both platforms for that exact combination. The entry-level sticker
+              price is rarely the real number.
+            </li>
+            <li>
+              <strong>Trial both for two weeks.</strong> Both offer free trials. Try your
+              actual workflow — uploading receipts, issuing an invoice, syncing a bank
+              account — on both before deciding. The one that creates less friction for
+              your specific habits is the right answer.
+            </li>
+          </ol>
+        </section>
+
+        <section id="faq">
+          <h2>Frequently asked questions</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Is freee or Money Forward cheaper for a Japan SME?</summary>
+              <p>
+                Money Forward Cloud Mini starts at ¥1,078/month (annual billing), making it
+                slightly cheaper than freee's Starter at ¥1,980/month. However, freee
+                includes more features at the base tier — notably invoicing and expense
+                management — that require add-ons or a higher tier in Money Forward. For
+                most small businesses, the all-in cost difference is minimal.
+              </p>
+            </details>
+            <details>
+              <summary>Which is better for a sole proprietor (個人事業主)?</summary>
+              <p>
+                freee has historically had a stronger sole proprietor focus — particularly
+                for 青色申告 (blue return) automation and 確定申告 (annual tax filing). The
+                UI guides non-accountants through categorization and produces compliant tax
+                forms with less manual work.
+              </p>
+            </details>
+            <details>
+              <summary>Do both support インボイス制度?</summary>
+              <p>
+                Yes — both freee and Money Forward Cloud are fully compliant with
+                インボイス制度 (mandatory since October 2023). Both can issue 適格請求書,
+                record your 登録番号, and handle both seller and buyer compliance. No
+                meaningful difference between them here.
+              </p>
+            </details>
+            <details>
+              <summary>Which is better if I have a tax accountant (税理士)?</summary>
+              <p>
+                Ask your 税理士 which they prefer before committing. Many Japanese tax
+                accountants have standardized their practice on one platform. Switching
+                mid-year is disruptive. Money Forward has historically had stronger
+                traction with established accounting firms; freee is more common in
+                tech-forward practices.
+              </p>
+            </details>
+            <details>
+              <summary>Which is better for foreign founders in Japan?</summary>
+              <p>
+                freee has a slight edge — more English-language help resources, a more
+                accessible UI for non-accountants, and better community support for
+                foreign business owners in Japan. Neither platform offers a full English
+                UI. If a Japanese bookkeeper handles all data entry for you, this
+                distinction matters less.
+              </p>
+            </details>
+            <details>
+              <summary>Can I switch between them if I change my mind?</summary>
+              <p>
+                Yes, but it requires effort. Both platforms allow data export (CSV,
+                journal data). The practical difficulty depends on how much historical
+                data and configuration you have. Switching mid-fiscal year is particularly
+                painful — both sets of books need to reconcile. If you're going to switch,
+                April 1 (start of Japanese fiscal year) is the cleanest time to do it.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="related-reading">
+          <h2>Related reading</h2>
+          <ul>
+            <li><a href="/blog/saas-sprawl-japan-sme-overpaying/">SaaS sprawl in Japan: why SMEs overpay for tools they don't use</a></li>
+            <li><a href="/blog/japan-sme-tech-stack-2026/">The Japan SME tech stack in 2026</a></li>
+            <li><a href="/blog/kill-the-fax-japan-business-migration/">Kill the fax: migrating Japanese business infrastructure to the modern era</a></li>
+            <li><a href="/guides/fractional-it-manager-japan/">Fractional IT Manager in Japan: The Complete Guide</a></li>
+            <li><a href="/compare/kintone-vs-salesforce/">Kintone vs Salesforce for Japan SMEs</a></li>
+          </ul>
+        </section>
+
+        <aside class="cta-block">
+          <h2>Not sure which fits your setup?</h2>
+          <p>
+            The accounting software decision matters less than having clean, consistent
+            books — and that comes down to workflow, not software brand. If you're
+            spending more than 2–3 hours a month wrestling with your accounting tools,
+            something in the setup is wrong.
+          </p>
+          <p>
+            A <a href="/services/stack-audit/">Stack Audit</a> covers your full digital
+            infrastructure — including whether your accounting setup is costing you time
+            or creating compliance risk. Most audits find 2–3 tools that are either
+            mismatched to the actual workflow or redundant.
+          </p>
+          <a href="/contact/" class="cta-link">Book a free call →</a>
+        </aside>
+
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Base>
+
+<style>
+  .compare {
+    padding: var(--space-64) 0 var(--space-96);
+    background: var(--bg);
+  }
+
+  .compare-article {
+    max-width: 780px;
+  }
+
+  /* Header */
+  .back-link {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+    margin-bottom: var(--space-24);
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .compare-eyebrow {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .compare-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4.5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: var(--space-24);
+  }
+
+  .compare-lead {
+    font-size: 18px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-16);
+  }
+
+  .compare-meta {
+    display: flex;
+    gap: var(--space-8);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-48);
+  }
+  .compare-meta a { color: var(--text-dim); transition: color 0.15s; }
+  .compare-meta a:hover { color: var(--accent); }
+
+  /* Verdict / TL;DR */
+  .tldr {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+    padding: var(--space-32);
+    margin-bottom: var(--space-48);
+  }
+  .tldr__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-20);
+  }
+
+  .verdict {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-32);
+    margin-bottom: var(--space-20);
+  }
+  .verdict__side h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: var(--space-12);
+  }
+  .verdict__side ul {
+    padding-left: var(--space-16);
+  }
+  .verdict__side li {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: var(--space-8);
+  }
+  .verdict__conclusion {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-top: var(--space-16);
+    border-top: 1px solid var(--border);
+  }
+
+  /* ToC */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-24) var(--space-32);
+    margin-bottom: var(--space-64);
+  }
+  .toc__title {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: var(--space-16);
+  }
+  .toc ol {
+    padding-left: var(--space-20);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+  .toc a {
+    font-size: 14px;
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .toc a:hover { color: var(--accent); }
+
+  /* Content sections */
+  .compare-article section {
+    margin-bottom: var(--space-64);
+  }
+  .compare-article h2 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.8vw, 30px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: var(--space-24);
+    padding-top: var(--space-16);
+    border-top: 1px solid var(--border);
+  }
+  .compare-article h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-12);
+    margin-top: var(--space-32);
+  }
+  .compare-article p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-16);
+  }
+  .compare-article ul,
+  .compare-article ol {
+    padding-left: var(--space-24);
+    margin-bottom: var(--space-16);
+  }
+  .compare-article li {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-8);
+  }
+  .compare-article a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+    transition: opacity 0.15s;
+  }
+  .compare-article a:hover { opacity: 0.8; }
+  strong { color: var(--text); font-weight: 600; }
+
+  /* Comparison table */
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: var(--space-8);
+  }
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .compare-table th,
+  .compare-table td {
+    padding: 10px var(--space-16, 16px);
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  .compare-table th {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--surface);
+  }
+  .compare-table th.col-a,
+  .compare-table th.col-b {
+    color: var(--accent);
+  }
+  .compare-table td { color: var(--text-muted); }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .table-note {
+    font-size: 12px;
+    color: var(--text-dim);
+    font-style: italic;
+    margin-bottom: var(--space-16);
+  }
+
+  /* Decision steps */
+  .decision-steps {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+  }
+  .decision-steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: var(--space-20);
+  }
+  .decision-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+  }
+
+  /* FAQ */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+  details {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    overflow: hidden;
+  }
+  details[open] { border-color: var(--accent); }
+  summary {
+    padding: var(--space-20) var(--space-24);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  details[open] summary::after { content: '−'; }
+  details p {
+    padding: 0 var(--space-24) var(--space-20);
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  /* Related reading */
+  .related-reading {
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-32);
+  }
+  .related-reading h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: none;
+    padding-top: 0;
+    margin-bottom: var(--space-16);
+  }
+  .related-reading ul {
+    padding-left: var(--space-20);
+  }
+  .related-reading li {
+    font-size: 15px;
+    margin-bottom: var(--space-8);
+  }
+
+  /* CTA block */
+  .cta-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-32);
+    margin-top: var(--space-48);
+  }
+  .cta-block h2 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    color: var(--text);
+    border: none;
+    padding-top: 0;
+    margin-bottom: var(--space-12);
+  }
+  .cta-link {
+    display: inline-block;
+    margin-top: var(--space-16);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+  .cta-link:hover { opacity: 0.8; }
+
+  @media (max-width: 768px) {
+    .verdict { grid-template-columns: 1fr; gap: var(--space-24); }
+    .compare-table th, .compare-table td { padding: 8px 12px; font-size: 13px; }
+  }
+</style>
