@@ -23,12 +23,12 @@ const schema = {
     // ── 1. Organization ────────────────────────────────────────────────────
     {
       "@type": "Organization",
-      "@id": "https://mkultraman.com/#organization",
+      "@id": "https://www.mkultraman.com/#organization",
       "name": "MKUltraman",
-      "url": "https://mkultraman.com",
+      "url": "https://www.mkultraman.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mkultraman.com/images/mkultraman-logo.png",
+        "url": "https://www.mkultraman.com/images/mkultraman-logo.png",
         "width": 512,
         "height": 512
       },
@@ -50,10 +50,10 @@ const schema = {
         }
       },
       "founder": {
-        "@id": "https://mkultraman.com/#person"
+        "@id": "https://www.mkultraman.com/#person"
       },
       "employee": {
-        "@id": "https://mkultraman.com/#person"
+        "@id": "https://www.mkultraman.com/#person"
       },
       "sameAs": [
         "https://instagram.com/mkultraman",
@@ -72,23 +72,23 @@ const schema = {
         "@type": "OfferCatalog",
         "name": "MKUltraman Services",
         "itemListElement": [
-          { "@id": "https://mkultraman.com/#service-stack-audit" },
-          { "@id": "https://mkultraman.com/#service-infrastructure-build" },
-          { "@id": "https://mkultraman.com/#service-ongoing-management" }
+          { "@id": "https://www.mkultraman.com/#service-stack-audit" },
+          { "@id": "https://www.mkultraman.com/#service-infrastructure-build" },
+          { "@id": "https://www.mkultraman.com/#service-ongoing-management" }
         ]
       },
       "memberOf": {
-        "@id": "https://mkultraman.com/guild/#organization"
+        "@id": "https://www.mkultraman.com/guild/#organization"
       }
     },
 
     // ── 2. ProfessionalService (LocalBusiness) ─────────────────────────────
     {
       "@type": ["LocalBusiness", "ProfessionalService"],
-      "@id": "https://mkultraman.com/#professional-service",
+      "@id": "https://www.mkultraman.com/#professional-service",
       "name": "MKUltraman",
-      "url": "https://mkultraman.com",
-      "image": "https://mkultraman.com/images/tetsu-island.webp",
+      "url": "https://www.mkultraman.com",
+      "image": "https://www.mkultraman.com/images/tetsu-island.webp",
       "description": "Digital infrastructure management for SMEs in Japan. Less tool chaos. More revenue. Less work.",
       "priceRange": "$$",
       "currenciesAccepted": "JPY",
@@ -104,33 +104,33 @@ const schema = {
       "serviceType": "Digital Infrastructure Consulting",
       "slogan": "Your tech stack is costing you money.",
       "founder": {
-        "@id": "https://mkultraman.com/#person"
+        "@id": "https://www.mkultraman.com/#person"
       },
       "sameAs": [
         "https://instagram.com/mkultraman",
         "https://linkedin.com/in/mkultraman"
       ],
       "parentOrganization": {
-        "@id": "https://mkultraman.com/#organization"
+        "@id": "https://www.mkultraman.com/#organization"
       }
     },
 
     // ── 3. Person (Tetsu) ──────────────────────────────────────────────────
     {
       "@type": "Person",
-      "@id": "https://mkultraman.com/#person",
+      "@id": "https://www.mkultraman.com/#person",
       "name": "Matt Ketchum",
       "alternateName": "MKUltraman",
-      "url": "https://mkultraman.com",
+      "url": "https://www.mkultraman.com/about",
       "image": {
         "@type": "ImageObject",
-        "url": "https://mkultraman.com/images/tetsu-island.webp",
+        "url": "https://www.mkultraman.com/images/tetsu-island.webp",
         "caption": "Tetsu — MKUltraman, on a hilltop in Japan"
       },
       "jobTitle": "Digital Infrastructure Consultant",
       "description": "10+ years in the Japan market across F&B, media, and professional services. Works with a small number of organizations at a time to build digital infrastructure that compounds over time.",
       "worksFor": {
-        "@id": "https://mkultraman.com/#organization"
+        "@id": "https://www.mkultraman.com/#organization"
       },
       "address": {
         "@type": "PostalAddress",
@@ -156,9 +156,9 @@ const schema = {
     // ── 4. Service: Stack Audit ────────────────────────────────────────────
     {
       "@type": "Service",
-      "@id": "https://mkultraman.com/#service-stack-audit",
+      "@id": "https://www.mkultraman.com/#service-stack-audit",
       "name": "Stack Audit",
-      "url": "https://mkultraman.com/#services",
+      "url": "https://www.mkultraman.com/services/stack-audit",
       "description": "A complete mapping of your digital infrastructure — tools, workflows, integrations, and costs. Identifies what is broken and what is wasted. Delivers a clear action plan. Most clients see significant savings within 60 days.",
       "serviceType": "Digital Infrastructure Audit",
       "offers": {
@@ -171,7 +171,7 @@ const schema = {
         }
       },
       "provider": {
-        "@id": "https://mkultraman.com/#organization"
+        "@id": "https://www.mkultraman.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
@@ -182,9 +182,9 @@ const schema = {
     // ── 5. Service: Infrastructure Build ──────────────────────────────────
     {
       "@type": "Service",
-      "@id": "https://mkultraman.com/#service-infrastructure-build",
+      "@id": "https://www.mkultraman.com/#service-infrastructure-build",
       "name": "Infrastructure Build",
-      "url": "https://mkultraman.com/#services",
+      "url": "https://www.mkultraman.com/services/infrastructure-build",
       "description": "A full redesign and rebuild of your digital stack — new tools, integrated workflows, and documentation your team can actually use. Delivered with a structured handoff and training.",
       "serviceType": "Digital Infrastructure Build",
       "offers": {
@@ -197,7 +197,7 @@ const schema = {
         }
       },
       "provider": {
-        "@id": "https://mkultraman.com/#organization"
+        "@id": "https://www.mkultraman.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
@@ -208,9 +208,9 @@ const schema = {
     // ── 6. Service: Ongoing Management ────────────────────────────────────
     {
       "@type": "Service",
-      "@id": "https://mkultraman.com/#service-ongoing-management",
+      "@id": "https://www.mkultraman.com/#service-ongoing-management",
       "name": "Ongoing Management",
-      "url": "https://mkultraman.com/#services",
+      "url": "https://www.mkultraman.com/services/ongoing-management",
       "description": "Continuous management of your digital infrastructure — new tools, vendor relationships, and performance monitoring, handled on a monthly retainer. You focus on the business.",
       "serviceType": "Digital Infrastructure Management",
       "offers": {
@@ -223,7 +223,7 @@ const schema = {
         }
       },
       "provider": {
-        "@id": "https://mkultraman.com/#organization"
+        "@id": "https://www.mkultraman.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
@@ -234,38 +234,33 @@ const schema = {
     // ── 7. WebSite with SearchAction ───────────────────────────────────────
     {
       "@type": "WebSite",
-      "@id": "https://mkultraman.com/#website",
+      "@id": "https://www.mkultraman.com/#website",
       "name": "MKUltraman",
-      "url": "https://mkultraman.com",
+      "url": "https://www.mkultraman.com",
       "description": "Digital infrastructure consulting for SMEs in Japan. Stack audits, infrastructure builds, and ongoing management. Based in Tokyo.",
       "inLanguage": "en",
       "publisher": {
-        "@id": "https://mkultraman.com/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://mkultraman.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
+        "@id": "https://www.mkultraman.com/#organization"
       },
       "isPartOf": {
-        "@id": "https://mkultraman.com/guild/#organization"
+        "@id": "https://www.mkultraman.com/guild/#organization"
       }
     },
 
     // ── 8. Guild Organization (network root) ───────────────────────────────
     {
       "@type": "Organization",
-      "@id": "https://mkultraman.com/guild/#organization",
+      "@id": "https://www.mkultraman.com/guild/#organization",
       "name": "The Guild",
       "description": "A network of independent sites spanning music, food, travel, art, and storytelling — built across Japan and beyond.",
-      "url": "https://mkultraman.com/guild",
+      "url": "https://www.mkultraman.com/guild",
       "sameAs": [
         "https://japanesejesus.com",
         "https://wildmeatjapan.com",
         "https://jacamp.com",
         "https://musicinjapan.com",
         "https://japancraftbeer.com",
-        "https://mkultraman.com",
+        "https://www.mkultraman.com",
         "https://akiyaz.io",
         "https://kaalamusic.com",
         "https://heatherdobbin.com",
@@ -278,7 +273,7 @@ const schema = {
         { "@type": "Organization", "@id": "https://jacamp.com/#entity",             "name": "JaCamp",               "url": "https://jacamp.com" },
         { "@type": "Organization", "@id": "https://musicinjapan.com/#entity",       "name": "Music In Japan",       "url": "https://musicinjapan.com" },
         { "@type": "Organization", "@id": "https://japancraftbeer.com/#entity",     "name": "Japan Craft Beer",     "url": "https://japancraftbeer.com" },
-        { "@type": "Organization", "@id": "https://mkultraman.com/#entity",         "name": "MKUltraman",           "url": "https://mkultraman.com" },
+        { "@type": "Organization", "@id": "https://www.mkultraman.com/#entity",         "name": "MKUltraman",           "url": "https://www.mkultraman.com" },
         { "@type": "Organization", "@id": "https://akiyaz.io/#entity",              "name": "Akiyaz",               "url": "https://akiyaz.io" },
         { "@type": "Organization", "@id": "https://kaalamusic.com/#entity",         "name": "Kaala Music",          "url": "https://kaalamusic.com" },
         { "@type": "Person",       "@id": "https://heatherdobbin.com/#entity",      "name": "Heather Dobbin",       "url": "https://heatherdobbin.com" },

@@ -12,7 +12,7 @@ const tools = {
     description: 'Reddit authority generation tool with keyword monitoring, AI-drafted contextual replies, and smart scheduling.',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
-    url: 'https://mkultraman.com/tools/redditreach',
+    url: 'https://www.mkultraman.com/tools/redditreach',
     offers: {
       '@type': 'Offer',
       price: '29',
@@ -26,7 +26,7 @@ const tools = {
     description: 'AI work operating system for English-speaking business operators in Japan. 11 specialist agents via Telegram.',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
-    url: 'https://mkultraman.com/tools/tetsuno-claw',
+    url: 'https://www.mkultraman.com/tools/tetsuno-claw',
     offers: {
       '@type': 'AggregateOffer',
       lowPrice: '0',
@@ -40,7 +40,7 @@ const tools = {
     description: 'AI-powered receipt scanning, multi-currency expense tracking, and 確定申告-ready tax categories for freelancers and expats in Japan.',
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Web',
-    url: 'https://mkultraman.com/tools/japan-money-tracker',
+    url: 'https://www.mkultraman.com/tools/japan-money-tracker',
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -53,7 +53,7 @@ const tools = {
     description: 'Meta membership management tool that normalizes contacts and members across Stripe, Luma, Mailchimp, and more.',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
-    url: 'https://mkultraman.com/tools/hitoe',
+    url: 'https://www.mkultraman.com/tools/hitoe',
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/PreOrder',
@@ -63,11 +63,12 @@ const tools = {
   },
 };
 
+// Reference the canonical Organization node defined in SchemaOrg.astro.
+// Prior @id was 'https://mkultraman.com/#entity' which was a dangling
+// reference (no such node exists in the graph). The real Organization
+// lives at https://www.mkultraman.com/#organization.
 const creator = {
-  '@type': 'Organization',
-  '@id': 'https://mkultraman.com/#entity',
-  name: 'MKUltraman',
-  url: 'https://mkultraman.com',
+  '@id': 'https://www.mkultraman.com/#organization',
 };
 
 let graph: Record<string, unknown>[];
