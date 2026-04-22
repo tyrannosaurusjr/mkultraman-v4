@@ -22,7 +22,7 @@ function getBlogDates() {
 const blogDates = getBlogDates();
 
 export default defineConfig({
-  site: 'https://mkultraman.com',
+  site: 'https://www.mkultraman.com',
   compressHTML: true,
   prefetch: true,
   integrations: [
@@ -38,14 +38,18 @@ export default defineConfig({
           item.lastmod = blogDates.get(blogMatch[1]);
           return item;
         }
-        // Commercial pages: pin to known build date
+        // Commercial pages: pinned to actual deploy dates. When a commercial
+        // page gets meaningful edits, update its date here so Google sees a
+        // fresh lastmod. See .gstack/seo-reports for the audit that flagged
+        // these as stale in April 2026.
         const commercialLastmod = {
-          'https://mkultraman.com/': '2026-04-10',
-          'https://mkultraman.com/services/': '2026-04-10',
-          'https://mkultraman.com/services/stack-audit/': '2026-04-10',
-          'https://mkultraman.com/services/infrastructure-build/': '2026-04-10',
-          'https://mkultraman.com/services/ongoing-management/': '2026-04-10',
-          'https://mkultraman.com/contact/': '2026-04-10',
+          'https://www.mkultraman.com/': '2026-04-10',
+          'https://www.mkultraman.com/services/': '2026-04-17',
+          'https://www.mkultraman.com/services/stack-audit/': '2026-04-17',
+          'https://www.mkultraman.com/services/infrastructure-build/': '2026-04-17',
+          'https://www.mkultraman.com/services/ongoing-management/': '2026-04-17',
+          'https://www.mkultraman.com/contact/': '2026-04-10',
+          'https://www.mkultraman.com/white-label/': '2026-04-22',
         };
         if (commercialLastmod[item.url]) {
           item.lastmod = new Date(commercialLastmod[item.url]);

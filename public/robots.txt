@@ -17,4 +17,4 @@ Allow: /
 User-agent: CCBot
 Disallow: /
 
-Sitemap: https://mkultraman.com/sitemap-index.xml
+Sitemap: https://www.mkultraman.com/sitemap-index.xml
