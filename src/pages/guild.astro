@@ -97,8 +97,12 @@ const sites = [
   },
 ];
 
+// Per-industry tag colors. This IS a deliberate exception to DESIGN.md's
+// "one accent color" rule — Guild is a directory where color-coding different
+// industries helps users scan. Purple (#8B5CF6) was swapped for terracotta
+// since DESIGN.md explicitly lists purple/violet as colors to avoid.
 const categoryColors: Record<string, string> = {
-  "Storytelling": "#8B5CF6",
+  "Storytelling": "#7C2D12",
   "Food": "#F59E0B",
   "Food & Drink": "#F59E0B",
   "Music": "#EC4899",
