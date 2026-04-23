@@ -1,0 +1,971 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const pubDate = '2026-04-23';
+const updatedDate = '2026-04-23';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://www.mkultraman.com/guides/japan-saas-compliance/#article",
+  "headline": "Japan SaaS Compliance: インボイス制度 and 電子帳簿保存法 for SMEs",
+  "description": "What Japan's インボイス制度 (qualified invoice system) and 電子帳簿保存法 (electronic bookkeeping law) actually require from your SaaS stack — plain-language guide for SMEs and foreign founders.",
+  "datePublished": `${pubDate}T00:00:00+09:00`,
+  "dateModified": `${updatedDate}T00:00:00+09:00`,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.mkultraman.com/og-default.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://www.mkultraman.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mkultraman.com/#organization",
+    "name": "MKUltraman",
+    "url": "https://www.mkultraman.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mkultraman.com/guides/japan-saas-compliance/"
+  },
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://www.mkultraman.com/#website"
+  },
+  "about": [
+    { "@type": "Thing", "name": "Japan Tax Compliance" },
+    { "@type": "Thing", "name": "Electronic Bookkeeping Law" },
+    { "@type": "Thing", "name": "Qualified Invoice System" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What happens if I don't register for インボイス制度?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you're a 課税事業者 (consumption tax registrant) and don't register for インボイス制度, your clients cannot claim consumption tax input credits from your invoices. This makes you less competitive for B2B work. If you're a 免税事業者 (exempt from consumption tax), registration is optional but affects your client relationships."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a 税理士 for compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not legally required, but highly recommended. Compliance requirements are interpreted differently by different 税理士, and their workflow preferences often override theoretical minimums. They can guide you on specific obligations for your business type and revenue level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are freee and Money Forward compliant with both laws?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, both platforms are fully compliant with インボイス制度 and 電子帳簿保存法 for their core use cases. They support qualified invoice registration numbers, compliant invoice output, and electronic record storage with required search functionality and tamper evidence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an exemption for small businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For インボイス制度, businesses under ¥10M revenue can elect 免税事業者 status and avoid registration, but this affects B2B relationships. For 電子帳簿保存法, there is no small business exemption — all electronically received invoices must be stored electronically regardless of business size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I still use Google Drive for invoice storage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not for primary compliance. 電子帳簿保存法 requires electronic records to be stored in a searchable, tamper-evident system. Google Drive lacks the required indexing by date/amount/counterparty and timestamp verification. Use your accounting software or a dedicated document management tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the penalty for non-compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For インボイス制度, your clients lose tax deduction eligibility, making you less competitive. For 電子帳簿保存法, penalties include additional taxes and potential audit complications. More importantly, non-compliance creates operational risk during tax reviews and vendor audits."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.mkultraman.com/guides/" },
+    { "@type": "ListItem", "position": 3, "name": "Japan SaaS Compliance", "item": "https://www.mkultraman.com/guides/japan-saas-compliance/" }
+  ]
+};
+---
+
+<Base
+  title="Japan SaaS Compliance Guide: インボイス制度 and 電子帳簿保存法 for SMEs — MKUltraman"
+  description="What Japan's インボイス制度 (qualified invoice system) and 電子帳簿保存法 (electronic bookkeeping law) actually require from your SaaS stack — plain-language guide for SMEs and foreign founders."
+  article={true}
+  pubDate={pubDate}
+>
+  <Nav />
+
+  <main class="guide">
+    <div class="container">
+      <article class="guide-article">
+        <header class="guide-header">
+          <a href="/" class="back-link">← Home</a>
+          <span class="guide-eyebrow">Guide · Updated April 2026</span>
+          <h1>Japan SaaS Compliance Guide: インボイス制度 and 電子帳簿保存法 for SMEs</h1>
+          <p class="guide-lead">
+            Two major Japan tax compliance laws changed how SMEs must manage invoices and bookkeeping records. If your SaaS stack isn't set up correctly, you're creating problems for yourself and your clients. This guide explains what each law requires, what it means for your tools, and the minimum viable compliance setup.
+          </p>
+          <div class="guide-meta">
+            <span>By <a href="/about/" rel="author">Matt Ketchum</a></span>
+            <span>·</span>
+            <span>Tokyo</span>
+            <span>·</span>
+            <span>~10 min read</span>
+          </div>
+        </header>
+
+        <div class="disclaimer">
+          <strong>Important disclaimer:</strong> This guide provides general information only. For specific compliance advice for your business, consult a licensed 税理士 (certified tax accountant). Compliance requirements are interpreted differently by different 税理士 — what follows is the general framework, not legal or tax advice.
+        </div>
+
+        <aside class="tldr" aria-label="TL;DR summary">
+          <h2 class="tldr__heading">TL;DR</h2>
+          <ul class="tldr__list">
+            <li><strong>Two major laws</strong> hit Japan SMEs simultaneously: インボイス制度 (October 2023) for qualified invoices and 電子帳簿保存法 (January 2024) for electronic record keeping.</li>
+            <li><strong>インボイス制度:</strong> If you're a 課税事業者, register as an "Approved Invoice Issuer," add your T-number to invoices. Your clients need it for tax deductions.</li>
+            <li><strong>電子帳簿保存法:</strong> Electronic invoices must stay electronic and be stored in a searchable, tamper-evident system. No more printing PDFs and filing them.</li>
+            <li><strong>Compliance stack:</strong> freee or Money Forward handle both laws natively. The gap is usually staff workflow — electronic invoices must go into the system, not Downloads folders.</li>
+            <li><strong>Foreign founders:</strong> Same rules apply regardless of nationality. No exemptions for foreign ownership, but 免税事業者 election may be available under ¥10M revenue.</li>
+          </ul>
+        </aside>
+
+        <nav class="toc" aria-label="Table of contents">
+          <h2 class="toc__heading">On this page</h2>
+          <ol class="toc__list">
+            <li><a href="#two-laws">The two laws you need to know</a></li>
+            <li><a href="#invoice-system">インボイス制度: what it actually requires</a></li>
+            <li><a href="#electronic-bookkeeping">電子帳簿保存法: what it actually requires</a></li>
+            <li><a href="#compliance-stack">The minimum viable compliance stack</a></li>
+            <li><a href="#freee-money-forward">freee vs Money Forward: compliance comparison</a></li>
+            <li><a href="#common-mistakes">Common compliance mistakes</a></li>
+            <li><a href="#foreign-founders">Foreign founders: additional considerations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <section id="two-laws" class="guide-section">
+          <h2>The two laws you need to know</h2>
+          <p>
+            Japan had two major compliance changes hit simultaneously that fundamentally changed how SMEs must handle their financial workflows. Both laws are active now, and both affect your tool stack decisions.
+          </p>
+          <div class="law-comparison">
+            <div class="law-box">
+              <h3>インボイス制度<br><span class="law-subtitle">Qualified Invoice System</span></h3>
+              <div class="law-details">
+                <p><strong>Effective:</strong> October 1, 2023</p>
+                <p><strong>What it affects:</strong> How you issue and receive invoices for consumption tax purposes</p>
+                <p><strong>Key requirement:</strong> Registered businesses must include their 登録番号 (T-number) on all invoices for clients to claim tax deductions</p>
+              </div>
+            </div>
+            <div class="law-box">
+              <h3>電子帳簿保存法<br><span class="law-subtitle">Electronic Bookkeeping Preservation Act</span></h3>
+              <div class="law-details">
+                <p><strong>Major revision:</strong> January 1, 2024</p>
+                <p><strong>What it affects:</strong> How you store and manage digital receipts, invoices, and accounting records</p>
+                <p><strong>Key requirement:</strong> Electronic documents must stay electronic and be stored in searchable, tamper-evident systems</p>
+              </div>
+            </div>
+          </div>
+          <p>
+            The timing wasn't coincidental — these changes are part of Japan's broader push toward digitalization and improved tax compliance. For SMEs, this means you can't ignore either law, and your tool choices affect both.
+          </p>
+        </section>
+
+        <section id="invoice-system" class="guide-section">
+          <h2>インボイス制度: what it actually requires</h2>
+          <p>
+            The qualified invoice system creates a direct link between your registration status and your clients' tax deductions. Here's what you need to understand:
+          </p>
+          <h3>The registration decision</h3>
+          <p>If you are a <strong>課税事業者</strong> (consumption tax registrant):</p>
+          <ul class="guide-list">
+            <li><strong>You must register</strong> as an "Approved Invoice Issuer" (適格請求書発行事業者) and include your 登録番号 (T-number) on all invoices issued</li>
+            <li><strong>Your clients need your T-number</strong> to claim consumption tax input credits from your invoices</li>
+            <li><strong>Registration is not automatic</strong> — you must apply through the NTA portal and wait 2–3 weeks for approval</li>
+          </ul>
+          <p>If you are a <strong>免税事業者</strong> (exempt from consumption tax, typically under ¥10M revenue):</p>
+          <ul class="guide-list">
+            <li><strong>You can choose not to register</strong> — but your clients then cannot claim input tax credit from your invoices</li>
+            <li><strong>This makes you less competitive</strong> for B2B work, as clients effectively pay more to work with you</li>
+            <li><strong>Many 免税事業者 elect to register</strong> and become 課税事業者 to maintain competitiveness</li>
+          </ul>
+          <h3>Practical implementation</h3>
+          <p>Once you're registered, the requirements are straightforward:</p>
+          <ol class="guide-list">
+            <li><strong>Update your invoice template</strong> to include your T-number (starts with "T" followed by 13 digits)</li>
+            <li><strong>Verify vendors' T-numbers</strong> when recording expenses — your accounting software needs this to claim input tax credit</li>
+            <li><strong>Use compliant accounting software</strong> — both freee and Money Forward handle qualified invoice issuance natively once you enter your 登録番号 in settings</li>
+          </ol>
+          <p class="guide-sidenote">
+            <strong>The T-number verification issue most businesses miss:</strong> It's not enough to just put your T-number on invoices. You also need to collect and verify T-numbers from your vendors to maximize your own tax deductions. This is where your accounting software's vendor database becomes critical.
+          </p>
+        </section>
+
+        <section id="electronic-bookkeeping" class="guide-section">
+          <h2>電子帳簿保存法: what it actually requires</h2>
+          <p>
+            The electronic bookkeeping preservation act has one core rule that affects most SMEs: <strong>electronic records you receive electronically must be stored electronically</strong>. This sounds simple but breaks a lot of existing workflows.
+          </p>
+          <h3>What counts as "electronic records"</h3>
+          <ul class="guide-list">
+            <li><strong>PDF invoices received by email</strong> — must preserve the original email and attachment</li>
+            <li><strong>Invoices downloaded from vendor portals</strong> — must preserve the original download, not a printed copy</li>
+            <li><strong>Digital receipts from SaaS subscriptions</strong> — the original receipt email or portal download</li>
+            <li><strong>Bank and credit card statements</strong> downloaded as PDF or CSV</li>
+          </ul>
+          <h3>Storage requirements</h3>
+          <p>The electronic storage system must support:</p>
+          <ul class="guide-list">
+            <li><strong>Search by date, amount, and counterparty name</strong> — manual filing in folders doesn't qualify</li>
+            <li><strong>Tamper evidence</strong> — timestamp verification and integrity protection</li>
+            <li><strong>Legal retention periods</strong> — typically 7 years for 法人, 5 years for 個人事業主</li>
+            <li><strong>Backup and recovery</strong> — data must be preserved even if the primary system fails</li>
+          </ul>
+          <h3>What this breaks</h3>
+          <p>Common workflows that are no longer compliant:</p>
+          <ul class="guide-list">
+            <li><strong>Printing PDF invoices and filing them in paper binders</strong> — you must keep the original electronic file</li>
+            <li><strong>Saving invoices to a Google Drive folder</strong> — lacks required indexing and tamper evidence</li>
+            <li><strong>Email forwarding to your accountant</strong> — unless they're using a compliant system for final storage</li>
+            <li><strong>Screenshot capture of vendor portals</strong> — screenshots aren't the original electronic record</li>
+          </ul>
+          <h3>The exception: paper receipts</h3>
+          <p>
+            Receipts for expenses under ¥30,000 can use smartphone photography under simplified rules. The photo must include timestamp and location data, and the app must provide tamper evidence. Most accounting software receipt capture features handle this compliance requirement.
+          </p>
+        </section>
+
+        <section id="compliance-stack" class="guide-section">
+          <h2>The minimum viable compliance stack</h2>
+          <p>
+            For most Japan SMEs, a compliant setup requires these five steps, in order:
+          </p>
+          <ol class="guide-list">
+            <li>
+              <strong>Register for インボイス制度</strong> if you do B2B work and are a 課税事業者. Apply through the NTA portal — takes 2–3 weeks. If you're unsure about 課税事業者 status, check with your 税理士 first.
+            </li>
+            <li>
+              <strong>Update your invoice template</strong> to include your T-number. Both freee and Money Forward do this automatically once you enter your 登録番号 in settings. If you use custom templates, manually add the number.
+            </li>
+            <li>
+              <strong>Set up electronic document management</strong> for incoming invoices. Either use your accounting software's receipt scan/upload feature, or a dedicated tool like Sansan Bill One, ricori, or Concur Invoice.
+            </li>
+            <li>
+              <strong>Train staff on the electronic-to-electronic rule</strong>. Emailed PDFs and vendor portal downloads must go into the compliant system, not Downloads folders or paper files. This is usually the compliance failure point.
+            </li>
+            <li>
+              <strong>Verify your 税理士's workflow</strong> — their preference for receiving documents often overrides the theoretical minimum. Some prefer everything through their portal; others want clients to handle primary storage internally.
+            </li>
+          </ol>
+          <h3>Tool options by function</h3>
+          <div class="tool-table-wrap">
+            <table class="tool-table">
+              <thead>
+                <tr>
+                  <th>Function</th>
+                  <th>Options</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Core accounting + compliance</strong></td>
+                  <td>freee, Money Forward Cloud</td>
+                  <td>Both handle インボイス and 電子帳簿保存法 natively</td>
+                </tr>
+                <tr>
+                  <td><strong>Document capture</strong></td>
+                  <td>freee app, Money Forward app, Sansan Bill One, ricori</td>
+                  <td>Smartphone receipt scanning with timestamp verification</td>
+                </tr>
+                <tr>
+                  <td><strong>Invoice management</strong></td>
+                  <td>Sansan Bill One, Concur Invoice, TKC document management</td>
+                  <td>Dedicated tools if accounting software isn't enough</td>
+                </tr>
+                <tr>
+                  <td><strong>T-number verification</strong></td>
+                  <td>Built into freee/Money Forward, NTA portal lookup</td>
+                  <td>Automatic verification when entering vendor information</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="freee-money-forward" class="guide-section">
+          <h2>freee vs Money Forward: compliance comparison</h2>
+          <p>
+            Both platforms are fully compliant with インボイス制度 and 電子帳簿保存法 for their core use cases. The differences are in ease of setup and workflow integration.
+          </p>
+          <h3>Compliance features: both platforms</h3>
+          <ul class="guide-list">
+            <li><strong>インボイス登録番号 support:</strong> Enter your T-number once, and it appears on all invoices automatically</li>
+            <li><strong>Compliant invoice output:</strong> PDFs include all required fields for qualified invoice compliance</li>
+            <li><strong>電子帳簿保存法 storage:</strong> Uploaded documents are timestamped, searchable by required fields, and tamper-evident</li>
+            <li><strong>T-number verification:</strong> Automatic lookup and validation when adding vendors</li>
+            <li><strong>税理士 integration:</strong> Dedicated portals for accountant access and document sharing</li>
+          </ul>
+          <h3>The practical differences</h3>
+          <ul class="guide-list">
+            <li><strong>Receipt capture:</strong> freee has a cleaner smartphone app interface; Money Forward's is functional but less polished</li>
+            <li><strong>Setup complexity:</strong> freee's compliance setup walks you through registration status and explains options; Money Forward assumes you know your obligations</li>
+            <li><strong>税理士 preference:</strong> Some accounting firms have stronger relationships with one platform — ask your 税理士 which they prefer before choosing</li>
+            <li><strong>Document management:</strong> Money Forward has better integration with third-party document tools; freee wants everything in their ecosystem</li>
+          </ul>
+          <p>
+            For detailed platform comparison beyond compliance, see the <a href="/compare/freee-vs-money-forward/">freee vs Money Forward guide</a>.
+          </p>
+        </section>
+
+        <section id="common-mistakes" class="guide-section">
+          <h2>Common compliance mistakes</h2>
+          <p>
+            These are the most frequent compliance failures we see in SME audits, roughly in order of how often they happen:
+          </p>
+          <ol class="guide-list">
+            <li>
+              <strong>Not registering for インボイス制度 despite doing regular B2B work.</strong> Many businesses assume registration happens automatically when they become 課税事業者. It doesn't. You must apply separately.
+            </li>
+            <li>
+              <strong>Issuing invoices without the T-number.</strong> Common with freelancers using custom Word or Excel templates, or businesses that updated their accounting software but didn't update manual invoice processes.
+            </li>
+            <li>
+              <strong>Storing electronic invoices in Google Drive folders.</strong> Looks organized, but lacks required search functionality and tamper evidence. The documents aren't indexed by amount or counterparty name.
+            </li>
+            <li>
+              <strong>Printing electronic invoices and filing them as paper.</strong> Staff receive a PDF by email, print it for the filing cabinet, and delete the original email. This breaks the electronic-to-electronic preservation requirement.
+            </li>
+            <li>
+              <strong>Missing vendor T-numbers.</strong> Your accounting software needs vendors' 登録番号 to record correct input tax deductions. Many businesses don't realize they need to collect this information.
+            </li>
+            <li>
+              <strong>Assuming compliance is the 税理士's responsibility.</strong> Your accountant can advise and handle tax filings, but the document storage and invoice issuance compliance is your operational responsibility.
+            </li>
+          </ol>
+          <p class="guide-sidenote">
+            <strong>The hidden cost of compliance mistakes:</strong> Non-compliance doesn't usually result in immediate penalties, but it creates problems during tax audits, vendor audits, and due diligence for investment or acquisition. The operational disruption when you have to reconstruct records retroactively is far more expensive than getting it right initially.
+          </p>
+        </section>
+
+        <section id="foreign-founders" class="guide-section">
+          <h2>Foreign founders: additional considerations</h2>
+          <p>
+            As a foreign-owned 法人 or 個人事業主, the same compliance rules apply — there is no foreigner exemption. However, there are a few additional factors to consider:
+          </p>
+          <h3>Registration decisions</h3>
+          <ul class="guide-list">
+            <li>
+              <strong>免税事業者 election:</strong> If your revenues are under ¥10M, you may qualify as 免税事業者 and can choose not to register for インボイス. However, this decision affects your B2B competitiveness — discuss the tradeoffs with your 税理士.
+            </li>
+            <li>
+              <strong>English vs Japanese invoicing:</strong> Invoices can be in English, but the T-number and required fields must be clearly labeled. Many foreign businesses use bilingual invoice templates to be safe.
+            </li>
+            <li>
+              <strong>International vendor relationships:</strong> Foreign vendors who don't have Japanese T-numbers cannot provide qualified invoices. This affects your input tax deduction calculations.
+            </li>
+          </ul>
+          <h3>Additional compliance layers</h3>
+          <ul class="guide-list">
+            <li>
+              <strong>FBAR/FATCA considerations:</strong> If you are a U.S. citizen, business bank accounts in Japan have FBAR and FATCA reporting obligations. This is separate from Japanese tax compliance but affects which financial institutions you use.
+            </li>
+            <li>
+              <strong>Transfer pricing documentation:</strong> If your business has related-party transactions across borders, you may need additional documentation beyond standard Japanese compliance.
+            </li>
+            <li>
+              <strong>Language barriers with vendors:</strong> Japanese accounting software and vendor portals operate in Japanese. Budget time for translation or hire bilingual staff for compliance workflows.
+            </li>
+          </ul>
+          <h3>Practical recommendations</h3>
+          <p>
+            Foreign founders usually benefit from working with a 税理士 who has other foreign clients, as they're more familiar with the intersection of Japanese compliance and international business structures. The compliance setup is the same, but the explanation and workflow design can account for language and cultural differences.
+          </p>
+        </section>
+
+        <section id="faq" class="guide-section">
+          <h2>Frequently asked questions</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>What happens if I don't register for インボイス制度?</summary>
+              <p>
+                If you're a 課税事業者 and don't register, your clients cannot claim consumption tax input credits from your invoices. This makes you less competitive for B2B work — clients effectively pay more to work with you. If you're a 免税事業者, registration is optional, but the same competitiveness issue applies.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Do I need a 税理士 for compliance?</summary>
+              <p>
+                Not legally required, but highly recommended. Compliance requirements are interpreted differently by different 税理士, and their workflow preferences often override theoretical minimums. They can guide you on specific obligations for your business type, revenue level, and industry.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Are freee and Money Forward compliant with both laws?</summary>
+              <p>
+                Yes, both platforms are fully compliant with インボイス制度 and 電子帳簿保存法 for their core use cases. They support qualified invoice registration numbers, compliant invoice output, and electronic record storage with required search functionality and tamper evidence.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Is there an exemption for small businesses?</summary>
+              <p>
+                For インボイス制度, businesses under ¥10M revenue can elect 免税事業者 status and avoid registration, but this affects B2B relationships. For 電子帳簿保存法, there is no small business exemption — all electronically received invoices must be stored electronically regardless of business size.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Can I still use Google Drive for invoice storage?</summary>
+              <p>
+                Not for primary compliance. 電子帳簿保存法 requires electronic records to be stored in a searchable, tamper-evident system. Google Drive lacks required indexing by date, amount, and counterparty name, plus timestamp verification. Use your accounting software or a dedicated compliance tool.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What's the penalty for non-compliance?</summary>
+              <p>
+                For インボイス制度, your clients lose tax deduction eligibility, making you less competitive. For 電子帳簿保存法, penalties include additional taxes and potential audit complications. More importantly, non-compliance creates operational risk during tax reviews and vendor audits.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="guide-related">
+          <h2>Related reading</h2>
+          <ul class="guide-related__list">
+            <li>
+              <a href="/compare/freee-vs-money-forward/">freee vs Money Forward: full compliance comparison →</a>
+              <span>Detailed platform comparison covering compliance features and setup differences.</span>
+            </li>
+            <li>
+              <a href="/guides/accepting-payments-japan/">Accepting payments in Japan →</a>
+              <span>Payment processor setup, banking requirements, and compliance considerations.</span>
+            </li>
+            <li>
+              <a href="/guides/japan-sme-tech-stack/">Japan SME tech stack guide →</a>
+              <span>The complete operational tech stack for SMEs operating in Japan.</span>
+            </li>
+            <li>
+              <a href="/services/stack-audit/">Stack Audit →</a>
+              <span>Comprehensive audit of your current setup for compliance gaps and optimization opportunities.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="guide-cta">
+          <h2>Need help with compliance setup?</h2>
+          <p>
+            If your current setup doesn't meet these requirements, a
+            <a href="/services/stack-audit/">Stack Audit</a> can identify
+            compliance gaps and provide a prioritized remediation plan. We'll
+            review your tool stack, workflows, and vendor relationships to ensure
+            you're compliant with both laws.
+          </p>
+          <div class="guide-cta__actions">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book a compliance review call — $175 →
+            </a>
+            <a href="/contact/" class="guide-cta__alt">or send a message</a>
+          </div>
+          <div class="guide-cta__services">
+            <span>Related services:</span>
+            <a href="/services/stack-audit/">Stack Audit</a>
+            <a href="/services/ongoing-management/">Ongoing Management</a>
+            <a href="/services/infrastructure-build/">Infrastructure Build</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Base>
+
+<style>
+  .guide {
+    padding: var(--space-64) 0 var(--space-96);
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  .guide-article {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-24);
+    display: inline-block;
+    transition: color 0.15s ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .guide-header {
+    margin-bottom: var(--space-48);
+  }
+
+  .guide-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .guide-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: var(--space-24);
+  }
+
+  .guide-lead {
+    font-size: 19px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-24);
+  }
+
+  .guide-meta {
+    display: flex;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  .guide-meta a {
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .guide-meta a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* Disclaimer */
+  .disclaimer {
+    margin: var(--space-32) 0;
+    padding: var(--space-20) var(--space-24);
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: var(--radius-md);
+    font-size: 15px;
+    color: #856404;
+    line-height: 1.6;
+  }
+
+  /* TL;DR */
+  .tldr {
+    margin: var(--space-48) 0;
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+  }
+  .tldr__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+  .tldr__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  .tldr__list li {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .tldr__list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .tldr__list strong { color: var(--text); font-weight: 600; }
+
+  /* TOC */
+  .toc {
+    margin: var(--space-48) 0;
+    padding: var(--space-24) var(--space-32);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+  }
+  .toc__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: var(--space-16);
+  }
+  .toc__list {
+    list-style: decimal inside;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: 0;
+  }
+  .toc__list li {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .toc__list a {
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .toc__list a:hover { color: var(--accent); }
+
+  /* Law Comparison */
+  .law-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-24);
+    margin: var(--space-32) 0;
+  }
+  .law-box {
+    padding: var(--space-24);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .law-box h3 {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    line-height: 1.3;
+  }
+  .law-subtitle {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-dim);
+    font-family: var(--font-base);
+  }
+  .law-details p {
+    font-size: 14px;
+    margin-bottom: var(--space-12);
+    line-height: 1.5;
+  }
+  .law-details p:last-child { margin-bottom: 0; }
+
+  /* Sections */
+  .guide-section {
+    margin: var(--space-64) 0;
+    scroll-margin-top: 80px;
+  }
+  .guide-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-24);
+    line-height: 1.2;
+  }
+  .guide-section h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin: var(--space-32) 0 var(--space-16);
+  }
+  .guide-section p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-20);
+  }
+  .guide-section strong { color: var(--text); font-weight: 600; }
+  .guide-section em { font-style: italic; }
+  .guide-section a {
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .guide-section a:hover { border-color: var(--accent); }
+
+  .guide-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    margin: var(--space-20) 0;
+  }
+  .guide-list li {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: var(--space-24);
+    position: relative;
+  }
+  .guide-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 13px;
+    top: 4px;
+  }
+  ol.guide-list {
+    counter-reset: guide-counter;
+  }
+  ol.guide-list li::before {
+    counter-increment: guide-counter;
+    content: counter(guide-counter) '.';
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .guide-sidenote {
+    padding: var(--space-20) var(--space-24);
+    background: var(--surface);
+    border-left: 3px solid var(--text-dim);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 15px !important;
+    margin: var(--space-32) 0 !important;
+  }
+
+  /* Tool table */
+  .tool-table-wrap {
+    margin: var(--space-32) 0;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .tool-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .tool-table thead {
+    background: var(--surface);
+  }
+  .tool-table th {
+    padding: var(--space-16);
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+  .tool-table td {
+    padding: var(--space-16);
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .tool-table tr:last-child td { border-bottom: none; }
+  .tool-table td strong { color: var(--text); font-weight: 600; }
+
+  /* FAQ */
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-top: var(--space-24);
+  }
+  .faq__item {
+    padding: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .faq__item:last-child { border-bottom: none; }
+  .faq__item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-left: var(--space-16);
+  }
+  .faq__item[open] summary::after { content: '–'; }
+  .faq__item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: var(--space-16) !important;
+  }
+  .faq__item a { color: var(--accent); }
+
+  /* Related */
+  .guide-related {
+    margin: var(--space-64) 0;
+    padding-top: var(--space-48);
+    border-top: 1px solid var(--border);
+  }
+  .guide-related h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-24);
+    letter-spacing: -0.015em;
+  }
+  .guide-related__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  .guide-related__list li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-16) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .guide-related__list li:last-child { border-bottom: none; }
+  .guide-related__list a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.15s;
+  }
+  .guide-related__list a:hover { color: var(--accent); }
+  .guide-related__list span {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* CTA */
+  .guide-cta {
+    margin-top: var(--space-64);
+    padding: var(--space-48);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .guide-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.02em;
+  }
+  .guide-cta p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-32);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .guide-cta p a { color: var(--accent); }
+  .guide-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+    margin-bottom: var(--space-32);
+  }
+  .guide-cta__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .guide-cta__alt:hover { color: var(--text); }
+  .guide-cta__services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-16);
+    flex-wrap: wrap;
+    padding-top: var(--space-24);
+    border-top: 1px dashed var(--border);
+  }
+  .guide-cta__services span {
+    font-size: 12px;
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .guide-cta__services a {
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .guide-cta__services a:hover { color: var(--accent); }
+
+  @media (max-width: 768px) {
+    .law-comparison { grid-template-columns: 1fr; }
+    .tldr { padding: var(--space-24); }
+    .toc { padding: var(--space-16) var(--space-20); }
+    .guide-cta { padding: var(--space-32) var(--space-24); }
+    .tool-table th, .tool-table td { padding: var(--space-12); font-size: 13px; }
+  }
+</style>

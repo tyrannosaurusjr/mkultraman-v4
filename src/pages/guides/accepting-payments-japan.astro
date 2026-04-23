@@ -1,0 +1,1066 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const pubDate = '2026-04-23';
+const updatedDate = '2026-04-23';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://www.mkultraman.com/guides/accepting-payments-japan/#article",
+  "headline": "Accepting Payments in Japan: The Complete Guide for SMEs",
+  "description": "How to accept payments in Japan as an SME or foreign founder — credit cards, QR codes, bank transfer, convenience store payment, and how to build a full Japan payment stack.",
+  "datePublished": `${pubDate}T00:00:00+09:00`,
+  "dateModified": `${updatedDate}T00:00:00+09:00`,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.mkultraman.com/og-default.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://www.mkultraman.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mkultraman.com/#organization",
+    "name": "MKUltraman",
+    "url": "https://www.mkultraman.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mkultraman.com/guides/accepting-payments-japan/"
+  },
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://www.mkultraman.com/#website"
+  },
+  "about": [
+    { "@type": "Thing", "name": "Payment Processing in Japan" },
+    { "@type": "Thing", "name": "Japanese Payment Methods" },
+    { "@type": "Thing", "name": "QR Code Payments Japan" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What payment methods do I need to accept in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For online businesses: credit/debit cards via Stripe are usually sufficient. For in-person retail: PayPay is mandatory (60M+ users), plus card acceptance via Square Japan or similar. For B2B: bank transfer (振込) after invoicing is standard. Convenience store payment (コンビニ払い) is optional unless your customer base specifically demands it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can foreign founders use Stripe in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but you need a Japan bank account for JPY payouts. Stripe Japan setup takes 1-2 weeks with proper documentation. The biggest hurdle is opening the bank account — Sony Bank, Prestia, or Japan Post Bank are most foreigner-friendly. Once you have a bank account, Stripe onboarding is straightforward."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to accept PayPay for my business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have physical customers in Japan, yes. PayPay has 60M+ users and not accepting it loses customers. The 1.98% fee is industry-standard. PayPay requires a Japan corporate bank account to apply, and merchant approval takes 2-4 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do B2B payments work in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Japan B2B payments happen via bank transfer (振込) after receiving an invoice (請求書). You issue an invoice using freee, Money Forward, or a template, the customer transfers to your bank account, and you reconcile in your accounting software. Since October 2023, invoices must include your qualified invoice registration number (登録番号) for the customer to claim input tax credit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the cheapest way to move money out of Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wise offers mid-market exchange rates with transparent fees, making it the best option for JPY to USD/EUR transfers. Bank SWIFT wires cost ¥3,000-¥7,500 per transfer plus exchange rate spreads. Avoid using domestic payment processors like PayPay for international transfers — they're JPY-only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use convenience store payment (コンビニ払い)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if your customer base specifically demands it — typically older consumers or those preferring cash. Adding コンビニ払い requires GMO Payment Gateway or similar enterprise solutions. Most SMEs start with Stripe (cards) + PayPay (QR) and add convenience store payment only if customer requests justify the complexity and cost."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.mkultraman.com/guides/" },
+    { "@type": "ListItem", "position": 3, "name": "Accepting Payments in Japan", "item": "https://www.mkultraman.com/guides/accepting-payments-japan/" }
+  ]
+};
+---
+
+<Base
+  title="Accepting Payments in Japan: The Complete Guide for SMEs — MKUltraman"
+  description="How to accept payments in Japan as an SME or foreign founder — credit cards, QR codes, bank transfer, convenience store payment, and how to build a full Japan payment stack."
+  article={true}
+  pubDate={pubDate}
+>
+  <Nav />
+
+  <main class="guide">
+    <div class="container">
+      <article class="guide-article">
+        <header class="guide-header">
+          <a href="/" class="back-link">← Home</a>
+          <span class="guide-eyebrow">Guide · Updated April 2026</span>
+          <h1>Accepting Payments in Japan: The Complete Guide for SMEs</h1>
+          <p class="guide-lead">
+            Japan has one of the most fragmented payment landscapes in the world.
+            Credit cards, QR codes, IC cards (Suica, iD), bank transfer (振込),
+            convenience store payment (コンビニ払い), and carrier billing all coexist.
+            This guide covers what you actually need to accept as a Japan SME,
+            what you can skip, and how to set it up.
+          </p>
+          <div class="guide-meta">
+            <span>By <a href="/about/" rel="author">Matt Ketchum</a></span>
+            <span>·</span>
+            <span>Tokyo</span>
+            <span>·</span>
+            <span>~10 min read</span>
+          </div>
+        </header>
+
+        <aside class="tldr" aria-label="TL;DR summary">
+          <h2 class="tldr__heading">TL;DR</h2>
+          <ul class="tldr__list">
+            <li><strong>Online payments:</strong> Stripe covers 80% of use cases. Add GMO-PG only if customers demand コンビニ払い (convenience store payment).</li>
+            <li><strong>In-person payments:</strong> PayPay is mandatory (60M+ users). Add Square Japan for cards. Skip IC card contactless unless high-traffic retail.</li>
+            <li><strong>B2B payments:</strong> bank transfer (振込) after invoicing. Use freee or Money Forward for qualified invoices with 登録番号.</li>
+            <li><strong>Biggest hurdle:</strong> Japan bank account required for all payment processors. Sony Bank, Prestia, or Japan Post Bank are most foreigner-friendly.</li>
+            <li><strong>International transfers:</strong> Wise for JPY → USD/EUR. Bank SWIFT wires are expensive. Avoid PayPay for international transfers.</li>
+          </ul>
+        </aside>
+
+        <nav class="toc" aria-label="Table of contents">
+          <h2 class="toc__heading">On this page</h2>
+          <ol class="toc__list">
+            <li><a href="#payment-landscape">Japan's payment landscape: why it's different</a></li>
+            <li><a href="#online-stack">Online payment stack: what you need</a></li>
+            <li><a href="#in-person-stack">In-person payment stack: what you need</a></li>
+            <li><a href="#b2b-invoicing">B2B invoicing in Japan</a></li>
+            <li><a href="#foreign-founders">As a foreign founder: the bank account problem</a></li>
+            <li><a href="#international-payments">International payments: getting money out of Japan</a></li>
+            <li><a href="#consumption-tax">Consumption tax and payment processors</a></li>
+            <li><a href="#full-stack-recommendations">Building the full stack: recommendations by business type</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <section id="payment-landscape" class="guide-section">
+          <h2>Japan's payment landscape: why it's different</h2>
+          <p>
+            Japan remains more cash-heavy than most developed economies despite
+            rapid QR code growth post-COVID. The payment methods Japanese
+            consumers actually use vary dramatically by context, age group,
+            and purchase type.
+          </p>
+          <p>Here's the real usage breakdown for 2026:</p>
+          <ul class="guide-list">
+            <li>
+              <strong>Cash:</strong> still 20–30% of transactions despite steady
+              decline. Dominant among older consumers, small purchases, and
+              traditional businesses that haven't modernized their POS systems.
+            </li>
+            <li>
+              <strong>Credit/debit cards:</strong> now the majority of retail
+              transaction volume. Visa and Mastercard widely accepted. JCB
+              strong domestically. American Express less universal.
+            </li>
+            <li>
+              <strong>QR codes (PayPay, LINE Pay, d払い, au PAY):</strong>
+              surged post-2018, especially PayPay which has 60M+ users.
+              Essential for retail, cafes, restaurants. PayPay is the clear
+              market leader.
+            </li>
+            <li>
+              <strong>IC card contactless (Suica, iD, QUICPay):</strong> strong
+              adoption in transit-adjacent retail — convenience stores, station
+              kiosks, vending machines. Less critical for general retail.
+            </li>
+            <li>
+              <strong>Bank transfer (振込):</strong> dominant in B2B invoicing.
+              Almost universal for business-to-business transactions after
+              invoice receipt.
+            </li>
+            <li>
+              <strong>Convenience store payment (コンビニ払い):</strong> used
+              for online purchases by cash-preferring consumers. Important for
+              e-commerce targeting older demographics.
+            </li>
+          </ul>
+          <p>
+            The fragmentation means no single payment method captures 100% of
+            the market. You need a strategy, not just a single processor.
+          </p>
+        </section>
+
+        <section id="online-stack" class="guide-section">
+          <h2>Online payment stack: what you need</h2>
+          <p>
+            For any business accepting payments online in Japan, your stack
+            decision tree is straightforward:
+          </p>
+          <h3>Start with Stripe</h3>
+          <p>
+            <strong>Stripe</strong> is the best starting point for most online
+            businesses. Easiest setup, best API, supports cards + Apple Pay +
+            Google Pay + bank debit. Setup for foreign founders is achievable
+            in 1–2 weeks with a Japan bank account.
+          </p>
+          <ul class="guide-list">
+            <li><strong>Fees:</strong> 3.6% + ¥30 for domestic cards</li>
+            <li><strong>Setup time:</strong> 1–2 weeks with bank account</li>
+            <li><strong>Requirements:</strong> Japan bank account for JPY payouts</li>
+            <li><strong>Covers:</strong> ~80% of online payment use cases</li>
+          </ul>
+          <h3>Alternative: PAY.JP</h3>
+          <p>
+            <strong>PAY.JP</strong> is the Japan-native Stripe alternative.
+            Similar API design, slightly different fee structure. Worth
+            evaluating if you need specific Japanese payment methods not
+            supported by Stripe.
+          </p>
+          <h3>Enterprise: GMO Payment Gateway</h3>
+          <p>
+            <strong>GMO-PG</strong> is enterprise-grade payment processing that
+            adds convenience store payment, carrier billing, and bank transfer
+            to standard card processing. Used by major Japan e-commerce companies
+            like Rakuten and Yahoo Shopping.
+          </p>
+          <ul class="guide-list">
+            <li><strong>When to use:</strong> customers specifically request コンビニ払い</li>
+            <li><strong>Setup:</strong> complex integration, enterprise sales process</li>
+            <li><strong>Cost:</strong> higher than Stripe, variable pricing</li>
+          </ul>
+          <p class="guide-sidenote">
+            <strong>For most SMEs: Stripe is enough.</strong> Add GMO-PG only
+            if your customer base specifically demands convenience store payment.
+            The integration complexity and cost aren't justified until you have
+            proven customer demand.
+          </p>
+        </section>
+
+        <section id="in-person-stack" class="guide-section">
+          <h2>In-person payment stack: what you need</h2>
+          <p>
+            For businesses with physical customers — retail stores, cafes,
+            restaurants, pop-ups, events — the requirements are different:
+          </p>
+          <h3>PayPay is mandatory</h3>
+          <p>
+            <strong>PayPay</strong> has 60M+ users and 1.98% processing fees.
+            Not accepting it actively loses customers. QR-based system with
+            simple setup once approved.
+          </p>
+          <ul class="guide-list">
+            <li><strong>Market share:</strong> dominant QR payment platform</li>
+            <li><strong>Requirements:</strong> Japan corporate bank account</li>
+            <li><strong>Approval time:</strong> 2–4 weeks</li>
+            <li><strong>Hardware:</strong> QR codes via tablet/smartphone app</li>
+          </ul>
+          <h3>Card acceptance: Square Japan</h3>
+          <p>
+            <strong>Square Japan</strong> provides the best all-in-one hardware
+            for accepting chip cards + contactless + QR codes on one device.
+            Clear 3.25% flat fee structure.
+          </p>
+          <ul class="guide-list">
+            <li><strong>Good for:</strong> pop-up shops, events, cafes, markets</li>
+            <li><strong>Hardware:</strong> integrated card reader + tablet POS</li>
+            <li><strong>Fees:</strong> 3.25% flat rate</li>
+            <li><strong>Setup:</strong> 1–2 weeks</li>
+          </ul>
+          <h3>Alternative: Coiney / Stripe Terminal</h3>
+          <p>
+            <strong>Coiney</strong> and <strong>Stripe Terminal</strong> offer
+            card readers for developer-integrated POS setups. Better for
+            businesses that need custom integration with existing systems.
+          </p>
+          <h3>IC card contactless: optional</h3>
+          <p>
+            IC card contactless (iD, QUICPay, Suica) requires separate
+            NFC-enabled readers. Important for convenience stores and
+            transit-adjacent retail, but optional for general retail where
+            cards + PayPay cover most customers.
+          </p>
+        </section>
+
+        <section id="b2b-invoicing" class="guide-section">
+          <h2>B2B invoicing in Japan</h2>
+          <p>
+            Most Japan B2B payments happen via bank transfer (振込) after
+            receiving a proper invoice (請求書). Understanding this flow is
+            critical for any business selling to Japanese companies.
+          </p>
+          <h3>The standard B2B flow</h3>
+          <ol class="guide-list">
+            <li>
+              <strong>Issue 請求書 (invoice)</strong> using freee, Money Forward
+              Cloud, or a compliant template. The invoice must include your
+              qualified invoice registration number (登録番号).
+            </li>
+            <li>
+              <strong>Customer transfers to your bank account</strong> via their
+              bank's online system or branch visit. Transfer typically happens
+              within 30 days of invoice date.
+            </li>
+            <li>
+              <strong>Reconcile in your accounting software</strong> — match the
+              incoming transfer to the issued invoice. Most accounting software
+              can auto-import bank data.
+            </li>
+          </ol>
+          <h3>インボイス制度 (qualified invoice system)</h3>
+          <p>
+            Since October 2023, all invoices must include your 登録番号
+            (qualified invoice registration number) to be used as input tax
+            credit by the payer. If you haven't registered for インボイス制度,
+            do it now — it affects your clients' ability to claim consumption
+            tax deductions.
+          </p>
+          <p>
+            <a href="/guides/japan-saas-compliance/">See our Japan SaaS compliance guide</a>
+            for detailed インボイス制度 registration and requirements.
+          </p>
+        </section>
+
+        <section id="foreign-founders" class="guide-section">
+          <h2>As a foreign founder: the bank account problem</h2>
+          <p>
+            The biggest blocker for foreign founders accepting payments in Japan
+            is the bank account. Every major payment processor requires one:
+          </p>
+          <ul class="guide-list">
+            <li>Stripe requires a Japan bank account for JPY payouts</li>
+            <li>PayPay requires a Japan bank account for merchant registration</li>
+            <li>GMO-PG requires a Japan bank account for settlement</li>
+            <li>B2B bank transfers obviously require a Japan bank account</li>
+          </ul>
+          <h3>Foreigner-friendly banks</h3>
+          <p>
+            Japan bank accounts are notoriously difficult for foreign nationals
+            to open, but these banks are more accessible:
+          </p>
+          <ul class="guide-list">
+            <li>
+              <strong>Sony Bank:</strong> online-first, English support, clearer
+              documentation requirements for foreign residents.
+            </li>
+            <li>
+              <strong>Prestia (SMBC Trust Bank):</strong> targets international
+              customers, English service, multiple branches in Tokyo.
+            </li>
+            <li>
+              <strong>Japan Post Bank:</strong> government-backed, present
+              everywhere, simpler requirements but Japanese-language only.
+            </li>
+          </ul>
+          <p class="guide-sidenote">
+            <strong>Wise is not a substitute.</strong> Wise business accounts
+            cannot receive Stripe payouts or PayPay settlements. You need a
+            proper Japan bank account from a licensed Japanese bank.
+          </p>
+          <h3>After you get the bank account</h3>
+          <p>
+            Once you have a Japan bank account, payment processor setup is
+            straightforward:
+          </p>
+          <ul class="guide-list">
+            <li><strong>Stripe setup:</strong> 3–5 business days</li>
+            <li><strong>PayPay merchant application:</strong> 2–4 weeks</li>
+            <li><strong>Square Japan:</strong> 1–2 weeks</li>
+          </ul>
+        </section>
+
+        <section id="international-payments" class="guide-section">
+          <h2>International payments: getting money out of Japan</h2>
+          <p>
+            For foreign founders receiving JPY and needing to repatriate funds
+            to USD, EUR, or other currencies, you have several options with
+            very different cost structures:
+          </p>
+          <h3>Best option: Wise</h3>
+          <p>
+            <strong>Wise</strong> offers mid-market exchange rates with
+            transparent fees, making it the best option for JPY → USD/EUR
+            transfers for most businesses.
+          </p>
+          <ul class="guide-list">
+            <li><strong>Exchange rate:</strong> mid-market rate (no markup)</li>
+            <li><strong>Fees:</strong> 0.45–0.75% depending on amount</li>
+            <li><strong>Speed:</strong> same day to 2 business days</li>
+            <li><strong>Limits:</strong> up to $1.6M per transfer</li>
+          </ul>
+          <p>
+            <a href="https://wise.com/invite/dic/matthewk1771" target="_blank" rel="noopener">
+              Get started with Wise →
+            </a> (personal referral link)
+          </p>
+          <h3>Expensive option: Bank SWIFT wire</h3>
+          <p>
+            Japanese banks offer international wire transfers, but they're
+            expensive:
+          </p>
+          <ul class="guide-list">
+            <li><strong>Fees:</strong> ¥3,000–¥7,500 per transfer</li>
+            <li><strong>Exchange rate:</strong> 1–3% markup over mid-market rate</li>
+            <li><strong>Speed:</strong> 1–3 business days</li>
+            <li><strong>When to use:</strong> very large transfers where fixed fee matters more than rate markup</li>
+          </ul>
+          <h3>What doesn't work</h3>
+          <p>
+            Avoid using domestic payment processors for international transfers:
+          </p>
+          <ul class="guide-list">
+            <li><strong>PayPay:</strong> JPY-only, no international transfer capability</li>
+            <li><strong>Domestic bank transfers:</strong> can't reach overseas accounts</li>
+            <li><strong>Credit card advances:</strong> extremely expensive</li>
+          </ul>
+        </section>
+
+        <section id="consumption-tax" class="guide-section">
+          <h2>Consumption tax and payment processors</h2>
+          <p>
+            Japan's consumption tax (消費税) is currently 10% for most goods
+            and services (8% for food and other reduced-rate items). Payment
+            processors handle gross amounts — your accounting software splits
+            out the tax component.
+          </p>
+          <h3>Tax-inclusive pricing (税込)</h3>
+          <p>
+            All B2C prices in Japan must be displayed tax-inclusive (税込).
+            Payment processors collect the full amount and remit to you. You're
+            responsible for calculating and remitting consumption tax to the
+            National Tax Agency.
+          </p>
+          <h3>Automated tax calculation</h3>
+          <p>
+            Stripe's tax module can automatically calculate and collect Japanese
+            consumption tax for online transactions. This is useful for
+            e-commerce businesses with complex tax scenarios (multiple rates,
+            exemptions, etc.).
+          </p>
+          <h3>Accounting integration</h3>
+          <p>
+            Modern payment processors integrate with Japanese accounting software:
+          </p>
+          <ul class="guide-list">
+            <li><strong>freee:</strong> direct integration with Stripe, PayPay business</li>
+            <li><strong>Money Forward Cloud:</strong> API integration with most processors</li>
+            <li><strong>Manual reconciliation:</strong> CSV export from payment processors</li>
+          </ul>
+        </section>
+
+        <section id="full-stack-recommendations" class="guide-section">
+          <h2>Building the full stack: recommendations by business type</h2>
+          <p>
+            Your payment stack depends on your business model and customer base.
+            Here are the most common scenarios:
+          </p>
+          <div class="cost-table-wrap">
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Business type</th>
+                  <th>Recommended stack</th>
+                  <th>Setup priority</th>
+                  <th>Monthly cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Online service / SaaS / consulting</strong></td>
+                  <td>Stripe only</td>
+                  <td>1. Japan bank account<br>2. Stripe setup</td>
+                  <td>No monthly fees, 3.6% + ¥30 per transaction</td>
+                </tr>
+                <tr>
+                  <td><strong>Physical retail / cafe / restaurant</strong></td>
+                  <td>PayPay + Square Japan</td>
+                  <td>1. Bank account<br>2. PayPay merchant<br>3. Square hardware</td>
+                  <td>No monthly fees, 1.98% (PayPay) + 3.25% (Square)</td>
+                </tr>
+                <tr>
+                  <td><strong>E-commerce with Japanese consumers</strong></td>
+                  <td>Stripe + GMO-PG for コンビニ払い</td>
+                  <td>1. Stripe first<br>2. Add GMO-PG if customers request</td>
+                  <td>Variable based on volume</td>
+                </tr>
+                <tr>
+                  <td><strong>B2B services (invoicing)</strong></td>
+                  <td>freee or Money Forward + bank transfer</td>
+                  <td>1. Bank account<br>2. インボイス制度 registration<br>3. Accounting software</td>
+                  <td>¥2,000–¥6,000 accounting software</td>
+                </tr>
+                <tr>
+                  <td><strong>Both online and in-person</strong></td>
+                  <td>Stripe (online) + PayPay + Square (in-person)</td>
+                  <td>1. Bank account<br>2. Stripe<br>3. PayPay + Square</td>
+                  <td>Transaction fees only</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="faq" class="guide-section">
+          <h2>Frequently asked questions</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>Can I use a US or Singapore bank account instead of a Japan bank account?</summary>
+              <p>
+                No. All major Japanese payment processors (Stripe Japan, PayPay,
+                GMO-PG, Square Japan) require a Japan bank account for settlement.
+                This is a regulatory requirement, not a business preference.
+                Wise business accounts also don't qualify — you need a proper
+                account from a licensed Japanese bank.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>How long does it take to get payment processing set up as a foreign founder?</summary>
+              <p>
+                The bank account is the long pole. Allow 2–6 weeks to open a
+                Japan bank account as a foreign resident, depending on the bank
+                and your documentation. Once you have the bank account, payment
+                processor setup is fast: Stripe (3–5 days), PayPay (2–4 weeks),
+                Square Japan (1–2 weeks).
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Should I start with PayPay or Stripe?</summary>
+              <p>
+                Start with whichever serves your primary customer base. For
+                online businesses, start with Stripe. For physical retail,
+                start with PayPay. Both require the same bank account, so you
+                can add the second processor later without additional banking
+                requirements.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Do I need to handle consumption tax myself?</summary>
+              <p>
+                Payment processors collect gross amounts including consumption
+                tax. You're responsible for calculating what portion is tax and
+                remitting it to the National Tax Agency. Modern accounting
+                software (freee, Money Forward) can calculate this automatically
+                based on your payment processor data.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What if my customers ask for payment methods I don't support?</summary>
+              <p>
+                Start simple and add payment methods based on actual customer
+                requests, not hypothetical demand. If customers specifically ask
+                for convenience store payment, carrier billing, or other methods,
+                then evaluate adding them. Don't build a complex payment stack
+                until you have proven demand.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Can I accept cryptocurrency payments in Japan?</summary>
+              <p>
+                Japan has clear regulations for cryptocurrency, but crypto
+                payment processing is complex and requires special licensing.
+                For most SMEs, crypto payments aren't worth the regulatory
+                complexity. Stick to traditional payment methods unless your
+                business specifically targets crypto users.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="guide-related">
+          <h2>Related reading</h2>
+          <ul class="guide-related__list">
+            <li>
+              <a href="/compare/stripe-vs-paypay-japan/">Stripe vs PayPay: detailed comparison →</a>
+              <span>Feature-by-feature comparison for Japan businesses.</span>
+            </li>
+            <li>
+              <a href="/compare/freee-vs-money-forward/">freee vs Money Forward for accounting →</a>
+              <span>Japanese accounting software comparison for payment reconciliation.</span>
+            </li>
+            <li>
+              <a href="/guides/japan-saas-compliance/">インボイス制度 and 電子帳簿保存法 compliance →</a>
+              <span>Legal requirements for invoicing and record-keeping in Japan.</span>
+            </li>
+            <li>
+              <a href="/services/stack-audit/">Stack Audit →</a>
+              <span>Professional review of your payment and business technology stack.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="guide-cta">
+          <h2>Ready to talk?</h2>
+          <p>
+            Setting up payments in Japan involves more than just picking a
+            processor — bank accounts, tax compliance, and integration with
+            your business systems all matter. If you need help designing your
+            payment stack or navigating the setup process, a 45-minute diagnostic
+            call can clarify your best path forward.
+          </p>
+          <div class="guide-cta__actions">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book an exploratory call — $175 →
+            </a>
+            <a href="/contact/" class="guide-cta__alt">or send a message</a>
+          </div>
+          <div class="guide-cta__services">
+            <span>Related services:</span>
+            <a href="/services/stack-audit/">Stack Audit</a>
+            <a href="/services/ongoing-management/">Ongoing Management</a>
+            <a href="/services/infrastructure-build/">Infrastructure Build</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Base>
+
+<style>
+  .guide {
+    padding: var(--space-64) 0 var(--space-96);
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  .guide-article {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-24);
+    display: inline-block;
+    transition: color 0.15s ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .guide-header {
+    margin-bottom: var(--space-48);
+  }
+
+  .guide-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .guide-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: var(--space-24);
+  }
+
+  .guide-lead {
+    font-size: 19px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-24);
+  }
+
+  .guide-meta {
+    display: flex;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  .guide-meta a {
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .guide-meta a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* TL;DR */
+  .tldr {
+    margin: var(--space-48) 0;
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+  }
+  .tldr__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+  .tldr__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  .tldr__list li {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .tldr__list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .tldr__list strong { color: var(--text); font-weight: 600; }
+
+  /* TOC */
+  .toc {
+    margin: var(--space-48) 0;
+    padding: var(--space-24) var(--space-32);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+  }
+  .toc__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: var(--space-16);
+  }
+  .toc__list {
+    list-style: decimal inside;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: 0;
+  }
+  .toc__list li {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .toc__list a {
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .toc__list a:hover { color: var(--accent); }
+
+  /* Sections */
+  .guide-section {
+    margin: var(--space-64) 0;
+    scroll-margin-top: 80px;
+  }
+  .guide-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-24);
+    line-height: 1.2;
+  }
+  .guide-section h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin: var(--space-32) 0 var(--space-16);
+  }
+  .guide-section p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-20);
+  }
+  .guide-section strong { color: var(--text); font-weight: 600; }
+  .guide-section em { font-style: italic; }
+  .guide-section a {
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .guide-section a:hover { border-color: var(--accent); }
+
+  .guide-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    margin: var(--space-20) 0;
+  }
+  .guide-list li {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: var(--space-24);
+    position: relative;
+  }
+  .guide-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 13px;
+    top: 4px;
+  }
+  ol.guide-list {
+    counter-reset: guide-counter;
+  }
+  ol.guide-list li::before {
+    counter-increment: guide-counter;
+    content: counter(guide-counter) '.';
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .guide-sidenote {
+    padding: var(--space-20) var(--space-24);
+    background: var(--surface);
+    border-left: 3px solid var(--text-dim);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 15px !important;
+    margin: var(--space-32) 0 !important;
+  }
+
+  /* Cost table */
+  .cost-table-wrap {
+    margin: var(--space-32) 0;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .cost-table thead {
+    background: var(--surface);
+  }
+  .cost-table th {
+    padding: var(--space-16);
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+  .cost-table td {
+    padding: var(--space-16);
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .cost-table tr:last-child td { border-bottom: none; }
+  .cost-table td strong { color: var(--text); font-weight: 600; }
+
+  /* FAQ */
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-top: var(--space-24);
+  }
+  .faq__item {
+    padding: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .faq__item:last-child { border-bottom: none; }
+  .faq__item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-left: var(--space-16);
+  }
+  .faq__item[open] summary::after { content: '–'; }
+  .faq__item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: var(--space-16) !important;
+  }
+  .faq__item a { color: var(--accent); }
+
+  /* Related */
+  .guide-related {
+    margin: var(--space-64) 0;
+    padding-top: var(--space-48);
+    border-top: 1px solid var(--border);
+  }
+  .guide-related h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-24);
+    letter-spacing: -0.015em;
+  }
+  .guide-related__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  .guide-related__list li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-16) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .guide-related__list li:last-child { border-bottom: none; }
+  .guide-related__list a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.15s;
+  }
+  .guide-related__list a:hover { color: var(--accent); }
+  .guide-related__list span {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* CTA */
+  .guide-cta {
+    margin-top: var(--space-64);
+    padding: var(--space-48);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .guide-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.02em;
+  }
+  .guide-cta p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-32);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .guide-cta p a { color: var(--accent); }
+  .guide-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+    margin-bottom: var(--space-32);
+  }
+  .guide-cta__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .guide-cta__alt:hover { color: var(--text); }
+  .guide-cta__services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-16);
+    flex-wrap: wrap;
+    padding-top: var(--space-24);
+    border-top: 1px dashed var(--border);
+  }
+  .guide-cta__services span {
+    font-size: 12px;
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .guide-cta__services a {
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .guide-cta__services a:hover { color: var(--accent); }
+
+  @media (max-width: 768px) {
+    .tldr { padding: var(--space-24); }
+    .toc { padding: var(--space-16) var(--space-20); }
+    .guide-cta { padding: var(--space-32) var(--space-24); }
+    .cost-table th, .cost-table td { padding: var(--space-12); font-size: 13px; }
+  }
+</style>

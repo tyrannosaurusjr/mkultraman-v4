@@ -1,0 +1,1080 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const pubDate = '2026-04-23';
+const updatedDate = '2026-04-23';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://www.mkultraman.com/guides/hiring-employees-japan/#article",
+  "headline": "Hiring Employees in Japan: The SME Guide to Payroll, HR Tools, and Compliance",
+  "description": "A practical guide to hiring employees in Japan as an SME — payroll setup, HR SaaS tools, social insurance, labor law basics, and the tools that handle Japanese HR compliance.",
+  "datePublished": `${pubDate}T00:00:00+09:00`,
+  "dateModified": `${updatedDate}T00:00:00+09:00`,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.mkultraman.com/og-default.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.mkultraman.com/#person",
+    "name": "Matt Ketchum",
+    "alternateName": "MKUltraman",
+    "url": "https://www.mkultraman.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mkultraman.com/#organization",
+    "name": "MKUltraman",
+    "url": "https://www.mkultraman.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mkultraman.com/guides/hiring-employees-japan/"
+  },
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://www.mkultraman.com/#website"
+  },
+  "about": [
+    { "@type": "Thing", "name": "Japanese Employment Law" },
+    { "@type": "Thing", "name": "Human Resources Management in Japan" },
+    { "@type": "Thing", "name": "Small and Medium Enterprises in Japan" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you fire employees in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dismissing employees in Japan is significantly more difficult than in at-will employment countries. Japanese labor law protects employees through 'objective rational grounds' requirements. You must demonstrate economic necessity, repeated serious misconduct, or that reasonable efforts to avoid termination have failed. Most dismissals require 30 days written notice or payment in lieu. Consult a 社労士 (SR consultant) before considering any dismissal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is My Number and why do I need it for employees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "My Number (マイナンバー) is Japan's national identification number system. Employers must collect My Number for all employees and their dependents for tax withholding and social insurance purposes. You're required by law to collect it within the first month of employment. Store it securely — there are strict data protection requirements around My Number handling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do social insurance costs add to salary in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Social insurance adds approximately 30% to gross salary costs — 15% paid by the employee (deducted from salary) and 15% paid by the employer. This covers health insurance (健康保険), employees' pension (厚生年金), employment insurance (雇用保険), and workers' accident insurance (労災保険). Rates vary slightly by prefecture and industry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the rules for hiring foreign nationals in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Foreign nationals need a valid work visa that permits the type of work you're offering. Check their residence card (在留カード) to confirm visa type and expiration date. Some visa categories have working hour restrictions. You must report the hiring to immigration within 14 days if they're on certain visa types. Keep photocopies of their residence card and passport."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between part-time and full-time employees in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Part-time employees working less than 20 hours per week or earning less than ¥88,000/month may not require social insurance enrollment, reducing costs. However, if they work 20+ hours/week and earn ¥88,000+/month, they must be enrolled in social insurance like full-time employees. Part-time workers still accrue paid leave (年次有給休暇) proportional to their hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When do I need to hire a 社会保険労務士 (SR consultant)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You should consider hiring a 社労士 when hiring your first employee (to navigate initial registration requirements), when dealing with any disciplinary or termination issues, when setting up employment rules for 10+ employees (就業規則), or when handling complex visa situations. They typically charge ¥20,000–¥60,000/month for ongoing support for small companies."
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mkultraman.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.mkultraman.com/guides/" },
+    { "@type": "ListItem", "position": 3, "name": "Hiring Employees Japan", "item": "https://www.mkultraman.com/guides/hiring-employees-japan/" }
+  ]
+};
+---
+
+<Base
+  title="Hiring Employees in Japan: The SME Guide to Payroll, HR Tools, and Compliance — MKUltraman"
+  description="A practical guide to hiring employees in Japan as an SME — payroll setup, HR SaaS tools, social insurance, labor law basics, and the tools that handle Japanese HR compliance."
+  article={true}
+  pubDate={pubDate}
+>
+  <Nav />
+
+  <main class="guide">
+    <div class="container">
+      <article class="guide-article">
+        <header class="guide-header">
+          <a href="/" class="back-link">← Home</a>
+          <span class="guide-eyebrow">Guide · Updated April 2026</span>
+          <h1>Hiring Employees in Japan: The SME Guide to Payroll, HR Tools, and Compliance</h1>
+          <p class="guide-lead">
+            Hiring your first employee in Japan is significantly more complex than
+            hiring in the US or Europe. Social insurance enrollment, labor contracts,
+            payroll tax withholding, and My Number collection all have hard legal
+            requirements. This guide covers what you need to set up — tools and
+            process — for a Japan SME hiring 1–50 employees.
+          </p>
+          <div class="guide-meta">
+            <span>By <a href="/about/" rel="author">Matt Ketchum</a></span>
+            <span>·</span>
+            <span>Tokyo</span>
+            <span>·</span>
+            <span>~10 min read</span>
+          </div>
+        </header>
+
+        <aside class="tldr" aria-label="TL;DR summary">
+          <h2 class="tldr__heading">TL;DR</h2>
+          <ul class="tldr__list">
+            <li><strong>Immediate requirements:</strong> Register with Hello Work for employment insurance, health insurance/pension enrollment, My Number collection, and income tax withholding setup — all within 10 days of first hire.</li>
+            <li><strong>Payroll complexity:</strong> Japanese payroll includes base salary, allowances, social insurance (15% employee + 15% employer), income tax withholding, and resident tax collection starting year two.</li>
+            <li><strong>HR tools:</strong> freee HR (¥3-5K/mo), Money Forward HR (¥2.8K+/mo), and SmartHR (¥600/user/mo) handle most SME needs. Add KING OF TIME (¥300/user/mo) for attendance tracking.</li>
+            <li><strong>Labor law protection:</strong> Japan strongly protects employees. Firing requires objective rational grounds. Fixed-term contracts that renew repeatedly create indefinite employment rights.</li>
+            <li><strong>Paid leave compliance:</strong> All employees earn paid leave after 6 months. Since 2019, employers must ensure employees take at least 5 days annually — penalties apply for non-compliance.</li>
+          </ul>
+        </aside>
+
+        <div class="guide-disclaimer">
+          <p><strong>Disclaimer:</strong> Japanese labor law is complex and regularly updated. This guide covers general SME requirements. Consult a 社会保険労務士 (sharo-shi / SR consultant) for specific compliance advice.</p>
+        </div>
+
+        <nav class="toc" aria-label="Table of contents">
+          <h2 class="toc__heading">On this page</h2>
+          <ol class="toc__list">
+            <li><a href="#first-hire-requirements">What happens when you hire your first employee in Japan</a></li>
+            <li><a href="#payroll-components">The four components of Japan payroll</a></li>
+            <li><a href="#hr-tools">HR and payroll SaaS tools for Japan</a></li>
+            <li><a href="#labor-contracts">Labor contracts in Japan: what you must include</a></li>
+            <li><a href="#paid-leave">Paid leave (年次有給休暇) requirements</a></li>
+            <li><a href="#sharoushi">When to hire a 社会保険労務士 (SR consultant)</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <section id="first-hire-requirements" class="guide-section">
+          <h2>What happens when you hire your first employee in Japan</h2>
+          <p>
+            The moment you hire employee #1, you trigger a cascade of legal
+            requirements that must be completed within specific timeframes.
+            Missing these deadlines can result in penalties and backdated
+            obligations.
+          </p>
+          <p>Here's what must happen within the first month:</p>
+          <ol class="guide-list">
+            <li>
+              <strong>Register with Hello Work (公共職業安定所).</strong> You must
+              register for 雇用保険 (employment insurance) within 10 days of the hire
+              date. This also triggers registration for 労働保険 (workers' accident
+              insurance) if you haven't already registered.
+            </li>
+            <li>
+              <strong>Enroll in health insurance and pension.</strong> If you have
+              a corporation, the employee must be enrolled in 健康保険 (health
+              insurance) and 厚生年金保険 (employees' pension) through the Japan
+              Pension Service. Sole proprietorships may be exempt depending on
+              employee count and industry.
+            </li>
+            <li>
+              <strong>Collect My Number (マイナンバー).</strong> You're legally
+              required to collect the employee's My Number and the My Numbers
+              of their dependents for tax and social insurance purposes. This
+              must happen within the first month of employment.
+            </li>
+            <li>
+              <strong>Set up income tax withholding.</strong> Register as a
+              withholding agent with the local tax office and begin withholding
+              income tax from salary based on National Tax Agency tables.
+            </li>
+            <li>
+              <strong>Issue payslips (給与明細).</strong> Every month, you must
+              provide a detailed payslip showing gross pay, deductions, and
+              net pay. This becomes a legal document for the employee's tax
+              filing.
+            </li>
+          </ol>
+          <p>
+            The registration process typically requires forms in Japanese and
+            can take 2–4 weeks to complete fully. Many SMEs hire a 社労士 (SR
+            consultant) to handle the initial setup rather than navigate the
+            bureaucracy themselves.
+          </p>
+        </section>
+
+        <section id="payroll-components" class="guide-section">
+          <h2>The four components of Japan payroll</h2>
+          <p>
+            Japanese payroll is more complex than simple base salary.
+            Understanding what goes into each payslip is crucial because
+            many components affect social insurance calculations and tax
+            withholding.
+          </p>
+          <h3>1. Base salary (基本給)</h3>
+          <p>
+            The contracted monthly amount specified in the labor contract.
+            In Japan, this is almost always expressed as a monthly figure,
+            not hourly or annual. Base salary is the foundation for calculating
+            overtime pay and social insurance premiums.
+          </p>
+          <h3>2. Allowances (各種手当)</h3>
+          <p>
+            Japanese companies commonly pay various allowances on top of base
+            salary:
+          </p>
+          <ul class="guide-list">
+            <li><strong>Housing allowance (住宅手当):</strong> Common allowance to offset Tokyo rent costs</li>
+            <li><strong>Commuting allowance (通勤手当):</strong> Reimbursement for train/bus costs, up to ¥100,000/month tax-free</li>
+            <li><strong>Position allowance (役職手当):</strong> Additional pay for management responsibilities</li>
+            <li><strong>Family allowance (家族手当):</strong> Additional support for employees with dependents</li>
+          </ul>
+          <p>
+            Important: Most allowances count toward social insurance calculations,
+            increasing both employee and employer contributions.
+          </p>
+          <h3>3. Social insurance deductions (社会保険料)</h3>
+          <p>
+            Employees pay approximately 15% of their gross salary for social
+            insurance, which includes:
+          </p>
+          <ul class="guide-list">
+            <li>Health insurance (健康保険): ~5% of gross</li>
+            <li>Employees' pension (厚生年金): ~9% of gross</li>
+            <li>Employment insurance (雇用保険): 0.5% of gross</li>
+            <li>Workers' accident insurance (労災保険): Employer-paid only</li>
+          </ul>
+          <p>
+            The employer pays a matching ~15% on top of salary. Total social
+            insurance cost is approximately 30% of gross salary.
+          </p>
+          <h3>4. Income tax and resident tax</h3>
+          <p>
+            <strong>Income tax withholding (源泉徴収):</strong> Monthly withholding
+            based on NTA tables, reconciled during 年末調整 (year-end adjustment)
+            each December.
+          </p>
+          <p>
+            <strong>Resident tax (住民税):</strong> Collected via 特別徴収 (payroll
+            deduction) starting in June of the year following employment. First-year
+            employees pay resident tax directly to their municipality.
+          </p>
+        </section>
+
+        <section id="hr-tools" class="guide-section">
+          <h2>HR and payroll SaaS tools for Japan</h2>
+          <p>
+            The Japanese HR SaaS market is mature and specialized for local
+            compliance requirements. Most international HR tools can't handle
+            Japanese payroll calculations, social insurance, or 年末調整
+            (year-end adjustment) processes.
+          </p>
+          <h3>freee HR (freee人事労務)</h3>
+          <p>
+            Native Japanese HR platform that integrates tightly with freee
+            accounting software. Handles payslip generation, social insurance
+            calculations, 年末調整, and My Number management.
+          </p>
+          <ul class="guide-list">
+            <li><strong>Cost:</strong> ¥3,000–¥5,000/month starting tier</li>
+            <li><strong>Best for:</strong> Existing freee accounting users who want integrated workflow</li>
+            <li><strong>Strengths:</strong> Deep integration, good for simple payroll</li>
+            <li><strong>Weaknesses:</strong> Limited approval workflows for larger teams</li>
+          </ul>
+
+          <h3>Money Forward HR (MFクラウド給与)</h3>
+          <p>
+            Strong payroll calculation engine with better workflow management
+            than freee. Integrates with Money Forward Cloud accounting.
+          </p>
+          <ul class="guide-list">
+            <li><strong>Cost:</strong> ¥2,800/month starting tier</li>
+            <li><strong>Best for:</strong> Companies needing approval workflows and multi-location support</li>
+            <li><strong>Strengths:</strong> Robust payroll calculations, good workflow management</li>
+            <li><strong>Weaknesses:</strong> Less user-friendly than freee for basic use cases</li>
+          </ul>
+
+          <h3>SmartHR</h3>
+          <p>
+            HR process automation focused on onboarding, social insurance
+            enrollment, and document management. Not a payroll calculator —
+            designed to integrate with separate payroll tools.
+          </p>
+          <ul class="guide-list">
+            <li><strong>Cost:</strong> ¥600/user/month</li>
+            <li><strong>Best for:</strong> Teams of 10+ with complex onboarding/offboarding flows</li>
+            <li><strong>Strengths:</strong> Excellent for automating administrative processes</li>
+            <li><strong>Weaknesses:</strong> Doesn't handle payroll calculations</li>
+          </ul>
+
+          <h3>KING OF TIME</h3>
+          <p>
+            Attendance management (勤怠管理) system for time tracking, shift
+            management, and overtime calculation. Feeds data into payroll tools.
+          </p>
+          <ul class="guide-list">
+            <li><strong>Cost:</strong> ¥300/user/month</li>
+            <li><strong>Best for:</strong> Any company that needs accurate time tracking</li>
+            <li><strong>Strengths:</strong> Comprehensive time tracking, integrates with most payroll tools</li>
+            <li><strong>Weaknesses:</strong> Additional cost and complexity for very small teams</li>
+          </ul>
+
+          <h3>Recommended stack by company size</h3>
+          <div class="cost-table-wrap">
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Company size</th>
+                  <th>Recommended tools</th>
+                  <th>Monthly cost</th>
+                  <th>When to upgrade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1–5 employees</strong></td>
+                  <td>freee HR or Money Forward HR alone</td>
+                  <td>¥3,000–¥5,000</td>
+                  <td>Add attendance tracking when you have shift workers or need overtime calculations</td>
+                </tr>
+                <tr>
+                  <td><strong>5–20 employees</strong></td>
+                  <td>Payroll tool + KING OF TIME</td>
+                  <td>¥4,500–¥10,000</td>
+                  <td>Add SmartHR when onboarding becomes a weekly process</td>
+                </tr>
+                <tr>
+                  <td><strong>20+ employees</strong></td>
+                  <td>SmartHR + KING OF TIME + dedicated payroll service</td>
+                  <td>¥15,000+ or hire 社労士</td>
+                  <td>Consider full-time HR when you reach 50+ employees</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="labor-contracts" class="guide-section">
+          <h2>Labor contracts in Japan: what you must include</h2>
+          <p>
+            Japan's Labor Standards Act (労働基準法) requires a written 雇用契約書
+            (employment contract) or 労働条件通知書 (working conditions notice)
+            that specifies minimum terms. Verbal agreements are not sufficient.
+          </p>
+          <h3>Required contract elements</h3>
+          <ol class="guide-list">
+            <li>
+              <strong>Term of employment.</strong> Specify whether this is
+              fixed-term (有期雇用) with an end date or indefinite term (無期雇用).
+              Fixed-term contracts can only be renewed a limited number of times
+              before creating indefinite employment rights.
+            </li>
+            <li>
+              <strong>Work location and job description.</strong> Be specific
+              about where the employee will work and what they'll do. Vague
+              descriptions like "office work" may not be sufficient.
+            </li>
+            <li>
+              <strong>Working hours and break time.</strong> Standard is 8 hours/day,
+              40 hours/week with at least 45 minutes break for 6+ hour days.
+              Overtime requires a 36 agreement (サブロク協定) filed with labor
+              standards office.
+            </li>
+            <li>
+              <strong>Days off and paid leave.</strong> Specify weekly rest days
+              and how 年次有給休暇 (paid leave) accrues. Employees earn 10 days
+              after 6 months, scaling up over time.
+            </li>
+            <li>
+              <strong>Salary structure.</strong> Base salary, any allowances,
+              payment method, and pay cycle (typically monthly on the 25th).
+              Must specify overtime calculation method.
+            </li>
+            <li>
+              <strong>Termination conditions.</strong> How either party can
+              end employment, notice periods, and any severance arrangements.
+            </li>
+          </ol>
+          <h3>The 無期転換 (indefinite conversion) rule</h3>
+          <p>
+            Fixed-term contracts that are renewed repeatedly create a right to
+            convert to indefinite employment. The threshold is typically:
+          </p>
+          <ul class="guide-list">
+            <li>Contracts renewed 3 or more times, OR</li>
+            <li>Total employment period exceeding 5 years</li>
+          </ul>
+          <p>
+            If you intend to use fixed-term contracts long-term, plan for this
+            conversion right. Many companies manage this by limiting renewals
+            or offering permanent positions proactively.
+          </p>
+        </section>
+
+        <section id="paid-leave" class="guide-section">
+          <h2>Paid leave (年次有給休暇) requirements</h2>
+          <p>
+            Japan's paid leave law is strict and frequently misunderstood by
+            foreign employers. Non-compliance can result in penalties and
+            employee complaints to labor standards offices.
+          </p>
+          <h3>Accrual schedule</h3>
+          <ul class="guide-list">
+            <li><strong>After 6 months:</strong> 10 days of paid leave</li>
+            <li><strong>After 1.5 years:</strong> 11 days</li>
+            <li><strong>After 2.5 years:</strong> 12 days</li>
+            <li><strong>After 3.5 years:</strong> 14 days</li>
+            <li><strong>After 4.5 years:</strong> 16 days</li>
+            <li><strong>After 5.5 years:</strong> 18 days</li>
+            <li><strong>After 6.5+ years:</strong> 20 days</li>
+          </ul>
+          <h3>The 5-day minimum rule (2019 law change)</h3>
+          <p>
+            Since 2019, employers must ensure that employees with 10+ days of
+            paid leave entitlement actually take at least 5 days per year.
+            This is an employer obligation, not just an employee right.
+          </p>
+          <p>
+            <strong>Penalties for non-compliance:</strong> Up to ¥300,000 per
+            employee who doesn't take the minimum 5 days. The labor standards
+            office can audit this.
+          </p>
+          <h3>Managing paid leave compliance</h3>
+          <ul class="guide-list">
+            <li>Track each employee's leave entitlement and usage</li>
+            <li>Actively encourage leave usage, especially in Q4</li>
+            <li>Consider mandatory company-wide shutdown days to ensure compliance</li>
+            <li>Document that employees were given opportunities to take leave</li>
+          </ul>
+          <p>
+            Most HR software tools (freee HR, Money Forward HR, SmartHR) include
+            paid leave tracking and alerts to help ensure compliance.
+          </p>
+        </section>
+
+        <section id="sharoushi" class="guide-section">
+          <h2>When to hire a 社会保険労務士 (SR consultant)</h2>
+          <p>
+            A 社労士 (sharo-shi) is a licensed social security and labor consultant
+            — essentially the Japanese equivalent of an employment attorney combined
+            with an HR compliance specialist. They handle the intersection of labor
+            law, social insurance, and tax requirements.
+          </p>
+          <h3>When you need a 社労士</h3>
+          <ul class="guide-list">
+            <li>
+              <strong>First employee hire.</strong> If you're unsure about the
+              registration process with Hello Work, pension service, and tax office,
+              a 社労士 can handle all initial setup and ensure you don't miss
+              deadlines.
+            </li>
+            <li>
+              <strong>Disciplinary action or dismissal.</strong> Japan labor law
+              strongly protects employees. Before taking any serious disciplinary
+              action or considering termination, consult a 社労士 to understand
+              your options and risks.
+            </li>
+            <li>
+              <strong>Employment rulebook (就業規則).</strong> Companies with 10+
+              employees must establish formal employment rules covering working
+              conditions, disciplinary procedures, and company policies. This
+              requires filing with the labor standards office.
+            </li>
+            <li>
+              <strong>Complex visa situations.</strong> If you're hiring foreign
+              nationals with unusual visa situations, visa changes, or work
+              restrictions, a 社労士 can navigate immigration compliance alongside
+              employment law.
+            </li>
+            <li>
+              <strong>年末調整 (year-end adjustment).</strong> If you're not using
+              HR software that handles this automatically, a 社労士 can process
+              the required year-end tax reconciliation for all employees.
+            </li>
+          </ul>
+          <h3>Typical costs and engagement models</h3>
+          <ul class="guide-list">
+            <li><strong>Ongoing retainer:</strong> ¥20,000–¥60,000/month for small companies</li>
+            <li><strong>Setup-only:</strong> ¥100,000–¥200,000 for initial registration and contracts</li>
+            <li><strong>Hourly consultation:</strong> ¥15,000–¥25,000/hour for specific questions</li>
+            <li><strong>年末調整 service:</strong> ¥5,000–¥10,000 per employee annually</li>
+          </ul>
+          <p>
+            For most SMEs, the decision comes down to: Do you want to learn Japanese
+            HR compliance yourself, or pay a professional to handle it? The cost
+            of mistakes — penalties, employee complaints, labor disputes — often
+            exceeds the cost of professional help.
+          </p>
+        </section>
+
+        <section id="faq" class="guide-section">
+          <h2>Frequently asked questions</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>Can you fire employees in Japan?</summary>
+              <p>
+                Dismissing employees in Japan is significantly more difficult than
+                in at-will employment countries. Japanese labor law protects employees
+                through "objective rational grounds" requirements. You must demonstrate
+                economic necessity, repeated serious misconduct, or that reasonable
+                efforts to avoid termination have failed. Most dismissals require
+                30 days written notice or payment in lieu. Consult a 社労士 before
+                considering any dismissal.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What is My Number and why do I need it for employees?</summary>
+              <p>
+                My Number (マイナンバー) is Japan's national identification number system.
+                Employers must collect My Number for all employees and their dependents
+                for tax withholding and social insurance purposes. You're required by
+                law to collect it within the first month of employment. Store it securely
+                — there are strict data protection requirements around My Number handling.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>How much do social insurance costs add to salary in Japan?</summary>
+              <p>
+                Social insurance adds approximately 30% to gross salary costs — 15%
+                paid by the employee (deducted from salary) and 15% paid by the employer.
+                This covers health insurance (健康保険), employees' pension (厚生年金),
+                employment insurance (雇用保険), and workers' accident insurance (労災保険).
+                Rates vary slightly by prefecture and industry.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What are the rules for hiring foreign nationals in Japan?</summary>
+              <p>
+                Foreign nationals need a valid work visa that permits the type of work
+                you're offering. Check their residence card (在留カード) to confirm visa
+                type and expiration date. Some visa categories have working hour restrictions.
+                You must report the hiring to immigration within 14 days if they're on
+                certain visa types. Keep photocopies of their residence card and passport.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>What's the difference between part-time and full-time employees in Japan?</summary>
+              <p>
+                Part-time employees working less than 20 hours per week or earning less
+                than ¥88,000/month may not require social insurance enrollment, reducing
+                costs. However, if they work 20+ hours/week and earn ¥88,000+/month,
+                they must be enrolled in social insurance like full-time employees.
+                Part-time workers still accrue paid leave (年次有給休暇) proportional
+                to their hours.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>When do I need to hire a 社会保険労務士 (SR consultant)?</summary>
+              <p>
+                You should consider hiring a 社労士 when hiring your first employee
+                (to navigate initial registration requirements), when dealing with any
+                disciplinary or termination issues, when setting up employment rules
+                for 10+ employees (就業規則), or when handling complex visa situations.
+                They typically charge ¥20,000–¥60,000/month for ongoing support for
+                small companies.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="guide-related">
+          <h2>Related reading</h2>
+          <ul class="guide-related__list">
+            <li>
+              <a href="/guides/japan-sme-tech-stack/">Japan SME Tech Stack Guide →</a>
+              <span>Complete technology infrastructure for Japanese SMEs.</span>
+            </li>
+            <li>
+              <a href="/compare/freee-vs-money-forward/">freee vs Money Forward Cloud →</a>
+              <span>Side-by-side comparison of Japan's leading accounting platforms.</span>
+            </li>
+            <li>
+              <a href="/guides/fractional-it-manager-japan/">Fractional IT Manager in Japan →</a>
+              <span>When and how to engage fractional IT management for SMEs.</span>
+            </li>
+            <li>
+              <a href="/services/stack-audit/">Stack Audit →</a>
+              <span>Comprehensive technology infrastructure audit for Japanese businesses.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="guide-cta">
+          <h2>Ready to talk?</h2>
+          <p>
+            If you're setting up HR processes for your Japan business and need
+            help navigating the tool landscape, the right next step is usually
+            a 45-minute diagnostic call. We'll map your needs to the right
+            combination of tools and help you avoid costly compliance mistakes.
+          </p>
+          <div class="guide-cta__actions">
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book an exploratory call — $175 →
+            </a>
+            <a href="/contact/" class="guide-cta__alt">or send a message</a>
+          </div>
+          <div class="guide-cta__services">
+            <span>Related services:</span>
+            <a href="/services/stack-audit/">Stack Audit</a>
+            <a href="/services/ongoing-management/">Ongoing Management</a>
+            <a href="/services/infrastructure-build/">Infrastructure Build</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Base>
+
+<style>
+  .guide {
+    padding: var(--space-64) 0 var(--space-96);
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  .guide-article {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-24);
+    display: inline-block;
+    transition: color 0.15s ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .guide-header {
+    margin-bottom: var(--space-48);
+  }
+
+  .guide-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+
+  .guide-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: var(--space-24);
+  }
+
+  .guide-lead {
+    font-size: 19px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-24);
+  }
+
+  .guide-meta {
+    display: flex;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  .guide-meta a {
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .guide-meta a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .guide-disclaimer {
+    margin: var(--space-32) 0;
+    padding: var(--space-20) var(--space-24);
+    background: var(--surface);
+    border-left: 3px solid var(--warning, #ff8c00);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  .guide-disclaimer strong { color: var(--text); }
+
+  /* TL;DR */
+  .tldr {
+    margin: var(--space-48) 0;
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+  }
+  .tldr__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: var(--space-16);
+  }
+  .tldr__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  .tldr__list li {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-left: var(--space-16);
+    position: relative;
+  }
+  .tldr__list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .tldr__list strong { color: var(--text); font-weight: 600; }
+
+  /* TOC */
+  .toc {
+    margin: var(--space-48) 0;
+    padding: var(--space-24) var(--space-32);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+  }
+  .toc__heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: var(--space-16);
+  }
+  .toc__list {
+    list-style: decimal inside;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: 0;
+  }
+  .toc__list li {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .toc__list a {
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .toc__list a:hover { color: var(--accent); }
+
+  /* Sections */
+  .guide-section {
+    margin: var(--space-64) 0;
+    scroll-margin-top: 80px;
+  }
+  .guide-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-24);
+    line-height: 1.2;
+  }
+  .guide-section h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin: var(--space-32) 0 var(--space-16);
+  }
+  .guide-section p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: var(--space-20);
+  }
+  .guide-section strong { color: var(--text); font-weight: 600; }
+  .guide-section em { font-style: italic; }
+  .guide-section a {
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .guide-section a:hover { border-color: var(--accent); }
+
+  .guide-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    margin: var(--space-20) 0;
+  }
+  .guide-list li {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: var(--space-24);
+    position: relative;
+  }
+  .guide-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 13px;
+    top: 4px;
+  }
+  ol.guide-list {
+    counter-reset: guide-counter;
+  }
+  ol.guide-list li::before {
+    counter-increment: guide-counter;
+    content: counter(guide-counter) '.';
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .guide-sidenote {
+    padding: var(--space-20) var(--space-24);
+    background: var(--surface);
+    border-left: 3px solid var(--text-dim);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 15px !important;
+    margin: var(--space-32) 0 !important;
+  }
+
+  /* Cost table */
+  .cost-table-wrap {
+    margin: var(--space-32) 0;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .cost-table thead {
+    background: var(--surface);
+  }
+  .cost-table th {
+    padding: var(--space-16);
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+  .cost-table td {
+    padding: var(--space-16);
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .cost-table tr:last-child td { border-bottom: none; }
+  .cost-table td strong { color: var(--text); font-weight: 600; }
+
+  /* FAQ */
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-top: var(--space-24);
+  }
+  .faq__item {
+    padding: var(--space-24);
+    border-bottom: 1px solid var(--border);
+  }
+  .faq__item:last-child { border-bottom: none; }
+  .faq__item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-size: 18px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-left: var(--space-16);
+  }
+  .faq__item[open] summary::after { content: '–'; }
+  .faq__item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: var(--space-16) !important;
+  }
+  .faq__item a { color: var(--accent); }
+
+  /* Related */
+  .guide-related {
+    margin: var(--space-64) 0;
+    padding-top: var(--space-48);
+    border-top: 1px solid var(--border);
+  }
+  .guide-related h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: var(--space-24);
+    letter-spacing: -0.015em;
+  }
+  .guide-related__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  .guide-related__list li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-16) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .guide-related__list li:last-child { border-bottom: none; }
+  .guide-related__list a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.15s;
+  }
+  .guide-related__list a:hover { color: var(--accent); }
+  .guide-related__list span {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* CTA */
+  .guide-cta {
+    margin-top: var(--space-64);
+    padding: var(--space-48);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .guide-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: var(--space-16);
+    letter-spacing: -0.02em;
+  }
+  .guide-cta p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-32);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .guide-cta p a { color: var(--accent); }
+  .guide-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+    margin-bottom: var(--space-32);
+  }
+  .guide-cta__alt {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.15s;
+  }
+  .guide-cta__alt:hover { color: var(--text); }
+  .guide-cta__services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-16);
+    flex-wrap: wrap;
+    padding-top: var(--space-24);
+    border-top: 1px dashed var(--border);
+  }
+  .guide-cta__services span {
+    font-size: 12px;
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .guide-cta__services a {
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .guide-cta__services a:hover { color: var(--accent); }
+
+  @media (max-width: 768px) {
+    .tldr { padding: var(--space-24); }
+    .toc { padding: var(--space-16) var(--space-20); }
+    .guide-cta { padding: var(--space-32) var(--space-24); }
+    .cost-table th, .cost-table td { padding: var(--space-12); font-size: 13px; }
+    .guide-disclaimer { padding: var(--space-16); }
+  }
+</style>
