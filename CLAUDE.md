@@ -41,6 +41,10 @@ Compile the full list first, then fix in one pass.
 
 ## Rules: git and deployment
 
+### Keep CLAUDE.md in sync with local memory
+
+Any rule or learned context written to `.claude/projects/` memory files must also be added to this file and committed. Local memory is machine-local — it doesn't exist on other machines or after a fresh clone. CLAUDE.md is the durable version. Write both at the same time, never one without the other.
+
 ### Always commit and push when done
 
 File edits are not complete until committed and pushed. Vercel deploys on push — until then the live site still shows old code.
