@@ -11,7 +11,7 @@ const articleSchema = {
   "@type": "Article",
   "@id": "https://www.mkultraman.com/guides/accepting-payments-japan/#article",
   "headline": "Accepting Payments in Japan: The Complete Guide for SMEs",
-  "description": "How  to accept payments in Japan as an SME or foreign founder : credit cards, QR codes, bank transfer, convenience s tore payment, and how  to build a full Japan payment stack.",
+  "description": "How  to accept payments in Japan as an SME or foreign founder : credit cards, QR codes, bank transfer, convenience store payment, and how  to build a full Japan payment stack.",
   "datePublished": `${pubDate}T00:00:00+09:00`,
   "dateModified": `${updatedDate}T00:00:00+09:00`,
   "image": {
@@ -57,7 +57,7 @@ const faqSchema = {
       "name": "What payment methods do I need  to accept in Japan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For online businesses: credit/debit cards via Stripe are usually sufficient. For in-person retail: PayPay is manda tory (60M+ users), plus card acceptance via Square Japan or similar. For B2B: bank transfer (振込) after invoicing is standard. Convenience s tore payment (コンビニ払い) is optional unless your cus tomer base specifically demands it."
+        "text": "For online businesses: credit/debit cards via Stripe are usually sufficient. For in-person retail: PayPay is mandatory (60M+ users), plus card acceptance via Square Japan or similar. For B2B: bank transfer (振込) after invoicing is standard. Convenience store payment (コンビニ払い) is optional unless your customer base specifically demands it."
       }
     },
     {
@@ -73,7 +73,7 @@ const faqSchema = {
       "name": "Do I need  to accept PayPay for my business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you have physical cus tomers in Japan, yes. PayPay has 60M+ users and not accepting it loses cus tomers. The 1.98% fee is industry-standard. PayPay requires a Japan corporate bank account  to apply, and merchant approval takes 2-4 weeks."
+        "text": "If you have physical customers in Japan, yes. PayPay has 60M+ users and not accepting it loses customers. The 1.98% fee is industry-standard. PayPay requires a Japan corporate bank account  to apply, and merchant approval takes 2-4 weeks."
       }
     },
     {
@@ -81,7 +81,7 @@ const faqSchema = {
       "name": "How do B2B payments work in Japan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most Japan B2B payments happen via bank transfer (振込) after receiving an invoice (請求書). You issue an invoice using freee, Money Forward, or a template, the cus tomer transfers  to your bank account, and you reconcile in your accounting software. Since Oc tober 2023, invoices must include your qualified invoice registration number (登録番号) for the cus tomer  to claim input tax credit."
+        "text": "Most Japan B2B payments happen via bank transfer (振込) after receiving an invoice (請求書). You issue an invoice using freee, Money Forward, or a template, the customer transfers  to your bank account, and you reconcile in your accounting software. Since October 2023, invoices must include your qualified invoice registration number (登録番号) for the customer  to claim input tax credit."
       }
     },
     {
@@ -94,10 +94,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Should I use convenience s tore payment (コンビニ払い)?",
+      "name": "Should I use convenience store payment (コンビニ払い)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only if your cus tomer base specifically demands it : typically older consumers or those preferring cash. Adding コンビニ払い requires GMO Payment Gateway or similar enterprise solutions. Most SMEs start with Stripe (cards) + PayPay (QR) and add convenience s tore payment only if cus tomer requests justify the complexity and cost."
+        "text": "Only if your customer base specifically demands it : typically older consumers or those preferring cash. Adding コンビニ払い requires GMO Payment Gateway or similar enterprise solutions. Most SMEs start with Stripe (cards) + PayPay (QR) and add convenience store payment only if customer requests justify the complexity and cost."
       }
     }
   ]
@@ -116,7 +116,7 @@ const breadcrumbSchema = {
 
 <Base
   title="Accepting Payments in Japan: The Complete Guide for SMEs : MKUltraman"
-  description="How  to accept payments in Japan as an SME or foreign founder : credit cards, QR codes, bank transfer, convenience s tore payment, and how  to build a full Japan payment stack."
+  description="How  to accept payments in Japan as an SME or foreign founder : credit cards, QR codes, bank transfer, convenience store payment, and how  to build a full Japan payment stack."
   article={true}
   pubDate={pubDate}
 >
@@ -132,7 +132,7 @@ const breadcrumbSchema = {
           <p class="guide-lead">
             Japan has one of the most fragmented payment landscapes in the world.
             Credit cards, QR codes, IC cards (Suica, iD), bank transfer (振込),
-            convenience s tore payment (コンビニ払い), and carrier billing all coexist.
+            convenience store payment (コンビニ払い), and carrier billing all coexist.
             This guide covers what you actually need  to accept as a Japan SME,
             what you can skip, and how  to set it up.
           </p>
@@ -148,8 +148,8 @@ const breadcrumbSchema = {
         <aside class="tldr" aria-label="TL;DR summary">
           <h2 class="tldr__heading">TL;DR</h2>
           <ul class="tldr__list">
-            <li><strong>Online payments:</strong> Stripe covers 80% of use cases. Add GMO-PG only if cus tomers demand コンビニ払い (convenience s tore payment).</li>
-            <li><strong>In-person payments:</strong> PayPay is manda tory (60M+ users). Add Square Japan for cards. Skip IC card contactless unless high-traffic retail.</li>
+            <li><strong>Online payments:</strong> Stripe covers 80% of use cases. Add GMO-PG only if customers demand コンビニ払い (convenience store payment).</li>
+            <li><strong>In-person payments:</strong> PayPay is mandatory (60M+ users). Add Square Japan for cards. Skip IC card contactless unless high-traffic retail.</li>
             <li><strong>B2B payments:</strong> bank transfer (振込) after invoicing. Use freee or Money Forward for qualified invoices with 登録番号.</li>
             <li><strong>Biggest hurdle:</strong> Japan bank account required for all payment processors. Sony Bank, Prestia, or Japan Post Bank are most foreigner-friendly.</li>
             <li><strong>International transfers:</strong> Wise for JPY → USD/EUR. Bank SWIFT wires are expensive. Avoid PayPay for international transfers.</li>
@@ -199,7 +199,7 @@ const breadcrumbSchema = {
             </li>
             <li>
               <strong>IC card contactless (Suica, iD, QUICPay):</strong> strong
-              adoption in transit-adjacent retail : convenience s tores, station
+              adoption in transit-adjacent retail : convenience stores, station
               kiosks, vending machines. Less critical for general retail.
             </li>
             <li>
@@ -208,7 +208,7 @@ const breadcrumbSchema = {
               invoice receipt.
             </li>
             <li>
-              <strong>Convenience s tore payment (コンビニ払い):</strong> used
+              <strong>Convenience store payment (コンビニ払い):</strong> used
               for online purchases by cash-preferring consumers. Important for
               e-commerce targeting older demographics.
             </li>
@@ -248,33 +248,33 @@ const breadcrumbSchema = {
           <h3>Enterprise: GMO Payment Gateway</h3>
           <p>
             <strong>GMO-PG</strong> is enterprise-grade payment processing that
-            adds convenience s tore payment, carrier billing, and bank transfer
+            adds convenience store payment, carrier billing, and bank transfer
              to standard card processing. Used by major Japan e-commerce companies
             like Rakuten and Yahoo Shopping.
           </p>
           <ul class="guide-list">
-            <li><strong>When  to use:</strong> cus tomers specifically request コンビニ払い</li>
+            <li><strong>When  to use:</strong> customers specifically request コンビニ払い</li>
             <li><strong>Setup:</strong> complex integration, enterprise sales process</li>
             <li><strong>Cost:</strong> higher than Stripe, variable pricing</li>
           </ul>
           <p class="guide-sidenote">
             <strong>For most SMEs: Stripe is enough.</strong> Add GMO-PG only
-            if your cus tomer base specifically demands convenience s tore payment.
+            if your customer base specifically demands convenience store payment.
             The integration complexity and cost aren't justified until you have
-            proven cus tomer demand.
+            proven customer demand.
           </p>
         </section>
 
         <section id="in-person-stack" class="guide-section">
           <h2>In-person payment stack: what you need</h2>
           <p>
-            For businesses with physical cus tomers : retail s tores, cafes,
+            For businesses with physical customers : retail stores, cafes,
             restaurants, pop-ups, events : the requirements are different:
           </p>
-          <h3>PayPay is manda tory</h3>
+          <h3>PayPay is mandatory</h3>
           <p>
             <strong>PayPay</strong> has 60M+ users and 1.98% processing fees.
-            Not accepting it actively loses cus tomers. QR-based system with
+            Not accepting it actively loses customers. QR-based system with
             simple setup once approved.
           </p>
           <ul class="guide-list">
@@ -299,14 +299,14 @@ const breadcrumbSchema = {
           <p>
             <strong>Coiney</strong> and <strong>Stripe Terminal</strong> offer
             card readers for developer-integrated POS setups. Better for
-            businesses that need cus tom integration with existing systems.
+            businesses that need custom integration with existing systems.
           </p>
           <h3>IC card contactless: optional</h3>
           <p>
             IC card contactless (iD, QUICPay, Suica) requires separate
-            NFC-enabled readers. Important for convenience s tores and
+            NFC-enabled readers. Important for convenience stores and
             transit-adjacent retail, but optional for general retail where
-            cards + PayPay cover most cus tomers.
+            cards + PayPay cover most customers.
           </p>
         </section>
 
@@ -325,7 +325,7 @@ const breadcrumbSchema = {
               qualified invoice registration number (登録番号).
             </li>
             <li>
-              <strong>Cus tomer transfers  to your bank account</strong> via their
+              <strong>customer transfers  to your bank account</strong> via their
               bank's online system or branch visit. Transfer typically happens
               within 30 days of invoice date.
             </li>
@@ -337,7 +337,7 @@ const breadcrumbSchema = {
           </ol>
           <h3>インボイス制度 (qualified invoice system)</h3>
           <p>
-            Since Oc tober 2023, all invoices must include your 登録番号
+            Since October 2023, all invoices must include your 登録番号
             (qualified invoice registration number)  to be used as input tax
             credit by the payer. If you haven't registered for インボイス制度,
             do it now : it affects your clients' ability  to claim consumption
@@ -373,7 +373,7 @@ const breadcrumbSchema = {
             </li>
             <li>
               <strong>Prestia (SMBC Trust Bank):</strong> targets international
-              cus tomers, English service, multiple branches in Tokyo.
+              customers, English service, multiple branches in Tokyo.
             </li>
             <li>
               <strong>Japan Post Bank:</strong> government-backed, present
@@ -460,7 +460,7 @@ const breadcrumbSchema = {
           </p>
           <h3>Au tomated tax calculation</h3>
           <p>
-            Stripe's tax module can au tomatically calculate and collect Japanese
+            Stripe's tax module can automatically calculate and collect Japanese
             consumption tax for online transactions. This is useful for
             e-commerce businesses with complex tax scenarios (multiple rates,
             exemptions, etc.).
@@ -479,7 +479,7 @@ const breadcrumbSchema = {
         <section id="full-stack-recommendations" class="guide-section">
           <h2>Building the full stack: recommendations by business type</h2>
           <p>
-            Your payment stack depends on your business model and cus tomer base.
+            Your payment stack depends on your business model and customer base.
             Here are the most common scenarios:
           </p>
           <div class="cost-table-wrap">
@@ -508,7 +508,7 @@ const breadcrumbSchema = {
                 <tr>
                   <td><strong>E-commerce with Japanese consumers</strong></td>
                   <td>Stripe + GMO-PG for コンビニ払い</td>
-                  <td>1. Stripe first<br>2. Add GMO-PG if cus tomers request</td>
+                  <td>1. Stripe first<br>2. Add GMO-PG if customers request</td>
                   <td>Variable based on volume</td>
                 </tr>
                 <tr>
@@ -554,7 +554,7 @@ const breadcrumbSchema = {
             <details class="faq__item">
               <summary>Should I start with PayPay or Stripe?</summary>
               <p>
-                Start with whichever serves your primary cus tomer base. For
+                Start with whichever serves your primary customer base. For
                 online businesses, start with Stripe. For physical retail,
                 start with PayPay. Both require the same bank account, so you
                 can add the second processor later without additional banking
@@ -567,16 +567,16 @@ const breadcrumbSchema = {
                 Payment processors collect gross amounts including consumption
                 tax. You're responsible for calculating what portion is tax and
                 remitting it  to the National Tax Agency. Modern accounting
-                software (freee, Money Forward) can calculate this au tomatically
+                software (freee, Money Forward) can calculate this automatically
                 based on your payment processor data.
               </p>
             </details>
             <details class="faq__item">
-              <summary>What if my cus tomers ask for payment methods I don't support?</summary>
+              <summary>What if my customers ask for payment methods I don't support?</summary>
               <p>
-                Start simple and add payment methods based on actual cus tomer
-                requests, not hypothetical demand. If cus tomers specifically ask
-                for convenience s tore payment, carrier billing, or other methods,
+                Start simple and add payment methods based on actual customer
+                requests, not hypothetical demand. If customers specifically ask
+                for convenience store payment, carrier billing, or other methods,
                 then evaluate adding them. Don't build a complex payment stack
                 until you have proven demand.
               </p>
@@ -626,8 +626,8 @@ const breadcrumbSchema = {
             call can clarify your best path forward.
           </p>
           <div class="guide-cta__actions">
-            <a href="https://calendly.com/mkultraman/mkultraman-explora tory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              Book an explora tory call : $175 →
+            <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book an exploratory call : $175 →
             </a>
             <a href="/contact/" class="guide-cta__alt">or send a message</a>
           </div>
@@ -658,7 +658,7 @@ const breadcrumbSchema = {
 
   .guide-article {
     max-width: 760px;
-    margin: 0 au to;
+    margin: 0 auto;
   }
 
   .back-link {
@@ -668,14 +668,14 @@ const breadcrumbSchema = {
     color: var(--text-dim);
     text-decoration: none;
     letter-spacing: 0.05em;
-    margin-bot tom: var(--space-24);
+    margin-bottom: var(--space-24);
     display: inline-block;
     transition: color 0.15s ease;
   }
   .back-link:hover { color: var(--accent); }
 
   .guide-header {
-    margin-bot tom: var(--space-48);
+    margin-bottom: var(--space-48);
   }
 
   .guide-eyebrow {
@@ -685,7 +685,7 @@ const breadcrumbSchema = {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bot tom: var(--space-16);
+    margin-bottom: var(--space-16);
   }
 
   .guide-header h1 {
@@ -695,14 +695,14 @@ const breadcrumbSchema = {
     letter-spacing: -0.025em;
     color: var(--text);
     line-height: 1.1;
-    margin-bot tom: var(--space-24);
+    margin-bottom: var(--space-24);
   }
 
   .guide-lead {
     font-size: 19px;
     color: var(--text-muted);
     line-height: 1.6;
-    margin-bot tom: var(--space-24);
+    margin-bottom: var(--space-24);
   }
 
   .guide-meta {
@@ -716,7 +716,7 @@ const breadcrumbSchema = {
   }
   .guide-meta a {
     color: var(--text);
-    border-bot tom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     transition: color 0.15s, border-color 0.15s;
   }
   .guide-meta a:hover { color: var(--accent); border-color: var(--accent); }
@@ -737,7 +737,7 @@ const breadcrumbSchema = {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--accent);
-    margin-bot tom: var(--space-16);
+    margin-bottom: var(--space-16);
   }
   .tldr__list {
     list-style: none;
@@ -775,7 +775,7 @@ const breadcrumbSchema = {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-dim);
-    margin-bot tom: var(--space-16);
+    margin-bottom: var(--space-16);
   }
   . toc__list {
     list-style: decimal inside;
@@ -805,7 +805,7 @@ const breadcrumbSchema = {
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
-    margin-bot tom: var(--space-24);
+    margin-bottom: var(--space-24);
     line-height: 1.2;
   }
   .guide-section h3 {
@@ -820,13 +820,13 @@ const breadcrumbSchema = {
     font-size: 16px;
     color: var(--text-muted);
     line-height: 1.75;
-    margin-bot tom: var(--space-20);
+    margin-bottom: var(--space-20);
   }
   .guide-section strong { color: var(--text); font-weight: 600; }
   .guide-section em { font-style: italic; }
   .guide-section a {
     color: var(--accent);
-    border-bot tom: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     transition: border-color 0.15s;
   }
   .guide-section a:hover { border-color: var(--accent); }
@@ -877,7 +877,7 @@ const breadcrumbSchema = {
   /* Cost table */
   .cost-table-wrap {
     margin: var(--space-32) 0;
-    overflow-x: au to;
+    overflow-x: auto;
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
   }
@@ -898,16 +898,16 @@ const breadcrumbSchema = {
     color: var(--text-dim);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-bot tom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
   .cost-table td {
     padding: var(--space-16);
     color: var(--text-muted);
-    border-bot tom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     vertical-align:  top;
     line-height: 1.55;
   }
-  .cost-table tr:last-child td { border-bot tom: none; }
+  .cost-table tr:last-child td { border-bottom: none; }
   .cost-table td strong { color: var(--text); font-weight: 600; }
 
   /* FAQ */
@@ -922,9 +922,9 @@ const breadcrumbSchema = {
   }
   .faq__item {
     padding: var(--space-24);
-    border-bot tom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
-  .faq__item:last-child { border-bot tom: none; }
+  .faq__item:last-child { border-bottom: none; }
   .faq__item summary {
     font-size: 15px;
     font-weight: 600;
@@ -963,7 +963,7 @@ const breadcrumbSchema = {
     font-size: 24px;
     font-weight: 700;
     color: var(--text);
-    margin-bot tom: var(--space-24);
+    margin-bottom: var(--space-24);
     letter-spacing: -0.015em;
   }
   .guide-related__list {
@@ -978,9 +978,9 @@ const breadcrumbSchema = {
     flex-direction: column;
     gap: var(--space-4);
     padding: var(--space-16) 0;
-    border-bot tom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
-  .guide-related__list li:last-child { border-bot tom: none; }
+  .guide-related__list li:last-child { border-bottom: none; }
   .guide-related__list a {
     font-size: 15px;
     font-weight: 600;
@@ -1008,17 +1008,17 @@ const breadcrumbSchema = {
     font-size: clamp(24px, 3vw, 32px);
     font-weight: 900;
     color: var(--text);
-    margin-bot tom: var(--space-16);
+    margin-bottom: var(--space-16);
     letter-spacing: -0.02em;
   }
   .guide-cta p {
     font-size: 16px;
     color: var(--text-muted);
     line-height: 1.7;
-    margin-bot tom: var(--space-32);
+    margin-bottom: var(--space-32);
     max-width: 560px;
-    margin-left: au to;
-    margin-right: au to;
+    margin-left: auto;
+    margin-right: auto;
   }
   .guide-cta p a { color: var(--accent); }
   .guide-cta__actions {
@@ -1026,7 +1026,7 @@ const breadcrumbSchema = {
     flex-direction: column;
     align-items: center;
     gap: var(--space-12);
-    margin-bot tom: var(--space-32);
+    margin-bottom: var(--space-32);
   }
   .guide-cta__alt {
     font-size: 13px;
