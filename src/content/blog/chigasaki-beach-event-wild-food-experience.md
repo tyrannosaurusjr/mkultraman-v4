@@ -10,7 +10,7 @@ This August, I invite you to embark on a journey to a truly remarkable gathering
 
 ## The Ultimate Coastal Gathering; A Celebration Beyond the Ordinary
 
-Forget what you know about typical beach barbecues. Firelight & Fermentation, happening August 30–31, is an immersive two-day experience on the iconic shores of Chigasaki. I find that the best events are those that create a genuine sense of community and connection. This gathering does exactly that. It masterfully blends the raw appeal of open-flame cooking with the sophisticated world of craft brewing and fermented foods. Consequently, it attracts a diverse crowd, from seasoned foodies to families looking for a unique weekend outing. This **Chigasaki Beach Event** is built around slowing down, savoring each moment, and tasting something truly real.
+Forget what you know about typical beach barbecues. Firelight & Fermentation, happening August 30 to 31, is an immersive two-day experience on the iconic shores of Chigasaki. I find that the best events are those that create a genuine sense of community and connection. This gathering does exactly that. It masterfully blends the raw appeal of open-flame cooking with the sophisticated world of craft brewing and fermented foods. Consequently, it attracts a diverse crowd, from seasoned foodies to families looking for a unique weekend outing. This **Chigasaki Beach Event** is built around slowing down, savoring each moment, and tasting something truly real.
 
 ## An Authentic Wild Food Experience Sourcing Kanagawa's Wild Game
 

@@ -106,7 +106,7 @@ Other countries are watching. This **Travel Policy** sets a dangerous precedent.
 The BBC has covered this exact topic. They explore how to be a responsible tourist and what destinations are doing wrong.
 
 
-[How to be a responsible tourist – The Global Story podcast, BBC World Service](https://www.youtube.com/watch?v=gfcKTMN-5CI)
+[How to be a responsible tourist : The Global Story podcast, BBC World Service](https://www.youtube.com/watch?v=gfcKTMN-5CI)
 
 This video makes it clear. The **Impact** of overtourism is real. But the solutions are complex. This **Departure Tax** is a simple, stupid "solution." It is a global embarrassment.
 

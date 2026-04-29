@@ -29,7 +29,7 @@ A typical professional might be juggling Slack for internal teams, Microsoft Tea
 
 ### The Tyranny of the Unknown Caller
 
-Then there's the telephone—a tool from another era that stubbornly refuses to adapt. My phone is a tool for me to use on my terms, not a leash for others to yank at their convenience. That is why I have a simple, unbreakable rule that shocks many established professionals.
+Then there's the telephone:a tool from another era that stubbornly refuses to adapt. My phone is a tool for me to use on my terms, not a leash for others to yank at their convenience. That is why I have a simple, unbreakable rule that shocks many established professionals.
 
 #### Why I Will Not Answer My Phone
 

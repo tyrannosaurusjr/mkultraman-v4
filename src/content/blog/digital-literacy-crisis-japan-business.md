@@ -110,7 +110,7 @@ But the firm refuses to teach them. They look at these "normie" users and see lo
 The result is a silent platform. But do **Japan Businesses** like this teach **digital literacy**? No. They look at the logs. They see users bouncing. They conclude, "The public is not ready for this tech."
 
 
-They use the user's confusion—which *they* caused by not providing instructions—as proof that their product is too advanced for the general market. They retreat further into their shell. They starve for cash flow while sitting on a potential gold mine. They simply do not understand that the user's ignorance is the company's responsibility to fix, that they should develop and employ a digital literacy curriculum to grow their business.
+They use the user's confusion:which *they* caused by not providing instructions:as proof that their product is too advanced for the general market. They retreat further into their shell. They starve for cash flow while sitting on a potential gold mine. They simply do not understand that the user's ignorance is the company's responsibility to fix, that they should develop and employ a digital literacy curriculum to grow their business.
 
 ## The Artist and the Boredom Trap
 

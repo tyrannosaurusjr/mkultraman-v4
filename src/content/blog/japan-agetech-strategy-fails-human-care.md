@@ -6,7 +6,7 @@ tags: ["Business in Japan", "Digital Transformation & AI"]
 draft: false
 ---
 
-In the world’s most elderly nation, a high-tech crusade is underway. As Japan’s aging population reaches record highs, the powers that be have bet big on **robotics** and AI to manage the demographic decline. In place of grandchildren, they offer nurse androids. In lieu of community, they offer ambient sensors. This is Japan’s **Agetech Strategy** in action. This vision is the logical endgame of the old “Japan Inc.” model—an alliance of government and corporate giants steeped in industrial efficiency.
+In the world’s most elderly nation, a high-tech crusade is underway. As Japan’s aging population reaches record highs, the powers that be have bet big on **robotics** and AI to manage the demographic decline. In place of grandchildren, they offer nurse androids. In lieu of community, they offer ambient sensors. This is Japan’s **Agetech Strategy** in action. This vision is the logical endgame of the old “Japan Inc.” model:an alliance of government and corporate giants steeped in industrial efficiency.
 
 
 However, this technocratic approach to aging is undermining the human heart of eldercare. It is a socially defeatist path. It is time to recognize that more gadgets cannot solve a crisis of humanity, and to champion a new model of **Human Eldercare**.
@@ -58,7 +58,7 @@ Historically, Japanese culture treasured the concept of *oya-kōkō* (filial dut
 If the current trajectory leads to a dead end, what alternative models exist? The answer lies in shifting the focus from industrial efficiency to social innovation. We must champion **Human Eldercare**. This means treating aging not as a market to be managed, but as an opportunity to rebuild social solidarity. A better path is possible.
 
 
-In conclusion, caring for an aging population is ultimately about *caring*—a fundamentally human act. Japan’s elders deserve dignity and companionship, not just efficiency. The nation's **Agetech Strategy**, born from the logic of a declining Japan Inc., is a clever but hollow answer. It offers **robotics** when it should be offering relationships. Real wisdom lies in reviving community and using technology wisely to support, not supplant, the human touch. The future must be built on **Human Eldercare**.
+In conclusion, caring for an aging population is ultimately about *caring*:a fundamentally human act. Japan’s elders deserve dignity and companionship, not just efficiency. The nation's **Agetech Strategy**, born from the logic of a declining Japan Inc., is a clever but hollow answer. It offers **robotics** when it should be offering relationships. Real wisdom lies in reviving community and using technology wisely to support, not supplant, the human touch. The future must be built on **Human Eldercare**.
 
 ---
 

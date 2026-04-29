@@ -47,7 +47,7 @@ These living **Cultural Assets** are what high-value travelers crave. They are l
 Like most of rural Japan, Aizu is not easy to reach. The journey from Tokyo is long and complex. This is not a weakness. It is a *feature*.
 
 
-This logistical "moat" is a natural filter. It blocks the low-value, high-volume day-tripper. It pre-selects for a more dedicated traveler, one willing to invest time and money. The historical "moat" of Aizu—its antagonism with Tokyo, its story of samurai defiance, its 2011 resilience—is the same. These are not problems to be hidden. They are the *core of the narrative*. A smart **Aizu Strategy** sells this complexity, not a generic, pale imitation of Kyoto.
+This logistical "moat" is a natural filter. It blocks the low-value, high-volume day-tripper. It pre-selects for a more dedicated traveler, one willing to invest time and money. The historical "moat" of Aizu (its antagonism with Tokyo, its story of samurai defiance, its 2011 resilience) is the same. These are not problems to be hidden. They are the *core of the narrative*. A smart **Aizu Strategy** sells this complexity, not a generic, pale imitation of Kyoto.
 
 ## A Blueprint for Rural Japan
 

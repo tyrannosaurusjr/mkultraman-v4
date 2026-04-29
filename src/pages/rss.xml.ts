@@ -2,7 +2,7 @@ import type { APIContext } from 'astro';
 import { getCollection } from 'astro:content';
 
 const SITE = 'https://www.mkultraman.com';
-const TITLE = 'MKUltraman — Japan SME Digital Infrastructure';
+const TITLE = 'MKUltraman : Japan SME Digital Infrastructure';
 const DESCRIPTION =
   'Field notes on digital infrastructure, business strategy, and market dynamics in Japan. Written by Matt Ketchum from Tokyo.';
 

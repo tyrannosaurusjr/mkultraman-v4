@@ -23,7 +23,7 @@ A failure of this magnitude cannot be contained within corporate headquarters. T
 
 ### Damage to Japan's Global Brand
 
-For decades, the "Made in Japan" label has been a global shorthand for quality, precision, and unwavering reliability. This single event has dealt a significant blow to that hard-won reputation. When a national institution as fundamental as the postal service—the very circulatory system of the nation's commerce—demonstrates such a catastrophic breakdown in basic safety, it raises uncomfortable questions about the integrity of other Japanese systems.
+For decades, the "Made in Japan" label has been a global shorthand for quality, precision, and unwavering reliability. This single event has dealt a significant blow to that hard-won reputation. When a national institution as fundamental as the postal service:the very circulatory system of the nation's commerce:demonstrates such a catastrophic breakdown in basic safety, it raises uncomfortable questions about the integrity of other Japanese systems.
 
 
 International partners and investors will rightfully question whether this is an isolated incident or a symptom of a wider "incumbent's disease," where legacy companies have failed to modernize. Restoring this trust requires far more than a press conference; it demands a transparent and radical overhaul of the failed **logistics safety protocols** that allowed this to happen. Every day that passes without a credible plan further erodes this crucial national asset.

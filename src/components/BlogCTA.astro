@@ -13,15 +13,15 @@ const isStrategy = tags.some(t => strategyTags.some(st => t.toLowerCase().includ
 
 let heading = 'Need help with this?';
 let subtext = 'I help SMEs in Japan fix their digital infrastructure. Book an exploratory call or send me a message.';
-let buttonText = 'Book a call — $175';
+let buttonText = 'Book a call ($175)';
 
 if (isInfra) {
   heading = 'Is your stack costing you?';
-  subtext = 'I audit digital infrastructure for SMEs in Japan — tools, workflows, costs, friction. 45 minutes, $175.';
-  buttonText = 'Book a stack review — $175';
+  subtext = 'I audit digital infrastructure for SMEs in Japan: tools, workflows, costs, friction. 45 minutes, $175.';
+  buttonText = 'Book a stack review ($175)';
 } else if (isStrategy) {
   heading = 'Want to talk strategy?';
-  subtext = 'I work with operators in Japan building systems that scale. 45 minutes, $175 — tell me what you\'re working on.';
+  subtext = 'I work with operators in Japan building systems that scale. 45 minutes, $175. Tell me what you\'re working on.';
   buttonText = 'Book a call';
 }
 ---

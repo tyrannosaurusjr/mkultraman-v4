@@ -6,7 +6,7 @@ tags: ["Business in Japan", "Economics & Investment"]
 draft: false
 ---
 
-The recent [Osaka ramen controversy](https://news.yahoo.co.jp/expert/articles/5258e51b04b78c96d43854a87445f6ee8ccab894)—where a shop utilized an English-language ticket machine to charge tourists more than double the local rate—has ignited a nationwide debate on how to handle surging visitor numbers. While the shop owner defended the move as a necessity for survival, the fallout proved that “foreigner pricing” is an operational and reputational landmine.
+The recent [Osaka ramen controversy](https://news.yahoo.co.jp/expert/articles/5258e51b04b78c96d43854a87445f6ee8ccab894):where a shop utilized an English-language ticket machine to charge tourists more than double the local rate:has ignited a nationwide debate on how to handle surging visitor numbers. While the shop owner defended the move as a necessity for survival, the fallout proved that “foreigner pricing” is an operational and reputational landmine.
 
 
 As Japan eyes [2026 tourism projections](https://www.jnto.go.jp/statistics/data/visitors-statistics/) of over 40 million visitors, the pressure on infrastructure is reaching a breaking point. However, the solution isn’t found in discriminatory surcharges that alienate guests. Instead, the country must look toward a structured resident discount model. By shifting the focus from “penalizing tourists” to “protecting locals,” Japan can implement a Japan dual pricing system that is both economically sound and socially acceptable.
@@ -16,14 +16,14 @@ Kiso identified the core problem but deserves expansion on why resident discount
 
 ## The Operational Failure of Foreigner Pricing
 
-he Osaka ramen controversy at Gadouya (also known as [Oudoya](https://oudouya.com/), which is ridiculous. [Here](https://share.google/aimode/OBYXeoyBf4z1uv71M) is a differentiation provided by Gemini) serves as a textbook example of how a foreigner pricing system collapses under real-world conditions. The establishment attempted to use a digital interface—an English screen—as a proxy for residency status. This was a catastrophic oversight. In a globalized economy, language ability does not equate to residency.
+he Osaka ramen controversy at Gadouya (also known as [Oudoya](https://oudouya.com/), which is ridiculous. [Here](https://share.google/aimode/OBYXeoyBf4z1uv71M) is a differentiation provided by Gemini) serves as a textbook example of how a foreigner pricing system collapses under real-world conditions. The establishment attempted to use a digital interface:an English screen:as a proxy for residency status. This was a catastrophic oversight. In a globalized economy, language ability does not equate to residency.
 
 ### Why Visual Identification Fails at Scale
 
 When a business attempts to enforce foreigner pricing, the burden of “policing” customers falls on frontline staff. This creates immediate friction:
 
 - **The Identification Paradox:** Staff cannot accurately distinguish between a Chinese tourist and a third-generation Chinese-Japanese resident.
-- **Throughput Delays:** Verifying passports or arguing over price discrepancies at a ticket machine destroys “throughput”—the speed at which a business serves customers. In the high-volume world of Japanese ramen, a 30-second delay per customer can lead to a collapse in daily revenue.
+- **Throughput Delays:** Verifying passports or arguing over price discrepancies at a ticket machine destroys “throughput”:the speed at which a business serves customers. In the high-volume world of Japanese ramen, a 30-second delay per customer can lead to a collapse in daily revenue.
 - **Reputational Damage:** Unlike a standard tax, a surcharge feels personal. It creates a “hostile hospitality” environment that contradicts the spirit of Omotenashi.
 
 ### The Economic Case for a Resident Discount Model
@@ -48,17 +48,17 @@ When looking for proven Japan overtourism solutions, the most successful templat
 
 
 **Museums/Culture**
-25% – 50% Off
-50% – 70% Off
+25% : 50% Off
+50% : 70% Off
 
 
 **Dining**
-10% – 15% Off
-15% – 20% Off
+10% : 15% Off
+15% : 20% Off
 
 
 **Hotels**
-20% – 40% Off
+20% : 40% Off
 Seasonal Variable
 
 ### Growing Trend
@@ -79,7 +79,7 @@ Overtourism is essentially a failure of price discovery. As the [UN Tourism (UNW
 
 ### Pricing is a Scalpel, Not a Sledgehammer
 
-The controversial dual pricing system disaster occurred because the owner used a sledgehammer—a massive, unannounced price hike for anyone clicking the “English” button. A sophisticated Japan dual pricing strategy uses pricing as a scalpel to manage capacity:
+The controversial dual pricing system disaster occurred because the owner used a sledgehammer:a massive, unannounced price hike for anyone clicking the “English” button. A sophisticated Japan dual pricing strategy uses pricing as a scalpel to manage capacity:
 
 
 - **Peak vs. Off-Peak:** Prices for international or local visitors can be adjusted dynamically, but the price for local visitors is set at a sustainable floor.

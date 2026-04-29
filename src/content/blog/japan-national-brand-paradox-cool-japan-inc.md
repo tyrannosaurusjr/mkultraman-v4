@@ -6,7 +6,7 @@ tags: ["Society & Culture", "Systems & Strategy"]
 draft: false
 ---
 
-In my work analyzing global perceptions, few countries present as stark a contradiction as Japan. Ask anyone to describe the nation, and my research shows you will likely receive one of two diametrically opposed images. Together, these two perceptions define the **Japan national brand**. The first image is a vibrant wonderland of **futuristic technology** and imaginative anime—the world of **Cool Japan**. The second is a monochrome society of exhausted "salarymen" bound by rigid tradition, the ghost of **Japan Inc**.
+In my work analyzing global perceptions, few countries present as stark a contradiction as Japan. Ask anyone to describe the nation, and my research shows you will likely receive one of two diametrically opposed images. Together, these two perceptions define the **Japan national brand**. The first image is a vibrant wonderland of **futuristic technology** and imaginative anime:the world of **Cool Japan**. The second is a monochrome society of exhausted "salarymen" bound by rigid tradition, the ghost of **Japan Inc**.
 
 
 This represents the fundamental paradox of the **Japan national brand**. The popular perception is not a cohesive whole but a stark dichotomy. Decades of curated cultural exports and media narratives have shaped this view, making the nation appear either perpetually juvenile or prematurely old. In this analysis, I will deconstruct these two pillars, arguing they create a jilted and incomplete media landscape that ultimately damages Japan's global standing.
@@ -23,7 +23,7 @@ The story of Cool Japan is built on several key exports that project a very spec
 
 ## A Jilted and Formulaic Media Mirror
 
-This cultural polarity is not merely an external perception; it is actively reinforced by Japan's domestic media. [Japanese TV dramas](https://www.nippon.com/en/japan-topics/g02360/) (*dorama*), for instance, often struggle for global resonance precisely because they tend to swing between these two established poles in a highly formulaic way. Primetime schedules are filled with corporate dramas showing whistleblowers fighting corruption or newcomers battling a cynical system—the world of **Japan Inc.** in primetime.
+This cultural polarity is not merely an external perception; it is actively reinforced by Japan's domestic media. [Japanese TV dramas](https://www.nippon.com/en/japan-topics/g02360/) (*dorama*), for instance, often struggle for global resonance precisely because they tend to swing between these two established poles in a highly formulaic way. Primetime schedules are filled with corporate dramas showing whistleblowers fighting corruption or newcomers battling a cynical system:the world of **Japan Inc.** in primetime.
 
 When the narrative focus isn't the office, it frequently shifts to lighthearted high school romances or pure fantasy, mirroring the escapist tropes of **Cool Japan**. A certain kind of story is conspicuously absent from this landscape: the broad portrayal of a free, complex, and self-motivated adult society. Characters are rarely depicted as individuals navigating life on their own terms. Instead, their lives are almost always defined by their relationship to an overwhelming external force: the demands of the company (**Japan Inc.**) or the predetermined path of a fated romance (**Cool Japan**).
 

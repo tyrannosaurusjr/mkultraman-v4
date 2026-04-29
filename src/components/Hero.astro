@@ -43,7 +43,7 @@ const FORMSPREE_ID = "mbdppqqq";
       <div class="hero__form">
         <p class="form-title">Get your stack audited.</p>
         <p class="form-desc">
-          Tell me what's breaking. I'll tell you what it's costing you — and
+          Tell me what's breaking. I'll tell you what it's costing you and
           exactly how to fix it.
         </p>
 
@@ -64,15 +64,16 @@ const FORMSPREE_ID = "mbdppqqq";
           </div>
 
           <div class="field">
-            <label class="label" for="message">What's the problem?</label>
+            <label class="label" for="message">What's the problem? <span class="label-optional">(optional)</span></label>
             <textarea
               class="textarea"
               id="message"
               name="message"
-              placeholder="Too many tools, broken workflows, no visibility — describe the friction."
-              required
+              placeholder="Too many tools, broken workflows, no visibility: describe the friction."
             ></textarea>
           </div>
+
+          <input type="hidden" name="_subject" value="Stack audit inquiry" />
 
           <button type="submit" class="btn btn-primary" id="hero-submit">
             Get your stack audited &rarr;
@@ -89,6 +90,9 @@ const FORMSPREE_ID = "mbdppqqq";
         <p class="form-note">
           <span class="dot">&#9679;</span>
           Reply within 48 hours. No sales calls, no pitch decks.
+        </p>
+        <p class="form-alt">
+          Prefer to just talk? <a href="https://calendly.com/mkultraman/mkultraman-exploratory-call" target="_blank" rel="noopener noreferrer">Book the $175 call &rarr;</a>
         </p>
       </div>
     </div>
@@ -209,6 +213,22 @@ const FORMSPREE_ID = "mbdppqqq";
     align-items: center;
     gap: var(--space-8);
     justify-content: center;
+  }
+  .form-alt {
+    margin-top: var(--space-8);
+    font-size: 12px;
+    color: var(--text-dim);
+    text-align: center;
+  }
+  .form-alt a {
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .form-alt a:hover { color: var(--accent); }
+  .label-optional {
+    font-size: 11px;
+    color: var(--text-dim);
+    font-weight: 400;
   }
   .dot { color: var(--accent); font-size: 8px; }
   .hidden { display: none; }

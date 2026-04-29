@@ -13,7 +13,7 @@ A concerning trend reveals a deep-seated issue within Japan's corporate and soci
 The most immediate, measurable sign of this **systemic failure** comes from Japan's own global representatives. A September 2025 survey by Bizmates Inc. found that over 90% of large Japanese companies have experienced expatriates returning early from overseas assignments. This is a staggering rate of failure. The primary reason, cited by 35% of HR managers, was the employee's "unable to adapt to local culture and values." This is a direct failure to cultivate a **global mindset**. These assignments, intended to build bridges, are instead proving how deep the chasm is. The individuals are failing because the system that trained them is fundamentally insular.
 
 
-This is not a new phenomenon, but its persistence shows the **systemic failure** to learn. The inability to adapt to new cultural norms—from decision-making speed to social etiquette—shows a deep-seated belief in Japanese exceptionalism. This belief is a critical barrier to engaging with **modernity**.
+This is not a new phenomenon, but its persistence shows the **systemic failure** to learn. The inability to adapt to new cultural norms:from decision-making speed to social etiquette:shows a deep-seated belief in Japanese exceptionalism. This belief is a critical barrier to engaging with **modernity**.
 
 ## Sign 2: A Failure to Connect Beyond Language
 
@@ -23,7 +23,7 @@ This communication breakdown is a direct symptom of a missing **global mindset**
 
 ## Sign 3: The Inability to Localize Process
 
-The third-ranking reason for expat failure—"sticking to Japanese work styles and failing to adapt to local practices" (26%)—is perhaps the most telling. This is the **systemic failure** in miniature. It is the corporate body actively rejecting the local environment. It is the insistence on *hanko* seals in a digital-first world, or demanding consensus-based *nemawashi* from a team used to decisive, top-down leadership. This rigidity is a hallmark of an organization that lacks a **global mindset**.
+The third-ranking reason for expat failure:"sticking to Japanese work styles and failing to adapt to local practices" (26%):is perhaps the most telling. This is the **systemic failure** in miniature. It is the corporate body actively rejecting the local environment. It is the insistence on *hanko* seals in a digital-first world, or demanding consensus-based *nemawashi* from a team used to decisive, top-down leadership. This rigidity is a hallmark of an organization that lacks a **global mindset**.
 
 
 This inflexibility is a direct threat to survival. **Modernity** demands agility, localization, and an acceptance that the "head office" way is not always the best way. By failing to adapt, Japanese companies not only demotivate their local staff but also make themselves slow, uncompetitive, and irrelevant. This is a self-inflicted wound born from a **systemic failure** to see beyond the home islands.
@@ -34,7 +34,7 @@ The Bizmates survey highlighted a "potential mismatch between training content a
 
 ### A Focus on Process Over People
 
-This training mismatch reveals a deeper truth: the system prioritizes *process* over *people*. It assumes that if an employee follows the "overseas assignment manual," they will succeed. It fails to equip them with the *soft skills*—the **global mindset**—needed to handle the ambiguity and cultural friction of the real world. This **systemic failure** to train for adaptability is a direct consequence of a corporate culture that itself lacks those same skills.
+This training mismatch reveals a deeper truth: the system prioritizes *process* over *people*. It assumes that if an employee follows the "overseas assignment manual," they will succeed. It fails to equip them with the *soft skills*:the **global mindset**:needed to handle the ambiguity and cultural friction of the real world. This **systemic failure** to train for adaptability is a direct consequence of a corporate culture that itself lacks those same skills.
 
 ## Sign 5: The Galapagos Syndrome
 

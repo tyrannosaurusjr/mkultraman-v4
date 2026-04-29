@@ -6,7 +6,7 @@ tags: ["Digital Transformation & AI"]
 draft: false
 ---
 
-The way we interact with artificial intelligence is about to change—again. OpenAI just announced a massive update that fundamentally alters what its flagship product can do. This isn't just another small update; it's the next major step in building the **OpenAI ecosystem**. The company is rolling out a new **ChatGPT integration** that allows third-party apps to run *directly* inside your conversations. For developers, users, and the entire tech landscape in **Japan**, this is a pivotal moment.
+The way we interact with artificial intelligence is about to change:again. OpenAI just announced a massive update that fundamentally alters what its flagship product can do. This isn't just another small update; it's the next major step in building the **OpenAI ecosystem**. The company is rolling out a new **ChatGPT integration** that allows third-party apps to run *directly* inside your conversations. For developers, users, and the entire tech landscape in **Japan**, this is a pivotal moment.
 
 
 At its annual DevDay 2025 conference, OpenAI revealed that users can now access interactive applications from major companies. We're talking about services like Booking.com, Expedia, Spotify, Figma, Coursera, Zillow, and Canva. This move transforms ChatGPT from a powerful conversationalist into a central "do-it-all" platform.

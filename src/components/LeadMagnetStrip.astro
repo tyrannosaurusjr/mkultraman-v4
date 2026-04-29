@@ -1,0 +1,180 @@
+---
+const FORMSPREE_ID = "mbdppqqq";
+---
+
+<aside class="lm-strip" aria-label="Free checklist download">
+  <div class="lm-strip__inner">
+    <div class="lm-strip__content">
+      <p class="lm-strip__label">Free resource</p>
+      <p class="lm-strip__heading">The Japan SME Stack Audit Checklist</p>
+      <p class="lm-strip__sub">22 questions we ask before recommending any change to a client's stack. Enter your email and I'll send it.</p>
+    </div>
+    <form
+      id="lm-form"
+      action={`https://formspree.io/f/${FORMSPREE_ID}`}
+      method="POST"
+      class="lm-strip__form"
+    >
+      <input type="hidden" name="_subject" value="Checklist request" />
+      <input type="hidden" name="type" value="checklist" />
+      <div class="lm-strip__row">
+        <input
+          class="lm-input"
+          id="lm-email"
+          name="email"
+          type="email"
+          placeholder="your@email.com"
+          required
+          aria-label="Email address"
+        />
+        <button type="submit" class="btn btn-primary lm-btn" id="lm-submit">
+          Send it to me &rarr;
+        </button>
+      </div>
+      <p class="lm-success hidden" id="lm-success">✓ On its way. Check your inbox.</p>
+      <p class="lm-error hidden" id="lm-error">Something went wrong. Email hello@mkultraman.com</p>
+    </form>
+  </div>
+</aside>
+
+<style>
+  .lm-strip {
+    margin: var(--space-48) 0;
+    padding: var(--space-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+  }
+
+  .lm-strip__inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-48);
+    align-items: center;
+  }
+
+  .lm-strip__label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: var(--space-8);
+  }
+
+  .lm-strip__heading {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin-bottom: var(--space-8);
+  }
+
+  .lm-strip__sub {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 460px;
+  }
+
+  .lm-strip__form {
+    min-width: 280px;
+  }
+
+  .lm-strip__row {
+    display: flex;
+    gap: var(--space-8);
+  }
+
+  .lm-input {
+    flex: 1;
+    height: 42px;
+    padding: 0 var(--space-12);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    color: var(--text);
+    font-family: var(--font-body, sans-serif);
+    transition: border-color 0.15s;
+    min-width: 0;
+  }
+  .lm-input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .lm-input::placeholder { color: var(--text-dim); }
+
+  .lm-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .lm-success {
+    margin-top: var(--space-8);
+    font-size: 13px;
+    color: var(--success, #4ade80);
+    font-weight: 500;
+  }
+  .lm-error {
+    margin-top: var(--space-8);
+    font-size: 12px;
+    color: var(--accent);
+  }
+  .hidden { display: none; }
+
+  @media (max-width: 900px) {
+    .lm-strip__inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-24);
+    }
+    .lm-strip__form {
+      min-width: 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .lm-strip__row {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('lm-form') as HTMLFormElement;
+  const btn = document.getElementById('lm-submit') as HTMLButtonElement;
+  const success = document.getElementById('lm-success') as HTMLElement;
+  const error = document.getElementById('lm-error') as HTMLElement;
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+
+        if (res.ok) {
+          form.reset();
+          btn.classList.add('hidden');
+          success.classList.remove('hidden');
+        } else {
+          throw new Error('non-ok');
+        }
+      } catch {
+        btn.textContent = 'Send it to me →';
+        btn.disabled = false;
+        error.classList.remove('hidden');
+      }
+    });
+  }
+</script>

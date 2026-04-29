@@ -23,7 +23,7 @@ The people who live here, citizens and long-term residents alike, are diligent, 
 Japan Inc. has produced a nation of unintended Luddites.
 
 
-The workforce has been trained to perfect the manufacturing of physical objects – this is legacy inertia – while being systematically denied the literacy required to build digital ones. Everyone, from the salaryman to the foreign entrepreneur trying to open a bank account, is kept in the dark. They are fed a diet of fax machines and Excel spreadsheets and told that this is what "work" looks like.
+The workforce has been trained to perfect the manufacturing of physical objects (this is legacy inertia) while being systematically denied the literacy required to build digital ones. Everyone, from the salaryman to the foreign entrepreneur trying to open a bank account, is kept in the dark. They are fed a diet of fax machines and Excel spreadsheets and told that this is what "work" looks like.
 
 ## What Is Japan's Digital Facade Hiding?
 

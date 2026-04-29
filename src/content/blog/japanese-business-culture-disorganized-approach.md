@@ -6,10 +6,10 @@ tags: ["Business in Japan", "Business Strategy"]
 draft: false
 ---
 
-A recent correspondence with a senior executive in Japan ended with a familiar, almost reflexive statement: "I forgot that – typical of my disorganized approach. I would love to improve on my work systems!" This sentiment, while seemingly a minor admission of a personal flaw, is in fact a symptom of a deep-seated and corrosive element within [Japanese business culture](https://www.inventurejapan.com/culture/business/ringi).
+A recent correspondence with a senior executive in Japan ended with a familiar, almost reflexive statement: "I forgot that : typical of my disorganized approach. I would love to improve on my work systems!" This sentiment, while seemingly a minor admission of a personal flaw, is in fact a symptom of a deep-seated and corrosive element within [Japanese business culture](https://www.inventurejapan.com/culture/business/ringi).
 
 
-The casual acceptance of a perpetually [disorganized approach](https://www.nippon.com/en/japan-data/h02240/) from those in positions of power is not a charming eccentricity; it is a manifestation of a profound organizational **inertia** that actively stifles growth, innovation, and global competitiveness. This is not a lament for the pathetic, as that implies a helplessness against circumstance. Rather, it is a sad recognition of a self-imposed limitation—a systemic problem that everyone has the means to fix, yet collectively chooses to enable.
+The casual acceptance of a perpetually [disorganized approach](https://www.nippon.com/en/japan-data/h02240/) from those in positions of power is not a charming eccentricity; it is a manifestation of a profound organizational **inertia** that actively stifles growth, innovation, and global competitiveness. This is not a lament for the pathetic, as that implies a helplessness against circumstance. Rather, it is a sad recognition of a self-imposed limitation:a systemic problem that everyone has the means to fix, yet collectively chooses to enable.
 
 The statement "I'm just disorganized" is rarely met with a demand for improvement in the upper echelons of Japanese corporations. Instead, it is often treated as a humble, even endearing, personality trait of a busy and important individual. This acceptance is rooted in a cultural framework that prioritizes hierarchy and harmony over direct confrontation and accountability.
 
@@ -25,7 +25,7 @@ Breaking this cycle of inertia requires a deliberate shift away from passively a
 
 ### Implementing Robust Systems and Processes
 
-This involves the strategic implementation of modern work management systems—from project management software like Asana or Trello to centralized communication platforms like Slack. More importantly, it requires executive-level commitment to actually *using* these tools consistently. Technology can provide the framework for organization, but only a change in behavior can make it effective. The excuse of being "disorganized" becomes invalid when the tools and processes for organization are mandated and universally adopted. I specialize in identifying these systemic gaps and architecting frameworks that enforce clarity and accountability from the top down.
+This involves the strategic implementation of modern work management systems:from project management software like Asana or Trello to centralized communication platforms like Slack. More importantly, it requires executive-level commitment to actually *using* these tools consistently. Technology can provide the framework for organization, but only a change in behavior can make it effective. The excuse of being "disorganized" becomes invalid when the tools and processes for organization are mandated and universally adopted. I specialize in identifying these systemic gaps and architecting frameworks that enforce clarity and accountability from the top down.
 
 ## A Choice Between Comfort and Competitiveness
 

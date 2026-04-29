@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
+import LeadMagnetStrip from '../../components/LeadMagnetStrip.astro';
 
 const posts = await getCollection('blog');
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -24,7 +25,7 @@ const blogSchema = {
   "@type": "Blog",
   "@id": "https://www.mkultraman.com/blog/#blog",
   "url": "https://www.mkultraman.com/blog/",
-  "name": "MKUltraman Blog — Japan SME Digital Infrastructure Analysis",
+  "name": "MKUltraman Blog: Japan SME Digital Infrastructure Analysis",
   "description": "Field notes on digital infrastructure, business strategy, and market dynamics in Japan. Written by Matt Ketchum from Tokyo.",
   "inLanguage": "en",
   "publisher": { "@id": "https://www.mkultraman.com/#organization" },
@@ -51,7 +52,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<Base title="Blog — MKUltraman | Japan SME Digital Infrastructure Analysis" description="Field notes on digital infrastructure, business strategy, and market dynamics in Japan. Written by Tetsu from Tokyo.">
+<Base title="Blog | MKUltraman | Japan SME Digital Infrastructure Analysis" description="Field notes on digital infrastructure, business strategy, and market dynamics in Japan. Written by Tetsu from Tokyo.">
   <Nav />
 
   <main class="blog-index">
@@ -64,6 +65,8 @@ const breadcrumbSchema = {
           from the ground in Tokyo.
         </p>
       </div>
+
+      <LeadMagnetStrip />
 
       <div class="tag-filters" id="tag-filters" role="group" aria-label="Filter by topic">
         <button class="tag-chip active" data-tag="all">All</button>

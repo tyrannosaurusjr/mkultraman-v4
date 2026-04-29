@@ -34,7 +34,7 @@ The event’s primary audience appears to be the generation of decision-makers w
 The **Osaka Expo 2025** is not a forward-looking vision. It is an accidental museum of a country that has lost its way, clinging to the comforting **nostalgia** of past glories while the foundations of its society erode. The event is a monument to **Japan economic stagnation**, showcasing a government unable to think beyond legacy projects and pageantry.
 
 
-Japan does not need another multi-billion-yen spectacle. It requires a fundamental reboot—a shift away from centralized, top-down projects and toward fostering local innovation and resilience. To remain relevant and build a truly sustainable future, Japan must stop designing societies based on memories and start redesigning its governance for the complex realities of the 21st century.
+Japan does not need another multi-billion-yen spectacle. It requires a fundamental reboot:a shift away from centralized, top-down projects and toward fostering local innovation and resilience. To remain relevant and build a truly sustainable future, Japan must stop designing societies based on memories and start redesigning its governance for the complex realities of the 21st century.
 
 ---
 

@@ -130,7 +130,7 @@ An accelerator that believes more human mediation equals more value is fundament
 When reduced to their actual function, most Japanese tech accelerators are not platform builders or system designers. They are event hosts.
 
 
-Their core activity is the staging of physical gatherings at semi–high profile venues: networking nights, panels, demo days, and sponsored socials selected as much for optics as for utility. These events create the appearance of relevance, but they do not create infrastructure.
+Their core activity is the staging of physical gatherings at semi:high profile venues: networking nights, panels, demo days, and sponsored socials selected as much for optics as for utility. These events create the appearance of relevance, but they do not create infrastructure.
 
 
 The website exists only to support this role. It announces events, displays logos, and archives photos. It does not facilitate ongoing interaction, store institutional knowledge, automate access, or compound value. The site is static because the organization itself is static.

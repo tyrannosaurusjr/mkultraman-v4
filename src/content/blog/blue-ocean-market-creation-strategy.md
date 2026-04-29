@@ -6,24 +6,24 @@ tags: ["Economics & Investment", "Leadership & Management"]
 draft: false
 ---
 
-**Blue ocean** entrepreneurs don’t follow the herd. They design their own arena. While others slash prices or copy competitors, these founders discover entirely new categories. They thrive not through incremental improvement, but through bold **market creation** and intelligent **strategy**. In this piece, I’ll show you how I’ve done that myself—and how you can too.
+**Blue ocean** entrepreneurs don’t follow the herd. They design their own arena. While others slash prices or copy competitors, these founders discover entirely new categories. They thrive not through incremental improvement, but through bold **market creation** and intelligent **strategy**. In this piece, I’ll show you how I’ve done that myself and how you can too.
 
 ## Why Compete When You Can Create?
 
 Most people start with what exists. They analyze their competition, benchmark pricing, and try to build a “better” version of something already out there. That’s a red ocean. It’s bloody with rivals, margin pressure, and zero breathing room.
 
 
-I’ve chosen a different approach. Instead of fighting over scraps, I look for areas where nobody else is even fishing. These uncharted waters are where **blue ocean** ideas thrive. They’re not empty—they’re just ignored. And that’s where value lives.
+I’ve chosen a different approach. Instead of fighting over scraps, I look for areas where nobody else is even fishing. These uncharted waters are where **blue ocean** ideas thrive. They’re not empty; they’re just ignored. And that’s where value lives.
 
 
-With [Akiyaz](#), I didn’t try to beat traditional real estate firms in Tokyo. I focused on Japan’s millions of vacant rural homes—an unloved market with enormous potential. With [Kaala Music](https://kaalamusic.com), I didn’t open another record shop. I curated rare Japanese pressings that collectors abroad had no access to. These ideas weren’t obvious. But that’s the point.
+With [Akiyaz](#), I didn’t try to beat traditional real estate firms in Tokyo. I focused on Japan’s millions of vacant rural homes, an unloved market with enormous potential. With [Kaala Music](https://kaalamusic.com), I didn’t open another record shop. I curated rare Japanese pressings that collectors abroad had no access to. These ideas weren’t obvious. But that’s the point.
 
 ## Red Oceans vs. Blue Oceans
 
-Understanding the contrast between traditional competition and **market creation** is critical. In a red ocean, everyone fights over the same customers. In a **blue ocean**, you’re alone—at least at first.
+Understanding the contrast between traditional competition and **market creation** is critical. In a red ocean, everyone fights over the same customers. In a **blue ocean**, you’re alone, at least at first.
 
 
-Think of Uber battling other rideshare apps. That’s red ocean. Now think of Tesla—not just selling cars, but redefining energy, status, and software all at once. That’s **strategy** that creates new value space. Cirque du Soleil didn’t copy the circus. It became something entirely different by blending theater, dance, and story into the live experience space.
+Think of Uber battling other rideshare apps. That’s red ocean. Now think of Tesla: not just selling cars, but redefining energy, status, and software all at once. That’s **strategy** that creates new value space. Cirque du Soleil didn’t copy the circus. It became something entirely different by blending theater, dance, and story into the live experience space.
 
 
 You don’t win by being slightly better. You win by being the only one who matters in a field you defined.
@@ -46,13 +46,13 @@ Here are a few companies that have nailed **blue ocean** thinking in their own s
 
 ## What Market Are You Willing to Create?
 
-You don’t need to find a totally untapped market. You can redefine an existing one. The key is to stop thinking in terms of competitors, and start thinking in terms of unmet energy—desires people have that no one is serving well.
+You don’t need to find a totally untapped market. You can redefine an existing one. The key is to stop thinking in terms of competitors, and start thinking in terms of unmet energy: desires people have that no one is serving well.
 
 
 Your job isn’t to fight harder. It’s to see clearer.
 
 
-Whether it’s identity, convenience, ethics, fun, or access—there’s always a layer of value waiting to be reimagined. That’s where the opportunity lives.
+Whether it’s identity, convenience, ethics, fun, or access, there’s always a layer of value waiting to be reimagined. That’s where the opportunity lives.
 
 ---
 

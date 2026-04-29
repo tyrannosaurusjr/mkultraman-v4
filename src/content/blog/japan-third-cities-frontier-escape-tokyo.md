@@ -45,7 +45,7 @@ The true alternative, as I see it, lies in the concept of the **Japan Third Citi
 
 ### Leveraging the Center’s Resources for the Periphery
 
-So, what is Tokyo’s role in this hopeful future? Its role is to be used. As a consultant for **pioneers** building on this **frontier**, I advise against severing all ties with the capital. To do so would be to abandon the greatest concentration of resources in the country. Instead, the optimal strategy I advocate is cultivating a tactical relationship with the metropolis. Tokyo becomes the "reprieve"—a comfortable, well-equipped base camp providing essential support for expeditions into the unknown.
+So, what is Tokyo’s role in this hopeful future? Its role is to be used. As a consultant for **pioneers** building on this **frontier**, I advise against severing all ties with the capital. To do so would be to abandon the greatest concentration of resources in the country. Instead, the optimal strategy I advocate is cultivating a tactical relationship with the metropolis. Tokyo becomes the "reprieve":a comfortable, well-equipped base camp providing essential support for expeditions into the unknown.
 
 
 For instance, a founder might spend three weeks in their regional town building their business. Then, they spend one week back in Tokyo. During that week, they tap into deep pools of venture capital, meet international partners, and consult with elite legal experts. They use Tokyo’s hyper-efficiency to solve problems that would take months to address elsewhere. This approach transforms Tokyo’s sterile comfort from a seductive trap into a powerful strategic asset.
